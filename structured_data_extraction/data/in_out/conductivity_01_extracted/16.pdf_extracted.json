@@ -1,0 +1,3791 @@
+{
+  "extraction": {
+    "article_title": "Deep eutectic solvents: syntheses, properties and applications",
+    "des_entries": [
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Urea"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Urea"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "40",
+          "Celsius"
+        ],
+        "conductivity": [
+          "0.199",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "EG"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "20",
+          "Celsius"
+        ],
+        "conductivity": [
+          "7.61",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Glycerol"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "20",
+          "Celsius"
+        ],
+        "conductivity": [
+          "1.05",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "1,4-Butanediol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "1,4-Butanediol"
+        ],
+        "molar_ratio": "1:3",
+        "temperature": [
+          "20",
+          "Celsius"
+        ],
+        "conductivity": [
+          "1.64",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "2,2,2-Trifluoroacetamide"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "CF3CONH2"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "40",
+          "Celsius"
+        ],
+        "conductivity": [
+          "0.286",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Imidazole"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Imidazole"
+        ],
+        "molar_ratio": "3:7",
+        "temperature": [
+          "60",
+          "Celsius"
+        ],
+        "conductivity": [
+          "12",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Zinc chloride"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "ZnCl2"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "42",
+          "Celsius"
+        ],
+        "conductivity": [
+          "0.06",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Zinc chloride",
+          "Urea"
+        ],
+        "compounds_acronyms": [
+          "ZnCl2",
+          "Urea"
+        ],
+        "molar_ratio": "1:3.5",
+        "temperature": [
+          "42",
+          "Celsius"
+        ],
+        "conductivity": [
+          "0.18",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Tetrabutylammonium bromide",
+          "Imidazole"
+        ],
+        "compounds_acronyms": [
+          "Bu4NBr",
+          "Imidazole"
+        ],
+        "molar_ratio": "3:7",
+        "temperature": [
+          "60",
+          "Celsius"
+        ],
+        "conductivity": [
+          "0.24",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Ethylammonium chloride",
+          "2,2,2-Trifluoroacetamide"
+        ],
+        "compounds_acronyms": [
+          "EtNH3Cl",
+          "CF3CONH2"
+        ],
+        "molar_ratio": "1:1.5",
+        "temperature": [
+          "40",
+          "Celsius"
+        ],
+        "conductivity": [
+          "0.39",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Ethylammonium chloride",
+          "Acetamide"
+        ],
+        "compounds_acronyms": [
+          "EtNH3Cl",
+          "Acetamide"
+        ],
+        "molar_ratio": "1:1.5",
+        "temperature": [
+          "40",
+          "Celsius"
+        ],
+        "conductivity": [
+          "0.688",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Ethylammonium chloride",
+          "Urea"
+        ],
+        "compounds_acronyms": [
+          "EtNH3Cl",
+          "Urea"
+        ],
+        "molar_ratio": "1:1.5",
+        "temperature": [
+          "40",
+          "Celsius"
+        ],
+        "conductivity": [
+          "0.348",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Acetylcholine chloride",
+          "Urea"
+        ],
+        "compounds_acronyms": [
+          "AcChCl",
+          "Urea"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "40",
+          "Celsius"
+        ],
+        "conductivity": [
+          "0.017",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Tetrabutylammonium bromide",
+          "Imidazole"
+        ],
+        "compounds_acronyms": [
+          "Bu4NBr",
+          "Imidazole"
+        ],
+        "molar_ratio": "3:7",
+        "temperature": [
+          "20",
+          "Celsius"
+        ],
+        "conductivity": [
+          "0.24",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "L-(+)-tartaric acid",
+          "1,3-dimethylurea"
+        ],
+        "compounds_acronyms": [
+          "L-(+)-tartaric acid",
+          "DMU"
+        ],
+        "molar_ratio": "3:7",
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "L-(+)-tartaric acid",
+          "Choline chloride"
+        ],
+        "compounds_acronyms": [
+          "L-(+)-tartaric acid",
+          "ChCl"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Citric acid",
+          "1,3-dimethylurea"
+        ],
+        "compounds_acronyms": [
+          "Citric acid",
+          "DMU"
+        ],
+        "molar_ratio": "4:6",
+        "temperature": [
+          "65",
+          "Celsius"
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Fructose",
+          "1,3-dimethylurea"
+        ],
+        "compounds_acronyms": [
+          "Fructose",
+          "DMU"
+        ],
+        "molar_ratio": "7:3",
+        "temperature": [
+          "71",
+          "Celsius"
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Tartaric acid",
+          "1,3-dimethylurea"
+        ],
+        "compounds_acronyms": [
+          "Tartaric acid",
+          "DMU"
+        ],
+        "molar_ratio": "3:7",
+        "temperature": [
+          "70",
+          "Celsius"
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Tartaric acid",
+          "Choline chloride"
+        ],
+        "compounds_acronyms": [
+          "Tartaric acid",
+          "ChCl"
+        ],
+        "molar_ratio": "5:5",
+        "temperature": [
+          "90",
+          "Celsius"
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Mannose",
+          "1,3-dimethylurea",
+          "Ammonium chloride"
+        ],
+        "compounds_acronyms": [
+          "Mannose",
+          "DMU",
+          "NH4Cl"
+        ],
+        "molar_ratio": "5:4:1",
+        "temperature": [
+          "89",
+          "Celsius"
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Lactose",
+          "1,3-dimethylurea",
+          "Ammonium chloride"
+        ],
+        "compounds_acronyms": [
+          "Lactose",
+          "DMU",
+          "NH4Cl"
+        ],
+        "molar_ratio": "5:4:1",
+        "temperature": [
+          "88",
+          "Celsius"
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Maltose",
+          "1,3-dimethylurea",
+          "Ammonium chloride"
+        ],
+        "compounds_acronyms": [
+          "Maltose",
+          "DMU",
+          "NH4Cl"
+        ],
+        "molar_ratio": "5:4:1",
+        "temperature": [
+          "84",
+          "Celsius"
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Urea"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "urea"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "70",
+          "Celsius"
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "ethylene glycol"
+        ],
+        "molar_ratio": "2:1",
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Malonic acid"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "malonic acid"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "glycerol"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Zinc chloride"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "ZnCl2"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "ethylene glycol"
+        ],
+        "molar_ratio": null,
+        "temperature": [
+          "90",
+          "Celsius"
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "2,2,2-trifluracetamide"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "TFA"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Urea"
+        ],
+        "compounds_acronyms": [
+          "Choline chloride",
+          "Urea"
+        ],
+        "molar_ratio": "2:1",
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "Choline chloride",
+          "Ethylene glycol"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Imidazolidone"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "imidazolidone"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "150–200",
+          "Celsius"
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Tetrapropylammonium bromide",
+          "Oxalic acid"
+        ],
+        "compounds_acronyms": [
+          "TPABr",
+          "oxalic acid"
+        ],
+        "molar_ratio": null,
+        "temperature": [
+          "150–180",
+          "Celsius"
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "1,3-dimethylurea",
+          "Tetraethylammonium bromide"
+        ],
+        "compounds_acronyms": [
+          "DMU",
+          "TEABr"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "1,3-dimethylurea",
+          "N,N-dimethyl piperidinium chloride"
+        ],
+        "compounds_acronyms": [
+          "DMU",
+          "N,N-dimethyl piperidinium chloride"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Oxalic acid dihydrate"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "oxalic acid dihydrate"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Tetramethylammonium chloride",
+          "Urea"
+        ],
+        "compounds_acronyms": [
+          "TMA",
+          "urea"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Tetramethylammonium chloride",
+          "Oxalic acid dihydrate"
+        ],
+        "compounds_acronyms": [
+          "TMA",
+          "oxalic acid dehydrate"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Tetrapropylammonium bromide",
+          "Urea"
+        ],
+        "compounds_acronyms": [
+          "TPABr",
+          "urea"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Ethylammonium chloride",
+          "Oxalic acid"
+        ],
+        "compounds_acronyms": [
+          "ethylammonium chloride",
+          "oxalic acid"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "1,3-dimethylurea"
+        ],
+        "compounds_acronyms": [
+          "Choline chloride",
+          "1,3-dimethyl urea"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Malonic acid"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "malonic acid"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Oxalic acid dihydrate"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "oxalic acid dihydrate"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Ethylene urea"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "e-urea"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Dimethylurea"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "dimethylurea"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Ethylene urea"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "e-urea"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Methylurea"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "m-urea"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Urea"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "urea"
+        ],
+        "molar_ratio": null,
+        "temperature": [
+          "30",
+          "Celsius"
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "1,3-dimethylurea"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "1,3-dimethylurea"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "2-imidazolidinone"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "2-imidazolidinone"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Urea"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "urea"
+        ],
+        "molar_ratio": null,
+        "temperature": [
+          "30",
+          "Celsius"
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "ethylene glycol"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Urea"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "urea"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "ethylene glycol"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Resorcinol",
+          "Choline chloride"
+        ],
+        "compounds_acronyms": [
+          "Resorcinol",
+          "ChCl"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Resorcinol",
+          "Urea",
+          "Choline chloride"
+        ],
+        "compounds_acronyms": [
+          "Resorcinol",
+          "Urea",
+          "ChCl"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Resorcinol",
+          "3-hydroxypyridine",
+          "Choline chloride"
+        ],
+        "compounds_acronyms": [
+          "Resorcinol",
+          "3-hydroxypyridine",
+          "ChCl"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "p-toluene sulfonic acid",
+          "Choline chloride"
+        ],
+        "compounds_acronyms": [
+          "pTsOH",
+          "ChCl"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      }
+    ]
+  },
+  "extraction_metadata": {
+    "article_title": {
+      "value": "Deep eutectic solvents: syntheses, properties and applications",
+      "references": [
+        "4ae047a2-5ca2-42c3-a62d-7c2cc6727274"
+      ]
+    },
+    "des_entries": [
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "2116ad46-25ac-4288-bbe0-d70f0f34bca9",
+              "8-q"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "2116ad46-25ac-4288-bbe0-d70f0f34bca9",
+              "8-r"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-q"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "8-r"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "8-s"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "40",
+            "references": [
+              "8-t"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "8-t"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.199",
+            "references": [
+              "8-t"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "8-t"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "2116ad46-25ac-4288-bbe0-d70f0f34bca9",
+              "8-v"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "6-1g",
+              "8-w"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-v"
+            ]
+          },
+          {
+            "value": "EG",
+            "references": [
+              "8-w"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "8-x"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "20",
+            "references": [
+              "8-y"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "8-y"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "7.61",
+            "references": [
+              "8-y"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "8-y"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "2116ad46-25ac-4288-bbe0-d70f0f34bca9",
+              "8-A"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "8-B"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-A"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "8-B"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "8-C"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "20",
+            "references": [
+              "8-D"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "8-D"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1.05",
+            "references": [
+              "8-D"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "8-D"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "2116ad46-25ac-4288-bbe0-d70f0f34bca9",
+              "8-F"
+            ]
+          },
+          {
+            "value": "1,4-Butanediol",
+            "references": [
+              "8-G"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-F"
+            ]
+          },
+          {
+            "value": "1,4-Butanediol",
+            "references": [
+              "8-G"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:3",
+          "references": [
+            "8-H"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "20",
+            "references": [
+              "8-I"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "8-I"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1.64",
+            "references": [
+              "8-I"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "8-I"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "2116ad46-25ac-4288-bbe0-d70f0f34bca9",
+              "8-K"
+            ]
+          },
+          {
+            "value": "2,2,2-Trifluoroacetamide",
+            "references": [
+              "d42617d7-0da0-4dba-a1e3-7c70833edb2e",
+              "8-L"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-K"
+            ]
+          },
+          {
+            "value": "CF3CONH2",
+            "references": [
+              "8-L"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "8-M"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "40",
+            "references": [
+              "8-N"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "8-N"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.286",
+            "references": [
+              "8-N"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "8-N"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "2116ad46-25ac-4288-bbe0-d70f0f34bca9",
+              "8-P"
+            ]
+          },
+          {
+            "value": "Imidazole",
+            "references": [
+              "8-Q"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-P"
+            ]
+          },
+          {
+            "value": "Imidazole",
+            "references": [
+              "8-Q"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "3:7",
+          "references": [
+            "8-R"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "60",
+            "references": [
+              "8-S"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "8-S"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "12",
+            "references": [
+              "8-S"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "8-S"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "2116ad46-25ac-4288-bbe0-d70f0f34bca9",
+              "8-U"
+            ]
+          },
+          {
+            "value": "Zinc chloride",
+            "references": [
+              "8-V"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-U"
+            ]
+          },
+          {
+            "value": "ZnCl2",
+            "references": [
+              "8-V"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "8-W"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "42",
+            "references": [
+              "8-X"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "8-X"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.06",
+            "references": [
+              "8-X"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "8-X"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Zinc chloride",
+            "references": [
+              "8-Z"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "8-10"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ZnCl2",
+            "references": [
+              "8-Z"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "8-10"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:3.5",
+          "references": [
+            "8-11"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "42",
+            "references": [
+              "8-12"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "8-12"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.18",
+            "references": [
+              "8-12"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "8-12"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Tetrabutylammonium bromide",
+            "references": [
+              "31d002dc-44f6-4cf1-85f6-7af5fdff3a4e",
+              "8-14"
+            ]
+          },
+          {
+            "value": "Imidazole",
+            "references": [
+              "8-15"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Bu4NBr",
+            "references": [
+              "8-14"
+            ]
+          },
+          {
+            "value": "Imidazole",
+            "references": [
+              "8-15"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "3:7",
+          "references": [
+            "8-16"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "60",
+            "references": [
+              "8-17"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "8-17"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.24",
+            "references": [
+              "8-17"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "8-17"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Ethylammonium chloride",
+            "references": [
+              "31d002dc-44f6-4cf1-85f6-7af5fdff3a4e",
+              "8-19"
+            ]
+          },
+          {
+            "value": "2,2,2-Trifluoroacetamide",
+            "references": [
+              "d42617d7-0da0-4dba-a1e3-7c70833edb2e",
+              "8-1a"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "EtNH3Cl",
+            "references": [
+              "8-19"
+            ]
+          },
+          {
+            "value": "CF3CONH2",
+            "references": [
+              "8-1a"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1.5",
+          "references": [
+            "8-1b"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "40",
+            "references": [
+              "8-1c"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "8-1c"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.39",
+            "references": [
+              "8-1c"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "8-1c"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Ethylammonium chloride",
+            "references": [
+              "31d002dc-44f6-4cf1-85f6-7af5fdff3a4e",
+              "8-1e"
+            ]
+          },
+          {
+            "value": "Acetamide",
+            "references": [
+              "d42617d7-0da0-4dba-a1e3-7c70833edb2e",
+              "8-1f"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "EtNH3Cl",
+            "references": [
+              "8-1e"
+            ]
+          },
+          {
+            "value": "Acetamide",
+            "references": [
+              "8-1f"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1.5",
+          "references": [
+            "8-1g"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "40",
+            "references": [
+              "8-1h"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "8-1h"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.688",
+            "references": [
+              "8-1h"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "8-1h"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Ethylammonium chloride",
+            "references": [
+              "31d002dc-44f6-4cf1-85f6-7af5fdff3a4e",
+              "8-1j"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "2116ad46-25ac-4288-bbe0-d70f0f34bca9",
+              "8-1k"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "EtNH3Cl",
+            "references": [
+              "8-1j"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "8-1k"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1.5",
+          "references": [
+            "8-1l"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "40",
+            "references": [
+              "8-1m"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "8-1m"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.348",
+            "references": [
+              "8-1m"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "8-1m"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Acetylcholine chloride",
+            "references": [
+              "31d002dc-44f6-4cf1-85f6-7af5fdff3a4e",
+              "8-1o"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "2116ad46-25ac-4288-bbe0-d70f0f34bca9",
+              "8-1p"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "AcChCl",
+            "references": [
+              "8-1o"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "8-1p"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "8-1q"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "40",
+            "references": [
+              "8-1r"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "8-1r"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.017",
+            "references": [
+              "8-1r"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "8-1r"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Tetrabutylammonium bromide",
+            "references": [
+              "31d002dc-44f6-4cf1-85f6-7af5fdff3a4e",
+              "8-1t"
+            ]
+          },
+          {
+            "value": "Imidazole",
+            "references": [
+              "8-1u"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Bu4NBr",
+            "references": [
+              "8-1t"
+            ]
+          },
+          {
+            "value": "Imidazole",
+            "references": [
+              "8-1u"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "3:7",
+          "references": [
+            "8-1v"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "20",
+            "references": [
+              "8-1w"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "8-1w"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.24",
+            "references": [
+              "8-1w"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "8-1w"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "L-(+)-tartaric acid",
+            "references": [
+              "25f25769-b411-4d8e-a4d4-6a9732a98c26"
+            ]
+          },
+          {
+            "value": "1,3-dimethylurea",
+            "references": [
+              "25f25769-b411-4d8e-a4d4-6a9732a98c26"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "L-(+)-tartaric acid",
+            "references": [
+              "25f25769-b411-4d8e-a4d4-6a9732a98c26"
+            ]
+          },
+          {
+            "value": "DMU",
+            "references": [
+              "25f25769-b411-4d8e-a4d4-6a9732a98c26"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "3:7",
+          "references": [
+            "25f25769-b411-4d8e-a4d4-6a9732a98c26"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "L-(+)-tartaric acid",
+            "references": [
+              "25f25769-b411-4d8e-a4d4-6a9732a98c26"
+            ]
+          },
+          {
+            "value": "Choline chloride",
+            "references": [
+              "25f25769-b411-4d8e-a4d4-6a9732a98c26"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "L-(+)-tartaric acid",
+            "references": [
+              "25f25769-b411-4d8e-a4d4-6a9732a98c26"
+            ]
+          },
+          {
+            "value": "ChCl",
+            "references": [
+              "25f25769-b411-4d8e-a4d4-6a9732a98c26"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "25f25769-b411-4d8e-a4d4-6a9732a98c26"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Citric acid",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "1,3-dimethylurea",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Citric acid",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "DMU",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "4:6",
+          "references": [
+            "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "65",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          }
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Fructose",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "1,3-dimethylurea",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Fructose",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "DMU",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "7:3",
+          "references": [
+            "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "71",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          }
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Tartaric acid",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "1,3-dimethylurea",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Tartaric acid",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "DMU",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "3:7",
+          "references": [
+            "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "70",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          }
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Tartaric acid",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "Choline chloride",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Tartaric acid",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "ChCl",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "5:5",
+          "references": [
+            "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "90",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          }
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Mannose",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "1,3-dimethylurea",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "Ammonium chloride",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Mannose",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "DMU",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "NH4Cl",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "5:4:1",
+          "references": [
+            "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "89",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          }
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Lactose",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "1,3-dimethylurea",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "Ammonium chloride",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Lactose",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "DMU",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "NH4Cl",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "5:4:1",
+          "references": [
+            "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "88",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          }
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Maltose",
+            "references": [
+              "1836d93f-65b8-49c9-9b2f-f48489084bf5",
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "1,3-dimethylurea",
+            "references": [
+              "1836d93f-65b8-49c9-9b2f-f48489084bf5",
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "Ammonium chloride",
+            "references": [
+              "1836d93f-65b8-49c9-9b2f-f48489084bf5",
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Maltose",
+            "references": [
+              "1836d93f-65b8-49c9-9b2f-f48489084bf5",
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "DMU",
+            "references": [
+              "1836d93f-65b8-49c9-9b2f-f48489084bf5",
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "NH4Cl",
+            "references": [
+              "1836d93f-65b8-49c9-9b2f-f48489084bf5",
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "5:4:1",
+          "references": [
+            "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "84",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "dc6a556c-289a-4033-ab4c-a0afa38346dc"
+            ]
+          }
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "ce0bcb8f-b6bd-4de8-91b8-c083304bdb09"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "ce0bcb8f-b6bd-4de8-91b8-c083304bdb09"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "ce0bcb8f-b6bd-4de8-91b8-c083304bdb09"
+            ]
+          },
+          {
+            "value": "urea",
+            "references": [
+              "ce0bcb8f-b6bd-4de8-91b8-c083304bdb09"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "ce0bcb8f-b6bd-4de8-91b8-c083304bdb09"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "70",
+            "references": [
+              "ce0bcb8f-b6bd-4de8-91b8-c083304bdb09"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "ce0bcb8f-b6bd-4de8-91b8-c083304bdb09"
+            ]
+          }
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "0097aaf6-97fd-40aa-a582-94e8ace74154"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "0097aaf6-97fd-40aa-a582-94e8ace74154"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "0097aaf6-97fd-40aa-a582-94e8ace74154"
+            ]
+          },
+          {
+            "value": "ethylene glycol",
+            "references": [
+              "0097aaf6-97fd-40aa-a582-94e8ace74154"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "2:1",
+          "references": [
+            "0097aaf6-97fd-40aa-a582-94e8ace74154"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "0097aaf6-97fd-40aa-a582-94e8ace74154"
+            ]
+          },
+          {
+            "value": "Malonic acid",
+            "references": [
+              "0097aaf6-97fd-40aa-a582-94e8ace74154"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "0097aaf6-97fd-40aa-a582-94e8ace74154"
+            ]
+          },
+          {
+            "value": "malonic acid",
+            "references": [
+              "0097aaf6-97fd-40aa-a582-94e8ace74154"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "0097aaf6-97fd-40aa-a582-94e8ace74154"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "0097aaf6-97fd-40aa-a582-94e8ace74154"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "0097aaf6-97fd-40aa-a582-94e8ace74154"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "0097aaf6-97fd-40aa-a582-94e8ace74154"
+            ]
+          },
+          {
+            "value": "glycerol",
+            "references": [
+              "0097aaf6-97fd-40aa-a582-94e8ace74154"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "0097aaf6-97fd-40aa-a582-94e8ace74154"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "0097aaf6-97fd-40aa-a582-94e8ace74154"
+            ]
+          },
+          {
+            "value": "Zinc chloride",
+            "references": [
+              "0097aaf6-97fd-40aa-a582-94e8ace74154"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "0097aaf6-97fd-40aa-a582-94e8ace74154"
+            ]
+          },
+          {
+            "value": "ZnCl2",
+            "references": [
+              "0097aaf6-97fd-40aa-a582-94e8ace74154"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "0097aaf6-97fd-40aa-a582-94e8ace74154"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "a5f34eb6-af70-45fb-bb82-43612bff615a"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "a5f34eb6-af70-45fb-bb82-43612bff615a"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "a5f34eb6-af70-45fb-bb82-43612bff615a"
+            ]
+          },
+          {
+            "value": "ethylene glycol",
+            "references": [
+              "a5f34eb6-af70-45fb-bb82-43612bff615a"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [
+          {
+            "value": "90",
+            "references": [
+              "a5f34eb6-af70-45fb-bb82-43612bff615a"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "a5f34eb6-af70-45fb-bb82-43612bff615a"
+            ]
+          }
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "59d4ba87-41f0-4c80-ab40-00fa1535eab5"
+            ]
+          },
+          {
+            "value": "2,2,2-trifluracetamide",
+            "references": [
+              "59d4ba87-41f0-4c80-ab40-00fa1535eab5"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "59d4ba87-41f0-4c80-ab40-00fa1535eab5"
+            ]
+          },
+          {
+            "value": "TFA",
+            "references": [
+              "59d4ba87-41f0-4c80-ab40-00fa1535eab5"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "59d4ba87-41f0-4c80-ab40-00fa1535eab5"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "0bb9a6e3-8983-4f27-a6a6-591c07909dcf"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "0bb9a6e3-8983-4f27-a6a6-591c07909dcf"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "0bb9a6e3-8983-4f27-a6a6-591c07909dcf"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "0bb9a6e3-8983-4f27-a6a6-591c07909dcf"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "2:1",
+          "references": [
+            "0bb9a6e3-8983-4f27-a6a6-591c07909dcf"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "0bb9a6e3-8983-4f27-a6a6-591c07909dcf"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "0bb9a6e3-8983-4f27-a6a6-591c07909dcf"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "0bb9a6e3-8983-4f27-a6a6-591c07909dcf"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "0bb9a6e3-8983-4f27-a6a6-591c07909dcf"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "0bb9a6e3-8983-4f27-a6a6-591c07909dcf"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "0bb9a6e3-8983-4f27-a6a6-591c07909dcf"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "0bb9a6e3-8983-4f27-a6a6-591c07909dcf"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "0bb9a6e3-8983-4f27-a6a6-591c07909dcf"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "0bb9a6e3-8983-4f27-a6a6-591c07909dcf"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "0bb9a6e3-8983-4f27-a6a6-591c07909dcf"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "58f26bb7-559f-4e32-a9a2-a21345c831df"
+            ]
+          },
+          {
+            "value": "Imidazolidone",
+            "references": [
+              "58f26bb7-559f-4e32-a9a2-a21345c831df"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "58f26bb7-559f-4e32-a9a2-a21345c831df"
+            ]
+          },
+          {
+            "value": "imidazolidone",
+            "references": [
+              "58f26bb7-559f-4e32-a9a2-a21345c831df"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "58f26bb7-559f-4e32-a9a2-a21345c831df"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "150–200",
+            "references": [
+              "58f26bb7-559f-4e32-a9a2-a21345c831df"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "58f26bb7-559f-4e32-a9a2-a21345c831df"
+            ]
+          }
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Tetrapropylammonium bromide",
+            "references": [
+              "49fc1810-765d-44af-9521-71fe4c280bea"
+            ]
+          },
+          {
+            "value": "Oxalic acid",
+            "references": [
+              "49fc1810-765d-44af-9521-71fe4c280bea"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "TPABr",
+            "references": [
+              "49fc1810-765d-44af-9521-71fe4c280bea"
+            ]
+          },
+          {
+            "value": "oxalic acid",
+            "references": [
+              "49fc1810-765d-44af-9521-71fe4c280bea"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [
+          {
+            "value": "150–180",
+            "references": [
+              "49fc1810-765d-44af-9521-71fe4c280bea"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "49fc1810-765d-44af-9521-71fe4c280bea"
+            ]
+          }
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "1,3-dimethylurea",
+            "references": [
+              "49fc1810-765d-44af-9521-71fe4c280bea"
+            ]
+          },
+          {
+            "value": "Tetraethylammonium bromide",
+            "references": [
+              "49fc1810-765d-44af-9521-71fe4c280bea"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "DMU",
+            "references": [
+              "49fc1810-765d-44af-9521-71fe4c280bea"
+            ]
+          },
+          {
+            "value": "TEABr",
+            "references": [
+              "49fc1810-765d-44af-9521-71fe4c280bea"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "1,3-dimethylurea",
+            "references": [
+              "49fc1810-765d-44af-9521-71fe4c280bea"
+            ]
+          },
+          {
+            "value": "N,N-dimethyl piperidinium chloride",
+            "references": [
+              "49fc1810-765d-44af-9521-71fe4c280bea"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "DMU",
+            "references": [
+              "49fc1810-765d-44af-9521-71fe4c280bea"
+            ]
+          },
+          {
+            "value": "N,N-dimethyl piperidinium chloride",
+            "references": [
+              "49fc1810-765d-44af-9521-71fe4c280bea"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "6fc7b83e-1a4b-4682-b5a5-111ca1bc154e"
+            ]
+          },
+          {
+            "value": "Oxalic acid dihydrate",
+            "references": [
+              "6fc7b83e-1a4b-4682-b5a5-111ca1bc154e"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "6fc7b83e-1a4b-4682-b5a5-111ca1bc154e"
+            ]
+          },
+          {
+            "value": "oxalic acid dihydrate",
+            "references": [
+              "6fc7b83e-1a4b-4682-b5a5-111ca1bc154e"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "6fc7b83e-1a4b-4682-b5a5-111ca1bc154e"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Tetramethylammonium chloride",
+            "references": [
+              "e21f16e8-3e7e-418e-92ae-969e268c04a7"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "e21f16e8-3e7e-418e-92ae-969e268c04a7"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "TMA",
+            "references": [
+              "e21f16e8-3e7e-418e-92ae-969e268c04a7"
+            ]
+          },
+          {
+            "value": "urea",
+            "references": [
+              "e21f16e8-3e7e-418e-92ae-969e268c04a7"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Tetramethylammonium chloride",
+            "references": [
+              "e21f16e8-3e7e-418e-92ae-969e268c04a7"
+            ]
+          },
+          {
+            "value": "Oxalic acid dihydrate",
+            "references": [
+              "e21f16e8-3e7e-418e-92ae-969e268c04a7"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "TMA",
+            "references": [
+              "e21f16e8-3e7e-418e-92ae-969e268c04a7"
+            ]
+          },
+          {
+            "value": "oxalic acid dehydrate",
+            "references": [
+              "e21f16e8-3e7e-418e-92ae-969e268c04a7"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Tetrapropylammonium bromide",
+            "references": [
+              "e12a5aa1-f866-4162-b623-55425846045a"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "e12a5aa1-f866-4162-b623-55425846045a"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "TPABr",
+            "references": [
+              "e12a5aa1-f866-4162-b623-55425846045a"
+            ]
+          },
+          {
+            "value": "urea",
+            "references": [
+              "e12a5aa1-f866-4162-b623-55425846045a"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Ethylammonium chloride",
+            "references": [
+              "f2227cb3-22bf-442e-849a-34e0ae5663fe"
+            ]
+          },
+          {
+            "value": "Oxalic acid",
+            "references": [
+              "f2227cb3-22bf-442e-849a-34e0ae5663fe"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ethylammonium chloride",
+            "references": [
+              "f2227cb3-22bf-442e-849a-34e0ae5663fe"
+            ]
+          },
+          {
+            "value": "oxalic acid",
+            "references": [
+              "f2227cb3-22bf-442e-849a-34e0ae5663fe"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "a5b9d7c3-4a98-4696-9d68-f9329d0c44b0"
+            ]
+          },
+          {
+            "value": "1,3-dimethylurea",
+            "references": [
+              "a5b9d7c3-4a98-4696-9d68-f9329d0c44b0"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "a5b9d7c3-4a98-4696-9d68-f9329d0c44b0"
+            ]
+          },
+          {
+            "value": "1,3-dimethyl urea",
+            "references": [
+              "a5b9d7c3-4a98-4696-9d68-f9329d0c44b0"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "03709f23-bff4-431b-84ce-e464fed014c7"
+            ]
+          },
+          {
+            "value": "Malonic acid",
+            "references": [
+              "03709f23-bff4-431b-84ce-e464fed014c7"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "03709f23-bff4-431b-84ce-e464fed014c7"
+            ]
+          },
+          {
+            "value": "malonic acid",
+            "references": [
+              "03709f23-bff4-431b-84ce-e464fed014c7"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "4ddb045f-836a-4b44-a8d8-08987db812a4"
+            ]
+          },
+          {
+            "value": "Oxalic acid dihydrate",
+            "references": [
+              "4ddb045f-836a-4b44-a8d8-08987db812a4"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "4ddb045f-836a-4b44-a8d8-08987db812a4"
+            ]
+          },
+          {
+            "value": "oxalic acid dihydrate",
+            "references": [
+              "4ddb045f-836a-4b44-a8d8-08987db812a4"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "a95864b8-da3b-4993-aeb7-1e048c822b0f"
+            ]
+          },
+          {
+            "value": "Ethylene urea",
+            "references": [
+              "a95864b8-da3b-4993-aeb7-1e048c822b0f"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "a95864b8-da3b-4993-aeb7-1e048c822b0f"
+            ]
+          },
+          {
+            "value": "e-urea",
+            "references": [
+              "a95864b8-da3b-4993-aeb7-1e048c822b0f"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "0bcf17bc-1e66-46e3-8fc6-070ad84a3c02"
+            ]
+          },
+          {
+            "value": "Dimethylurea",
+            "references": [
+              "0bcf17bc-1e66-46e3-8fc6-070ad84a3c02"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "0bcf17bc-1e66-46e3-8fc6-070ad84a3c02"
+            ]
+          },
+          {
+            "value": "dimethylurea",
+            "references": [
+              "0bcf17bc-1e66-46e3-8fc6-070ad84a3c02"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "34e23f22-4c3b-4f5e-86b4-068cdb84361e"
+            ]
+          },
+          {
+            "value": "Ethylene urea",
+            "references": [
+              "34e23f22-4c3b-4f5e-86b4-068cdb84361e"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "34e23f22-4c3b-4f5e-86b4-068cdb84361e"
+            ]
+          },
+          {
+            "value": "e-urea",
+            "references": [
+              "34e23f22-4c3b-4f5e-86b4-068cdb84361e"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "1ecf8f4d-7a1a-49f7-b8a8-b93b718d0e40"
+            ]
+          },
+          {
+            "value": "Methylurea",
+            "references": [
+              "1ecf8f4d-7a1a-49f7-b8a8-b93b718d0e40"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "1ecf8f4d-7a1a-49f7-b8a8-b93b718d0e40"
+            ]
+          },
+          {
+            "value": "m-urea",
+            "references": [
+              "1ecf8f4d-7a1a-49f7-b8a8-b93b718d0e40"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "5503e1eb-703e-40d5-898c-86a226be1a49"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "5503e1eb-703e-40d5-898c-86a226be1a49"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "5503e1eb-703e-40d5-898c-86a226be1a49"
+            ]
+          },
+          {
+            "value": "urea",
+            "references": [
+              "5503e1eb-703e-40d5-898c-86a226be1a49"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [
+          {
+            "value": "30",
+            "references": [
+              "5503e1eb-703e-40d5-898c-86a226be1a49"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "5503e1eb-703e-40d5-898c-86a226be1a49"
+            ]
+          }
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "b50c6080-ed57-4be8-8c14-eb4488f3b103"
+            ]
+          },
+          {
+            "value": "1,3-dimethylurea",
+            "references": [
+              "b50c6080-ed57-4be8-8c14-eb4488f3b103"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "b50c6080-ed57-4be8-8c14-eb4488f3b103"
+            ]
+          },
+          {
+            "value": "1,3-dimethylurea",
+            "references": [
+              "b50c6080-ed57-4be8-8c14-eb4488f3b103"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "317589fe-201f-408c-8f91-d05ee4fc6e58"
+            ]
+          },
+          {
+            "value": "2-imidazolidinone",
+            "references": [
+              "317589fe-201f-408c-8f91-d05ee4fc6e58"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "317589fe-201f-408c-8f91-d05ee4fc6e58"
+            ]
+          },
+          {
+            "value": "2-imidazolidinone",
+            "references": [
+              "317589fe-201f-408c-8f91-d05ee4fc6e58"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "b0fa77ba-a0f3-4dd7-8ece-25d996dd0ec7"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "b0fa77ba-a0f3-4dd7-8ece-25d996dd0ec7"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "b0fa77ba-a0f3-4dd7-8ece-25d996dd0ec7"
+            ]
+          },
+          {
+            "value": "urea",
+            "references": [
+              "b0fa77ba-a0f3-4dd7-8ece-25d996dd0ec7"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [
+          {
+            "value": "30",
+            "references": [
+              "b0fa77ba-a0f3-4dd7-8ece-25d996dd0ec7"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "b0fa77ba-a0f3-4dd7-8ece-25d996dd0ec7"
+            ]
+          }
+        ],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "3f4c6b63-f66f-4a64-9d5c-da528a2d2372"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "3f4c6b63-f66f-4a64-9d5c-da528a2d2372"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "3f4c6b63-f66f-4a64-9d5c-da528a2d2372"
+            ]
+          },
+          {
+            "value": "ethylene glycol",
+            "references": [
+              "3f4c6b63-f66f-4a64-9d5c-da528a2d2372"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "3f4c6b63-f66f-4a64-9d5c-da528a2d2372"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "3f4c6b63-f66f-4a64-9d5c-da528a2d2372"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "3f4c6b63-f66f-4a64-9d5c-da528a2d2372"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "3f4c6b63-f66f-4a64-9d5c-da528a2d2372"
+            ]
+          },
+          {
+            "value": "urea",
+            "references": [
+              "3f4c6b63-f66f-4a64-9d5c-da528a2d2372"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "3f4c6b63-f66f-4a64-9d5c-da528a2d2372"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "ab642f3a-9a20-45eb-b95a-6d6a54a4fc23"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "ab642f3a-9a20-45eb-b95a-6d6a54a4fc23"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "ab642f3a-9a20-45eb-b95a-6d6a54a4fc23"
+            ]
+          },
+          {
+            "value": "ethylene glycol",
+            "references": [
+              "ab642f3a-9a20-45eb-b95a-6d6a54a4fc23"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Resorcinol",
+            "references": [
+              "aa46b614-cb4e-4d9f-aa01-25bffb09be2e"
+            ]
+          },
+          {
+            "value": "Choline chloride",
+            "references": [
+              "aa46b614-cb4e-4d9f-aa01-25bffb09be2e"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Resorcinol",
+            "references": [
+              "aa46b614-cb4e-4d9f-aa01-25bffb09be2e"
+            ]
+          },
+          {
+            "value": "ChCl",
+            "references": [
+              "aa46b614-cb4e-4d9f-aa01-25bffb09be2e"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Resorcinol",
+            "references": [
+              "aa46b614-cb4e-4d9f-aa01-25bffb09be2e"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "aa46b614-cb4e-4d9f-aa01-25bffb09be2e"
+            ]
+          },
+          {
+            "value": "Choline chloride",
+            "references": [
+              "aa46b614-cb4e-4d9f-aa01-25bffb09be2e"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Resorcinol",
+            "references": [
+              "aa46b614-cb4e-4d9f-aa01-25bffb09be2e"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "aa46b614-cb4e-4d9f-aa01-25bffb09be2e"
+            ]
+          },
+          {
+            "value": "ChCl",
+            "references": [
+              "aa46b614-cb4e-4d9f-aa01-25bffb09be2e"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Resorcinol",
+            "references": [
+              "2b1c0771-1214-403f-ba4d-847d29f9f336"
+            ]
+          },
+          {
+            "value": "3-hydroxypyridine",
+            "references": [
+              "2b1c0771-1214-403f-ba4d-847d29f9f336"
+            ]
+          },
+          {
+            "value": "Choline chloride",
+            "references": [
+              "2b1c0771-1214-403f-ba4d-847d29f9f336"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Resorcinol",
+            "references": [
+              "2b1c0771-1214-403f-ba4d-847d29f9f336"
+            ]
+          },
+          {
+            "value": "3-hydroxypyridine",
+            "references": [
+              "2b1c0771-1214-403f-ba4d-847d29f9f336"
+            ]
+          },
+          {
+            "value": "ChCl",
+            "references": [
+              "2b1c0771-1214-403f-ba4d-847d29f9f336"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "p-toluene sulfonic acid",
+            "references": [
+              "53cb8012-04a9-4660-b18c-5d694650bf9b"
+            ]
+          },
+          {
+            "value": "Choline chloride",
+            "references": [
+              "53cb8012-04a9-4660-b18c-5d694650bf9b"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "pTsOH",
+            "references": [
+              "53cb8012-04a9-4660-b18c-5d694650bf9b"
+            ]
+          },
+          {
+            "value": "ChCl",
+            "references": [
+              "53cb8012-04a9-4660-b18c-5d694650bf9b"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      }
+    ]
+  },
+  "metadata": {
+    "credit_usage": 68.1724,
+    "duration_ms": 53672,
+    "filename": "upload.md",
+    "job_id": "2616b513418d4f3da3c4a6780f61cd1e",
+    "org_id": null,
+    "version": "extract-20251024",
+    "fallback_model_version": null,
+    "schema_violation_error": null
+  }
+}

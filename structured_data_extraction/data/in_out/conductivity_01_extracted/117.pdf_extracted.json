@@ -1,0 +1,3927 @@
+{
+  "extraction": {
+    "article_title": "Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges",
+    "des_entries": [
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Urea"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Urea"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.75",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Glycerol"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1.74",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Ethylene glycol"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "7.61",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Malonic acid"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Malonic acid"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.91",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Oxalic acid"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Oxalic acid"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.48",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Phenol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Phenol"
+        ],
+        "molar_ratio": "1:1.5",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "3.14",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "o-cresol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "o-cresol"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1.21",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Xylenol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Xylenol"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "trichloroacetic acid"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "trichloroacetic acid"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.07",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Acetic acid"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Acetic acid"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "3.28",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Levulinic acid"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Levulinic acid"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.81",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Imidazole"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Imidazole"
+        ],
+        "molar_ratio": "3:7",
+        "temperature": [
+          "333",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "12.01",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "1,4-butanediol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "1,4-butanediol"
+        ],
+        "molar_ratio": "1:3",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1.64",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "D-fructose"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "D-fructose"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glucose"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Glucose"
+        ],
+        "molar_ratio": "2:1",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Propylene glycol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "PG"
+        ],
+        "molar_ratio": "1:2.5",
+        "temperature": [
+          "323",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "7.16",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "n-butyric acid"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "n-butyric acid"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "n-butyric acid"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "n-butyric acid"
+        ],
+        "molar_ratio": "1:3",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "n-butyric acid"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "n-butyric acid"
+        ],
+        "molar_ratio": "1:4",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyltrimethylammonium chloride",
+          "Ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "Benzyltrimethylammonium chloride",
+          "EG"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "4.61",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyltrimethylammonium chloride",
+          "Diethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "Benzyltrimethylammonium chloride",
+          "Diethylene glycol"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1.65",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyltrimethylammonium chloride",
+          "Tri ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "Benzyltrimethylammonium chloride",
+          "Tri ethylene glycol"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1.01",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyltrimethylammonium chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "Benzyltrimethylammonium chloride",
+          "Glycerol"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.39",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyltrimethylammonium chloride",
+          "p-toluene sulfonic acid"
+        ],
+        "compounds_acronyms": [
+          "Benzyltrimethylammonium chloride",
+          "p-toluene sulfonic acid"
+        ],
+        "molar_ratio": "3:7",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "2.412",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyltrimethylammonium chloride",
+          "Citric acid"
+        ],
+        "compounds_acronyms": [
+          "Benzyltrimethylammonium chloride",
+          "Citric acid"
+        ],
+        "molar_ratio": "3:7",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "4.366",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyltrimethylammonium chloride",
+          "Oxalic acid"
+        ],
+        "compounds_acronyms": [
+          "Benzyltrimethylammonium chloride",
+          "Oxalic acid"
+        ],
+        "molar_ratio": "3:7",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "5.342",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyltributylammonium chloride",
+          "Ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "Benzyltributylammonium chloride",
+          "EG"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.64",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyltributylammonium chloride",
+          "Diethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "Benzyltributylammonium chloride",
+          "Diethylene glycol"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.40",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyltributylammonium chloride",
+          "Tri ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "Benzyltributylammonium chloride",
+          "Tri ethylene glycol"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.27",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyltributylammonium chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "Benzyltributylammonium chloride",
+          "Glycerol"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.09",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Methyltriphenylphosphonium bromide",
+          "Ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "Methyltriphenylphosphonium bromide",
+          "Ethylene glycol"
+        ],
+        "molar_ratio": "1:4",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Methyltriphenylphosphonium bromide",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "Methyltriphenylphosphonium bromide",
+          "Glycerol"
+        ],
+        "molar_ratio": "1:3",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Methyltriphenylphosphonium bromide",
+          "2,2,2-trifluroacetamide"
+        ],
+        "compounds_acronyms": [
+          "Methyltriphenylphosphonium bromide",
+          "2,2,2-trifluroacetamide"
+        ],
+        "molar_ratio": "1:8",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Tetrapropylammonium bromide",
+          "Ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "Tetrapropylammonium bromide",
+          "Ethylene glycol"
+        ],
+        "molar_ratio": "1:3",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Tetrapropylammonium bromide",
+          "Triethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "Tetrapropylammonium bromide",
+          "Triethylene glycol"
+        ],
+        "molar_ratio": "1:3",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Tetrapropylammonium bromide",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "Tetrapropylammonium bromide",
+          "Glycerol"
+        ],
+        "molar_ratio": "1:4",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Tetrapropylammonium bromide",
+          "1,3-propanediol"
+        ],
+        "compounds_acronyms": [
+          "Tetrapropylammonium bromide",
+          "1,3-propanediol"
+        ],
+        "molar_ratio": "1:3",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Tetrapropylammonium bromide",
+          "imidazole"
+        ],
+        "compounds_acronyms": [
+          "Tetrapropylammonium bromide",
+          "imidazole"
+        ],
+        "molar_ratio": "3:7",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Tetrapropylammonium bromide",
+          "1,5-propanediol"
+        ],
+        "compounds_acronyms": [
+          "Tetrapropylammonium bromide",
+          "1,5-propanediol"
+        ],
+        "molar_ratio": "1:3",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "N, N-dimethylammonium chloride",
+          "Ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "N, N-dimethylammonium chloride",
+          "Ethylene glycol"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "N, N-dimethylammonium chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "N, N-dimethylammonium chloride",
+          "Glycerol"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Sodium chloride",
+          "Ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "NaCl",
+          "Ethylene glycol"
+        ],
+        "molar_ratio": "0.5-20",
+        "temperature": [
+          "303",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "4.73",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Sodium bromide",
+          "Ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "NaBr",
+          "Ethylene glycol"
+        ],
+        "molar_ratio": "0.5-10",
+        "temperature": [
+          "303",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "6.92",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Sodium iodide",
+          "Ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "NaI",
+          "Ethylene glycol"
+        ],
+        "molar_ratio": "0.5-10",
+        "temperature": [
+          "303",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "7.81",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Zinc chloride",
+          "Urea"
+        ],
+        "compounds_acronyms": [
+          "ZnCl₂",
+          "Urea"
+        ],
+        "molar_ratio": "1:3.5",
+        "temperature": [
+          "315",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.18",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Zinc chloride",
+          "Acetamide"
+        ],
+        "compounds_acronyms": [
+          "ZnCl₂",
+          "Acetamide"
+        ],
+        "molar_ratio": "1:4",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Zinc chloride",
+          "1,2-ethanediol"
+        ],
+        "compounds_acronyms": [
+          "ZnCl₂",
+          "1,2-ethanediol"
+        ],
+        "molar_ratio": "1:4",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Zinc chloride",
+          "1,6-hexanediol"
+        ],
+        "compounds_acronyms": [
+          "ZnCl₂",
+          "1,6-hexanediol"
+        ],
+        "molar_ratio": "1:3",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Zinc chloride",
+          "Glucose"
+        ],
+        "compounds_acronyms": [
+          "ZnCl₂",
+          "Glucose"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.06",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Zinc chloride",
+          "Fructose"
+        ],
+        "compounds_acronyms": [
+          "ZnCl₂",
+          "Fructose"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.01",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Zinc chloride",
+          "Lactic acid"
+        ],
+        "compounds_acronyms": [
+          "ZnCl₂",
+          "Lactic acid"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.01",
+          "mS/cm"
+        ]
+      }
+    ]
+  },
+  "extraction_metadata": {
+    "article_title": {
+      "value": "Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges",
+      "references": [
+        "c82f2593-89ab-4041-b26e-f3fdaf0d26ed",
+        "d8e23e87-ab64-4276-ac26-64125320802e"
+      ]
+    },
+    "des_entries": [
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "8-d"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "8-d"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "8-e"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.75",
+            "references": [
+              "8-j"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "8-x"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "8-x"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "8-y"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1.74",
+            "references": [
+              "8-D"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "8-H"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "8-H"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "8-I"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "7.61",
+            "references": [
+              "8-N"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Malonic acid",
+            "references": [
+              "8-R"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Malonic acid",
+            "references": [
+              "8-R"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "8-S"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.91",
+            "references": [
+              "8-X"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Oxalic acid",
+            "references": [
+              "8-11"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Oxalic acid",
+            "references": [
+              "8-11"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "8-12"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.48",
+            "references": [
+              "8-17"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Phenol",
+            "references": [
+              "8-1b"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Phenol",
+            "references": [
+              "8-1b"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1.5",
+          "references": [
+            "8-1c"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "3.14",
+            "references": [
+              "8-1h"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "o-cresol",
+            "references": [
+              "8-1l"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "o-cresol",
+            "references": [
+              "8-1l"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "8-1m"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1.21",
+            "references": [
+              "8-1r"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Xylenol",
+            "references": [
+              "8-1w"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Xylenol",
+            "references": [
+              "8-1w"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "8-1x"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "trichloroacetic acid",
+            "references": [
+              "8-1F"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "trichloroacetic acid",
+            "references": [
+              "8-1F"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "8-1G"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.07",
+            "references": [
+              "8-1L"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Acetic acid",
+            "references": [
+              "8-1P"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Acetic acid",
+            "references": [
+              "8-1P"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "8-1Q"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "3.28",
+            "references": [
+              "8-1V"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Levulinic acid",
+            "references": [
+              "8-1Z"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Levulinic acid",
+            "references": [
+              "8-1Z"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "8-20"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.81",
+            "references": [
+              "8-25"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Imidazole",
+            "references": [
+              "8-29"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Imidazole",
+            "references": [
+              "8-29"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "3:7",
+          "references": [
+            "8-2a"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "333",
+            "references": [
+              "8-2f"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "12.01",
+            "references": [
+              "8-2f"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "1,4-butanediol",
+            "references": [
+              "8-2j"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "1,4-butanediol",
+            "references": [
+              "8-2j"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:3",
+          "references": [
+            "8-2k"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1.64",
+            "references": [
+              "8-2p"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "D-fructose",
+            "references": [
+              "8-2t"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "D-fructose",
+            "references": [
+              "8-2t"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "8-2u"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Glucose",
+            "references": [
+              "8-2D"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Glucose",
+            "references": [
+              "8-2D"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "2:1",
+          "references": [
+            "8-2E"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "Propylene glycol",
+            "references": [
+              "8-2N"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "PG",
+            "references": [
+              "8-2N"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2.5",
+          "references": [
+            "8-2O"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "323",
+            "references": [
+              "8-2T"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "7.16",
+            "references": [
+              "8-2T"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "n-butyric acid",
+            "references": [
+              "8-2X"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "n-butyric acid",
+            "references": [
+              "8-2X"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "8-2Y"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "n-butyric acid",
+            "references": [
+              "8-2X"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "n-butyric acid",
+            "references": [
+              "8-2X"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:3",
+          "references": [
+            "8-38"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "n-butyric acid",
+            "references": [
+              "8-2X"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "8-c"
+            ]
+          },
+          {
+            "value": "n-butyric acid",
+            "references": [
+              "8-2X"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:4",
+          "references": [
+            "8-3i"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyltrimethylammonium chloride",
+            "references": [
+              "8-3q"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "8-3r"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Benzyltrimethylammonium chloride",
+            "references": [
+              "8-3q"
+            ]
+          },
+          {
+            "value": "EG",
+            "references": [
+              "8-3r"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "8-3s"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "4.61",
+            "references": [
+              "8-3x"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyltrimethylammonium chloride",
+            "references": [
+              "8-3q"
+            ]
+          },
+          {
+            "value": "Diethylene glycol",
+            "references": [
+              "8-3B"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Benzyltrimethylammonium chloride",
+            "references": [
+              "8-3q"
+            ]
+          },
+          {
+            "value": "Diethylene glycol",
+            "references": [
+              "8-3B"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "8-3C"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1.65",
+            "references": [
+              "8-3H"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyltrimethylammonium chloride",
+            "references": [
+              "8-3q"
+            ]
+          },
+          {
+            "value": "Tri ethylene glycol",
+            "references": [
+              "8-3L"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Benzyltrimethylammonium chloride",
+            "references": [
+              "8-3q"
+            ]
+          },
+          {
+            "value": "Tri ethylene glycol",
+            "references": [
+              "8-3L"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "8-3M"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1.01",
+            "references": [
+              "8-3R"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyltrimethylammonium chloride",
+            "references": [
+              "8-3q"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "8-3V"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Benzyltrimethylammonium chloride",
+            "references": [
+              "8-3q"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "8-3V"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "8-3W"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.39",
+            "references": [
+              "8-41"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyltrimethylammonium chloride",
+            "references": [
+              "8-3q"
+            ]
+          },
+          {
+            "value": "p-toluene sulfonic acid",
+            "references": [
+              "8-44"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Benzyltrimethylammonium chloride",
+            "references": [
+              "8-3q"
+            ]
+          },
+          {
+            "value": "p-toluene sulfonic acid",
+            "references": [
+              "8-44"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "3:7",
+          "references": [
+            "8-45"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "2.412",
+            "references": [
+              "8-4a"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyltrimethylammonium chloride",
+            "references": [
+              "8-3q"
+            ]
+          },
+          {
+            "value": "Citric acid",
+            "references": [
+              "8-4d"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Benzyltrimethylammonium chloride",
+            "references": [
+              "8-3q"
+            ]
+          },
+          {
+            "value": "Citric acid",
+            "references": [
+              "8-4d"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "3:7",
+          "references": [
+            "8-4e"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "4.366",
+            "references": [
+              "8-4j"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyltrimethylammonium chloride",
+            "references": [
+              "8-3q"
+            ]
+          },
+          {
+            "value": "Oxalic acid",
+            "references": [
+              "8-4n"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Benzyltrimethylammonium chloride",
+            "references": [
+              "8-3q"
+            ]
+          },
+          {
+            "value": "Oxalic acid",
+            "references": [
+              "8-4n"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "3:7",
+          "references": [
+            "8-4o"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "5.342",
+            "references": [
+              "8-4t"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyltributylammonium chloride",
+            "references": [
+              "8-4w"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "8-4x"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Benzyltributylammonium chloride",
+            "references": [
+              "8-4w"
+            ]
+          },
+          {
+            "value": "EG",
+            "references": [
+              "8-4x"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "8-4y"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.64",
+            "references": [
+              "8-4D"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyltributylammonium chloride",
+            "references": [
+              "8-4w"
+            ]
+          },
+          {
+            "value": "Diethylene glycol",
+            "references": [
+              "8-4G"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Benzyltributylammonium chloride",
+            "references": [
+              "8-4w"
+            ]
+          },
+          {
+            "value": "Diethylene glycol",
+            "references": [
+              "8-4G"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "8-4H"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.40",
+            "references": [
+              "8-4M"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyltributylammonium chloride",
+            "references": [
+              "8-4w"
+            ]
+          },
+          {
+            "value": "Tri ethylene glycol",
+            "references": [
+              "8-4Q"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Benzyltributylammonium chloride",
+            "references": [
+              "8-4w"
+            ]
+          },
+          {
+            "value": "Tri ethylene glycol",
+            "references": [
+              "8-4Q"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "8-4R"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.27",
+            "references": [
+              "8-4W"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyltributylammonium chloride",
+            "references": [
+              "8-4w"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "8-50"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Benzyltributylammonium chloride",
+            "references": [
+              "8-4w"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "8-50"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "8-51"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.09",
+            "references": [
+              "8-56"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Methyltriphenylphosphonium bromide",
+            "references": [
+              "8-59"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "8-5a"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Methyltriphenylphosphonium bromide",
+            "references": [
+              "8-59"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "8-5a"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:4",
+          "references": [
+            "8-5b"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Methyltriphenylphosphonium bromide",
+            "references": [
+              "8-59"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "8-5k"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Methyltriphenylphosphonium bromide",
+            "references": [
+              "8-59"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "8-5k"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:3",
+          "references": [
+            "8-5l"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Methyltriphenylphosphonium bromide",
+            "references": [
+              "8-59"
+            ]
+          },
+          {
+            "value": "2,2,2-trifluroacetamide",
+            "references": [
+              "8-5t"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Methyltriphenylphosphonium bromide",
+            "references": [
+              "8-59"
+            ]
+          },
+          {
+            "value": "2,2,2-trifluroacetamide",
+            "references": [
+              "8-5t"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:8",
+          "references": [
+            "8-5u"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Tetrapropylammonium bromide",
+            "references": [
+              "8-5C"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "8-5D"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Tetrapropylammonium bromide",
+            "references": [
+              "8-5C"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "8-5D"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:3",
+          "references": [
+            "8-5E"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Tetrapropylammonium bromide",
+            "references": [
+              "8-5C"
+            ]
+          },
+          {
+            "value": "Triethylene glycol",
+            "references": [
+              "8-5W"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Tetrapropylammonium bromide",
+            "references": [
+              "8-5C"
+            ]
+          },
+          {
+            "value": "Triethylene glycol",
+            "references": [
+              "8-5W"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:3",
+          "references": [
+            "8-5X"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Tetrapropylammonium bromide",
+            "references": [
+              "8-5C"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "8-6f"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Tetrapropylammonium bromide",
+            "references": [
+              "8-5C"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "8-6f"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:4",
+          "references": [
+            "8-6g"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Tetrapropylammonium bromide",
+            "references": [
+              "8-5C"
+            ]
+          },
+          {
+            "value": "1,3-propanediol",
+            "references": [
+              "8-6p"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Tetrapropylammonium bromide",
+            "references": [
+              "8-5C"
+            ]
+          },
+          {
+            "value": "1,3-propanediol",
+            "references": [
+              "8-6p"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:3",
+          "references": [
+            "8-6q"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Tetrapropylammonium bromide",
+            "references": [
+              "8-5C"
+            ]
+          },
+          {
+            "value": "imidazole",
+            "references": [
+              "8-6z"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Tetrapropylammonium bromide",
+            "references": [
+              "8-5C"
+            ]
+          },
+          {
+            "value": "imidazole",
+            "references": [
+              "8-6z"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "3:7",
+          "references": [
+            "8-6A"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Tetrapropylammonium bromide",
+            "references": [
+              "8-5C"
+            ]
+          },
+          {
+            "value": "1,5-propanediol",
+            "references": [
+              "8-6I"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Tetrapropylammonium bromide",
+            "references": [
+              "8-5C"
+            ]
+          },
+          {
+            "value": "1,5-propanediol",
+            "references": [
+              "8-6I"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:3",
+          "references": [
+            "8-6J"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "N, N-dimethylammonium chloride",
+            "references": [
+              "8-6R"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "8-6S"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "N, N-dimethylammonium chloride",
+            "references": [
+              "8-6R"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "8-6S"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "8-6T"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "N, N-dimethylammonium chloride",
+            "references": [
+              "8-6R"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "8-7c"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "N, N-dimethylammonium chloride",
+            "references": [
+              "8-6R"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "8-7c"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "8-7d"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Sodium chloride",
+            "references": [
+              "9-c"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "9-d"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "NaCl",
+            "references": [
+              "9-c"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "9-d"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "0.5-20",
+          "references": [
+            "9-e"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "303",
+            "references": [
+              "9-j"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "4.73",
+            "references": [
+              "9-j"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Sodium bromide",
+            "references": [
+              "9-w"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "9-x"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "NaBr",
+            "references": [
+              "9-w"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "9-x"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "0.5-10",
+          "references": [
+            "9-y"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "303",
+            "references": [
+              "9-D"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "6.92",
+            "references": [
+              "9-D"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Sodium iodide",
+            "references": [
+              "9-Q"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "9-R"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "NaI",
+            "references": [
+              "9-Q"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "9-R"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "0.5-10",
+          "references": [
+            "9-S"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "303",
+            "references": [
+              "9-X"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "7.81",
+            "references": [
+              "9-X"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Zinc chloride",
+            "references": [
+              "9-10"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "9-11"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ZnCl₂",
+            "references": [
+              "9-10"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "9-11"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:3.5",
+          "references": [
+            "9-12"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "315",
+            "references": [
+              "9-17"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.18",
+            "references": [
+              "9-17"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Zinc chloride",
+            "references": [
+              "9-10"
+            ]
+          },
+          {
+            "value": "Acetamide",
+            "references": [
+              "9-1b"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ZnCl₂",
+            "references": [
+              "9-10"
+            ]
+          },
+          {
+            "value": "Acetamide",
+            "references": [
+              "9-1b"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:4",
+          "references": [
+            "9-1c"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Zinc chloride",
+            "references": [
+              "9-10"
+            ]
+          },
+          {
+            "value": "1,2-ethanediol",
+            "references": [
+              "9-1l"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ZnCl₂",
+            "references": [
+              "9-10"
+            ]
+          },
+          {
+            "value": "1,2-ethanediol",
+            "references": [
+              "9-1l"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:4",
+          "references": [
+            "9-1m"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Zinc chloride",
+            "references": [
+              "9-10"
+            ]
+          },
+          {
+            "value": "1,6-hexanediol",
+            "references": [
+              "9-1v"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ZnCl₂",
+            "references": [
+              "9-10"
+            ]
+          },
+          {
+            "value": "1,6-hexanediol",
+            "references": [
+              "9-1v"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:3",
+          "references": [
+            "9-1w"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Zinc chloride",
+            "references": [
+              "9-10"
+            ]
+          },
+          {
+            "value": "Glucose",
+            "references": [
+              "9-1F"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ZnCl₂",
+            "references": [
+              "9-10"
+            ]
+          },
+          {
+            "value": "Glucose",
+            "references": [
+              "9-1F"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "9-1G"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.06",
+            "references": [
+              "9-1L"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Zinc chloride",
+            "references": [
+              "9-10"
+            ]
+          },
+          {
+            "value": "Fructose",
+            "references": [
+              "9-1P"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ZnCl₂",
+            "references": [
+              "9-10"
+            ]
+          },
+          {
+            "value": "Fructose",
+            "references": [
+              "9-1P"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "9-1Q"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.01",
+            "references": [
+              "9-1V"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Zinc chloride",
+            "references": [
+              "9-10"
+            ]
+          },
+          {
+            "value": "Lactic acid",
+            "references": [
+              "9-1Z"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ZnCl₂",
+            "references": [
+              "9-10"
+            ]
+          },
+          {
+            "value": "Lactic acid",
+            "references": [
+              "9-1Z"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "9-20"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": []
+          },
+          {
+            "value": "Kelvin",
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.01",
+            "references": [
+              "9-25"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": []
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "credit_usage": 49.107600000000005,
+    "duration_ms": 88570,
+    "filename": "upload.md",
+    "job_id": "14c2d90c0aac4a8cb49da1c821be4917",
+    "org_id": null,
+    "version": "extract-20251024",
+    "fallback_model_version": null,
+    "schema_violation_error": "Extracted data does not completely conform to the requested schema. See below error for details.\nNone is not of type 'string'\n\nFailed validating 'type' in schema['properties']['des_entries']['items']['properties']['conductivity']['items']:\n    {'type': 'string'}\n\nOn instance['des_entries'][7]['conductivity'][0]:\n    None\nPlease read our documentation for more information: https://docs.landing.ai/ade/ade-extract-troubleshoot"
+  }
+}

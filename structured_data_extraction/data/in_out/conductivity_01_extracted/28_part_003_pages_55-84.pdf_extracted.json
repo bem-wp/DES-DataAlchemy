@@ -1,0 +1,2932 @@
+{
+  "extraction": {
+    "article_title": "Physical Properties of Alcohol Based Deep Eutectic Solvents",
+    "des_entries": [
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "1,2-ethanediol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "1,2-ethanediol"
+        ],
+        "molar_ratio": "1:4",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1200",
+          "μS cm⁻¹"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "1,4-butanediol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "1,4-butanediol"
+        ],
+        "molar_ratio": "1:19",
+        "temperature": [
+          "311",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1000",
+          "μS cm⁻¹"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "1,4-butanediol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "1,4-butanediol"
+        ],
+        "molar_ratio": "1:9",
+        "temperature": [
+          "311",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1500",
+          "μS cm⁻¹"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "1,4-butanediol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "1,4-butanediol"
+        ],
+        "molar_ratio": "3:17",
+        "temperature": [
+          "311",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "2000",
+          "μS cm⁻¹"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "1,4-butanediol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "1,4-butanediol"
+        ],
+        "molar_ratio": "1:4",
+        "temperature": [
+          "311",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "2500",
+          "μS cm⁻¹"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "1,4-butanediol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "1,4-butanediol"
+        ],
+        "molar_ratio": "1:3",
+        "temperature": [
+          "311",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "3000",
+          "μS cm⁻¹"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "1,4-butanediol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "1,4-butanediol"
+        ],
+        "molar_ratio": "1:4",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1400",
+          "μS cm⁻¹"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "1,6-hexanediol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "1,6-hexanediol"
+        ],
+        "molar_ratio": "1:19",
+        "temperature": [
+          "335",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "500",
+          "μS cm⁻¹"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "1,6-hexanediol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "1,6-hexanediol"
+        ],
+        "molar_ratio": "1:9",
+        "temperature": [
+          "335",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "800",
+          "μS cm⁻¹"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "1,6-hexanediol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "1,6-hexanediol"
+        ],
+        "molar_ratio": "3:17",
+        "temperature": [
+          "335",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1200",
+          "μS cm⁻¹"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "1,6-hexanediol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "1,6-hexanediol"
+        ],
+        "molar_ratio": "1:4",
+        "temperature": [
+          "335",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1600",
+          "μS cm⁻¹"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "1,6-hexanediol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "1,6-hexanediol"
+        ],
+        "molar_ratio": "1:3",
+        "temperature": [
+          "335",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "2000",
+          "μS cm⁻¹"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "1,3-butanediol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "1,3-butanediol"
+        ],
+        "molar_ratio": "1:4",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1000",
+          "μS cm⁻¹"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "2,3-butanediol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "2,3-butanediol"
+        ],
+        "molar_ratio": "1:4",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "800",
+          "μS cm⁻¹"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Glycerol"
+        ],
+        "molar_ratio": "1:19",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1000",
+          "μS cm⁻¹"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Glycerol"
+        ],
+        "molar_ratio": "1:9",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1500",
+          "μS cm⁻¹"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Glycerol"
+        ],
+        "molar_ratio": "3:17",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "2000",
+          "μS cm⁻¹"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Glycerol"
+        ],
+        "molar_ratio": "1:4",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "2500",
+          "μS cm⁻¹"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Glycerol"
+        ],
+        "molar_ratio": "1:3",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "3000",
+          "μS cm⁻¹"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Glycerol"
+        ],
+        "molar_ratio": "3:7",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "3500",
+          "μS cm⁻¹"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Glycerol"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "3800",
+          "μS cm⁻¹"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Glycerol"
+        ],
+        "molar_ratio": "1:19",
+        "temperature": [
+          "335.5",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1000",
+          "μS"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Glycerol"
+        ],
+        "molar_ratio": "1:9",
+        "temperature": [
+          "335.5",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1500",
+          "μS"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Glycerol"
+        ],
+        "molar_ratio": "3:17",
+        "temperature": [
+          "335.5",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "2000",
+          "μS"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Glycerol"
+        ],
+        "molar_ratio": "1:4",
+        "temperature": [
+          "335.5",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "2500",
+          "μS"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Glycerol"
+        ],
+        "molar_ratio": "1:3",
+        "temperature": [
+          "335.5",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "3000",
+          "μS"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Glycerol"
+        ],
+        "molar_ratio": "3:7",
+        "temperature": [
+          "335.5",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "3500",
+          "μS"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Glycerol"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "335.5",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "3800",
+          "μS"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Phenol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Phenol"
+        ],
+        "molar_ratio": "2:3",
+        "temperature": [
+          "275",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "890",
+          "µS"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Phenol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Phenol"
+        ],
+        "molar_ratio": "7:13",
+        "temperature": [
+          "275",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1130",
+          "µS"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Phenol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Phenol"
+        ],
+        "molar_ratio": "3:7",
+        "temperature": [
+          "275",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1460",
+          "µS"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Phenol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Phenol"
+        ],
+        "molar_ratio": "1:3",
+        "temperature": [
+          "275",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1670",
+          "µS"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Phenol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Phenol"
+        ],
+        "molar_ratio": "1:4",
+        "temperature": [
+          "275",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1900",
+          "µS"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Phenol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Phenol"
+        ],
+        "molar_ratio": "3:17",
+        "temperature": [
+          "275",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1840",
+          "µS"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Phenol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Phenol"
+        ],
+        "molar_ratio": "1:9",
+        "temperature": [
+          "275",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1400",
+          "µS"
+        ]
+      }
+    ]
+  },
+  "extraction_metadata": {
+    "article_title": {
+      "value": "Physical Properties of Alcohol Based Deep Eutectic Solvents",
+      "references": [
+        "49fd6c6b-97b7-4dd4-ba49-e6f083a6f40f"
+      ]
+    },
+    "des_entries": [
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "f9308d0b-3962-4c54-a862-021d34417d00"
+            ]
+          },
+          {
+            "value": "1,2-ethanediol",
+            "references": [
+              "f9308d0b-3962-4c54-a862-021d34417d00"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "3cab202a-dec5-45f9-a6c3-26f713338734"
+            ]
+          },
+          {
+            "value": "1,2-ethanediol",
+            "references": [
+              "3cab202a-dec5-45f9-a6c3-26f713338734"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:4",
+          "references": [
+            "37f7d84d-a4fd-4d48-b560-08a9fcbcd089"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "37f7d84d-a4fd-4d48-b560-08a9fcbcd089"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "37f7d84d-a4fd-4d48-b560-08a9fcbcd089"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1200",
+            "references": [
+              "37f7d84d-a4fd-4d48-b560-08a9fcbcd089"
+            ]
+          },
+          {
+            "value": "μS cm⁻¹",
+            "references": [
+              "37f7d84d-a4fd-4d48-b560-08a9fcbcd089"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "638ed0d0-6982-423e-8798-5f02f386f9ad"
+            ]
+          },
+          {
+            "value": "1,4-butanediol",
+            "references": [
+              "638ed0d0-6982-423e-8798-5f02f386f9ad"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "638ed0d0-6982-423e-8798-5f02f386f9ad"
+            ]
+          },
+          {
+            "value": "1,4-butanediol",
+            "references": [
+              "638ed0d0-6982-423e-8798-5f02f386f9ad"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:19",
+          "references": [
+            "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "311",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1000",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          },
+          {
+            "value": "μS cm⁻¹",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "638ed0d0-6982-423e-8798-5f02f386f9ad"
+            ]
+          },
+          {
+            "value": "1,4-butanediol",
+            "references": [
+              "638ed0d0-6982-423e-8798-5f02f386f9ad"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "638ed0d0-6982-423e-8798-5f02f386f9ad"
+            ]
+          },
+          {
+            "value": "1,4-butanediol",
+            "references": [
+              "638ed0d0-6982-423e-8798-5f02f386f9ad"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:9",
+          "references": [
+            "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "311",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1500",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          },
+          {
+            "value": "μS cm⁻¹",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "638ed0d0-6982-423e-8798-5f02f386f9ad"
+            ]
+          },
+          {
+            "value": "1,4-butanediol",
+            "references": [
+              "638ed0d0-6982-423e-8798-5f02f386f9ad"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "638ed0d0-6982-423e-8798-5f02f386f9ad"
+            ]
+          },
+          {
+            "value": "1,4-butanediol",
+            "references": [
+              "638ed0d0-6982-423e-8798-5f02f386f9ad"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "3:17",
+          "references": [
+            "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "311",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "2000",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          },
+          {
+            "value": "μS cm⁻¹",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "638ed0d0-6982-423e-8798-5f02f386f9ad"
+            ]
+          },
+          {
+            "value": "1,4-butanediol",
+            "references": [
+              "638ed0d0-6982-423e-8798-5f02f386f9ad"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "638ed0d0-6982-423e-8798-5f02f386f9ad"
+            ]
+          },
+          {
+            "value": "1,4-butanediol",
+            "references": [
+              "638ed0d0-6982-423e-8798-5f02f386f9ad"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:4",
+          "references": [
+            "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "311",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "2500",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          },
+          {
+            "value": "μS cm⁻¹",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "638ed0d0-6982-423e-8798-5f02f386f9ad"
+            ]
+          },
+          {
+            "value": "1,4-butanediol",
+            "references": [
+              "638ed0d0-6982-423e-8798-5f02f386f9ad"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "638ed0d0-6982-423e-8798-5f02f386f9ad"
+            ]
+          },
+          {
+            "value": "1,4-butanediol",
+            "references": [
+              "638ed0d0-6982-423e-8798-5f02f386f9ad"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:3",
+          "references": [
+            "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "311",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "3000",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          },
+          {
+            "value": "μS cm⁻¹",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "f9308d0b-3962-4c54-a862-021d34417d00"
+            ]
+          },
+          {
+            "value": "1,4-butanediol",
+            "references": [
+              "f9308d0b-3962-4c54-a862-021d34417d00"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "f9308d0b-3962-4c54-a862-021d34417d00"
+            ]
+          },
+          {
+            "value": "1,4-butanediol",
+            "references": [
+              "f9308d0b-3962-4c54-a862-021d34417d00"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:4",
+          "references": [
+            "37f7d84d-a4fd-4d48-b560-08a9fcbcd089"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "37f7d84d-a4fd-4d48-b560-08a9fcbcd089"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "37f7d84d-a4fd-4d48-b560-08a9fcbcd089"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1400",
+            "references": [
+              "37f7d84d-a4fd-4d48-b560-08a9fcbcd089"
+            ]
+          },
+          {
+            "value": "μS cm⁻¹",
+            "references": [
+              "37f7d84d-a4fd-4d48-b560-08a9fcbcd089"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "1c51e135-dbbc-4871-beda-982071754222"
+            ]
+          },
+          {
+            "value": "1,6-hexanediol",
+            "references": [
+              "1c51e135-dbbc-4871-beda-982071754222"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "1c51e135-dbbc-4871-beda-982071754222"
+            ]
+          },
+          {
+            "value": "1,6-hexanediol",
+            "references": [
+              "1c51e135-dbbc-4871-beda-982071754222"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:19",
+          "references": [
+            "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "335",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "500",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          },
+          {
+            "value": "μS cm⁻¹",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "1c51e135-dbbc-4871-beda-982071754222"
+            ]
+          },
+          {
+            "value": "1,6-hexanediol",
+            "references": [
+              "1c51e135-dbbc-4871-beda-982071754222"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "1c51e135-dbbc-4871-beda-982071754222"
+            ]
+          },
+          {
+            "value": "1,6-hexanediol",
+            "references": [
+              "1c51e135-dbbc-4871-beda-982071754222"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:9",
+          "references": [
+            "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "335",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "800",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          },
+          {
+            "value": "μS cm⁻¹",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "1c51e135-dbbc-4871-beda-982071754222"
+            ]
+          },
+          {
+            "value": "1,6-hexanediol",
+            "references": [
+              "1c51e135-dbbc-4871-beda-982071754222"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "1c51e135-dbbc-4871-beda-982071754222"
+            ]
+          },
+          {
+            "value": "1,6-hexanediol",
+            "references": [
+              "1c51e135-dbbc-4871-beda-982071754222"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "3:17",
+          "references": [
+            "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "335",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1200",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          },
+          {
+            "value": "μS cm⁻¹",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "1c51e135-dbbc-4871-beda-982071754222"
+            ]
+          },
+          {
+            "value": "1,6-hexanediol",
+            "references": [
+              "1c51e135-dbbc-4871-beda-982071754222"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "1c51e135-dbbc-4871-beda-982071754222"
+            ]
+          },
+          {
+            "value": "1,6-hexanediol",
+            "references": [
+              "1c51e135-dbbc-4871-beda-982071754222"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:4",
+          "references": [
+            "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "335",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1600",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          },
+          {
+            "value": "μS cm⁻¹",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "1c51e135-dbbc-4871-beda-982071754222"
+            ]
+          },
+          {
+            "value": "1,6-hexanediol",
+            "references": [
+              "1c51e135-dbbc-4871-beda-982071754222"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "1c51e135-dbbc-4871-beda-982071754222"
+            ]
+          },
+          {
+            "value": "1,6-hexanediol",
+            "references": [
+              "1c51e135-dbbc-4871-beda-982071754222"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:3",
+          "references": [
+            "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "335",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "2000",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          },
+          {
+            "value": "μS cm⁻¹",
+            "references": [
+              "d7e4c6ae-a9b9-457d-92c3-6ac9c8cf3d3e"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "f9308d0b-3962-4c54-a862-021d34417d00"
+            ]
+          },
+          {
+            "value": "1,3-butanediol",
+            "references": [
+              "f9308d0b-3962-4c54-a862-021d34417d00"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "f9308d0b-3962-4c54-a862-021d34417d00"
+            ]
+          },
+          {
+            "value": "1,3-butanediol",
+            "references": [
+              "f9308d0b-3962-4c54-a862-021d34417d00"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:4",
+          "references": [
+            "37f7d84d-a4fd-4d48-b560-08a9fcbcd089"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "37f7d84d-a4fd-4d48-b560-08a9fcbcd089"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "37f7d84d-a4fd-4d48-b560-08a9fcbcd089"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1000",
+            "references": [
+              "37f7d84d-a4fd-4d48-b560-08a9fcbcd089"
+            ]
+          },
+          {
+            "value": "μS cm⁻¹",
+            "references": [
+              "37f7d84d-a4fd-4d48-b560-08a9fcbcd089"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "f9308d0b-3962-4c54-a862-021d34417d00"
+            ]
+          },
+          {
+            "value": "2,3-butanediol",
+            "references": [
+              "f9308d0b-3962-4c54-a862-021d34417d00"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "f9308d0b-3962-4c54-a862-021d34417d00"
+            ]
+          },
+          {
+            "value": "2,3-butanediol",
+            "references": [
+              "f9308d0b-3962-4c54-a862-021d34417d00"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:4",
+          "references": [
+            "37f7d84d-a4fd-4d48-b560-08a9fcbcd089"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "37f7d84d-a4fd-4d48-b560-08a9fcbcd089"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "37f7d84d-a4fd-4d48-b560-08a9fcbcd089"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "800",
+            "references": [
+              "37f7d84d-a4fd-4d48-b560-08a9fcbcd089"
+            ]
+          },
+          {
+            "value": "μS cm⁻¹",
+            "references": [
+              "37f7d84d-a4fd-4d48-b560-08a9fcbcd089"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:19",
+          "references": [
+            "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1000",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          },
+          {
+            "value": "μS cm⁻¹",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:9",
+          "references": [
+            "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1500",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          },
+          {
+            "value": "μS cm⁻¹",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "3:17",
+          "references": [
+            "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "2000",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          },
+          {
+            "value": "μS cm⁻¹",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:4",
+          "references": [
+            "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "2500",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          },
+          {
+            "value": "μS cm⁻¹",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:3",
+          "references": [
+            "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "3000",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          },
+          {
+            "value": "μS cm⁻¹",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "3:7",
+          "references": [
+            "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "3500",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          },
+          {
+            "value": "μS cm⁻¹",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "3800",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          },
+          {
+            "value": "μS cm⁻¹",
+            "references": [
+              "5f6877c4-eacd-4560-9fd8-94ab3441a106"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:19",
+          "references": [
+            "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "335.5",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1000",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          },
+          {
+            "value": "μS",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:9",
+          "references": [
+            "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "335.5",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1500",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          },
+          {
+            "value": "μS",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "3:17",
+          "references": [
+            "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "335.5",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "2000",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          },
+          {
+            "value": "μS",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:4",
+          "references": [
+            "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "335.5",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "2500",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          },
+          {
+            "value": "μS",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:3",
+          "references": [
+            "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "335.5",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "3000",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          },
+          {
+            "value": "μS",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "3:7",
+          "references": [
+            "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "335.5",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "3500",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          },
+          {
+            "value": "μS",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "dd533f5e-638a-4ae2-bb36-78ef01b39c01"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "335.5",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "3800",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          },
+          {
+            "value": "μS",
+            "references": [
+              "6571cee2-2b5d-45aa-bfe3-a8fefc81dbb1"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          },
+          {
+            "value": "Phenol",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          },
+          {
+            "value": "Phenol",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "2:3",
+          "references": [
+            "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "275",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "890",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          },
+          {
+            "value": "µS",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          },
+          {
+            "value": "Phenol",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          },
+          {
+            "value": "Phenol",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "7:13",
+          "references": [
+            "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "275",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1130",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          },
+          {
+            "value": "µS",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          },
+          {
+            "value": "Phenol",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          },
+          {
+            "value": "Phenol",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "3:7",
+          "references": [
+            "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "275",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1460",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          },
+          {
+            "value": "µS",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          },
+          {
+            "value": "Phenol",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          },
+          {
+            "value": "Phenol",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:3",
+          "references": [
+            "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "275",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1670",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          },
+          {
+            "value": "µS",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          },
+          {
+            "value": "Phenol",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          },
+          {
+            "value": "Phenol",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:4",
+          "references": [
+            "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "275",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1900",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          },
+          {
+            "value": "µS",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          },
+          {
+            "value": "Phenol",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          },
+          {
+            "value": "Phenol",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "3:17",
+          "references": [
+            "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "275",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1840",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          },
+          {
+            "value": "µS",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          },
+          {
+            "value": "Phenol",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          },
+          {
+            "value": "Phenol",
+            "references": [
+              "197c0d48-6434-4d20-bba3-4456a6ad6a99"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:9",
+          "references": [
+            "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "275",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1400",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          },
+          {
+            "value": "µS",
+            "references": [
+              "c75a64a7-bfe9-4bee-873c-a9bf3458bd85"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "credit_usage": 22.569,
+    "duration_ms": 51392,
+    "filename": "upload.md",
+    "job_id": "c2702753a3004f5f82c958afb9874b94",
+    "org_id": null,
+    "version": "extract-20251024",
+    "fallback_model_version": null,
+    "schema_violation_error": null
+  }
+}

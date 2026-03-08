@@ -1,0 +1,1189 @@
+{
+  "extraction": {
+    "article_title": "Insights into the physicochemical properties of newly synthesized benzyl triethylammonium chloride-based deep eutectic solvents",
+    "des_entries": [
+      {
+        "compounds_names": [
+          "Benzyl triethylammonium chloride",
+          "Formic acid"
+        ],
+        "compounds_acronyms": [
+          "BTEA",
+          "FA"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "293.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1000",
+          "μS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyl triethylammonium chloride",
+          "Acetic acid"
+        ],
+        "compounds_acronyms": [
+          "BTEA",
+          "AA"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "293.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "500",
+          "μS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyl triethylammonium chloride",
+          "Butyric acid"
+        ],
+        "compounds_acronyms": [
+          "BTEA",
+          "BA"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "293.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "200",
+          "μS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyl triethylammonium chloride",
+          "Valeric acid"
+        ],
+        "compounds_acronyms": [
+          "BTEA",
+          "VA"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "293.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "150",
+          "μS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyl triethylammonium chloride",
+          "Pivalic acid"
+        ],
+        "compounds_acronyms": [
+          "BTEA",
+          "PA"
+        ],
+        "molar_ratio": "1:3",
+        "temperature": [
+          "293.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "50",
+          "μS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyl triethylammonium chloride",
+          "Caprylic acid"
+        ],
+        "compounds_acronyms": [
+          "BTEA",
+          "CAP"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "293.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "30",
+          "μS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyl triethylammonium chloride",
+          "Capric acid"
+        ],
+        "compounds_acronyms": [
+          "BTEA",
+          "CA"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "293.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "25",
+          "μS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyl triethylammonium chloride",
+          "Lauric acid"
+        ],
+        "compounds_acronyms": [
+          "BTEA",
+          "LAU"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "293.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "20",
+          "μS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyl triethylammonium chloride",
+          "Oleic acid"
+        ],
+        "compounds_acronyms": [
+          "BTEA",
+          "OLE"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "293.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "23.27",
+          "μS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyltriethyl ammonium chloride",
+          "Lactic acid"
+        ],
+        "compounds_acronyms": [
+          "BTEA",
+          "LA"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "293.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1500",
+          "μS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyl triethyl ammonium chloride",
+          "Levulinic acid"
+        ],
+        "compounds_acronyms": [
+          "BTEA",
+          "LEV"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "293.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "800",
+          "μS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyltriethyl ammonium chloride",
+          "1,2 Propane diol"
+        ],
+        "compounds_acronyms": [
+          "BTEA",
+          "PRO"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "293.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "300",
+          "μS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyltriethyl ammonium chloride",
+          "1,4 Butanediol"
+        ],
+        "compounds_acronyms": [
+          "BTEA",
+          "BUT"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "293.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "250",
+          "μS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Benzyl triethyl ammonium chloride",
+          "Ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "BTEA",
+          "EG"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "293.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "400",
+          "μS/cm"
+        ]
+      }
+    ]
+  },
+  "extraction_metadata": {
+    "article_title": {
+      "value": "Insights into the physicochemical properties of newly synthesized benzyl triethylammonium chloride-based deep eutectic solvents",
+      "references": [
+        "aeb9ff4a-1372-4c8b-89de-1ce7f2e45862"
+      ]
+    },
+    "des_entries": [
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyl triethylammonium chloride",
+            "references": [
+              "2-a"
+            ]
+          },
+          {
+            "value": "Formic acid",
+            "references": [
+              "2-b"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "BTEA",
+            "references": [
+              "2-9"
+            ]
+          },
+          {
+            "value": "FA",
+            "references": [
+              "2-9"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "2-c"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "293.15",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1000",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          },
+          {
+            "value": "μS/cm",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyl triethylammonium chloride",
+            "references": [
+              "2-h"
+            ]
+          },
+          {
+            "value": "Acetic acid",
+            "references": [
+              "2-i"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "BTEA",
+            "references": [
+              "2-g"
+            ]
+          },
+          {
+            "value": "AA",
+            "references": [
+              "2-g"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "2-j"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "293.15",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "500",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          },
+          {
+            "value": "μS/cm",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyl triethylammonium chloride",
+            "references": [
+              "2-o"
+            ]
+          },
+          {
+            "value": "Butyric acid",
+            "references": [
+              "2-p"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "BTEA",
+            "references": [
+              "2-n"
+            ]
+          },
+          {
+            "value": "BA",
+            "references": [
+              "2-n"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "2-q"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "293.15",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "200",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          },
+          {
+            "value": "μS/cm",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyl triethylammonium chloride",
+            "references": [
+              "2-v"
+            ]
+          },
+          {
+            "value": "Valeric acid",
+            "references": [
+              "2-w"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "BTEA",
+            "references": [
+              "2-u"
+            ]
+          },
+          {
+            "value": "VA",
+            "references": [
+              "2-u"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "2-x"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "293.15",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "150",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          },
+          {
+            "value": "μS/cm",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyl triethylammonium chloride",
+            "references": [
+              "2-C"
+            ]
+          },
+          {
+            "value": "Pivalic acid",
+            "references": [
+              "2-D"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "BTEA",
+            "references": [
+              "2-B"
+            ]
+          },
+          {
+            "value": "PA",
+            "references": [
+              "2-B"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:3",
+          "references": [
+            "2-E"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "293.15",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "50",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          },
+          {
+            "value": "μS/cm",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyl triethylammonium chloride",
+            "references": [
+              "2-J"
+            ]
+          },
+          {
+            "value": "Caprylic acid",
+            "references": [
+              "2-K"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "BTEA",
+            "references": [
+              "2-I"
+            ]
+          },
+          {
+            "value": "CAP",
+            "references": [
+              "2-I"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "2-L"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "293.15",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "30",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          },
+          {
+            "value": "μS/cm",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyl triethylammonium chloride",
+            "references": [
+              "2-Q"
+            ]
+          },
+          {
+            "value": "Capric acid",
+            "references": [
+              "2-R"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "BTEA",
+            "references": [
+              "2-P"
+            ]
+          },
+          {
+            "value": "CA",
+            "references": [
+              "2-P"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "2-S"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "293.15",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "25",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          },
+          {
+            "value": "μS/cm",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyl triethylammonium chloride",
+            "references": [
+              "2-X"
+            ]
+          },
+          {
+            "value": "Lauric acid",
+            "references": [
+              "2-Y"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "BTEA",
+            "references": [
+              "2-W"
+            ]
+          },
+          {
+            "value": "LAU",
+            "references": [
+              "2-W"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "2-Z"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "293.15",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "20",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          },
+          {
+            "value": "μS/cm",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyl triethylammonium chloride",
+            "references": [
+              "2-14"
+            ]
+          },
+          {
+            "value": "Oleic acid",
+            "references": [
+              "2-15"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "BTEA",
+            "references": [
+              "2-13"
+            ]
+          },
+          {
+            "value": "OLE",
+            "references": [
+              "2-13"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "2-16"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "293.15",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "23.27",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          },
+          {
+            "value": "μS/cm",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyltriethyl ammonium chloride",
+            "references": [
+              "2-1b"
+            ]
+          },
+          {
+            "value": "Lactic acid",
+            "references": [
+              "2-1c"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "BTEA",
+            "references": [
+              "2-1a"
+            ]
+          },
+          {
+            "value": "LA",
+            "references": [
+              "2-1a"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "2-1d"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "293.15",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1500",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          },
+          {
+            "value": "μS/cm",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyl triethyl ammonium chloride",
+            "references": [
+              "2-1i"
+            ]
+          },
+          {
+            "value": "Levulinic acid",
+            "references": [
+              "2-1j"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "BTEA",
+            "references": [
+              "2-1h"
+            ]
+          },
+          {
+            "value": "LEV",
+            "references": [
+              "2-1h"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "2-1k"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "293.15",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "800",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          },
+          {
+            "value": "μS/cm",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyltriethyl ammonium chloride",
+            "references": [
+              "2-1p"
+            ]
+          },
+          {
+            "value": "1,2 Propane diol",
+            "references": [
+              "2-1q"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "BTEA",
+            "references": [
+              "2-1o"
+            ]
+          },
+          {
+            "value": "PRO",
+            "references": [
+              "2-1o"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "2-1r"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "293.15",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "300",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          },
+          {
+            "value": "μS/cm",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyltriethyl ammonium chloride",
+            "references": [
+              "2-1w"
+            ]
+          },
+          {
+            "value": "1,4 Butanediol",
+            "references": [
+              "2-1x"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "BTEA",
+            "references": [
+              "2-1v"
+            ]
+          },
+          {
+            "value": "BUT",
+            "references": [
+              "2-1v"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "2-1y"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "293.15",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "250",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          },
+          {
+            "value": "μS/cm",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Benzyl triethyl ammonium chloride",
+            "references": [
+              "2-1D"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "2-1E"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "BTEA",
+            "references": [
+              "2-1C"
+            ]
+          },
+          {
+            "value": "EG",
+            "references": [
+              "2-1C"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "2-1F"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "293.15",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "2cb3407a-847f-44e8-8105-41764a525500"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "400",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          },
+          {
+            "value": "μS/cm",
+            "references": [
+              "96673b4d-5160-4f58-83a3-cfea664cb52f"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "credit_usage": 24.225,
+    "duration_ms": 32895,
+    "filename": "upload.md",
+    "job_id": "79853147e85441d18312c1ccd5bdb054",
+    "org_id": null,
+    "version": "extract-20251024",
+    "fallback_model_version": null,
+    "schema_violation_error": null
+  }
+}

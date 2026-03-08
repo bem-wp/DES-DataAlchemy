@@ -1,0 +1,120 @@
+{
+  "extraction": {
+    "article_title": "Investigation of Intramolecular Interactions in Deep Eutectic Solvents Using Solvatochromic Probes",
+    "des_entries": [
+      {
+        "compounds_names": [
+          "Phenol",
+          "Choline chloride"
+        ],
+        "compounds_acronyms": [
+          "Phenol",
+          "ChCl"
+        ],
+        "molar_ratio": "4:1",
+        "temperature": [
+          "275",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1900",
+          "µS"
+        ]
+      }
+    ]
+  },
+  "extraction_metadata": {
+    "article_title": {
+      "value": "Investigation of Intramolecular Interactions in Deep Eutectic Solvents Using Solvatochromic Probes",
+      "references": [
+        "b7b48015-07c0-4193-9169-300b1fde9992"
+      ]
+    },
+    "des_entries": [
+      {
+        "compounds_names": [
+          {
+            "value": "Phenol",
+            "references": [
+              "edc8a398-0b0d-4c41-940c-ca94160d5351",
+              "a9b90dcf-5c64-4d12-9b72-6f1a0e01ba8f",
+              "90b24145-1190-44cd-85a5-132e85e15fb0"
+            ]
+          },
+          {
+            "value": "Choline chloride",
+            "references": [
+              "edc8a398-0b0d-4c41-940c-ca94160d5351",
+              "a9b90dcf-5c64-4d12-9b72-6f1a0e01ba8f",
+              "90b24145-1190-44cd-85a5-132e85e15fb0"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Phenol",
+            "references": [
+              "edc8a398-0b0d-4c41-940c-ca94160d5351",
+              "a9b90dcf-5c64-4d12-9b72-6f1a0e01ba8f",
+              "90b24145-1190-44cd-85a5-132e85e15fb0"
+            ]
+          },
+          {
+            "value": "ChCl",
+            "references": [
+              "edc8a398-0b0d-4c41-940c-ca94160d5351",
+              "a9b90dcf-5c64-4d12-9b72-6f1a0e01ba8f",
+              "90b24145-1190-44cd-85a5-132e85e15fb0"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "4:1",
+          "references": [
+            "edc8a398-0b0d-4c41-940c-ca94160d5351",
+            "a9b90dcf-5c64-4d12-9b72-6f1a0e01ba8f",
+            "90b24145-1190-44cd-85a5-132e85e15fb0"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "275",
+            "references": [
+              "a9b90dcf-5c64-4d12-9b72-6f1a0e01ba8f"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "a9b90dcf-5c64-4d12-9b72-6f1a0e01ba8f"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1900",
+            "references": [
+              "a9b90dcf-5c64-4d12-9b72-6f1a0e01ba8f"
+            ]
+          },
+          {
+            "value": "µS",
+            "references": [
+              "a9b90dcf-5c64-4d12-9b72-6f1a0e01ba8f"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "credit_usage": 17.4652,
+    "duration_ms": 36090,
+    "filename": "upload.md",
+    "job_id": "85b53ef68acd4211ac15106853421b21",
+    "org_id": null,
+    "version": "extract-20251024",
+    "fallback_model_version": null,
+    "schema_violation_error": "Extracted data does not completely conform to the requested schema. See below error for details.\nNone is not of type 'string'\n\nFailed validating 'type' in schema['properties']['des_entries']['items']['properties']['conductivity']['items']:\n    {'type': 'string'}\n\nOn instance['des_entries'][1]['conductivity'][0]:\n    None\nPlease read our documentation for more information: https://docs.landing.ai/ade/ade-extract-troubleshoot"
+  }
+}

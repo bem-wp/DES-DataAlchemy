@@ -1,0 +1,274 @@
+{
+  "extraction": {
+    "article_title": "Ethanolamine-mediated microstructural transitions within terpenoid- and fatty acid-based deep eutectic solvents†",
+    "des_entries": [
+      {
+        "compounds_names": [
+          "n-decanoic acid",
+          "Thymol"
+        ],
+        "compounds_acronyms": [
+          "DA",
+          "Thy"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1.0",
+          "µS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "n-decanoic acid",
+          "Menthol"
+        ],
+        "compounds_acronyms": [
+          "DA",
+          "Men"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          null
+        ]
+      },
+      {
+        "compounds_names": [
+          "Thymol",
+          "Menthol"
+        ],
+        "compounds_acronyms": [
+          "Thy",
+          "Men"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          null,
+          null
+        ]
+      }
+    ]
+  },
+  "extraction_metadata": {
+    "article_title": {
+      "value": "Ethanolamine-mediated microstructural transitions within terpenoid- and fatty acid-based deep eutectic solvents†",
+      "references": [
+        "8306ed44-b5d2-4454-b852-e2c4ccbf2392"
+      ]
+    },
+    "des_entries": [
+      {
+        "compounds_names": [
+          {
+            "value": "n-decanoic acid",
+            "references": [
+              "9f5ea008-d790-4d3d-8b9e-2042d1e2af33"
+            ]
+          },
+          {
+            "value": "Thymol",
+            "references": [
+              "9f5ea008-d790-4d3d-8b9e-2042d1e2af33"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "DA",
+            "references": [
+              "9f5ea008-d790-4d3d-8b9e-2042d1e2af33"
+            ]
+          },
+          {
+            "value": "Thy",
+            "references": [
+              "9f5ea008-d790-4d3d-8b9e-2042d1e2af33"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "9f5ea008-d790-4d3d-8b9e-2042d1e2af33"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "fb9d251f-2430-4e2b-a242-8e1029f11890",
+              "13a4c9f8-33d3-4429-b6de-fab9800c0b80"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "fb9d251f-2430-4e2b-a242-8e1029f11890",
+              "13a4c9f8-33d3-4429-b6de-fab9800c0b80"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1.0",
+            "references": [
+              "fb9d251f-2430-4e2b-a242-8e1029f11890"
+            ]
+          },
+          {
+            "value": "µS/cm",
+            "references": [
+              "fb9d251f-2430-4e2b-a242-8e1029f11890"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "n-decanoic acid",
+            "references": [
+              "9f5ea008-d790-4d3d-8b9e-2042d1e2af33"
+            ]
+          },
+          {
+            "value": "Menthol",
+            "references": [
+              "9f5ea008-d790-4d3d-8b9e-2042d1e2af33"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "DA",
+            "references": [
+              "9f5ea008-d790-4d3d-8b9e-2042d1e2af33"
+            ]
+          },
+          {
+            "value": "Men",
+            "references": [
+              "9f5ea008-d790-4d3d-8b9e-2042d1e2af33"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "9f5ea008-d790-4d3d-8b9e-2042d1e2af33"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "fb9d251f-2430-4e2b-a242-8e1029f11890",
+              "13a4c9f8-33d3-4429-b6de-fab9800c0b80"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "fb9d251f-2430-4e2b-a242-8e1029f11890",
+              "13a4c9f8-33d3-4429-b6de-fab9800c0b80"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": null,
+            "references": []
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Thymol",
+            "references": [
+              "9f5ea008-d790-4d3d-8b9e-2042d1e2af33"
+            ]
+          },
+          {
+            "value": "Menthol",
+            "references": [
+              "9f5ea008-d790-4d3d-8b9e-2042d1e2af33"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Thy",
+            "references": [
+              "9f5ea008-d790-4d3d-8b9e-2042d1e2af33"
+            ]
+          },
+          {
+            "value": "Men",
+            "references": [
+              "9f5ea008-d790-4d3d-8b9e-2042d1e2af33"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "9f5ea008-d790-4d3d-8b9e-2042d1e2af33"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "fb9d251f-2430-4e2b-a242-8e1029f11890",
+              "13a4c9f8-33d3-4429-b6de-fab9800c0b80"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "fb9d251f-2430-4e2b-a242-8e1029f11890",
+              "13a4c9f8-33d3-4429-b6de-fab9800c0b80"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": null,
+            "references": []
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "credit_usage": 18.3718,
+    "duration_ms": 21509,
+    "filename": "upload.md",
+    "job_id": "c0826e62a7fb4cec825168c339ec9f9a",
+    "org_id": null,
+    "version": "extract-20251024",
+    "fallback_model_version": null,
+    "schema_violation_error": "Extracted data does not completely conform to the requested schema. See below error for details.\nNone is not of type 'string'\n\nFailed validating 'type' in schema['properties']['des_entries']['items']['properties']['conductivity']['items']:\n    {'type': 'string'}\n\nOn instance['des_entries'][1]['conductivity'][0]:\n    None\nPlease read our documentation for more information: https://docs.landing.ai/ade/ade-extract-troubleshoot"
+  }
+}

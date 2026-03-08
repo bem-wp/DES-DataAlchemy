@@ -1,0 +1,25 @@
+{
+  "extraction": {
+    "article_title": "Insights on the cellulose pretreatment at room temperature by choline-chloride-based deep eutectic solvents: an atomistic study",
+    "des_entries": []
+  },
+  "extraction_metadata": {
+    "article_title": {
+      "value": "Insights on the cellulose pretreatment at room temperature by choline-chloride-based deep eutectic solvents: an atomistic study",
+      "references": [
+        "9c93601e-5c5c-4bcd-a877-a183a09becd8"
+      ]
+    },
+    "des_entries": []
+  },
+  "metadata": {
+    "credit_usage": 34.2442,
+    "duration_ms": 20577,
+    "filename": "upload.md",
+    "job_id": "50cfcb9e4871416c927547630a8e28e8",
+    "org_id": null,
+    "version": "extract-20251024",
+    "fallback_model_version": null,
+    "schema_violation_error": "Extracted data does not completely conform to the requested schema. See below error for details.\nNone is not of type 'string'\n\nFailed validating 'type' in schema['properties']['des_entries']['items']['properties']['conductivity']['items']:\n    {'type': 'string'}\n\nOn instance['des_entries'][0]['conductivity'][0]:\n    None\nPlease read our documentation for more information: https://docs.landing.ai/ade/ade-extract-troubleshoot"
+  }
+}

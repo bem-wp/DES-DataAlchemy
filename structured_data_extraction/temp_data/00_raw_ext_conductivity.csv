@@ -1,0 +1,372 @@
+﻿c1,c2,c3,c1_acr,c2_acr,c3_acr,x1,x2,x3,t,t_unit,cond,cond_unit,ref,num
+Choline chloride,Glycerol,,ChCl,Gly,,1.0,2.0,,50.0,Celsius,7.5,mS/cm,Deep eutectic solvents: alternative reaction media for organic oxidation reactions,109
+Choline chloride,Urea,,ChCl,Urea,,1.0,2.0,,50.0,Celsius,2.5,mS/cm,Deep eutectic solvents: alternative reaction media for organic oxidation reactions,109
+Choline chloride,Ethylene glycol,,ChCl,EG,,1.0,2.0,,50.0,Celsius,1.5,mS/cm,Deep eutectic solvents: alternative reaction media for organic oxidation reactions,109
+Choline chloride,Urea,,ChCl,Urea,,1.0,2.0,,298.0,Kelvin,0.75,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,2.0,,298.0,Kelvin,1.74,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,Ethylene glycol,,ChCl,Ethylene glycol,,1.0,2.0,,298.0,Kelvin,7.61,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,Malonic acid,,ChCl,Malonic acid,,1.0,1.0,,298.0,Kelvin,0.91,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,Oxalic acid,,ChCl,Oxalic acid,,1.0,1.0,,298.0,Kelvin,0.48,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,Phenol,,ChCl,Phenol,,1.0,1.5,,298.0,Kelvin,3.14,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,o-cresol,,ChCl,o-cresol,,1.0,1.0,,298.0,Kelvin,1.21,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,Xylenol,,ChCl,Xylenol,,1.0,1.0,,298.0,Kelvin,mS/cm,,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,trichloroacetic acid,,ChCl,trichloroacetic acid,,1.0,2.0,,298.0,Kelvin,0.07,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,Acetic acid,,ChCl,Acetic acid,,1.0,1.0,,298.0,Kelvin,3.28,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,Levulinic acid,,ChCl,Levulinic acid,,1.0,2.0,,298.0,Kelvin,0.81,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,Imidazole,,ChCl,Imidazole,,3.0,7.0,,333.0,Kelvin,12.01,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,"1,4-butanediol",,ChCl,"1,4-butanediol",,1.0,3.0,,298.0,Kelvin,1.64,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,D-fructose,,ChCl,D-fructose,,1.0,1.0,,298.0,Kelvin,mS/cm,,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,Glucose,,ChCl,Glucose,,2.0,1.0,,298.0,Kelvin,mS/cm,,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,Propylene glycol,,ChCl,PG,,1.0,2.5,,323.0,Kelvin,7.16,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,n-butyric acid,,ChCl,n-butyric acid,,1.0,2.0,,298.0,Kelvin,mS/cm,,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,n-butyric acid,,ChCl,n-butyric acid,,1.0,3.0,,298.0,Kelvin,mS/cm,,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,n-butyric acid,,ChCl,n-butyric acid,,1.0,4.0,,298.0,Kelvin,mS/cm,,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Benzyltrimethylammonium chloride,Ethylene glycol,,Benzyltrimethylammonium chloride,EG,,1.0,1.0,,298.0,Kelvin,4.61,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Benzyltrimethylammonium chloride,Diethylene glycol,,Benzyltrimethylammonium chloride,Diethylene glycol,,1.0,1.0,,298.0,Kelvin,1.65,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Benzyltrimethylammonium chloride,Tri ethylene glycol,,Benzyltrimethylammonium chloride,Tri ethylene glycol,,1.0,1.0,,298.0,Kelvin,1.01,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Benzyltrimethylammonium chloride,Glycerol,,Benzyltrimethylammonium chloride,Glycerol,,1.0,1.0,,298.0,Kelvin,0.39,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Benzyltrimethylammonium chloride,p-toluene sulfonic acid,,Benzyltrimethylammonium chloride,p-toluene sulfonic acid,,3.0,7.0,,298.0,Kelvin,2.412,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Benzyltrimethylammonium chloride,Citric acid,,Benzyltrimethylammonium chloride,Citric acid,,3.0,7.0,,298.0,Kelvin,4.366,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Benzyltrimethylammonium chloride,Oxalic acid,,Benzyltrimethylammonium chloride,Oxalic acid,,3.0,7.0,,298.0,Kelvin,5.342,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Benzyltributylammonium chloride,Ethylene glycol,,Benzyltributylammonium chloride,EG,,1.0,1.0,,298.0,Kelvin,0.64,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Benzyltributylammonium chloride,Diethylene glycol,,Benzyltributylammonium chloride,Diethylene glycol,,1.0,1.0,,298.0,Kelvin,0.4,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Benzyltributylammonium chloride,Tri ethylene glycol,,Benzyltributylammonium chloride,Tri ethylene glycol,,1.0,1.0,,298.0,Kelvin,0.27,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Benzyltributylammonium chloride,Glycerol,,Benzyltributylammonium chloride,Glycerol,,1.0,1.0,,298.0,Kelvin,0.09,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Methyltriphenylphosphonium bromide,Ethylene glycol,,Methyltriphenylphosphonium bromide,Ethylene glycol,,1.0,4.0,,298.0,Kelvin,mS/cm,,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Methyltriphenylphosphonium bromide,Glycerol,,Methyltriphenylphosphonium bromide,Glycerol,,1.0,3.0,,298.0,Kelvin,mS/cm,,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Methyltriphenylphosphonium bromide,"2,2,2-trifluroacetamide",,Methyltriphenylphosphonium bromide,"2,2,2-trifluroacetamide",,1.0,8.0,,298.0,Kelvin,mS/cm,,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Tetrapropylammonium bromide,Ethylene glycol,,Tetrapropylammonium bromide,Ethylene glycol,,1.0,3.0,,298.0,Kelvin,mS/cm,,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Tetrapropylammonium bromide,Triethylene glycol,,Tetrapropylammonium bromide,Triethylene glycol,,1.0,3.0,,298.0,Kelvin,mS/cm,,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Tetrapropylammonium bromide,Glycerol,,Tetrapropylammonium bromide,Glycerol,,1.0,4.0,,298.0,Kelvin,mS/cm,,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Tetrapropylammonium bromide,"1,3-propanediol",,Tetrapropylammonium bromide,"1,3-propanediol",,1.0,3.0,,298.0,Kelvin,mS/cm,,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Tetrapropylammonium bromide,imidazole,,Tetrapropylammonium bromide,imidazole,,3.0,7.0,,298.0,Kelvin,mS/cm,,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Tetrapropylammonium bromide,"1,5-propanediol",,Tetrapropylammonium bromide,"1,5-propanediol",,1.0,3.0,,298.0,Kelvin,mS/cm,,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+N,N-dimethylammonium chloride,Ethylene glycol,N,N-dimethylammonium chloride,Ethylene glycol,1.0,2.0,,298.0,Kelvin,mS/cm,,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+N,N-dimethylammonium chloride,Glycerol,N,N-dimethylammonium chloride,Glycerol,1.0,2.0,,298.0,Kelvin,mS/cm,,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Sodium chloride,Ethylene glycol,,NaCl,Ethylene glycol,,0.5-20,,,303.0,Kelvin,4.73,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Sodium bromide,Ethylene glycol,,NaBr,Ethylene glycol,,0.5-10,,,303.0,Kelvin,6.92,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Sodium iodide,Ethylene glycol,,NaI,Ethylene glycol,,0.5-10,,,303.0,Kelvin,7.81,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Zinc chloride,Urea,,ZnCl₂,Urea,,1.0,3.5,,315.0,Kelvin,0.18,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Zinc chloride,Acetamide,,ZnCl₂,Acetamide,,1.0,4.0,,298.0,Kelvin,mS/cm,,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Zinc chloride,"1,2-ethanediol",,ZnCl₂,"1,2-ethanediol",,1.0,4.0,,298.0,Kelvin,mS/cm,,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Zinc chloride,"1,6-hexanediol",,ZnCl₂,"1,6-hexanediol",,1.0,3.0,,298.0,Kelvin,mS/cm,,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Zinc chloride,Glucose,,ZnCl₂,Glucose,,1.0,1.0,,298.0,Kelvin,0.06,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Zinc chloride,Fructose,,ZnCl₂,Fructose,,1.0,1.0,,298.0,Kelvin,0.01,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Zinc chloride,Lactic acid,,ZnCl₂,Lactic acid,,1.0,1.0,,298.0,Kelvin,0.01,mS/cm,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,Urea,,ChCl,Urea,,1.0,2.0,,40.0,Celsius,0.199,mS/cm,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,Ethylene glycol,,ChCl,EG,,1.0,2.0,,20.0,Celsius,7.61,mS/cm,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,2.0,,20.0,Celsius,1.05,mS/cm,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,"1,4-Butanediol",,ChCl,"1,4-Butanediol",,1.0,3.0,,20.0,Celsius,1.64,mS/cm,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,"2,2,2-Trifluoroacetamide",,ChCl,CF3CONH2,,1.0,2.0,,40.0,Celsius,0.286,mS/cm,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,Imidazole,,ChCl,Imidazole,,3.0,7.0,,60.0,Celsius,12.0,mS/cm,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,Zinc chloride,,ChCl,ZnCl2,,1.0,2.0,,42.0,Celsius,0.06,mS/cm,"Deep eutectic solvents: syntheses, properties and applications",16
+Zinc chloride,Urea,,ZnCl2,Urea,,1.0,3.5,,42.0,Celsius,0.18,mS/cm,"Deep eutectic solvents: syntheses, properties and applications",16
+Tetrabutylammonium bromide,Imidazole,,Bu4NBr,Imidazole,,3.0,7.0,,60.0,Celsius,0.24,mS/cm,"Deep eutectic solvents: syntheses, properties and applications",16
+Ethylammonium chloride,"2,2,2-Trifluoroacetamide",,EtNH3Cl,CF3CONH2,,1.0,1.5,,40.0,Celsius,0.39,mS/cm,"Deep eutectic solvents: syntheses, properties and applications",16
+Ethylammonium chloride,Acetamide,,EtNH3Cl,Acetamide,,1.0,1.5,,40.0,Celsius,0.688,mS/cm,"Deep eutectic solvents: syntheses, properties and applications",16
+Ethylammonium chloride,Urea,,EtNH3Cl,Urea,,1.0,1.5,,40.0,Celsius,0.348,mS/cm,"Deep eutectic solvents: syntheses, properties and applications",16
+Acetylcholine chloride,Urea,,AcChCl,Urea,,1.0,2.0,,40.0,Celsius,0.017,mS/cm,"Deep eutectic solvents: syntheses, properties and applications",16
+Tetrabutylammonium bromide,Imidazole,,Bu4NBr,Imidazole,,3.0,7.0,,20.0,Celsius,0.24,mS/cm,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,Urea,,ChCl,U,,1.0,2.0,,298.0,Kelvin,0.75,mS/cm,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Choline chloride,Urea,,ChCl,U,,1.0,2.0,,40.0,Celsius,0.199,mS/cm,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Choline chloride,Ethylene glycol,,ChCl,EG,,1.0,2.0,,298.0,Kelvin,7.61,mS/cm,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Choline chloride,Glycerol,,ChCl,Gly,,1.0,2.0,,298.0,Kelvin,1.18,mS/cm,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Choline chloride,phenol,,ChCl,phenol,,1.0,3.0,,298.0,Kelvin,3.14,mS/cm,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Choline chloride,phenol,,ChCl,phenol,,1.0,3.0,,35.0,Celsius,4.77,mS/cm,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Choline chloride,phenol,,ChCl,phenol,,1.0,3.0,,45.0,Celsius,6.77,mS/cm,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Choline chloride,imidazole,,ChCl,imidazole,,3.0,7.0,,60.0,Celsius,12.0,mS/cm,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Choline chloride,Malonic acid,,ChCl,MalA,,1.0,1.0,,298.0,Kelvin,0.55,mS/cm,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Methyltriphenylphosphonium bromide,Glycerol,,[P(Me)(Ph)3]Br,Gly,,1.0,1.75,,298.0,Kelvin,0.165,mS/cm,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Methyltriphenylphosphonium bromide,Ethylene glycol,,[P(Me)(Ph)3]Br,EG,,1.0,4.0,,298.0,Kelvin,0.788,mS/cm,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Tetrabuthylammonium bromide,imidazole,,[N(Bu)4]Br,imidazole,,3.0,7.0,,60.0,Celsius,0.24,mS/cm,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Ethylammonium chloride,acetamide,,[NH3(Et)]Cl,acetamide,,2.0,3.0,,40.0,Celsius,0.688,mS/cm,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Ethylammonium chloride,"2,2,2-Trifluoroacetamide",,[NH3(Et)]CI,CF3CONH2,,2.0,3.0,,40.0,Celsius,0.39,mS/cm,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Ethylammonium chloride,Urea,,[NH3(Et)]Cl,U,,2.0,3.0,,40.0,Celsius,0.348,mS/cm,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Tributylmethylammonium chloride,Ethylene glycol,,[N(Bu)3(Me)]Cl,EG,,1.0,3.0,,55.0,Celsius,0.48,mS/cm,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Tributylmethylammonium chloride,Glycerol,,[N(Bu)3(Me)]Cl,Gly,,1.0,5.0,,55.0,Celsius,0.163,mS/cm,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Benzyl triethylammonium chloride,Formic acid,,BTEA,FA,,1.0,2.0,,293.15,Kelvin,1000.0,μS/cm,Insights into the physicochemical properties of newly synthesized benzyl triethylammonium chloride-based deep eutectic solvents,175
+Benzyl triethylammonium chloride,Acetic acid,,BTEA,AA,,1.0,2.0,,293.15,Kelvin,500.0,μS/cm,Insights into the physicochemical properties of newly synthesized benzyl triethylammonium chloride-based deep eutectic solvents,175
+Benzyl triethylammonium chloride,Butyric acid,,BTEA,BA,,1.0,2.0,,293.15,Kelvin,200.0,μS/cm,Insights into the physicochemical properties of newly synthesized benzyl triethylammonium chloride-based deep eutectic solvents,175
+Benzyl triethylammonium chloride,Valeric acid,,BTEA,VA,,1.0,2.0,,293.15,Kelvin,150.0,μS/cm,Insights into the physicochemical properties of newly synthesized benzyl triethylammonium chloride-based deep eutectic solvents,175
+Benzyl triethylammonium chloride,Pivalic acid,,BTEA,PA,,1.0,3.0,,293.15,Kelvin,50.0,μS/cm,Insights into the physicochemical properties of newly synthesized benzyl triethylammonium chloride-based deep eutectic solvents,175
+Benzyl triethylammonium chloride,Caprylic acid,,BTEA,CAP,,1.0,2.0,,293.15,Kelvin,30.0,μS/cm,Insights into the physicochemical properties of newly synthesized benzyl triethylammonium chloride-based deep eutectic solvents,175
+Benzyl triethylammonium chloride,Capric acid,,BTEA,CA,,1.0,2.0,,293.15,Kelvin,25.0,μS/cm,Insights into the physicochemical properties of newly synthesized benzyl triethylammonium chloride-based deep eutectic solvents,175
+Benzyl triethylammonium chloride,Lauric acid,,BTEA,LAU,,1.0,2.0,,293.15,Kelvin,20.0,μS/cm,Insights into the physicochemical properties of newly synthesized benzyl triethylammonium chloride-based deep eutectic solvents,175
+Benzyl triethylammonium chloride,Oleic acid,,BTEA,OLE,,1.0,2.0,,293.15,Kelvin,23.27,μS/cm,Insights into the physicochemical properties of newly synthesized benzyl triethylammonium chloride-based deep eutectic solvents,175
+Benzyltriethyl ammonium chloride,Lactic acid,,BTEA,LA,,1.0,2.0,,293.15,Kelvin,1500.0,μS/cm,Insights into the physicochemical properties of newly synthesized benzyl triethylammonium chloride-based deep eutectic solvents,175
+Benzyl triethyl ammonium chloride,Levulinic acid,,BTEA,LEV,,1.0,2.0,,293.15,Kelvin,800.0,μS/cm,Insights into the physicochemical properties of newly synthesized benzyl triethylammonium chloride-based deep eutectic solvents,175
+Benzyltriethyl ammonium chloride,"1,2 Propane diol",,BTEA,PRO,,1.0,2.0,,293.15,Kelvin,300.0,μS/cm,Insights into the physicochemical properties of newly synthesized benzyl triethylammonium chloride-based deep eutectic solvents,175
+Benzyltriethyl ammonium chloride,"1,4 Butanediol",,BTEA,BUT,,1.0,2.0,,293.15,Kelvin,250.0,μS/cm,Insights into the physicochemical properties of newly synthesized benzyl triethylammonium chloride-based deep eutectic solvents,175
+Benzyl triethyl ammonium chloride,Ethylene glycol,,BTEA,EG,,1.0,2.0,,293.15,Kelvin,400.0,μS/cm,Insights into the physicochemical properties of newly synthesized benzyl triethylammonium chloride-based deep eutectic solvents,175
+Choline chloride,Lactic acid,,ChCl,LA,,1.0,2.0,,,,2.5,mS/cm,"Applications of deep eutectic solvents in the extraction, dissolution, and functional materials of chitin: research progress and prospects",180
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,2.0,,298.15,Kelvin,1.02,mS/cm,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Triethylene glycol,,ChCl,Triethylene glycol,,1.0,2.0,,298.15,Kelvin,1.41,mS/cm,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Phenol,,ChCl,Phenol,,1.0,3.0,,298.15,Kelvin,3.14,mS/cm,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Xylitol,,ChCl,Xylitol,,1.0,1.0,,298.15,Kelvin,1.15,mS/cm,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Malonic acid,,ChCl,Malonic acid,,1.0,1.0,,298.15,Kelvin,0.91,mS/cm,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Levulinic acid,,ChCl,Levulinic acid,,1.0,2.0,,298.15,Kelvin,0.81,mS/cm,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Zinc nitrate hexahydrate,,ChCl,Zn(NO3)2 +6H2O,,1.0,1.0,,298.15,Kelvin,9.28,mS/cm,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Acetylcholine chloride,Levulinic acid,,Acetylcholine Cl,Levulinic acid,,1.0,2.0,,298.15,Kelvin,0.67,mS/cm,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline Chloride,Glycerol,,ChCl,Gly,,1.0,2.0,,70.0,Celsius,1142.0,uS/cm,Thermodynamics insights of lignin dissolution in deep eutectic solvents,22
+Choline Chloride,Ethylene Glycol,,ChCl,EG,,1.0,2.0,,70.0,Celsius,6854.0,uS/cm,Thermodynamics insights of lignin dissolution in deep eutectic solvents,22
+Choline chloride,Formamide,,ChCl,FM,,1.0,4.0,,25.0,Celsius,1.25,S/m,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Urea,,ChCl,U,,1.0,2.0,,25.0,Celsius,0.02,S/m,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Methylurea,,ChCl,MU,,1.0,2.0,,25.0,Celsius,0.07,S/m,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Ethylene glycol,,ChCl,EG,,1.0,3.0,,25.0,Celsius,0.04,S/m,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Propanediol,,ChCl,PDO,,1.0,3.0,,25.0,Celsius,0.27,S/m,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Butanediol,,ChCl,BDO,,1.0,3.0,,25.0,Celsius,0.21,S/m,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Glycerol,,ChCl,Gly,,1.0,2.0,,25.0,Celsius,0.09,S/m,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Formic acid,,ChCl,FA,,1.0,2.0,,25.0,Celsius,3.7,S/m,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Acetic acid,,ChCl,AA,,1.0,2.0,,25.0,Celsius,0.07,S/m,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Propionic acid,,ChCl,PA,,1.0,4.0,,25.0,Celsius,0.35,S/m,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Lactic acid,,ChCl,LA,,1.0,2.0,,25.0,Celsius,0.07,S/m,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Malic acid,,ChCl,MA,,1.0,1.0,,25.0,Celsius,0.03,S/m,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Itaconic acid,,ChCl,IA,,1.0,1.0,,25.0,Celsius,0.15,S/m,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Levulinic acid,,ChCl,LevA,,1.0,2.0,,25.0,Celsius,4.8,S/m,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Glutaric acid,,ChCl,GA,,1.0,1.0,,25.0,Celsius,0.03,S/m,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Formamide,FeCl3,ChCl,FM,FeCl3,1.0,4.0,0.1,25.0,Celsius,1.1,S/m,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Glycerol,FeCl3,ChCl,Gly,FeCl3,1.0,2.0,0.1,25.0,Celsius,1.2,S/m,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Lactic acid,FeCl3,ChCl,LA,FeCl3,1.0,2.0,0.1,25.0,Celsius,0.19,S/m,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Lactic acid,Glycerol,ChCl,LA,Gly,1.0,2.0,2.0,25.0,Celsius,0.15,S/m,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,"1,2-ethanediol",,ChCl,"1,2-ethanediol",,1.0,19.0,,293.0,Kelvin,3.9,mS/cm,,28_part_002_pages_28-57
+Choline chloride,"1,2-ethanediol",,ChCl,"1,2-ethanediol",,1.0,9.0,,293.0,Kelvin,5.8,mS/cm,,28_part_002_pages_28-57
+Choline chloride,"1,2-ethanediol",,ChCl,"1,2-ethanediol",,3.0,17.0,,293.0,Kelvin,7.3,mS/cm,,28_part_002_pages_28-57
+Choline chloride,"1,2-ethanediol",,ChCl,"1,2-ethanediol",,1.0,4.0,,293.0,Kelvin,7.6,mS/cm,,28_part_002_pages_28-57
+Choline chloride,"1,2-ethanediol",,ChCl,"1,2-ethanediol",,1.0,3.0,,293.0,Kelvin,7.4,mS/cm,,28_part_002_pages_28-57
+Choline chloride,"1,2-ethanediol",,ChCl,"1,2-ethanediol",,3.0,7.0,,293.0,Kelvin,6.9,mS/cm,,28_part_002_pages_28-57
+Choline chloride,"1,2-ethanediol",,ChCl,"1,2-ethanediol",,1.0,2.0,,293.0,Kelvin,6.6,mS/cm,,28_part_002_pages_28-57
+Choline chloride,"1,2-ethanediol",,ChCl,"1,2-ethanediol",,1.0,4.0,,298.0,Kelvin,1200.0,μS cm⁻¹,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,4-butanediol",,ChCl,"1,4-butanediol",,1.0,19.0,,311.0,Kelvin,1000.0,μS cm⁻¹,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,4-butanediol",,ChCl,"1,4-butanediol",,1.0,9.0,,311.0,Kelvin,1500.0,μS cm⁻¹,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,4-butanediol",,ChCl,"1,4-butanediol",,3.0,17.0,,311.0,Kelvin,2000.0,μS cm⁻¹,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,4-butanediol",,ChCl,"1,4-butanediol",,1.0,4.0,,311.0,Kelvin,2500.0,μS cm⁻¹,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,4-butanediol",,ChCl,"1,4-butanediol",,1.0,3.0,,311.0,Kelvin,3000.0,μS cm⁻¹,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,4-butanediol",,ChCl,"1,4-butanediol",,1.0,4.0,,298.0,Kelvin,1400.0,μS cm⁻¹,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,6-hexanediol",,ChCl,"1,6-hexanediol",,1.0,19.0,,335.0,Kelvin,500.0,μS cm⁻¹,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,6-hexanediol",,ChCl,"1,6-hexanediol",,1.0,9.0,,335.0,Kelvin,800.0,μS cm⁻¹,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,6-hexanediol",,ChCl,"1,6-hexanediol",,3.0,17.0,,335.0,Kelvin,1200.0,μS cm⁻¹,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,6-hexanediol",,ChCl,"1,6-hexanediol",,1.0,4.0,,335.0,Kelvin,1600.0,μS cm⁻¹,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,6-hexanediol",,ChCl,"1,6-hexanediol",,1.0,3.0,,335.0,Kelvin,2000.0,μS cm⁻¹,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,3-butanediol",,ChCl,"1,3-butanediol",,1.0,4.0,,298.0,Kelvin,1000.0,μS cm⁻¹,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"2,3-butanediol",,ChCl,"2,3-butanediol",,1.0,4.0,,298.0,Kelvin,800.0,μS cm⁻¹,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,19.0,,298.0,Kelvin,1000.0,μS cm⁻¹,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,9.0,,298.0,Kelvin,1500.0,μS cm⁻¹,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,17.0,,298.0,Kelvin,2000.0,μS cm⁻¹,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,4.0,,298.0,Kelvin,2500.0,μS cm⁻¹,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,3.0,,298.0,Kelvin,3000.0,μS cm⁻¹,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,7.0,,298.0,Kelvin,3500.0,μS cm⁻¹,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,2.0,,298.0,Kelvin,3800.0,μS cm⁻¹,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,19.0,,335.5,Kelvin,1000.0,μS,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,9.0,,335.5,Kelvin,1500.0,μS,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,17.0,,335.5,Kelvin,2000.0,μS,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,4.0,,335.5,Kelvin,2500.0,μS,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,3.0,,335.5,Kelvin,3000.0,μS,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,7.0,,335.5,Kelvin,3500.0,μS,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,2.0,,335.5,Kelvin,3800.0,μS,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Phenol,,ChCl,Phenol,,2.0,3.0,,275.0,Kelvin,890.0,µS,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Phenol,,ChCl,Phenol,,7.0,13.0,,275.0,Kelvin,1130.0,µS,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Phenol,,ChCl,Phenol,,3.0,7.0,,275.0,Kelvin,1460.0,µS,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Phenol,,ChCl,Phenol,,1.0,3.0,,275.0,Kelvin,1670.0,µS,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Phenol,,ChCl,Phenol,,1.0,4.0,,275.0,Kelvin,1900.0,µS,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Phenol,,ChCl,Phenol,,3.0,17.0,,275.0,Kelvin,1840.0,µS,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Phenol,,ChCl,Phenol,,1.0,9.0,,275.0,Kelvin,1400.0,µS,Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Phenol,Choline chloride,,Phenol,ChCl,,4.0,1.0,,275.0,Kelvin,1900.0,µS,Investigation of Intramolecular Interactions in Deep Eutectic Solvents Using Solvatochromic Probes,28_part_004_pages_82-111
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,19.0,,4.0,Celsius,2.59,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,19.0,,6.0,Celsius,2.68,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,19.0,,8.0,Celsius,2.82,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,19.0,,10.0,Celsius,2.99,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,19.0,,12.0,Celsius,3.14,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,19.0,,14.0,Celsius,3.29,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,19.0,,16.0,Celsius,3.45,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,19.0,,18.0,Celsius,3.71,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,19.0,,20.0,Celsius,3.93,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,9.0,,4.0,Celsius,4.31,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,9.0,,6.0,Celsius,4.43,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,9.0,,8.0,Celsius,4.57,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,9.0,,10.0,Celsius,4.72,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,9.0,,12.0,Celsius,4.89,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,9.0,,14.0,Celsius,5.09,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,9.0,,16.0,Celsius,5.33,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,9.0,,18.0,Celsius,5.58,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,9.0,,20.0,Celsius,5.83,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,3.0,17.0,,4.0,Celsius,5.27,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,3.0,17.0,,6.0,Celsius,5.37,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,3.0,17.0,,8.0,Celsius,5.52,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,3.0,17.0,,10.0,Celsius,5.71,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,3.0,17.0,,12.0,Celsius,5.96,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,3.0,17.0,,14.0,Celsius,6.28,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,3.0,17.0,,16.0,Celsius,6.62,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,3.0,17.0,,18.0,Celsius,6.98,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,3.0,17.0,,20.0,Celsius,7.35,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,4.0,,4.0,Celsius,5.68,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,4.0,,6.0,Celsius,5.79,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,4.0,,8.0,Celsius,5.93,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,4.0,,10.0,Celsius,6.11,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,4.0,,12.0,Celsius,6.35,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,4.0,,14.0,Celsius,6.59,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,4.0,,16.0,Celsius,6.84,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,4.0,,18.0,Celsius,7.13,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,4.0,,20.0,Celsius,7.56,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,3.0,,4.0,Celsius,5.4,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,3.0,,6.0,Celsius,5.51,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,3.0,,8.0,Celsius,5.63,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,3.0,,10.0,Celsius,5.77,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,3.0,,12.0,Celsius,5.98,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,3.0,,14.0,Celsius,6.24,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,3.0,,16.0,Celsius,6.61,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,3.0,,18.0,Celsius,6.97,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,1.0,3.0,,20.0,Celsius,7.44,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,3.0,7.0,,4.0,Celsius,5.05,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,3.0,7.0,,6.0,Celsius,5.12,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,3.0,7.0,,8.0,Celsius,5.23,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,3.0,7.0,,10.0,Celsius,5.35,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,3.0,7.0,,12.0,Celsius,5.5,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,3.0,7.0,,14.0,Celsius,5.74,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,3.0,7.0,,16.0,Celsius,6.05,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,3.0,7.0,,18.0,Celsius,6.4,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,3.0,7.0,,20.0,Celsius,6.89,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,33.0,67.0,,4.0,Celsius,4.9,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,33.0,67.0,,6.0,Celsius,5.02,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,33.0,67.0,,8.0,Celsius,5.15,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,33.0,67.0,,10.0,Celsius,5.3,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,33.0,67.0,,12.0,Celsius,5.48,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,33.0,67.0,,14.0,Celsius,5.67,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,33.0,67.0,,16.0,Celsius,5.93,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,33.0,67.0,,18.0,Celsius,6.16,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,"1,2-Ethanediol",,ChCl,"1,2-Ethanediol",,33.0,67.0,,20.0,Celsius,6.58,mS,Esterification of Glycerol in a Choline Chloride Based Deep Eutectic Solvent,28_part_006_pages_136-165
+Choline chloride,Ethylene Glycol,,ChCl,EG,,1.0,19.0,,20.0,Celsius,3.74,mS/cm,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Ethylene Glycol,,ChCl,EG,,1.0,9.0,,20.0,Celsius,7.52,mS/cm,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Ethylene Glycol,,ChCl,EG,,3.0,17.0,,20.0,Celsius,8.14,mS/cm,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Ethylene Glycol,,ChCl,EG,,1.0,4.0,,20.0,Celsius,8.53,mS/cm,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Ethylene Glycol,,ChCl,EG,,1.0,3.0,,20.0,Celsius,8.74,mS/cm,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Ethylene Glycol,,ChCl,EG,,3.0,7.0,,20.0,Celsius,7.92,mS/cm,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Ethylene Glycol,,ChCl,EG,,33.0,67.0,,20.0,Celsius,7.61,mS/cm,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,19.0,,20.0,Celsius,106.4,µS/cm,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,9.0,,20.0,Celsius,243.0,µS/cm,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,17.0,,20.0,Celsius,470.0,µS/cm,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,4.0,,20.0,Celsius,580.0,µS/cm,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,3.0,,20.0,Celsius,850.0,µS/cm,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,7.0,,20.0,Celsius,964.0,µS/cm,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,33.0,67.0,,20.0,Celsius,1047.0,µS/cm,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,"1,4-Butanediol",,ChCl,BG,,1.0,19.0,,20.0,Celsius,593.0,µS/cm,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,"1,4-Butanediol",,ChCl,BG,,1.0,9.0,,20.0,Celsius,923.0,µS/cm,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,"1,4-Butanediol",,ChCl,BG,,3.0,17.0,,20.0,Celsius,1271.0,µS/cm,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,"1,4-Butanediol",,ChCl,BG,,1.0,4.0,,20.0,Celsius,1606.0,µS/cm,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,"1,4-Butanediol",,ChCl,BG,,1.0,3.0,,20.0,Celsius,1654.0,µS/cm,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,"2,3-Butanediol",,ChCl,"2,3-BD",,1.0,19.0,,292.0,Kelvin,240.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,"2,3-Butanediol",,ChCl,"2,3-BD",,1.0,9.0,,292.0,Kelvin,460.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,"2,3-Butanediol",,ChCl,"2,3-BD",,3.0,17.0,,292.0,Kelvin,780.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,"2,3-Butanediol",,ChCl,"2,3-BD",,1.0,4.0,,292.0,Kelvin,900.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,"2,3-Butanediol",,ChCl,"2,3-BD",,1.0,19.0,,310.0,Kelvin,490.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,"2,3-Butanediol",,ChCl,"2,3-BD",,1.0,9.0,,310.0,Kelvin,950.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,"2,3-Butanediol",,ChCl,"2,3-BD",,3.0,17.0,,310.0,Kelvin,1480.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,"2,3-Butanediol",,ChCl,"2,3-BD",,1.0,4.0,,310.0,Kelvin,1750.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,19.0,,20.0,Celsius,106.4,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,19.0,,25.0,Celsius,143.3,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,19.0,,30.0,Celsius,190.1,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,19.0,,35.0,Celsius,252.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,19.0,,40.0,Celsius,320.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,19.0,,45.0,Celsius,394.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,19.0,,50.0,Celsius,479.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,19.0,,55.0,Celsius,568.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,9.0,,20.0,Celsius,243.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,9.0,,25.0,Celsius,297.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,9.0,,30.0,Celsius,374.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,9.0,,35.0,Celsius,483.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,9.0,,40.0,Celsius,601.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,9.0,,45.0,Celsius,759.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,9.0,,50.0,Celsius,980.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,9.0,,55.0,Celsius,1245.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,17.0,,20.0,Celsius,470.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,17.0,,25.0,Celsius,555.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,17.0,,30.0,Celsius,666.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,17.0,,35.0,Celsius,798.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,17.0,,40.0,Celsius,963.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,17.0,,45.0,Celsius,1114.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,17.0,,50.0,Celsius,1403.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,17.0,,55.0,Celsius,1788.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,4.0,,20.0,Celsius,580.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,4.0,,25.0,Celsius,739.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,4.0,,30.0,Celsius,930.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,4.0,,35.0,Celsius,1140.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,4.0,,40.0,Celsius,1362.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,4.0,,45.0,Celsius,1609.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,4.0,,50.0,Celsius,1923.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,4.0,,55.0,Celsius,2250.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,3.0,,20.0,Celsius,850.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,3.0,,25.0,Celsius,1030.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,3.0,,30.0,Celsius,1244.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,3.0,,35.0,Celsius,1490.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,3.0,,40.0,Celsius,1835.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,3.0,,45.0,Celsius,2140.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,3.0,,50.0,Celsius,2480.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,3.0,,55.0,Celsius,2930.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,7.0,,20.0,Celsius,964.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,7.0,,25.0,Celsius,1165.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,7.0,,30.0,Celsius,1410.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,7.0,,35.0,Celsius,1750.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,7.0,,40.0,Celsius,2080.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,7.0,,45.0,Celsius,2430.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,7.0,,50.0,Celsius,2800.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,7.0,,55.0,Celsius,3260.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,33.0,67.0,,20.0,Celsius,1047.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,33.0,67.0,,25.0,Celsius,1298.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,33.0,67.0,,30.0,Celsius,1636.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,33.0,67.0,,35.0,Celsius,1947.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,33.0,67.0,,40.0,Celsius,2320.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,33.0,67.0,,45.0,Celsius,2710.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,33.0,67.0,,50.0,Celsius,3110.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,33.0,67.0,,55.0,Celsius,3560.0,μS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,19.0,,290.0,Kelvin,100.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,9.0,,290.0,Kelvin,200.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,17.0,,290.0,Kelvin,400.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,4.0,,290.0,Kelvin,500.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,3.0,,290.0,Kelvin,800.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,7.0,,290.0,Kelvin,900.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,33.0,67.0,,290.0,Kelvin,1000.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,19.0,,330.0,Kelvin,600.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,9.0,,330.0,Kelvin,1200.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,17.0,,330.0,Kelvin,2000.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,4.0,,330.0,Kelvin,2500.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,1.0,3.0,,330.0,Kelvin,3000.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,3.0,7.0,,330.0,Kelvin,3500.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,ChCl,Glycerol,,33.0,67.0,,330.0,Kelvin,3800.0,µS,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Urea,Water,CC,U,Water,1.0,2.0,0.0,40.0,Celsius,0.37,mS/cm,EFFECT OF WATER ON CELLULOSE TREATMENT WITH CHOLINE CHLORIDE -UREA DEEP EUTECTIC SOLVENT,41
+Choline chloride,Urea,Water,CC,U,Water,1.0,2.0,2.0,40.0,Celsius,8.23,mS/cm,EFFECT OF WATER ON CELLULOSE TREATMENT WITH CHOLINE CHLORIDE -UREA DEEP EUTECTIC SOLVENT,41
+Choline chloride,Urea,Water,CC,U,Water,1.0,2.0,4.0,40.0,Celsius,28.21,mS/cm,EFFECT OF WATER ON CELLULOSE TREATMENT WITH CHOLINE CHLORIDE -UREA DEEP EUTECTIC SOLVENT,41
+Choline chloride,Urea,Water,CC,U,Water,1.0,2.0,2.0,40.0,Celsius,39.38,mS/cm,EFFECT OF WATER ON CELLULOSE TREATMENT WITH CHOLINE CHLORIDE -UREA DEEP EUTECTIC SOLVENT,41
+Choline chloride,Urea,Water,CC,U,Water,1.0,2.0,8.0,40.0,Celsius,53.23,mS/cm,EFFECT OF WATER ON CELLULOSE TREATMENT WITH CHOLINE CHLORIDE -UREA DEEP EUTECTIC SOLVENT,41
+Choline chloride,Urea,Water,CC,U,Water,1.0,2.0,10.0,40.0,Celsius,62.36,mS/cm,EFFECT OF WATER ON CELLULOSE TREATMENT WITH CHOLINE CHLORIDE -UREA DEEP EUTECTIC SOLVENT,41
+Choline chloride,Urea,Water,CC,U,Water,1.0,1.0,2.0,40.0,Celsius,15.17,mS/cm,EFFECT OF WATER ON CELLULOSE TREATMENT WITH CHOLINE CHLORIDE -UREA DEEP EUTECTIC SOLVENT,41
+Choline chloride,Urea,Water,CC,U,Water,1.0,1.0,4.0,40.0,Celsius,33.65,mS/cm,EFFECT OF WATER ON CELLULOSE TREATMENT WITH CHOLINE CHLORIDE -UREA DEEP EUTECTIC SOLVENT,41
+Choline chloride,Urea,Water,CC,U,Water,1.0,1.0,6.0,40.0,Celsius,57.55,mS/cm,EFFECT OF WATER ON CELLULOSE TREATMENT WITH CHOLINE CHLORIDE -UREA DEEP EUTECTIC SOLVENT,41
+Choline chloride,Urea,Water,CC,U,Water,1.0,1.0,8.0,40.0,Celsius,64.08,mS/cm,EFFECT OF WATER ON CELLULOSE TREATMENT WITH CHOLINE CHLORIDE -UREA DEEP EUTECTIC SOLVENT,41
+Choline chloride,Urea,Water,CC,U,Water,1.0,1.0,10.0,40.0,Celsius,77.48,mS/cm,EFFECT OF WATER ON CELLULOSE TREATMENT WITH CHOLINE CHLORIDE -UREA DEEP EUTECTIC SOLVENT,41
+Choline chloride,Urea,Water,CC,U,Water,1.0,0.5,2.0,40.0,Celsius,18.28,mS/cm,EFFECT OF WATER ON CELLULOSE TREATMENT WITH CHOLINE CHLORIDE -UREA DEEP EUTECTIC SOLVENT,41
+Choline chloride,Urea,Water,CC,U,Water,1.0,0.5,4.0,40.0,Celsius,44.45,mS/cm,EFFECT OF WATER ON CELLULOSE TREATMENT WITH CHOLINE CHLORIDE -UREA DEEP EUTECTIC SOLVENT,41
+Choline chloride,Urea,Water,CC,U,Water,1.0,0.5,6.0,40.0,Celsius,65.79,mS/cm,EFFECT OF WATER ON CELLULOSE TREATMENT WITH CHOLINE CHLORIDE -UREA DEEP EUTECTIC SOLVENT,41
+Choline chloride,Urea,Water,CC,U,Water,1.0,0.5,8.0,40.0,Celsius,78.47,mS/cm,EFFECT OF WATER ON CELLULOSE TREATMENT WITH CHOLINE CHLORIDE -UREA DEEP EUTECTIC SOLVENT,41
+Choline chloride,Urea,Water,CC,U,Water,1.0,0.5,10.0,40.0,Celsius,85.69,mS/cm,EFFECT OF WATER ON CELLULOSE TREATMENT WITH CHOLINE CHLORIDE -UREA DEEP EUTECTIC SOLVENT,41
+Choline chloride,Urea,,ChCl,U,,1.0,2.0,,298.15,Kelvin,0.85,mS/cm,"Aggregation Behavior of Sodium Dioctyl Sulfosuccinate in Deep Eutectic Solvents and Their Mixtures with Water: An Account of Solvent's Polarity, Cohesiveness, and Solvent Structure",48
+Choline chloride,Ethylene glycol,,ChCl,EG,,1.0,2.0,,298.15,Kelvin,5.68,mS/cm,"Aggregation Behavior of Sodium Dioctyl Sulfosuccinate in Deep Eutectic Solvents and Their Mixtures with Water: An Account of Solvent's Polarity, Cohesiveness, and Solvent Structure",48
+Cobalt(II) chloride hexahydrate,Ethylene glycol,,CoCl2.6H2O,EG,,1.0,2.0,,25.0,Celsius,9500.0,µS/cm,Magnetic deep eutectic solvents: formation and properties,49
+Cobalt(II) chloride hexahydrate,Xylitol,,CoCl2.6H2O,Xyl,,1.0,2.0,,25.0,Celsius,210.0,µS/cm,Magnetic deep eutectic solvents: formation and properties,49
+Cobalt(II) chloride hexahydrate,L(+)-Lactic acid,,CoCl2.6H2O,LA,,1.0,6.0,,25.0,Celsius,1000.0,µS/cm,Magnetic deep eutectic solvents: formation and properties,49
+Cobalt(II) chloride hexahydrate,Glycerol,,CoCl2.6H2O,Gly,,1.0,2.0,,25.0,Celsius,2000.0,µS/cm,Magnetic deep eutectic solvents: formation and properties,49
+Cobalt(II) chloride hexahydrate,Acetamide,,CoCl2.6H2O,Ace,,1.0,2.0,,25.0,Celsius,3000.0,µS/cm,Magnetic deep eutectic solvents: formation and properties,49
+Cobalt(II) chloride hexahydrate,Urea,,CoCl2.6H2O,urea,,1.0,3.0,,25.0,Celsius,4000.0,µS/cm,Magnetic deep eutectic solvents: formation and properties,49
+Nickel(II) chloride hexahydrate,Ethylene glycol,,NiCl2.6H2O,EG,,1.0,2.0,,25.0,Celsius,5000.0,µS/cm,Magnetic deep eutectic solvents: formation and properties,49
+Nickel(II) chloride hexahydrate,L(+)-Lactic acid,,NiCl2.6H2O,LA,,1.0,6.0,,25.0,Celsius,1500.0,µS/cm,Magnetic deep eutectic solvents: formation and properties,49
+Nickel(II) chloride hexahydrate,Glycerol,,NiCl2.6H2O,Gly,,1.0,2.0,,25.0,Celsius,1000.0,µS/cm,Magnetic deep eutectic solvents: formation and properties,49
+Nickel(II) chloride hexahydrate,Acetamide,,NiCl2.6H2O,Ace,,1.0,2.0,,25.0,Celsius,2000.0,µS/cm,Magnetic deep eutectic solvents: formation and properties,49
+Nickel(II) chloride hexahydrate,Urea,,NiCl2.6H2O,urea,,1.0,2.0,,25.0,Celsius,3000.0,µS/cm,Magnetic deep eutectic solvents: formation and properties,49
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,LiTf₂N,acetamide,,1.0,2.0,,298.0,Kelvin,0.337,mS/cm,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,LiTf₂N,acetamide,,1.0,3.0,,298.0,Kelvin,0.767,mS/cm,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,LiTf₂N,acetamide,,1.0,4.0,,298.0,Kelvin,1.29,mS/cm,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-Trifluoroacetamide",,LiTf₂N,"2,2,2-trifluoroacetamide",,1.0,2.0,,298.0,Kelvin,0.309,mS/cm,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-Trifluoroacetamide",,LiTf₂N,"2,2,2-trifluoroacetamide",,1.0,3.0,,298.0,Kelvin,0.809,mS/cm,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-Trifluoroacetamide",,LiTf₂N,"2,2,2-trifluoroacetamide",,1.0,4.0,,298.0,Kelvin,1.3,mS/cm,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,LiTf₂N,urea,,1.0,2.0,,298.0,Kelvin,0.09,mS/cm,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,LiTf₂N,urea,,1.0,3.0,,298.0,Kelvin,0.219,mS/cm,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,LiTf₂N,urea,,1.0,4.0,,298.0,Kelvin,0.341,mS/cm,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+n-decanoic acid,Thymol,,DA,Thy,,1.0,1.0,,298.0,Kelvin,1.0,µS/cm,Ethanolamine-mediated microstructural transitions within terpenoid- and fatty acid-based deep eutectic solvents†,64

@@ -1,0 +1,201 @@
+{
+  "extraction": {
+    "article_title": "Aggregation Behavior of Sodium Dioctyl Sulfosuccinate in Deep Eutectic Solvents and Their Mixtures with Water: An Account of Solvent's Polarity, Cohesiveness, and Solvent Structure",
+    "des_entries": [
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Urea"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "U"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "298.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.85",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "EG"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "298.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "5.68",
+          "mS/cm"
+        ]
+      }
+    ]
+  },
+  "extraction_metadata": {
+    "article_title": {
+      "value": "Aggregation Behavior of Sodium Dioctyl Sulfosuccinate in Deep Eutectic Solvents and Their Mixtures with Water: An Account of Solvent's Polarity, Cohesiveness, and Solvent Structure",
+      "references": [
+        "8c5d3059-5bee-40f5-962e-c517accd907e"
+      ]
+    },
+    "des_entries": [
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "c9046b4e-f88c-4dff-98bd-e4a811e9bfd0",
+              "2fbfe0a3-b983-4a28-91ba-d41345eb7257",
+              "11bc11e9-f203-4337-a9a8-27cf7e94eee6"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "c9046b4e-f88c-4dff-98bd-e4a811e9bfd0",
+              "2fbfe0a3-b983-4a28-91ba-d41345eb7257",
+              "11bc11e9-f203-4337-a9a8-27cf7e94eee6"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "c1f6a3f9-c830-4dff-8045-768b67facfdb"
+            ]
+          },
+          {
+            "value": "U",
+            "references": [
+              "c1f6a3f9-c830-4dff-8045-768b67facfdb"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "2fbfe0a3-b983-4a28-91ba-d41345eb7257"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298.15",
+            "references": [
+              "7677b8f0-ceb3-45b4-a469-c72af92f7ace"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "7677b8f0-ceb3-45b4-a469-c72af92f7ace"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.85",
+            "references": [
+              "7677b8f0-ceb3-45b4-a469-c72af92f7ace"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "7677b8f0-ceb3-45b4-a469-c72af92f7ace"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "c9046b4e-f88c-4dff-98bd-e4a811e9bfd0",
+              "2fbfe0a3-b983-4a28-91ba-d41345eb7257",
+              "11bc11e9-f203-4337-a9a8-27cf7e94eee6"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "c9046b4e-f88c-4dff-98bd-e4a811e9bfd0",
+              "2fbfe0a3-b983-4a28-91ba-d41345eb7257",
+              "11bc11e9-f203-4337-a9a8-27cf7e94eee6"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "c1f6a3f9-c830-4dff-8045-768b67facfdb"
+            ]
+          },
+          {
+            "value": "EG",
+            "references": [
+              "c1f6a3f9-c830-4dff-8045-768b67facfdb"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "2fbfe0a3-b983-4a28-91ba-d41345eb7257"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298.15",
+            "references": [
+              "7677b8f0-ceb3-45b4-a469-c72af92f7ace"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "7677b8f0-ceb3-45b4-a469-c72af92f7ace"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "5.68",
+            "references": [
+              "7677b8f0-ceb3-45b4-a469-c72af92f7ace"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "7677b8f0-ceb3-45b4-a469-c72af92f7ace"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "credit_usage": 18.6288,
+    "duration_ms": 28754,
+    "filename": "upload.md",
+    "job_id": "b67080a41df64b71b861a53e284628e5",
+    "org_id": null,
+    "version": "extract-20251024",
+    "fallback_model_version": null,
+    "schema_violation_error": null
+  }
+}

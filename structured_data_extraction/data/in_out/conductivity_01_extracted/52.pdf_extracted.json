@@ -1,0 +1,810 @@
+{
+  "extraction": {
+    "article_title": "Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents",
+    "des_entries": [
+      {
+        "compounds_names": [
+          "Lithium bis(trifluoromethylsulfonyl)imide",
+          "Acetamide"
+        ],
+        "compounds_acronyms": [
+          "LiTf₂N",
+          "acetamide"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.337",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Lithium bis(trifluoromethylsulfonyl)imide",
+          "Acetamide"
+        ],
+        "compounds_acronyms": [
+          "LiTf₂N",
+          "acetamide"
+        ],
+        "molar_ratio": "1:3",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.767",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Lithium bis(trifluoromethylsulfonyl)imide",
+          "Acetamide"
+        ],
+        "compounds_acronyms": [
+          "LiTf₂N",
+          "acetamide"
+        ],
+        "molar_ratio": "1:4",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1.29",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Lithium bis(trifluoromethylsulfonyl)imide",
+          "2,2,2-Trifluoroacetamide"
+        ],
+        "compounds_acronyms": [
+          "LiTf₂N",
+          "2,2,2-trifluoroacetamide"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.309",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Lithium bis(trifluoromethylsulfonyl)imide",
+          "2,2,2-Trifluoroacetamide"
+        ],
+        "compounds_acronyms": [
+          "LiTf₂N",
+          "2,2,2-trifluoroacetamide"
+        ],
+        "molar_ratio": "1:3",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.809",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Lithium bis(trifluoromethylsulfonyl)imide",
+          "2,2,2-Trifluoroacetamide"
+        ],
+        "compounds_acronyms": [
+          "LiTf₂N",
+          "2,2,2-trifluoroacetamide"
+        ],
+        "molar_ratio": "1:4",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1.30",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Lithium bis(trifluoromethylsulfonyl)imide",
+          "Urea"
+        ],
+        "compounds_acronyms": [
+          "LiTf₂N",
+          "urea"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.0900",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Lithium bis(trifluoromethylsulfonyl)imide",
+          "Urea"
+        ],
+        "compounds_acronyms": [
+          "LiTf₂N",
+          "urea"
+        ],
+        "molar_ratio": "1:3",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.219",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Lithium bis(trifluoromethylsulfonyl)imide",
+          "Urea"
+        ],
+        "compounds_acronyms": [
+          "LiTf₂N",
+          "urea"
+        ],
+        "molar_ratio": "1:4",
+        "temperature": [
+          "298",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.341",
+          "mS/cm"
+        ]
+      }
+    ]
+  },
+  "extraction_metadata": {
+    "article_title": {
+      "value": "Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents",
+      "references": [
+        "1a3d00b1-d221-4bc4-bfcf-25433ce71b89"
+      ]
+    },
+    "des_entries": [
+      {
+        "compounds_names": [
+          {
+            "value": "Lithium bis(trifluoromethylsulfonyl)imide",
+            "references": [
+              "7212acea-c5f5-48ec-a7cb-18020d72867c",
+              "2-7"
+            ]
+          },
+          {
+            "value": "Acetamide",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-c"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "LiTf₂N",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-7"
+            ]
+          },
+          {
+            "value": "acetamide",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-c"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "6-1b"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.337",
+            "references": [
+              "6-1c"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Lithium bis(trifluoromethylsulfonyl)imide",
+            "references": [
+              "7212acea-c5f5-48ec-a7cb-18020d72867c",
+              "2-7"
+            ]
+          },
+          {
+            "value": "Acetamide",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-c"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "LiTf₂N",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-7"
+            ]
+          },
+          {
+            "value": "acetamide",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-c"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:3",
+          "references": [
+            "6-1f"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.767",
+            "references": [
+              "6-1g"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Lithium bis(trifluoromethylsulfonyl)imide",
+            "references": [
+              "7212acea-c5f5-48ec-a7cb-18020d72867c",
+              "2-7"
+            ]
+          },
+          {
+            "value": "Acetamide",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-c"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "LiTf₂N",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-7"
+            ]
+          },
+          {
+            "value": "acetamide",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-c"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:4",
+          "references": [
+            "6-1j"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1.29",
+            "references": [
+              "6-1k"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Lithium bis(trifluoromethylsulfonyl)imide",
+            "references": [
+              "7212acea-c5f5-48ec-a7cb-18020d72867c",
+              "2-7"
+            ]
+          },
+          {
+            "value": "2,2,2-Trifluoroacetamide",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-m"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "LiTf₂N",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-7"
+            ]
+          },
+          {
+            "value": "2,2,2-trifluoroacetamide",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-m"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "6-1q"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.309",
+            "references": [
+              "6-1r"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Lithium bis(trifluoromethylsulfonyl)imide",
+            "references": [
+              "7212acea-c5f5-48ec-a7cb-18020d72867c",
+              "2-7"
+            ]
+          },
+          {
+            "value": "2,2,2-Trifluoroacetamide",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-m"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "LiTf₂N",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-7"
+            ]
+          },
+          {
+            "value": "2,2,2-trifluoroacetamide",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-m"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:3",
+          "references": [
+            "6-1u"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.809",
+            "references": [
+              "6-1v"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Lithium bis(trifluoromethylsulfonyl)imide",
+            "references": [
+              "7212acea-c5f5-48ec-a7cb-18020d72867c",
+              "2-7"
+            ]
+          },
+          {
+            "value": "2,2,2-Trifluoroacetamide",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-m"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "LiTf₂N",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-7"
+            ]
+          },
+          {
+            "value": "2,2,2-trifluoroacetamide",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-m"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:4",
+          "references": [
+            "6-1y"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1.30",
+            "references": [
+              "6-1z"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Lithium bis(trifluoromethylsulfonyl)imide",
+            "references": [
+              "7212acea-c5f5-48ec-a7cb-18020d72867c",
+              "2-7"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-h"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "LiTf₂N",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-7"
+            ]
+          },
+          {
+            "value": "urea",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-h"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "6-1F"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.0900",
+            "references": [
+              "6-1G"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Lithium bis(trifluoromethylsulfonyl)imide",
+            "references": [
+              "7212acea-c5f5-48ec-a7cb-18020d72867c",
+              "2-7"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-h"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "LiTf₂N",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-7"
+            ]
+          },
+          {
+            "value": "urea",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-h"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:3",
+          "references": [
+            "6-1J"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.219",
+            "references": [
+              "6-1K"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Lithium bis(trifluoromethylsulfonyl)imide",
+            "references": [
+              "7212acea-c5f5-48ec-a7cb-18020d72867c",
+              "2-7"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-h"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "LiTf₂N",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-7"
+            ]
+          },
+          {
+            "value": "urea",
+            "references": [
+              "05028415-0c4a-4d2c-bc0d-135aea002bc2",
+              "2-h"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:4",
+          "references": [
+            "6-1N"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.341",
+            "references": [
+              "6-1O"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "6e5bf7b6-deb6-4f57-8851-e114558b539a"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "credit_usage": 23.091,
+    "duration_ms": 30805,
+    "filename": "upload.md",
+    "job_id": "995b67bd211248f3b2fd64c1b7f23449",
+    "org_id": null,
+    "version": "extract-20251024",
+    "fallback_model_version": null,
+    "schema_violation_error": null
+  }
+}

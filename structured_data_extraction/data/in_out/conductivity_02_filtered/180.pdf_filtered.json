@@ -1,0 +1,106 @@
+{
+  "extraction": {
+    "article_title": "Applications of deep eutectic solvents in the extraction, dissolution, and functional materials of chitin: research progress and prospects",
+    "des_entries": [
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Lactic acid"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "LA"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          null,
+          null
+        ],
+        "conductivity": [
+          "2.5",
+          "mS/cm"
+        ]
+      }
+    ]
+  },
+  "extraction_metadata": {
+    "article_title": {
+      "value": "Applications of deep eutectic solvents in the extraction, dissolution, and functional materials of chitin: research progress and prospects",
+      "references": [
+        "4c7579e8-77fd-439d-9314-32bff51f42c8"
+      ]
+    },
+    "des_entries": [
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "bbac4a9f-7f66-4f60-b76d-4df75bda94f4"
+            ]
+          },
+          {
+            "value": "Lactic acid",
+            "references": [
+              "bbac4a9f-7f66-4f60-b76d-4df75bda94f4"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "bbac4a9f-7f66-4f60-b76d-4df75bda94f4"
+            ]
+          },
+          {
+            "value": "LA",
+            "references": [
+              "bbac4a9f-7f66-4f60-b76d-4df75bda94f4"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "3-59"
+          ]
+        },
+        "temperature": [
+          {
+            "value": null,
+            "references": []
+          },
+          {
+            "value": null,
+            "references": []
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "2.5",
+            "references": [
+              "bbac4a9f-7f66-4f60-b76d-4df75bda94f4"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "bbac4a9f-7f66-4f60-b76d-4df75bda94f4"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "credit_usage": 17.5952,
+    "duration_ms": 22548,
+    "filename": "upload.md",
+    "job_id": "2bb83da2e6d347f5ad1fbaaceb46298e",
+    "org_id": null,
+    "version": "extract-20251024",
+    "fallback_model_version": null,
+    "schema_violation_error": "Extracted data does not completely conform to the requested schema. See below error for details.\nNone is not of type 'string'\n\nFailed validating 'type' in schema['properties']['des_entries']['items']['properties']['temperature']['items']:\n    {'type': 'string'}\n\nOn instance['des_entries'][0]['temperature'][0]:\n    None\nPlease read our documentation for more information: https://docs.landing.ai/ade/ade-extract-troubleshoot"
+  }
+}

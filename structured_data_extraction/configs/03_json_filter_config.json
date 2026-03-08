@@ -1,0 +1,7 @@
+{
+  "property_json_field": "conductivity",
+  "property_type": "single_with_unit",
+  "use_condition": true,
+  "condition_vars": ["temperature"],
+  "clean_strategy": "any"
+}

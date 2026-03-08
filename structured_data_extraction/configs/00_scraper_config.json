@@ -1,0 +1,17 @@
+{
+  "proxies": {
+    "http": "http://127.0.0.1:7897",
+    "https": "http://127.0.0.1:7897"
+  },
+  "search_settings": {
+    "keywords": ["deep eutectic solvent", "kamlet−taft parameters"],
+    "num_results": 15,
+    "lang": "en",
+    "search_mode": "AND",
+    "year": [2016, 2026]
+  },
+  "output_settings": {
+    "json_basename": "papers_info",
+    "excel_filename": "k-t_extracted_titles.xlsx"
+  }
+}

@@ -1,0 +1,387 @@
+{
+  "extraction": {
+    "article_title": "Deep eutectic solvents: alternative reaction media for organic oxidation reactions",
+    "des_entries": [
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Gly"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "50",
+          "Celsius"
+        ],
+        "conductivity": [
+          "7.5",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Methyltriphenylphosphonium bromide",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "Ph3PMeBr",
+          "Gly"
+        ],
+        "molar_ratio": null,
+        "temperature": [
+          "50",
+          "Celsius"
+        ],
+        "conductivity": [
+          "4.5",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Urea"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Urea"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "50",
+          "Celsius"
+        ],
+        "conductivity": [
+          "2.5",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "EG"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "50",
+          "Celsius"
+        ],
+        "conductivity": [
+          "1.5",
+          "mS/cm"
+        ]
+      }
+    ]
+  },
+  "extraction_metadata": {
+    "article_title": {
+      "value": "Deep eutectic solvents: alternative reaction media for organic oxidation reactions",
+      "references": [
+        "af02aa25-5433-47cb-bf93-7f40e0986a65",
+        "43c7f74b-d15c-4950-adb6-ab9690d30cfb"
+      ]
+    },
+    "des_entries": [
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "aa20a924-d025-48ee-9d1d-daccabf5143e",
+              "c51eab14-f428-4392-a29d-845b2e65fc69",
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "aa20a924-d025-48ee-9d1d-daccabf5143e",
+              "c51eab14-f428-4392-a29d-845b2e65fc69",
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+            ]
+          },
+          {
+            "value": "Gly",
+            "references": [
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1",
+              "8f2983db-fd16-471c-8964-1e9b979373b0",
+              "9cb6983f-d436-4a25-8dca-d8eb8a1cdf3c"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "50",
+            "references": [
+              "2e629c16-cdfb-40ac-9ba0-d5b3b136274f",
+              "51d999c0-f71c-4615-a045-24643a9a4f6d"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "2e629c16-cdfb-40ac-9ba0-d5b3b136274f",
+              "51d999c0-f71c-4615-a045-24643a9a4f6d"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "7.5",
+            "references": [
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Methyltriphenylphosphonium bromide",
+            "references": [
+              "c51eab14-f428-4392-a29d-845b2e65fc69"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Ph3PMeBr",
+            "references": [
+              "c51eab14-f428-4392-a29d-845b2e65fc69",
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+            ]
+          },
+          {
+            "value": "Gly",
+            "references": [
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1",
+              "8f2983db-fd16-471c-8964-1e9b979373b0",
+              "9cb6983f-d436-4a25-8dca-d8eb8a1cdf3c"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [
+          {
+            "value": "50",
+            "references": [
+              "2e629c16-cdfb-40ac-9ba0-d5b3b136274f",
+              "51d999c0-f71c-4615-a045-24643a9a4f6d"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "2e629c16-cdfb-40ac-9ba0-d5b3b136274f",
+              "51d999c0-f71c-4615-a045-24643a9a4f6d"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "4.5",
+            "references": [
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "aa20a924-d025-48ee-9d1d-daccabf5143e",
+              "c51eab14-f428-4392-a29d-845b2e65fc69",
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "c51eab14-f428-4392-a29d-845b2e65fc69",
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "aa20a924-d025-48ee-9d1d-daccabf5143e",
+              "c51eab14-f428-4392-a29d-845b2e65fc69",
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "c51eab14-f428-4392-a29d-845b2e65fc69",
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "50",
+            "references": [
+              "2e629c16-cdfb-40ac-9ba0-d5b3b136274f",
+              "51d999c0-f71c-4615-a045-24643a9a4f6d"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "2e629c16-cdfb-40ac-9ba0-d5b3b136274f",
+              "51d999c0-f71c-4615-a045-24643a9a4f6d"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "2.5",
+            "references": [
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "aa20a924-d025-48ee-9d1d-daccabf5143e",
+              "c51eab14-f428-4392-a29d-845b2e65fc69",
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "c51eab14-f428-4392-a29d-845b2e65fc69",
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "aa20a924-d025-48ee-9d1d-daccabf5143e",
+              "c51eab14-f428-4392-a29d-845b2e65fc69",
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+            ]
+          },
+          {
+            "value": "EG",
+            "references": [
+              "2e629c16-cdfb-40ac-9ba0-d5b3b136274f",
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "50",
+            "references": [
+              "2e629c16-cdfb-40ac-9ba0-d5b3b136274f",
+              "51d999c0-f71c-4615-a045-24643a9a4f6d"
+            ]
+          },
+          {
+            "value": "Celsius",
+            "references": [
+              "2e629c16-cdfb-40ac-9ba0-d5b3b136274f",
+              "51d999c0-f71c-4615-a045-24643a9a4f6d"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1.5",
+            "references": [
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "52196c9d-47e0-4d9a-855b-886b79cbd6c1"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "credit_usage": 25.9328,
+    "duration_ms": 24535,
+    "filename": "upload.md",
+    "job_id": "c425e79c55d84e4e9d7d96fc88d0691f",
+    "org_id": null,
+    "version": "extract-20251024",
+    "fallback_model_version": null,
+    "schema_violation_error": null
+  }
+}

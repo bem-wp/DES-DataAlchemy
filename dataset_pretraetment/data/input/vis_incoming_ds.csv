@@ -1,0 +1,900 @@
+﻿c1,c2,c3,x1,x2,x3,t,vis,ref,num
+acetic acid,imidazole,,0.5,0.5,0,303.15,54,Thermophysical Properties and Solubility of Different Sugar-Derived Molecules in Deep Eutectic Solvents,10
+acetic acid,imidazole,,0.5,0.5,0,323.15,20,Thermophysical Properties and Solubility of Different Sugar-Derived Molecules in Deep Eutectic Solvents,10
+acetic acid,imidazole,,0.5,0.5,0,353.15,6,Thermophysical Properties and Solubility of Different Sugar-Derived Molecules in Deep Eutectic Solvents,10
+levulinic acid,betaine,,0.666666667,0.333333333,0,303.15,838,Thermophysical Properties and Solubility of Different Sugar-Derived Molecules in Deep Eutectic Solvents,10
+levulinic acid,betaine,,0.666666667,0.333333333,0,323.15,221,Thermophysical Properties and Solubility of Different Sugar-Derived Molecules in Deep Eutectic Solvents,10
+levulinic acid,betaine,,0.666666667,0.333333333,0,353.15,56,Thermophysical Properties and Solubility of Different Sugar-Derived Molecules in Deep Eutectic Solvents,10
+urea,choline chloride,,0.666666667,0.333333333,0,303.15,893,Thermophysical Properties and Solubility of Different Sugar-Derived Molecules in Deep Eutectic Solvents,10
+urea,choline chloride,,0.666666667,0.333333333,0,323.15,197,Thermophysical Properties and Solubility of Different Sugar-Derived Molecules in Deep Eutectic Solvents,10
+urea,choline chloride,,0.666666667,0.333333333,0,353.15,44,Thermophysical Properties and Solubility of Different Sugar-Derived Molecules in Deep Eutectic Solvents,10
+ethylene glycol,choline chloride,,0.666666667,0.333333333,0,303.15,35,Thermophysical Properties and Solubility of Different Sugar-Derived Molecules in Deep Eutectic Solvents,10
+ethylene glycol,choline chloride,,0.666666667,0.333333333,0,323.15,19,Thermophysical Properties and Solubility of Different Sugar-Derived Molecules in Deep Eutectic Solvents,10
+ethylene glycol,choline chloride,,0.666666667,0.333333333,0,353.15,9,Thermophysical Properties and Solubility of Different Sugar-Derived Molecules in Deep Eutectic Solvents,10
+glycolic acid,n-tetraethyl ammonium chloride,,0.666666667,0.333333333,0,303.15,268,Thermophysical Properties and Solubility of Different Sugar-Derived Molecules in Deep Eutectic Solvents,10
+glycolic acid,n-tetraethyl ammonium chloride,,0.666666667,0.333333333,0,323.15,87,Thermophysical Properties and Solubility of Different Sugar-Derived Molecules in Deep Eutectic Solvents,10
+glycolic acid,n-tetraethyl ammonium chloride,,0.666666667,0.333333333,0,353.15,27,Thermophysical Properties and Solubility of Different Sugar-Derived Molecules in Deep Eutectic Solvents,10
+decanoic acid,tetraoctyl ammonium bromide,,0.666666667,0.333333333,0,303.15,469,Thermophysical Properties and Solubility of Different Sugar-Derived Molecules in Deep Eutectic Solvents,10
+decanoic acid,tetraoctyl ammonium bromide,,0.666666667,0.333333333,0,323.15,174,Thermophysical Properties and Solubility of Different Sugar-Derived Molecules in Deep Eutectic Solvents,10
+decanoic acid,tetraoctyl ammonium bromide,,0.666666667,0.333333333,0,353.15,56,Thermophysical Properties and Solubility of Different Sugar-Derived Molecules in Deep Eutectic Solvents,10
+Choline chloride,"1,5-pentandiol",,0.222222222,0.777777778,0,298.15,110,Thermodynamics of phase transfer for polar molecules from alkanes to deep eutectic solvents,101
+Choline chloride,"1,4-butan-diol",,0.25,0.75,0,298.15,94,Thermodynamics of phase transfer for polar molecules from alkanes to deep eutectic solvents,101
+Choline chloride,Ethylene glycol,,0.333333333,0.666666667,0,298.15,40,Thermodynamics of phase transfer for polar molecules from alkanes to deep eutectic solvents,101
+Choline chloride,Glycerol,,0.333333333,0.666666667,0,298.15,296,Thermodynamics of phase transfer for polar molecules from alkanes to deep eutectic solvents,101
+Choline chloride,Oxalic acid dihydrate,,0.333333333,0.666666667,0,298.15,767,Thermodynamics of phase transfer for polar molecules from alkanes to deep eutectic solvents,101
+Choline chloride,Urea,,0.333333333,0.666666667,0,298.15,849,Thermodynamics of phase transfer for polar molecules from alkanes to deep eutectic solvents,101
+Tetrabutylammonium bromide,3-amino-1-propanol,,0.2,0.8,0,298.15,84.69,Solubility of Carbon Dioxide in Deep Eutectic Solvents Based on 3-Amino-1-Propanol and Tetraalkylammonium Salts at Low Pressure,102
+Tetraethylammonium chloride,3-amino-1-propanol,,0.2,0.8,0,298.15,42.37,Solubility of Carbon Dioxide in Deep Eutectic Solvents Based on 3-Amino-1-Propanol and Tetraalkylammonium Salts at Low Pressure,102
+Tetrabutylammonium chloride,3-amino-1-propanol,,0.2,0.8,0,298.15,77.36,Solubility of Carbon Dioxide in Deep Eutectic Solvents Based on 3-Amino-1-Propanol and Tetraalkylammonium Salts at Low Pressure,102
+Tetrabutylammonium chloride,3-amino-1-propanol,,0.142857143,0.857142857,0,298.15,53.86,Solubility of Carbon Dioxide in Deep Eutectic Solvents Based on 3-Amino-1-Propanol and Tetraalkylammonium Salts at Low Pressure,102
+Tetrabutylammonium chloride,3-amino-1-propanol,,0.111111111,0.888888889,0,298.15,46.14,Solubility of Carbon Dioxide in Deep Eutectic Solvents Based on 3-Amino-1-Propanol and Tetraalkylammonium Salts at Low Pressure,102
+Choline chloride,Ethylene glycol,,0.333333333,0.666666667,0,298,38.5,Choline chloride and ethylene glycol based deep eutectic solvent (DES) versus hydroxyl functionalized room temperature ionic liquids (RTILs): assessing the differences in microscopic behaviour between the DES and RTILs†,104
+Choline chloride,Glucose,,0.5,0.5,0,323.15,24000,Design and Characterization of Sugar-Based Deep Eutectic Solvents Using Conductor-like Screening Model for Real Solvents,106
+Choline chloride,Fructose,,0.5,0.5,0,323.15,22000,Design and Characterization of Sugar-Based Deep Eutectic Solvents Using Conductor-like Screening Model for Real Solvents,106
+Choline chloride,Xylose,,0.5,0.5,0,323.15,18000,Design and Characterization of Sugar-Based Deep Eutectic Solvents Using Conductor-like Screening Model for Real Solvents,106
+Choline chloride,Mannose,,0.5,0.5,0,323.15,23000,Design and Characterization of Sugar-Based Deep Eutectic Solvents Using Conductor-like Screening Model for Real Solvents,106
+Choline chloride,Arabinose,,0.5,0.5,0,323.15,21000,Design and Characterization of Sugar-Based Deep Eutectic Solvents Using Conductor-like Screening Model for Real Solvents,106
+Choline chloride,Sucrose,,0.5,0.5,0,323.15,25000,Design and Characterization of Sugar-Based Deep Eutectic Solvents Using Conductor-like Screening Model for Real Solvents,106
+Choline chloride,Fructose,Glucose,0.333333333,0.333333333,0.333333333,323.15,24000,Design and Characterization of Sugar-Based Deep Eutectic Solvents Using Conductor-like Screening Model for Real Solvents,106
+Choline chloride,Mannose,Xylose,0.333333333,0.333333333,0.333333333,323.15,22000,Design and Characterization of Sugar-Based Deep Eutectic Solvents Using Conductor-like Screening Model for Real Solvents,106
+L-Proline,Citric Acid,,0.5,0.5,0,298.15,1348000,"Natural deep eutectic solvents-_platostoma palustre_ polysaccharides/ polyvinyl alcohol nano-electrospun membranes: Fabrication, characterization, transdermal property and bioactivity",107
+L-Proline,Lactic Acid,,0.5,0.5,0,298.15,10130,"Natural deep eutectic solvents-_platostoma palustre_ polysaccharides/ polyvinyl alcohol nano-electrospun membranes: Fabrication, characterization, transdermal property and bioactivity",107
+L-Proline,Malic Acid,,0.5,0.5,0,298.15,476000,"Natural deep eutectic solvents-_platostoma palustre_ polysaccharides/ polyvinyl alcohol nano-electrospun membranes: Fabrication, characterization, transdermal property and bioactivity",107
+Betaine,Malic Acid,,0.5,0.5,0,298.15,27700,"Natural deep eutectic solvents-_platostoma palustre_ polysaccharides/ polyvinyl alcohol nano-electrospun membranes: Fabrication, characterization, transdermal property and bioactivity",107
+Betaine,Lactic Acid,,0.5,0.5,0,298.15,2780,"Natural deep eutectic solvents-_platostoma palustre_ polysaccharides/ polyvinyl alcohol nano-electrospun membranes: Fabrication, characterization, transdermal property and bioactivity",107
+Betaine,Glycerin,,0.666666667,0.333333333,0,298.15,1140,"Natural deep eutectic solvents-_platostoma palustre_ polysaccharides/ polyvinyl alcohol nano-electrospun membranes: Fabrication, characterization, transdermal property and bioactivity",107
+DL-menthol,anise alcohol,,0.5,0.5,0,298.15,64.1,Effective extraction of harmine by menthol/anise alcohol-based natural deep eutectic solvents,108
+DL-menthol,anise alcohol,,0.666666667,0.333333333,0,298.15,66.2,Effective extraction of harmine by menthol/anise alcohol-based natural deep eutectic solvents,108
+DL-menthol,anise alcohol,,0.333333333,0.666666667,0,298.15,66.9,Effective extraction of harmine by menthol/anise alcohol-based natural deep eutectic solvents,108
+Choline hydroxide,Urea,,0.333333333,0.666666667,0,298.15,100000,Choline hydroxide based deep eutectic solvent for dissolving cellulose,115
+Choline chloride,Glycerol,,0.333333333,0.666666667,0,298.15,191,Hydrogen Bond Donor/Acceptor Cosolvent-Modified Choline Chloride-Based Deep Eutectic Solvents,116
+Choline chloride,Urea,,0.333333333,0.666666667,0,303,750,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,Glycerol,,0.333333333,0.666666667,0,303,246,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,Ethylene glycol,,0.333333333,0.666666667,0,303,48,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,Malonic acid,,0.5,0.5,0,293,1638,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,Oxalic acid,,0.5,0.5,0,313,212,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,Phenol,,0.4,0.6,0,294,44,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,o-cresol,,0.5,0.5,0,249,78,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,Xylenol,,0.5,0.5,0,290,77,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Choline chloride,n-butyric acid,,0.333333333,0.666666667,0,323,1757,Deep Eutectic Liquids as Tailorable Extraction Solvents: A Review of Opportunities and Challenges,117
+Glycolic acid,4-Aminopyridine,,0.833333333,0.166666667,0,298.15,237.9,Theoretical and experimental study of new deep eutectic solvents for extraction of perfluorinated iodoalkanes,120
+Glycolic acid,Nicotinamide,,0.833333333,0.166666667,0,298.15,5320,Theoretical and experimental study of new deep eutectic solvents for extraction of perfluorinated iodoalkanes,120
+allyl triethyl ammonium chloride,oxalic acid,,0.5,0.5,0,393.15,76,Synthesis of a Novel Allyl-Functionalized Deep Eutectic Solvent to Promote Dissolution of Cellulose,123
+allyl triethyl ammonium chloride,oxalic acid,,0.5,0.5,0,313.15,780,Synthesis of a Novel Allyl-Functionalized Deep Eutectic Solvent to Promote Dissolution of Cellulose,123
+Menthol,Acetic acid,,0.5,0.5,0,298.15,8.691,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Menthol,Pyruvic acid,,0.333333333,0.666666667,0,298.15,29.951,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Menthol,Lactic acid,,0.333333333,0.666666667,0,298.15,218.927,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Menthol,Dodecanoic acid,,0.666666667,0.333333333,0,298.15,24.417,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Menthol,Levulinic acid,,0.5,0.5,0,298.15,30.1,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Menthol,Lidocaine,,0.666666667,0.333333333,0,298.15,68.05,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Dodecanoic acid,Octanoic acid,,0.25,0.75,0,298.15,7.085,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Dodecanoic acid,Nonanoic acid,,0.25,0.75,0,298.15,8.636,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Dodecanoic acid,Decanoic acid,,0.333333333,0.666666667,0,298.15,10.756,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Dodecanoic acid,Lidocaine,,0.666666667,0.333333333,0,298.15,370.55,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Dodecanoic acid,Atropine,,0.666666667,0.333333333,0,298.15,5599.5,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Lidocaine,Decanoic acid,,0.333333333,0.666666667,0,298.15,237.5,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Lidocaine,Decanoic acid,,0.25,0.75,0,298.15,208.5,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Lidocaine,Decanoic acid,,0.2,0.8,0,298.15,142,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Tetrabutylammonium chloride,Decanoic acid,,0.333333333,0.666666667,0,298.15,265.26,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Methyltrioctylammonium chloride,Decanoic acid,,0.333333333,0.666666667,0,298.15,783.41,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Methyltrioctylammonium chloride,Ethyl 4-hydroxybenzoate,,0.333333333,0.666666667,0,298.15,957.5,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Tetraoctylammonium chloride,Decanoic acid,,0.333333333,0.666666667,0,298.15,472.58,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Methyltrioctylammonium bromide,Decanoic acid,,0.333333333,0.666666667,0,298.15,576.53,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Tetraoctylammonium bromide,Decanoic acid,,0.333333333,0.666666667,0,298.15,636.36,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Tetraheptylammonium chloride,Decanoic acid,,0.333333333,0.666666667,0,298.15,172.87,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Thymol,Camphor,,0.7,0.3,0,298.15,18.8,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Thymol,Camphor,,0.6,0.4,0,298.15,20.5,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Thymol,Camphor,,0.5,0.5,0,298.15,25.8,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Thymol,10-Undecylenic acid,,0.7,0.3,0,298.15,15.6,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Thymol,10-Undecylenic acid,,0.6,0.4,0,298.15,14.4,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Thymol,10-Undecylenic acid,,0.5,0.5,0,298.15,13.2,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Thymol,10-Undecylenic acid,,0.333333333,0.666666667,0,298.15,13.1,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Thymol,10-Undecylenic acid,,0.25,0.75,0,298.15,12.4,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Thymol,10-Undecylenic acid,,0.2,0.8,0,298.15,11.8,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Thymol,Decanoic acid,,0.6,0.4,0,298.15,13,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Thymol,Decanoic acid,,0.5,0.5,0,298.15,11.2,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Thymol,Decanoic acid,,0.333333333,0.666666667,0,298.15,10.8,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Thymol,Decanoic acid,,0.25,0.75,0,298.15,10.4,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Thymol,Lidocaine,,0.666666667,0.333333333,0,298.15,122.05,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Thymol,Lidocaine,,0.5,0.5,0,298.15,177.15,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Thymol,Coumarin,,0.666666667,0.333333333,0,298.15,31.35,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Thymol,Coumarin,,0.5,0.5,0,298.15,29.16,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Thymol,Menthol,,0.5,0.5,0,298.15,53.14,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Thymol,Menthol,,0.333333333,0.666666667,0,298.15,67.85,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Trioctylphosphine Oxide,Phenol,,0.333333333,0.666666667,0,298.15,12.38,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Betaine,Hexafluoroisopropanol,,0.333333333,0.666666667,0,298.15,76,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Betaine,Hexafluoroisopropanol,,0.285714286,0.714285714,0,298.15,55,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Betaine,Hexafluoroisopropanol,,0.25,0.75,0,298.15,46,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+L-Carnitine,Hexafluoroisopropanol,,0.333333333,0.666666667,0,298.15,698,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+L-Carnitine,Hexafluoroisopropanol,,0.285714286,0.714285714,0,298.15,194,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+L-Carnitine,Hexafluoroisopropanol,,0.25,0.75,0,298.15,149,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Decanoic acid,Lidocaine,,0.666666667,0.333333333,0,298.15,360.6,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Decanoic acid,Atropine,,0.666666667,0.333333333,0,298.15,5985,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Decanoic acid,Menthol,,0.5,0.5,0,298.15,20.03,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Decanoic acid,Menthol,,0.333333333,0.666666667,0,298.15,27.67,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+1-Tetradecanol,Menthol,,0.333333333,0.666666667,0,298.15,43.86,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+"1,2-Decanediol",Thymol,,0.333333333,0.666666667,0,298.15,64.25,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+1-Napthol,Menthol,,0.333333333,0.666666667,0,298.15,120.9,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Atropine,Thymol,,0.333333333,0.666666667,0,298.15,86800,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Menthol,Thymol,,0.5,0.5,0,298.15,38.08,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Menthol,Camphor,,0.5,0.5,0,298.15,16.42,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Menthol,Borneol,,0.7,0.3,0,298.15,110.4,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Thymol,Camphor,,0.5,0.5,0,298.15,20.8,"The Curious Case of Hydrophobic Deep Eutectic Solvents: A Story on the Discovery, Design, and Applications",126
+Zinc chloride,Water,Phosphoric acid,0.27027027,0.675675676,0.054054054,298.15,30,Room temperature dissolving cellulose with a metal salt hydrate-based deep eutectic solvent,134
+Zinc chloride,Water,Phosphoric acid,0.256410256,0.641025641,0.102564103,298.15,25,Room temperature dissolving cellulose with a metal salt hydrate-based deep eutectic solvent,134
+Zinc chloride,Water,Phosphoric acid,0.243902439,0.609756098,0.146341463,298.15,20,Room temperature dissolving cellulose with a metal salt hydrate-based deep eutectic solvent,134
+Zinc chloride,Water,Phosphoric acid,0.23255814,0.581395349,0.186046512,298.15,18,Room temperature dissolving cellulose with a metal salt hydrate-based deep eutectic solvent,134
+Zinc chloride,Water,Phosphoric acid,0.222222222,0.555555556,0.222222222,298.15,15,Room temperature dissolving cellulose with a metal salt hydrate-based deep eutectic solvent,134
+Zinc chloride,Water,Phosphoric acid,0.238095238,0.714285714,0.047619048,298.15,55,Room temperature dissolving cellulose with a metal salt hydrate-based deep eutectic solvent,134
+Zinc chloride,Water,Phosphoric acid,0.227272727,0.681818182,0.090909091,298.15,50,Room temperature dissolving cellulose with a metal salt hydrate-based deep eutectic solvent,134
+Zinc chloride,Water,Phosphoric acid,0.217391304,0.652173913,0.130434783,298.15,45,Room temperature dissolving cellulose with a metal salt hydrate-based deep eutectic solvent,134
+Zinc chloride,Water,Phosphoric acid,0.208333333,0.625,0.166666667,298.15,40,Room temperature dissolving cellulose with a metal salt hydrate-based deep eutectic solvent,134
+Zinc chloride,Water,Phosphoric acid,0.2,0.6,0.2,298.15,35,Room temperature dissolving cellulose with a metal salt hydrate-based deep eutectic solvent,134
+Zinc chloride,Water,Phosphoric acid,0.212765957,0.744680851,0.042553191,298.15,75,Room temperature dissolving cellulose with a metal salt hydrate-based deep eutectic solvent,134
+Zinc chloride,Water,Phosphoric acid,0.204081633,0.714285714,0.081632653,298.15,70,Room temperature dissolving cellulose with a metal salt hydrate-based deep eutectic solvent,134
+Zinc chloride,Water,Phosphoric acid,0.196078431,0.68627451,0.117647059,298.15,65,Room temperature dissolving cellulose with a metal salt hydrate-based deep eutectic solvent,134
+Zinc chloride,Water,Phosphoric acid,0.188679245,0.660377358,0.150943396,298.15,60,Room temperature dissolving cellulose with a metal salt hydrate-based deep eutectic solvent,134
+Zinc chloride,Water,Phosphoric acid,0.181818182,0.636363636,0.181818182,298.15,55,Room temperature dissolving cellulose with a metal salt hydrate-based deep eutectic solvent,134
+Zinc chloride,Water,Phosphoric acid,0.192307692,0.769230769,0.038461538,298.15,95,Room temperature dissolving cellulose with a metal salt hydrate-based deep eutectic solvent,134
+Zinc chloride,Water,Phosphoric acid,0.185185185,0.740740741,0.074074074,298.15,90,Room temperature dissolving cellulose with a metal salt hydrate-based deep eutectic solvent,134
+Zinc chloride,Water,Phosphoric acid,0.178571429,0.714285714,0.107142857,298.15,85,Room temperature dissolving cellulose with a metal salt hydrate-based deep eutectic solvent,134
+Zinc chloride,Water,Phosphoric acid,0.172413793,0.689655172,0.137931034,298.15,80,Room temperature dissolving cellulose with a metal salt hydrate-based deep eutectic solvent,134
+Zinc chloride,Water,Phosphoric acid,0.166666667,0.666666667,0.166666667,298.15,75,Room temperature dissolving cellulose with a metal salt hydrate-based deep eutectic solvent,134
+Monoethanolammonium chloride,Ethylenediamine,,0.5,0.5,0,298.15,128,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+Monoethanolammonium chloride,Ethylenediamine,,0.333333333,0.666666667,0,298.15,17.3,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+Monoethanolammonium chloride,Ethylenediamine,,0.25,0.75,0,298.15,9.6,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+Monoethanolammonium chloride,Ethylenediamine,,0.2,0.8,0,298.15,7,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+Monoethanolammonium chloride,Diethylenetriamine,,0.2,0.8,0,298.15,19.2,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+Monoethanolammonium chloride,Tetraethylenepentamine,,0.2,0.8,0,298.15,109.4,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+Monoethanolammonium chloride,Pentaethylenehexamine,,0.2,0.8,0,298.15,222,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+1-Methylimidazolium chloride,Ethylenediamine,,0.5,0.5,0,298.15,80,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+1-Methylimidazolium chloride,Ethylenediamine,,0.333333333,0.666666667,0,298.15,14.1,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+1-Methylimidazolium chloride,Ethylenediamine,,0.25,0.75,0,298.15,7.7,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+1-Methylimidazolium chloride,Ethylenediamine,,0.2,0.8,0,298.15,5.8,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+1-Methylimidazolium chloride,Diethylenetriamine,,0.2,0.8,0,298.15,17.3,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+1-Methylimidazolium chloride,Tetraethylenepentamine,,0.2,0.8,0,298.15,100.5,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+1-Methylimidazolium chloride,Pentaethylenehexamine,,0.2,0.8,0,298.15,213,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+Monoethanolammonium chloride,3-Amino-1-propanol,,0.5,0.5,0,298.15,126.7,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+Monoethanolammonium chloride,3-Amino-1-propanol,,0.333333333,0.666666667,0,298.15,67,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+Monoethanolammonium chloride,3-Amino-1-propanol,,0.25,0.75,0,298.15,64,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+Monoethanolammonium chloride,3-Amino-1-propanol,,0.2,0.8,0,298.15,55,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+1-Methylimidazolium chloride,3-Amino-1-propanol,,0.5,0.5,0,298.15,130.6,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+1-Methylimidazolium chloride,3-Amino-1-propanol,,0.333333333,0.666666667,0,298.15,57,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+1-Methylimidazolium chloride,3-Amino-1-propanol,,0.25,0.75,0,298.15,49.9,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+1-Methylimidazolium chloride,3-Amino-1-propanol,,0.2,0.8,0,298.15,39,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+Tetrabutylammonium bromide,3-Amino-1-propanol,,0.333333333,0.666666667,0,298.15,243,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+Tetrabutylammonium bromide,3-Amino-1-propanol,,0.25,0.75,0,298.15,51.2,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+Tetrabutylammonium bromide,3-Amino-1-propanol,,0.2,0.8,0,298.15,38.4,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+Tetrabutylammonium bromide,Aminomethylpropanol,,0.25,0.75,0,298.15,199.7,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+Tetrabutylammonium bromide,Aminomethylpropanol,,0.2,0.8,0,298.15,252.2,Intermolecular interactions upon carbon dioxide capture in deep-eutectic solvents†,137
+Choline chloride,Lactic acid,,0.333333333,0.666666667,0,295.65,53.13,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Choline chloride,Lactic acid,,0.166666667,0.833333333,0,295.65,53.41,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Choline chloride,Lactic acid,,0.090909091,0.909090909,0,295.65,53.34,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Choline chloride,Oxalic acid,,0.5,0.5,0,295.65,108.09,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Choline chloride,Oxalic acid,,0.333333333,0.666666667,0,295.65,101.29,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Choline chloride,Formic acid,,0.333333333,0.666666667,0,295.65,11.31,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Choline chloride,Formic acid,,0.25,0.75,0,295.65,11.07,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Choline chloride,Formic acid,,0.2,0.8,0,295.65,10.85,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Choline chloride,Acetic acid,,0.333333333,0.666666667,0,295.65,20.07,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Choline chloride,Glycerine,,0.25,0.75,0,295.65,23.14,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Choline chloride,Ethylene glycol,,0.2,0.8,0,295.65,25.06,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Choline chloride,Ethylene glycol,,0.333333333,0.666666667,0,295.65,114.48,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Choline chloride,Ethylene glycol,,0.25,0.75,0,295.65,116.83,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Choline chloride,Ethylene glycol,,0.333333333,0.666666667,0,295.65,60.1,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Ethylammonium chloride,Glycerine,,0.333333333,0.666666667,0,295.65,51.5,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Ethylammonium chloride,Ethylene glycol,,0.333333333,0.666666667,0,295.65,38.6,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Ethylammonium chloride,Ethylene glycol,,0.25,0.75,0,295.65,42.1,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Ethylammonium chloride,Ethylene glycol,,0.2,0.8,0,295.65,46.7,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Choline chloride,Diethanolamine,,0.142857143,0.857142857,0,295.65,93.9,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Choline chloride,Diethanolamine,,0.111111111,0.888888889,0,295.65,106.7,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Choline chloride,Diethanolamine,,0.090909091,0.909090909,0,295.65,112.6,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Choline chloride,Urea,,0.333333333,0.666666667,0,295.65,132.5,Structure and functionality of cassava starch in different deep eutectic solvents/water mixtures: A comparative study,139
+Tetradecyltrimethylammonium bromide,Lactic acid,Iron(III) chloride,0.199556983,0.798227934,0.002215083,298.15,674.2,"Valorization of rapeseed straw through the enhancement of cellulose accessibility, lignin removal and xylan elimination using an n-alkyltrimethylammonium bromide-based deep eutectic solvent",141
+Tetradecyltrimethylammonium bromide,Lactic acid,,0.2,0.8,0,298.15,848.2,"Valorization of rapeseed straw through the enhancement of cellulose accessibility, lignin removal and xylan elimination using an n-alkyltrimethylammonium bromide-based deep eutectic solvent",141
+Octadecyltrimethylammonium bromide,Lactic acid,,0.2,0.8,0,298.15,1983.5,"Valorization of rapeseed straw through the enhancement of cellulose accessibility, lignin removal and xylan elimination using an n-alkyltrimethylammonium bromide-based deep eutectic solvent",141
+Dodecyltrimethylammonium bromide,Lactic acid,,0.2,0.8,0,298.15,350.3,"Valorization of rapeseed straw through the enhancement of cellulose accessibility, lignin removal and xylan elimination using an n-alkyltrimethylammonium bromide-based deep eutectic solvent",141
+Methacryloxyethyltrimethyl ammonium chloride,Oxalic acid,,0.666666667,0.333333333,0,403.15,25.41,A deep eutectic solvent pretreatment with self-cleaning lignin droplets function to efficiently improve the enzymatic saccharification and ethanol production of bamboo residues,145
+Choline chloride,Oxalic acid,,0.666666667,0.333333333,0,403.15,15.65,A deep eutectic solvent pretreatment with self-cleaning lignin droplets function to efficiently improve the enzymatic saccharification and ethanol production of bamboo residues,145
+Choline chloride,Glycerol,Aluminum chloride,0.328947368,0.657894737,0.013157895,383.15,110,Low-chromophore lignin isolation from natural biomass with polyol-based deep eutectic solvents,146
+Choline chloride,Butanediol,Aluminum chloride,0.328947368,0.657894737,0.013157895,383.15,108,Low-chromophore lignin isolation from natural biomass with polyol-based deep eutectic solvents,146
+Choline chloride,Ethylene glycol,Aluminum chloride,0.328947368,0.657894737,0.013157895,303.15,60,Low-chromophore lignin isolation from natural biomass with polyol-based deep eutectic solvents,146
+Betaine,Glucose,Water,0.294117647,0.117647059,0.588235294,293.15,1032.05,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,Glucose,Water,0.294117647,0.117647059,0.588235294,298.15,679.9,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,Glucose,Water,0.294117647,0.117647059,0.588235294,303.15,459.68,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,Glucose,Water,0.294117647,0.117647059,0.588235294,308.15,319.89,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,Glucose,Water,0.294117647,0.117647059,0.588235294,313.15,228.37,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,Glycerol,D-(+)-Sucrose,0.333333333,0.5,0.166666667,293.15,6486.25,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,Glycerol,D-(+)-Sucrose,0.333333333,0.5,0.166666667,298.15,3936.65,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,Glycerol,D-(+)-Sucrose,0.333333333,0.5,0.166666667,303.15,2457.9,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,Glycerol,D-(+)-Sucrose,0.333333333,0.5,0.166666667,308.15,1578.45,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,Glycerol,D-(+)-Sucrose,0.333333333,0.5,0.166666667,313.15,1044.3,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,D-Sorbitol,Water,0.214285714,0.071428571,0.714285714,293.15,123.27,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,D-Sorbitol,Water,0.214285714,0.071428571,0.714285714,298.15,90.87,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,D-Sorbitol,Water,0.214285714,0.071428571,0.714285714,303.15,68.21,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,D-Sorbitol,Water,0.214285714,0.071428571,0.714285714,308.15,52.24,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,D-Sorbitol,Water,0.214285714,0.071428571,0.714285714,313.15,40.76,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,D-Sorbitol,Water,0.214285714,0.071428571,0.714285714,318.15,32.34,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,D-Sorbitol,Water,0.214285714,0.071428571,0.714285714,323.15,26.06,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,D-Sorbitol,Water,0.214285714,0.071428571,0.714285714,328.15,21.31,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,D-Sorbitol,Water,0.214285714,0.071428571,0.714285714,333.15,17.65,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,D-Sorbitol,Water,0.214285714,0.071428571,0.714285714,338.15,14.79,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,D-Sorbitol,Water,0.214285714,0.071428571,0.714285714,343.15,12.53,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,D-(+)-Sucrose,L-Proline,0.555555556,0.222222222,0.222222222,293.15,508.54,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,D-(+)-Sucrose,L-Proline,0.555555556,0.222222222,0.222222222,303.15,386.64,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,D-(+)-Sucrose,L-Proline,0.555555556,0.222222222,0.222222222,313.15,197.5,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,D-(+)-Sucrose,L-Proline,0.555555556,0.222222222,0.222222222,323.15,109.87,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,D-(+)-Sucrose,L-Proline,0.555555556,0.222222222,0.222222222,333.15,66.19,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Betaine,D-(+)-Sucrose,L-Proline,0.555555556,0.222222222,0.222222222,343.15,49.89,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Ethylene glycol,,0.333333333,0.666666667,0,308.15,30.9,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Ethylene glycol,,0.333333333,0.666666667,0,313.15,25.8,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Ethylene glycol,,0.333333333,0.666666667,0,318.15,21.9,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Ethylene glycol,,0.333333333,0.666666667,0,323.15,18.8,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Ethylene glycol,,0.333333333,0.666666667,0,328.15,16.2,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Ethylene glycol,,0.333333333,0.666666667,0,333.15,14.2,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Ethylene glycol,,0.333333333,0.666666667,0,338.15,12.5,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Ethylene glycol,,0.333333333,0.666666667,0,343.15,11,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Ethylene glycol,,0.333333333,0.666666667,0,353.15,8.79,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Ethylene glycol,,0.333333333,0.666666667,0,363.15,7.11,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Glycerol,,0.333333333,0.666666667,0,293.15,520,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Glycerol,,0.333333333,0.666666667,0,303.15,264,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Glycerol,,0.333333333,0.666666667,0,313.15,146,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Glycerol,,0.333333333,0.666666667,0,323.15,88.8,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Glycerol,,0.333333333,0.666666667,0,333.15,58.6,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Glycerol,,0.333333333,0.666666667,0,343.15,39.6,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Glycerol,,0.333333333,0.666666667,0,353.15,28.4,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Glycerol,,0.333333333,0.666666667,0,363.15,20.9,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Urea,,0.333333333,0.666666667,0,293.15,1371.97,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Urea,,0.333333333,0.666666667,0,303.15,527.28,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Urea,,0.333333333,0.666666667,0,313.15,238.08,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Urea,,0.333333333,0.666666667,0,323.15,119.8,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Urea,,0.333333333,0.666666667,0,333.15,68.65,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Urea,,0.333333333,0.666666667,0,343.15,41.96,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Urea,,0.333333333,0.666666667,0,353.15,28.11,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline Chloride,Urea,,0.333333333,0.666666667,0,363.15,19.95,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Fructose,Glucose,D-(+)-Sucrose,0.333333333,0.333333333,0.333333333,293.15,3842,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Fructose,Glucose,D-(+)-Sucrose,0.333333333,0.333333333,0.333333333,298.15,2395.55,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Fructose,Glucose,D-(+)-Sucrose,0.333333333,0.333333333,0.333333333,303.15,1347.67,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Fructose,Glucose,D-(+)-Sucrose,0.333333333,0.333333333,0.333333333,308.15,887.59,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Fructose,Glucose,D-(+)-Sucrose,0.333333333,0.333333333,0.333333333,313.15,546.47,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glucose,L-Proline,Glycerol,0.272727273,0.454545455,0.272727273,293.15,478.77,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glucose,L-Proline,Glycerol,0.272727273,0.454545455,0.272727273,298.15,322.55,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glucose,L-Proline,Glycerol,0.272727273,0.454545455,0.272727273,303.15,223.05,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glucose,L-Proline,Glycerol,0.272727273,0.454545455,0.272727273,308.15,158.54,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glucose,L-Proline,Glycerol,0.272727273,0.454545455,0.272727273,313.15,115.69,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Fructose,,0.8,0.2,0,293.15,15709.5,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Fructose,,0.8,0.2,0,303.15,5431.6,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Fructose,,0.8,0.2,0,313.15,2061.55,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Fructose,,0.8,0.2,0,323.15,863.38,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Fructose,,0.8,0.2,0,333.15,395.31,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Fructose,D-Sorbitol,0.333333333,0.333333333,0.333333333,293.15,13013,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Fructose,D-Sorbitol,0.333333333,0.333333333,0.333333333,303.15,4078.6,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Fructose,D-Sorbitol,0.333333333,0.333333333,0.333333333,313.15,1446.05,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Fructose,D-Sorbitol,0.333333333,0.333333333,0.333333333,323.15,584.56,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Fructose,D-Sorbitol,0.333333333,0.333333333,0.333333333,333.15,268.14,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Glucose,,0.8,0.2,0,293.15,17974,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Glucose,,0.8,0.2,0,303.15,6230.25,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Glucose,,0.8,0.2,0,313.15,2395.95,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Glucose,,0.8,0.2,0,323.15,1022.65,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Glucose,,0.8,0.2,0,333.15,481.74,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Glucose,D-Sorbitol,0.333333333,0.333333333,0.333333333,293.15,14695.5,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Glucose,D-Sorbitol,0.333333333,0.333333333,0.333333333,303.15,4554.05,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Glucose,D-Sorbitol,0.333333333,0.333333333,0.333333333,313.15,1648.85,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Glucose,D-Sorbitol,0.333333333,0.333333333,0.333333333,323.15,684.9,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Glucose,D-Sorbitol,0.333333333,0.333333333,0.333333333,333.15,318.84,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,D-(+)-Sucrose,D-Sorbitol,0.4,0.2,0.4,293.15,3522.8,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,D-(+)-Sucrose,D-Sorbitol,0.4,0.2,0.4,303.15,1251.65,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,D-(+)-Sucrose,D-Sorbitol,0.4,0.2,0.4,313.15,515.1,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,D-(+)-Sucrose,D-Sorbitol,0.4,0.2,0.4,323.15,239.84,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,D-(+)-Sucrose,D-Sorbitol,0.4,0.2,0.4,333.15,123.7,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Trehalose,D-Sorbitol,0.4,0.2,0.4,293.15,1469.6,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Trehalose,D-Sorbitol,0.4,0.2,0.4,303.15,590.19,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Trehalose,D-Sorbitol,0.4,0.2,0.4,313.15,268.01,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Trehalose,D-Sorbitol,0.4,0.2,0.4,323.15,135.74,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Glycerol,Trehalose,D-Sorbitol,0.4,0.2,0.4,333.15,75.22,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+L-Proline,Glycerol,D-Sorbitol,0.333333333,0.333333333,0.333333333,293.15,25.74,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+L-Proline,Glycerol,D-Sorbitol,0.333333333,0.333333333,0.333333333,298.15,20.17,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+L-Proline,Glycerol,D-Sorbitol,0.333333333,0.333333333,0.333333333,303.15,16.06,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+L-Proline,Glycerol,D-Sorbitol,0.333333333,0.333333333,0.333333333,308.15,12.99,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+L-Proline,Glycerol,D-Sorbitol,0.333333333,0.333333333,0.333333333,313.15,10.67,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Trehalose,Fructose,Water,0.0625,0.125,0.8125,293.15,553.06,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Trehalose,Fructose,Water,0.0625,0.125,0.8125,298.15,238.57,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Trehalose,Fructose,Water,0.0625,0.125,0.8125,303.15,115.09,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Trehalose,Fructose,Water,0.0625,0.125,0.8125,308.15,61.83,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Trehalose,Fructose,Water,0.0625,0.125,0.8125,313.15,36.33,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Trehalose,Glucose,Water,0.0625,0.125,0.8125,293.15,669.86,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Trehalose,Glucose,Water,0.0625,0.125,0.8125,303.15,289.39,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Trehalose,Glucose,Water,0.0625,0.125,0.8125,313.15,141.01,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Trehalose,Glucose,Water,0.0625,0.125,0.8125,323.15,76.29,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Trehalose,Glucose,Water,0.0625,0.125,0.8125,333.15,44.83,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Acetic acid (glacial),,0.5,0.5,0,293.15,11.44,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Acetic acid (glacial),,0.5,0.5,0,303.15,7.07,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Acetic acid (glacial),,0.5,0.5,0,313.15,4.69,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Acetic acid (glacial),,0.5,0.5,0,323.15,3.3,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Acetic acid (glacial),,0.5,0.5,0,333.15,2.43,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Borneol,,0.777777778,0.222222222,0,293.15,150.69,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Borneol,,0.777777778,0.222222222,0,303.15,56.22,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Borneol,,0.777777778,0.222222222,0,313.15,25.22,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Borneol,,0.777777778,0.222222222,0,323.15,12.94,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Borneol,,0.777777778,0.222222222,0,333.15,7.44,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Decanoic acid,,0.5,0.5,0,293.15,20.23,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Decanoic acid,,0.5,0.5,0,303.15,12.79,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Decanoic acid,,0.5,0.5,0,313.15,8.55,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Decanoic acid,,0.5,0.5,0,323.15,6.01,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Decanoic acid,,0.5,0.5,0,333.15,4.41,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Decanoic acid,,0.666666667,0.333333333,0,293.15,28.08,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Decanoic acid,,0.666666667,0.333333333,0,303.15,16.19,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Decanoic acid,,0.666666667,0.333333333,0,313.15,10.07,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Decanoic acid,,0.666666667,0.333333333,0,323.15,6.69,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Decanoic acid,,0.666666667,0.333333333,0,333.15,4.69,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Decanoic acid,,0.8,0.2,0,293.15,39.34,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Decanoic acid,,0.8,0.2,0,303.15,20.48,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Decanoic acid,,0.8,0.2,0,313.15,11.79,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Decanoic acid,,0.8,0.2,0,323.15,7.38,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Decanoic acid,,0.8,0.2,0,333.15,4.93,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Decanoic acid,,0.777777778,0.222222222,0,293.15,36.46,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Decanoic acid,,0.777777778,0.222222222,0,303.15,19.43,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Decanoic acid,,0.777777778,0.222222222,0,313.15,11.39,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Decanoic acid,,0.777777778,0.222222222,0,323.15,7.23,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Decanoic acid,,0.777777778,0.222222222,0,333.15,4.89,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.72972973,0.27027027,0,293.15,35.2,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.72972973,0.27027027,0,303.15,19.51,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.72972973,0.27027027,0,313.15,11.74,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.72972973,0.27027027,0,323.15,7.59,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.72972973,0.27027027,0,333.15,5.21,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.666666667,0.333333333,0,293.15,32.03,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.666666667,0.333333333,0,303.15,18.47,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.666666667,0.333333333,0,313.15,11.42,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.666666667,0.333333333,0,323.15,7.54,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.666666667,0.333333333,0,333.15,5.25,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.818181818,0.181818182,0,293.15,44,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.818181818,0.181818182,0,303.15,22.63,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.818181818,0.181818182,0,313.15,12.88,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.818181818,0.181818182,0,323.15,7.97,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.818181818,0.181818182,0,333.15,5.29,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.8,0.2,0,293.15,42.5,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.8,0.2,0,303.15,22.22,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.8,0.2,0,313.15,12.87,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.8,0.2,0,323.15,8.03,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.8,0.2,0,333.15,5.36,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.841269841,0.158730159,0,293.15,46.47,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.841269841,0.158730159,0,303.15,23.48,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.841269841,0.158730159,0,313.15,13.19,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.841269841,0.158730159,0,323.15,8.09,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.841269841,0.158730159,0,333.15,5.32,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.888888889,0.111111111,0,293.15,55.27,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.888888889,0.111111111,0,303.15,26.42,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.888888889,0.111111111,0,313.15,14.23,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.888888889,0.111111111,0,323.15,8.45,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,,0.888888889,0.111111111,0,333.15,5.41,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,Decanoic acid,0.5,0.25,0.25,293.15,23.24,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,Decanoic acid,0.5,0.25,0.25,303.15,14.53,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,Decanoic acid,0.5,0.25,0.25,313.15,9.66,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,Decanoic acid,0.5,0.25,0.25,323.15,6.71,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,Decanoic acid,0.5,0.25,0.25,333.15,4.88,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,Decanoic acid,0.666666667,0.166666667,0.166666667,293.15,30.11,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,Decanoic acid,0.666666667,0.166666667,0.166666667,303.15,17.36,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,Decanoic acid,0.666666667,0.166666667,0.166666667,313.15,10.83,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,Decanoic acid,0.666666667,0.166666667,0.166666667,323.15,7.15,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Lauric acid,Decanoic acid,0.666666667,0.166666667,0.166666667,333.15,5,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Levulinic acid,,0.5,0.5,0,293.15,39.87,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Levulinic acid,,0.5,0.5,0,303.15,21.48,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Levulinic acid,,0.5,0.5,0,313.15,12.82,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+DL-Menthol,Levulinic acid,,0.5,0.5,0,323.15,8.28,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Menthol,Decanoic acid,,0.5,0.5,0,293.15,16,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Menthol,Decanoic acid,,0.666666667,0.333333333,0,293.15,21,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Menthol,Decanoic acid,,0.8,0.2,0,293.15,28,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Menthol,Decanoic acid,,0.777777778,0.222222222,0,293.15,26.5,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Menthol,Lauric acid,,0.72972973,0.27027027,0,293.15,26,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Menthol,Lauric acid,,0.666666667,0.333333333,0,293.15,24,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Menthol,Lauric acid,,0.818181818,0.181818182,0,293.15,31,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Menthol,Lauric acid,,0.8,0.2,0,293.15,30,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Menthol,Lauric acid,,0.841269841,0.158730159,0,293.15,32,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Menthol,Lauric acid,,0.888888889,0.111111111,0,293.15,37,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Menthol,Thymol,,0.5,0.5,0,293.15,36,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Menthol,Thymol,,0.666666667,0.333333333,0,293.15,44,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Menthol,Thymol,,0.8,0.2,0,293.15,50,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Menthol,Thymol,,0.888888889,0.111111111,0,293.15,52,Is it possible to correlate various physicochemical properties of Natural Deep eutectic systems in order to predict their behaviours as solvents?,155
+Choline chloride,Urea,,0.333333333,0.666666667,0,298.15,750,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,Urea,,0.333333333,0.666666667,0,313.15,169,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,Ethylene glycol,,0.333333333,0.666666667,0,293.15,36,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,Ethylene glycol,,0.333333333,0.666666667,0,298.15,37,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,Ethylene glycol,,0.25,0.75,0,293.15,19,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,Ethylene glycol,,0.2,0.8,0,293.15,19,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,Glucose,,0.5,0.5,0,323.15,34400,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,Glycerol,,0.333333333,0.666666667,0,293.15,376,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,Glycerol,,0.333333333,0.666666667,0,298.15,259,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,Glycerol,,0.25,0.75,0,293.15,450,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,Glycerol,,0.2,0.8,0,293.15,503,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,"1,4-Butanediol",,0.25,0.75,0,293.15,140,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,"1,4-Butanediol",,0.2,0.8,0,293.15,88,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,"2,2,2-Trifluoroacetamide",,0.333333333,0.666666667,0,313.15,77,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,Imidazole,,0.3,0.7,0,343.15,15,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,Zinc chloride,,0.333333333,0.666666667,0,298.15,85000,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,Xylitol,,0.5,0.5,0,303.15,5230,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,Sorbitol,,0.5,0.5,0,303.15,12730,"Deep eutectic solvents: syntheses, properties and applications",16
+Choline chloride,Malonic acid,,0.333333333,0.666666667,0,298.15,1124,"Deep eutectic solvents: syntheses, properties and applications",16
+Zinc chloride,Urea,,0.222222222,0.777777778,0,298.15,11340,"Deep eutectic solvents: syntheses, properties and applications",16
+Tetrabutylammonium bromide,Imidazole,,0.3,0.7,0,293.15,810,"Deep eutectic solvents: syntheses, properties and applications",16
+Ethylammonium chloride,"2,2,2-Trifluoroacetamide",,0.4,0.6,0,313.15,256,"Deep eutectic solvents: syntheses, properties and applications",16
+Ethylammonium chloride,Acetamide,,0.4,0.6,0,313.15,64,"Deep eutectic solvents: syntheses, properties and applications",16
+Ethylammonium chloride,Urea,,0.4,0.6,0,313.15,128,"Deep eutectic solvents: syntheses, properties and applications",16
+Acetylcholine chloride,Urea,,0.333333333,0.666666667,0,313.15,2214,"Deep eutectic solvents: syntheses, properties and applications",16
+Tetrabutylammonium bromide,Imidazole,,0.3,0.7,0,293.15,810,"Deep eutectic solvents: syntheses, properties and applications",16
+Cetyl trimethyl ammonium chloride,Lactic acid,,0.2,0.8,0,433.15,380.9,Exploration of biomass fractionation and lignin removal for enhancing enzymatic digestion of wheat-stalk through deep eutectic solvent Cetyl trimethyl ammonium chloride:Lactic acid treatment,160
+Choline chloride,Glycerol,Magnesium chloride hexahydrate,0.331564987,0.663129973,0.00530504,298.15,5,Unveiling the potential of water as a co-solvent in microwave-assisted delignification of sugarcane bagasse using ternary deep eutectic solvents,161
+Choline chloride,Glycerol,Magnesium chloride hexahydrate,0.331564987,0.663129973,0.00530504,298.15,47,Unveiling the potential of water as a co-solvent in microwave-assisted delignification of sugarcane bagasse using ternary deep eutectic solvents,161
+Choline chloride,Glycerol,Magnesium chloride hexahydrate,0.331564987,0.663129973,0.00530504,298.15,335,Unveiling the potential of water as a co-solvent in microwave-assisted delignification of sugarcane bagasse using ternary deep eutectic solvents,161
+Choline chloride,Ethylene glycol,Magnesium chloride hexahydrate,0.331564987,0.663129973,0.00530504,298.15,4,Unveiling the potential of water as a co-solvent in microwave-assisted delignification of sugarcane bagasse using ternary deep eutectic solvents,161
+Choline chloride,Ethylene glycol,Magnesium chloride hexahydrate,0.331564987,0.663129973,0.00530504,298.15,38,Unveiling the potential of water as a co-solvent in microwave-assisted delignification of sugarcane bagasse using ternary deep eutectic solvents,161
+Choline chloride,Ethylene glycol,Magnesium chloride hexahydrate,0.331564987,0.663129973,0.00530504,298.15,101,Unveiling the potential of water as a co-solvent in microwave-assisted delignification of sugarcane bagasse using ternary deep eutectic solvents,161
+Choline chloride,Glycerol,Nickel chloride hexahydrate,0.331564987,0.663129973,0.00530504,298.15,4,Unveiling the potential of water as a co-solvent in microwave-assisted delignification of sugarcane bagasse using ternary deep eutectic solvents,161
+Choline chloride,Glycerol,Nickel chloride hexahydrate,0.331564987,0.663129973,0.00530504,298.15,43,Unveiling the potential of water as a co-solvent in microwave-assisted delignification of sugarcane bagasse using ternary deep eutectic solvents,161
+Choline chloride,Glycerol,Nickel chloride hexahydrate,0.331564987,0.663129973,0.00530504,298.15,314,Unveiling the potential of water as a co-solvent in microwave-assisted delignification of sugarcane bagasse using ternary deep eutectic solvents,161
+Choline chloride,Ethylene glycol,Nickel chloride hexahydrate,0.331564987,0.663129973,0.00530504,298.15,6,Unveiling the potential of water as a co-solvent in microwave-assisted delignification of sugarcane bagasse using ternary deep eutectic solvents,161
+Choline chloride,Ethylene glycol,Nickel chloride hexahydrate,0.331564987,0.663129973,0.00530504,298.15,38,Unveiling the potential of water as a co-solvent in microwave-assisted delignification of sugarcane bagasse using ternary deep eutectic solvents,161
+Choline chloride,Ethylene glycol,Nickel chloride hexahydrate,0.331564987,0.663129973,0.00530504,298.15,151,Unveiling the potential of water as a co-solvent in microwave-assisted delignification of sugarcane bagasse using ternary deep eutectic solvents,161
+Trimethyl benzyl ammonium chloride,Oxalic acid,,0.5,0.5,0,403.15,78,Effects of hydrogen bond acceptor with benzyl group in deep eutectic solvents on pretreatment performance of bamboo residue,162
+Triethyl benzyl ammonium chloride,Oxalic acid,,0.5,0.5,0,403.15,85,Effects of hydrogen bond acceptor with benzyl group in deep eutectic solvents on pretreatment performance of bamboo residue,162
+Tripropyl benzyl ammonium chloride,Oxalic acid,,0.5,0.5,0,403.15,120,Effects of hydrogen bond acceptor with benzyl group in deep eutectic solvents on pretreatment performance of bamboo residue,162
+Tributyl benzyl ammonium chloride,Oxalic acid,,0.5,0.5,0,403.15,324,Effects of hydrogen bond acceptor with benzyl group in deep eutectic solvents on pretreatment performance of bamboo residue,162
+Tetradecyl dimethyl benzyl ammonium chloride,Oxalic acid,,0.5,0.5,0,403.15,110,Effects of hydrogen bond acceptor with benzyl group in deep eutectic solvents on pretreatment performance of bamboo residue,162
+Benzyl dimethyl (2-hydroxyethyl) ammonium chloride,Oxalic acid,,0.5,0.5,0,403.15,95,Effects of hydrogen bond acceptor with benzyl group in deep eutectic solvents on pretreatment performance of bamboo residue,162
+Tetraethyl ammonium chloride,Oxalic acid,,0.5,0.5,0,403.15,60,Effects of hydrogen bond acceptor with benzyl group in deep eutectic solvents on pretreatment performance of bamboo residue,162
+Tributyl ammonium chloride,Oxalic acid,,0.5,0.5,0,403.15,50,Effects of hydrogen bond acceptor with benzyl group in deep eutectic solvents on pretreatment performance of bamboo residue,162
+Choline chloride,Oxalic acid,,0.5,0.5,0,403.15,45,Effects of hydrogen bond acceptor with benzyl group in deep eutectic solvents on pretreatment performance of bamboo residue,162
+Choline chloride,Urea,,0.333333333,0.666666667,0,298,750,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Choline chloride,Urea,,0.333333333,0.666666667,0,313.15,169,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Choline chloride,"2,2,2-Trifluoroacetamide",,0.333333333,0.666666667,0,313.15,77,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Choline chloride,Ethylene glycol,,0.333333333,0.666666667,0,298,37,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Choline chloride,Ethylene glycol,,0.25,0.75,0,293.15,19,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Choline chloride,Glycerol,,0.333333333,0.666666667,0,298,376,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Choline chloride,Glycerol,,0.25,0.75,0,293.15,450,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Choline chloride,"1,4-butanediol",,0.25,0.75,0,293.15,140,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Choline chloride,"1,4-butanediol",,0.2,0.8,0,293.15,88,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Choline chloride,Imidazole,,0.3,0.7,0,343.15,15,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Choline chloride,Malonic acid,,0.5,0.5,0,298,721,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Choline chloride,Malonic acid,,0.333333333,0.666666667,0,298,1124,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Methyltriphenylphosphonium bromide,Glycerol,,0.363636364,0.636363636,0,318.15,887,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Methyltriphenylphosphonium bromide,Ethylene glycol,,0.2,0.8,0,298,109.8,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Tetrabuthylammonium bromide,Imidazole,,0.3,0.7,0,293.15,810,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Ethylammonium chloride,Acetamide,,0.4,0.6,0,313.15,64,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Ethylammonium chloride,"2,2,2-Trifluoroacetamide",,0.4,0.6,0,313.15,256,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Tributylmethylammonium chloride,Ethylene glycol,,0.25,0.75,0,328.15,202,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Tributylmethylammonium chloride,Glycerol,,0.166666667,0.833333333,0,328.15,534,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+1-butyl-1-methylpyrrolidinium bromide,Choline chloride,Glycerol,0.4,0.2,0.4,298,14.46,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+1-butyl-1-methylpyrrolidinium bromide,Choline chloride,Glycerol,0.25,0.25,0.5,298,11.57,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+1-butyl-1-methylpyrrolidinium bromide,Choline chloride,Glycerol,0.0625,0.3125,0.625,298,9.33,Use of Deep Eutectic Solvents in Polymer Chemistry–A Review,163
+Thymol,Menthol,,0.5,0.5,0,328,57.88,Non-Ideality in Thymol + Menthol Type V Deep Eutectic Solvents,167
+Creatine,Citric acid,Water,0.25,0.25,0.5,294.1,13360,Deep eutectic solvents comprising creatine and citric acid and their hydrated mixtures,173
+Creatine,Citric acid,Water,0.2,0.2,0.6,294.1,2981,Deep eutectic solvents comprising creatine and citric acid and their hydrated mixtures,173
+Creatine,Citric acid,Water,0.166666667,0.166666667,0.666666667,294.1,1097,Deep eutectic solvents comprising creatine and citric acid and their hydrated mixtures,173
+Creatine,Citric acid,Water,0.142857143,0.142857143,0.714285714,294.1,546,Deep eutectic solvents comprising creatine and citric acid and their hydrated mixtures,173
+Choline chloride,Glycerol,,0.333333333,0.666666667,0,294.1,148,Deep eutectic solvents comprising creatine and citric acid and their hydrated mixtures,173
+Benzyl triethylammonium chloride,Formic acid,,0.333333333,0.666666667,0,293.15,514.469,Insights into the physicochemical properties of newly synthesized benzyl triethylammonium chloride-based deep eutectic solvents,175
+Benzyl triethylammonium chloride,Acetic acid,,0.333333333,0.666666667,0,293.15,828.389,Insights into the physicochemical properties of newly synthesized benzyl triethylammonium chloride-based deep eutectic solvents,175
+Benzyl triethylammonium chloride,"1,2 Propane diol",,0.333333333,0.666666667,0,293.15,828.389,Insights into the physicochemical properties of newly synthesized benzyl triethylammonium chloride-based deep eutectic solvents,175
+Benzyl triethylammonium chloride,"1,4 Butanediol",,0.333333333,0.666666667,0,293.15,834.398,Insights into the physicochemical properties of newly synthesized benzyl triethylammonium chloride-based deep eutectic solvents,175
+Benzyl triethylammonium chloride,Ethylene glycol,,0.333333333,0.666666667,0,293.15,411.478,Insights into the physicochemical properties of newly synthesized benzyl triethylammonium chloride-based deep eutectic solvents,175
+"N,N-dimethyl-N-(2-hydroxyethyl)decan-1-aminium bromide",Thymol,,0.333333333,0.666666667,0,294.75,138.96,New Class of Tunable Choline Bromide-Based Hydrophobic Deep Eutectic Solvents for the Extraction of Bioactive Compounds of Varying Polarity from a Plant Matrix,177
+Tetrabutylammonium bromide,Thymol,,0.333333333,0.666666667,0,294.75,2228.33,New Class of Tunable Choline Bromide-Based Hydrophobic Deep Eutectic Solvents for the Extraction of Bioactive Compounds of Varying Polarity from a Plant Matrix,177
+Terpineol,Decanoic acid,,0.5,0.5,0,293.15,26,"Unveiling Solubilization Mechanisms of Natural Deep Eutectic Solvents in Triazole Fungicides: COSMO-RS Calculations and Screening for Eco-Friendly, High-Efficiency Pesticide Systems",178
+Menthol,Decanoic acid,,0.5,0.5,0,293.15,22,"Unveiling Solubilization Mechanisms of Natural Deep Eutectic Solvents in Triazole Fungicides: COSMO-RS Calculations and Screening for Eco-Friendly, High-Efficiency Pesticide Systems",178
+Decyl alcohol,Decanoic acid,,0.5,0.5,0,293.15,17,"Unveiling Solubilization Mechanisms of Natural Deep Eutectic Solvents in Triazole Fungicides: COSMO-RS Calculations and Screening for Eco-Friendly, High-Efficiency Pesticide Systems",178
+Choline chloride,Urea,,0.333333333,0.666666667,0,298.15,750,"Applications of deep eutectic solvents in the extraction, dissolution, and functional materials of chitin: research progress and prospects",180
+Choline chloride,Imidazole,,0.3,0.7,0,293.15,124,The Properties of Choline Chloride-based Deep Eutectic Solvents and their Performance in the Dissolution of Cellulose,182
+Choline chloride,Urea,,0.333333333,0.666666667,0,293.15,1000,The Properties of Choline Chloride-based Deep Eutectic Solvents and their Performance in the Dissolution of Cellulose,182
+Choline chloride,Ammonium thiocyanate,,0.5,0.5,0,293.15,1200,The Properties of Choline Chloride-based Deep Eutectic Solvents and their Performance in the Dissolution of Cellulose,182
+Choline chloride,Urea,,0.333333333,0.666666667,0,298.15,829,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Ethylene glycol,,0.333333333,0.666666667,0,298.15,44.4,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Glycerol,,0.333333333,0.666666667,0,298.15,302,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Triethylene glycol,,0.333333333,0.666666667,0,298.15,839,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Phenol,,0.25,0.75,0,298.15,446,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Malonic acid,,0.5,0.5,0,298.15,1350,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Levulinic acid,,0.333333333,0.666666667,0,298.15,102,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Glucose,,0.6,0.4,0,298.15,7968,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Fructose,,0.5,0.5,0,298.15,653,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Mannose,,0.5,0.5,0,298.15,1068,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Xylose,,0.5,0.5,0,298.15,920,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Sorbitol,,0.076923077,0.923076923,0,298.15,19470,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Sucrose,,0.5,0.5,0,298.15,79590,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Lactic acid,,0.5,0.5,0,298.15,400,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Citric acid,,0.5,0.5,0,298.15,3852,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Tartaric acid,,0.5,0.5,0,298.15,2389,"Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",193
+Choline chloride,Formamide,,0.2,0.8,0,298.15,0,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Urea,,0.333333333,0.666666667,0,298.15,800,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Methylurea,,0.333333333,0.666666667,0,298.15,21500,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Ethylene glycol,,0.25,0.75,0,298.15,0,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Propanediol,,0.25,0.75,0,298.15,0,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Butanediol,,0.25,0.75,0,298.15,80,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Glycerol,,0.333333333,0.666666667,0,298.15,300,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Formic acid,,0.333333333,0.666666667,0,298.15,200,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Acetic acid,,0.333333333,0.666666667,0,298.15,3,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Propionic acid,,0.2,0.8,0,298.15,150,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Lactic acid,,0.333333333,0.666666667,0,298.15,350,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Malic acid,,0.5,0.5,0,298.15,850000,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Itaconic acid,,0.5,0.5,0,298.15,900000,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Levulinic acid,,0.333333333,0.666666667,0,298.15,200,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Glutaric acid,,0.5,0.5,0,298.15,66700,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Formamide,FeCl3·6 H2O,0.196078431,0.784313725,0.019607843,298.15,0,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Glycerol,FeCl3·6 H2O,0.322580645,0.64516129,0.032258065,298.15,250,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Lactic acid,FeCl3·6 H2O,0.322580645,0.64516129,0.032258065,298.15,150,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,Lactic acid,Glycerol,0.2,0.4,0.4,298.15,260,Comparative insight into biomass pretreatment by choline chloride-based deep eutectic solvents in relation to their physicochemical characteristics,26
+Choline chloride,"1,4-butanediol",,0.05,0.95,0,298,78,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,4-butanediol",,0.1,0.9,0,298,84,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,4-butanediol",,0.15,0.85,0,298,78,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,4-butanediol",,0.2,0.8,0,298,79,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,2-butanediol",,0.05,0.95,0,298,62,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,2-butanediol",,0.1,0.9,0,298,67,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,2-butanediol",,0.15,0.85,0,298,70,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,2-butanediol",,0.2,0.8,0,298,79,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,3-butanediol",,0.05,0.95,0,298,98,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,3-butanediol",,0.1,0.9,0,298,100,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,3-butanediol",,0.15,0.85,0,298,105,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"1,3-butanediol",,0.2,0.8,0,298,113,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"2,3-butanediol",,0.05,0.95,0,298,120,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"2,3-butanediol",,0.1,0.9,0,298,121,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"2,3-butanediol",,0.15,0.85,0,298,130,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,"2,3-butanediol",,0.2,0.8,0,298,179,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,0.05,0.95,0,293,900,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,0.1,0.9,0,293,700,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,0.15,0.85,0,293,500,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,0.2,0.8,0,293,400,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,0.25,0.75,0,293,350,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,0.3,0.7,0,293,300,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,0.33,0.67,0,293,300,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Phenol,,0.6,0.4,0,275,495,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Phenol,,0.35,0.65,0,275,310,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Phenol,,0.3,0.7,0,275,170,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Phenol,,0.25,0.75,0,275,110,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Phenol,,0.2,0.8,0,275,30,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Phenol,,0.15,0.85,0,275,80,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Phenol,,0.1,0.9,0,275,190,CHAPTER 3 – Physical Properties of Alcohol Based Deep Eutectic Solvents,28_part_003_pages_55-84
+Choline chloride,Glycerol,,0.05,0.95,0,293.15,998,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.05,0.95,0,298.15,654,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.05,0.95,0,303.15,450,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.05,0.95,0,308.15,314,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.05,0.95,0,313.15,222,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.05,0.95,0,318.15,163,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.05,0.95,0,323.15,120,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.05,0.95,0,328.15,90,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.1,0.9,0,293.15,790,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.1,0.9,0,298.15,503,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.1,0.9,0,303.15,349,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.1,0.9,0,308.15,247,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.1,0.9,0,313.15,180,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.1,0.9,0,318.15,132,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.1,0.9,0,323.15,98,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.1,0.9,0,328.15,74,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.15,0.85,0,293.15,548,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.15,0.85,0,298.15,380,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.15,0.85,0,303.15,270,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.15,0.85,0,308.15,194,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.15,0.85,0,313.15,140,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.15,0.85,0,318.15,107,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.15,0.85,0,323.15,80,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.15,0.85,0,328.15,60,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.2,0.8,0,293.15,503,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.2,0.8,0,298.15,350,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.2,0.8,0,303.15,246,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.2,0.8,0,308.15,178,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.2,0.8,0,313.15,132,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.2,0.8,0,318.15,98,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.2,0.8,0,323.15,86,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.2,0.8,0,328.15,57,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.25,0.75,0,293.15,450,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.25,0.75,0,298.15,320,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.25,0.75,0,303.15,229,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.25,0.75,0,308.15,169,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.25,0.75,0,313.15,126,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.25,0.75,0,318.15,95,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.25,0.75,0,323.15,73,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.25,0.75,0,328.15,58,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.3,0.7,0,293.15,401,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.3,0.7,0,298.15,295,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.3,0.7,0,303.15,213,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.3,0.7,0,308.15,160,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.3,0.7,0,313.15,120,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.3,0.7,0,318.15,91,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.3,0.7,0,323.15,71,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.3,0.7,0,328.15,55,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.33,0.67,0,293.15,376,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.33,0.67,0,298.15,259,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.33,0.67,0,303.15,188,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.33,0.67,0,308.15,140,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.33,0.67,0,313.15,104,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.33,0.67,0,318.15,82,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.33,0.67,0,323.15,64,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Glycerol,,0.33,0.67,0,328.15,52,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Ethylene Glycol,,0.05,0.95,0,293.15,10,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Ethylene Glycol,,0.1,0.9,0,293.15,12,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Ethylene Glycol,,0.15,0.85,0,293.15,15,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Ethylene Glycol,,0.2,0.8,0,293.15,19,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Ethylene Glycol,,0.25,0.75,0,293.15,19,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Ethylene Glycol,,0.3,0.7,0,293.15,29,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,Ethylene Glycol,,0.33,0.67,0,293.15,36,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,"1,4-Butanediol",,0.05,0.95,0,293.15,78,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,"1,4-Butanediol",,0.1,0.9,0,293.15,84,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,"1,4-Butanediol",,0.15,0.85,0,293.15,78,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,"1,4-Butanediol",,0.2,0.8,0,293.15,88,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Choline chloride,"1,4-Butanediol",,0.25,0.75,0,293.15,140,Application of Hole Theory to Define Ionic Liquids by their Transport Properties,28_part_007_pages_163-188
+Tetramethylammonium hydroxide pentahydrate,Urea,,0.25,0.75,0,303.15,248,Deep eutectic solvent (TMAH·5H₂O/Urea) with low viscosity for cellulose dissolution at room temperature,29
+Tetramethylammonium hydroxide pentahydrate,Urea,,0.25,0.75,0,303.15,1854.1,Deep eutectic solvent (TMAH·5H₂O/Urea) with low viscosity for cellulose dissolution at room temperature,29
+Tetramethylammonium hydroxide pentahydrate,Urea,,0.25,0.75,0,293.15,4000,Deep eutectic solvent (TMAH·5H₂O/Urea) with low viscosity for cellulose dissolution at room temperature,29
+Tetramethylammonium hydroxide pentahydrate,Urea,,0.25,0.75,0,313.15,1800,Deep eutectic solvent (TMAH·5H₂O/Urea) with low viscosity for cellulose dissolution at room temperature,29
+Tetramethylammonium hydroxide pentahydrate,Urea,,0.25,0.75,0,323.15,1500,Deep eutectic solvent (TMAH·5H₂O/Urea) with low viscosity for cellulose dissolution at room temperature,29
+Tetramethylammonium hydroxide pentahydrate,Urea,,0.25,0.75,0,333.15,1200,Deep eutectic solvent (TMAH·5H₂O/Urea) with low viscosity for cellulose dissolution at room temperature,29
+Tetramethylammonium hydroxide pentahydrate,Urea,,0.25,0.75,0,343.15,1100,Deep eutectic solvent (TMAH·5H₂O/Urea) with low viscosity for cellulose dissolution at room temperature,29
+Tetramethylammonium hydroxide pentahydrate,Urea,,0.25,0.75,0,353.15,1000,Deep eutectic solvent (TMAH·5H₂O/Urea) with low viscosity for cellulose dissolution at room temperature,29
+Sodium Hexanoate,Nonanoic acid,,0.3,0.7,0,293.15,280.5,"Sodium Hexanoate and Dodecanoate Salt-Based Eutectic Solvents: Density, Viscosity, and Kamlet–Taft Parameters",3
+Sodium Dodecanoate,Nonanoic acid,,0.2,0.8,0,293.15,68.61,"Sodium Hexanoate and Dodecanoate Salt-Based Eutectic Solvents: Density, Viscosity, and Kamlet–Taft Parameters",3
+Choline chloride,Lactic acid,,0.333333333,0.666666667,0,298.15,163.1,Insights into acidic deep eutectic solvent-mediated softwood pretreatment for high fermentable sugar yield and efficient lignin recovery,33
+Choline chloride,Lactic acid,,0.333333333,0.666666667,0,423.15,9.19,Insights into acidic deep eutectic solvent-mediated softwood pretreatment for high fermentable sugar yield and efficient lignin recovery,33
+Choline chloride,Lactic acid,,0.2,0.8,0,298.15,38.68,Insights into acidic deep eutectic solvent-mediated softwood pretreatment for high fermentable sugar yield and efficient lignin recovery,33
+Choline chloride,Lactic acid,,0.2,0.8,0,423.15,7.52,Insights into acidic deep eutectic solvent-mediated softwood pretreatment for high fermentable sugar yield and efficient lignin recovery,33
+Choline chloride,Formic acid,,0.333333333,0.666666667,0,298.15,23.39,Insights into acidic deep eutectic solvent-mediated softwood pretreatment for high fermentable sugar yield and efficient lignin recovery,33
+Choline chloride,Formic acid,,0.333333333,0.666666667,0,423.15,7.17,Insights into acidic deep eutectic solvent-mediated softwood pretreatment for high fermentable sugar yield and efficient lignin recovery,33
+Choline chloride,Formic acid,,0.2,0.8,0,298.15,9.6,Insights into acidic deep eutectic solvent-mediated softwood pretreatment for high fermentable sugar yield and efficient lignin recovery,33
+Choline chloride,Formic acid,,0.2,0.8,0,423.15,7.3,Insights into acidic deep eutectic solvent-mediated softwood pretreatment for high fermentable sugar yield and efficient lignin recovery,33
+Triethylbenzylammonium chloride,Lactic acid,,0.333333333,0.666666667,0,298.15,927.75,Insights into acidic deep eutectic solvent-mediated softwood pretreatment for high fermentable sugar yield and efficient lignin recovery,33
+Triethylbenzylammonium chloride,Lactic acid,,0.333333333,0.666666667,0,423.15,4.42,Insights into acidic deep eutectic solvent-mediated softwood pretreatment for high fermentable sugar yield and efficient lignin recovery,33
+Triethylbenzylammonium chloride,Lactic acid,,0.2,0.8,0,298.15,262.05,Insights into acidic deep eutectic solvent-mediated softwood pretreatment for high fermentable sugar yield and efficient lignin recovery,33
+Triethylbenzylammonium chloride,Lactic acid,,0.2,0.8,0,423.15,5.57,Insights into acidic deep eutectic solvent-mediated softwood pretreatment for high fermentable sugar yield and efficient lignin recovery,33
+Triethylbenzylammonium chloride,Formic acid,,0.333333333,0.666666667,0,298.15,327.16,Insights into acidic deep eutectic solvent-mediated softwood pretreatment for high fermentable sugar yield and efficient lignin recovery,33
+Triethylbenzylammonium chloride,Formic acid,,0.333333333,0.666666667,0,423.15,1.88,Insights into acidic deep eutectic solvent-mediated softwood pretreatment for high fermentable sugar yield and efficient lignin recovery,33
+Triethylbenzylammonium chloride,Formic acid,,0.2,0.8,0,298.15,10.31,Insights into acidic deep eutectic solvent-mediated softwood pretreatment for high fermentable sugar yield and efficient lignin recovery,33
+Triethylbenzylammonium chloride,Formic acid,,0.2,0.8,0,423.15,2.05,Insights into acidic deep eutectic solvent-mediated softwood pretreatment for high fermentable sugar yield and efficient lignin recovery,33
+1-butyl-3-methylimidazolium chloride,Thiourea,,0.666666667,0.333333333,0,343.15,9666.4,Highly efficient dissolution of xylan in ionic liquid-based deep eutectic solvents,37
+1-allyl-3-methylimidazolium chloride,Thiourea,,0.666666667,0.333333333,0,343.15,110.28,Highly efficient dissolution of xylan in ionic liquid-based deep eutectic solvents,37
+Choline chloride,Urea,,0.333333333,0.666666667,0,373.15,73000,Effect of water on cellulose treatment with choline chloride-urea deep eutectic solvent,41
+Choline chloride,Urea,,0.333333333,0.666666667,0,293.15,87340,Effect of water on cellulose treatment with choline chloride-urea deep eutectic solvent,41
+Choline chloride,Urea,,0.333333333,0.666666667,0,293.15,111570,Effect of water on cellulose treatment with choline chloride-urea deep eutectic solvent,41
+Choline chloride,Urea,,0.333333333,0.666666667,0,293.15,101690,Effect of water on cellulose treatment with choline chloride-urea deep eutectic solvent,41
+Choline chloride,Urea,,0.333333333,0.666666667,0,293.15,103860,Effect of water on cellulose treatment with choline chloride-urea deep eutectic solvent,41
+Choline chloride,Urea,,0.5,0.5,0,293.15,102250,Effect of water on cellulose treatment with choline chloride-urea deep eutectic solvent,41
+Choline chloride,Urea,,0.5,0.5,0,293.15,135510,Effect of water on cellulose treatment with choline chloride-urea deep eutectic solvent,41
+Choline chloride,Urea,,0.5,0.5,0,293.15,99520,Effect of water on cellulose treatment with choline chloride-urea deep eutectic solvent,41
+Choline chloride,Urea,,0.666666667,0.333333333,0,293.15,100160,Effect of water on cellulose treatment with choline chloride-urea deep eutectic solvent,41
+Choline chloride,Urea,,0.666666667,0.333333333,0,293.15,116140,Effect of water on cellulose treatment with choline chloride-urea deep eutectic solvent,41
+Choline chloride,Urea,,0.666666667,0.333333333,0,293.15,113540,Effect of water on cellulose treatment with choline chloride-urea deep eutectic solvent,41
+Choline chloride,Glycerol,Iron(III) chloride,0.327868852,0.655737705,0.016393443,298.15,213.74,Extractive desulfurization of model jet fuel using metal chloride modified deep eutectic solvents,42
+Choline chloride,Glycerol,Copper(II) chloride,0.327868852,0.655737705,0.016393443,298.15,363.7,Extractive desulfurization of model jet fuel using metal chloride modified deep eutectic solvents,42
+Choline chloride,Glycerol,Tin(II) chloride,0.327868852,0.655737705,0.016393443,298.15,339.96,Extractive desulfurization of model jet fuel using metal chloride modified deep eutectic solvents,42
+Choline chloride,Glycerol,Zinc(II) chloride,0.327868852,0.655737705,0.016393443,298.15,423.7,Extractive desulfurization of model jet fuel using metal chloride modified deep eutectic solvents,42
+Choline chloride,Oxalic acid,,0.5,0.5,0,313.15,3401,Structure–properties relationships of deep eutectic solvents formed between choline chloride and carboxylic acids: Experimental and computational study,43
+Choline chloride,Malonic acid,,0.5,0.5,0,313.15,563,Structure–properties relationships of deep eutectic solvents formed between choline chloride and carboxylic acids: Experimental and computational study,43
+Choline chloride,Glutaric acid,,0.5,0.5,0,313.15,790,Structure–properties relationships of deep eutectic solvents formed between choline chloride and carboxylic acids: Experimental and computational study,43
+Choline chloride,DL-lactic acid,,0.5,0.5,0,313.15,300,Structure–properties relationships of deep eutectic solvents formed between choline chloride and carboxylic acids: Experimental and computational study,43
+Choline chloride,DL-malic acid,,0.5,0.5,0,313.15,1500,Structure–properties relationships of deep eutectic solvents formed between choline chloride and carboxylic acids: Experimental and computational study,43
+Choline chloride,α-ketoglutaric acid,,0.5,0.5,0,313.15,1800,Structure–properties relationships of deep eutectic solvents formed between choline chloride and carboxylic acids: Experimental and computational study,43
+Choline chloride,Citric acid,,0.5,0.5,0,313.15,10000,Structure–properties relationships of deep eutectic solvents formed between choline chloride and carboxylic acids: Experimental and computational study,43
+Levulinic acid,Polyethylene glycol 200,,0.5,0.5,0,293.15,57.74,Novel PEGylated deep eutectic solvents: A thermophysical and photophysical investigation,46
+Cinnamic acid,Polyethylene glycol 200,,0.2,0.8,0,293.15,110,Novel PEGylated deep eutectic solvents: A thermophysical and photophysical investigation,46
+Hydrocinnamic acid,Polyethylene glycol 200,,0.5,0.5,0,293.15,80.03,Novel PEGylated deep eutectic solvents: A thermophysical and photophysical investigation,46
+Citric acid,Polyethylene glycol 200,,0.333333333,0.666666667,0,293.15,3161,Novel PEGylated deep eutectic solvents: A thermophysical and photophysical investigation,46
+Cobalt(II) chloride hexahydrate,ethylene glycol,,0.333333333,0.666666667,0,298.15,84.3,Magnetic deep eutectic solvents: formation and properties,49
+Cobalt(II) chloride hexahydrate,xylitol,,0.333333333,0.666666667,0,298.15,10907.2,Magnetic deep eutectic solvents: formation and properties,49
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.333333333,0.666666667,0,293,1895,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.333333333,0.666666667,0,298,1185,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.333333333,0.666666667,0,303,805.9,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.333333333,0.666666667,0,308,554.5,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.333333333,0.666666667,0,313,392.6,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.333333333,0.666666667,0,318,285.1,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.333333333,0.666666667,0,323,212.6,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.333333333,0.666666667,0,328,157.5,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.333333333,0.666666667,0,333,122.9,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.333333333,0.666666667,0,338,97.24,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.333333333,0.666666667,0,343,78.48,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.333333333,0.666666667,0,348,64.39,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.333333333,0.666666667,0,353,54.01,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.333333333,0.666666667,0,358,45.55,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.25,0.75,0,288,853,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.25,0.75,0,293,559.3,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.25,0.75,0,298,386.6,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.25,0.75,0,303,266.8,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.25,0.75,0,308,195,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.25,0.75,0,313,144.5,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.25,0.75,0,318,108.4,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.25,0.75,0,323,85.06,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.25,0.75,0,328,66.59,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.25,0.75,0,333,53.87,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.25,0.75,0,338,44.47,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.25,0.75,0,343,36.98,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.25,0.75,0,348,31.36,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.25,0.75,0,353,27.26,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.25,0.75,0,358,23.98,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.2,0.8,0,288,357.8,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.2,0.8,0,293,241.5,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.2,0.8,0,298,169.8,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.2,0.8,0,303,123.1,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.2,0.8,0,308,91.76,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.2,0.8,0,313,69.96,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.2,0.8,0,318,54.37,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.2,0.8,0,323,43.21,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.2,0.8,0,328,34.83,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.2,0.8,0,333,28.54,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.2,0.8,0,338,23.6,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.2,0.8,0,343,19.82,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.2,0.8,0,348,16.8,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.2,0.8,0,353,14.4,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Acetamide,,0.2,0.8,0,358,12.64,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.333333333,0.666666667,0,293,1138,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.333333333,0.666666667,0,298,717.2,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.333333333,0.666666667,0,303,473.9,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.333333333,0.666666667,0,308,326,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.333333333,0.666666667,0,313,230.3,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.333333333,0.666666667,0,318,169.3,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.333333333,0.666666667,0,323,127.1,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.333333333,0.666666667,0,328,100.6,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.333333333,0.666666667,0,333,79.24,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.333333333,0.666666667,0,338,63.1,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.333333333,0.666666667,0,343,49.75,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.333333333,0.666666667,0,348,40.92,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.333333333,0.666666667,0,353,33.81,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.333333333,0.666666667,0,358,30.82,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.25,0.75,0,288,559.2,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.25,0.75,0,293,342.5,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.25,0.75,0,298,222.9,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.25,0.75,0,303,157.3,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.25,0.75,0,308,105.2,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.25,0.75,0,313,79.6,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.25,0.75,0,318,61.22,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.25,0.75,0,323,48.38,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.25,0.75,0,328,38.72,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.25,0.75,0,333,31.53,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.25,0.75,0,338,26.02,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.25,0.75,0,343,21.91,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.25,0.75,0,348,18.55,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.25,0.75,0,353,15.89,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.25,0.75,0,358,13.76,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.2,0.8,0,288,365.3,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.2,0.8,0,293,242.1,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.2,0.8,0,298,167.3,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.2,0.8,0,303,119.4,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.2,0.8,0,308,87.93,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.2,0.8,0,313,66.34,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.2,0.8,0,318,51.39,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.2,0.8,0,323,40.57,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.2,0.8,0,328,32.62,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.2,0.8,0,333,26.65,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.2,0.8,0,338,22.12,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.2,0.8,0,343,18.54,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.2,0.8,0,348,15.73,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.2,0.8,0,353,13.48,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,"2,2,2-trifluoroacetamide",,0.2,0.8,0,358,11.65,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.333333333,0.666666667,0,318,1815,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.333333333,0.666666667,0,323,1208,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.333333333,0.666666667,0,328,831.5,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.333333333,0.666666667,0,333,581.9,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.333333333,0.666666667,0,338,428.5,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.333333333,0.666666667,0,343,320.6,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.333333333,0.666666667,0,348,244.5,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.333333333,0.666666667,0,353,189.3,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.333333333,0.666666667,0,358,150.2,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.25,0.75,0,303,1519,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.25,0.75,0,308,967.8,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.25,0.75,0,313,643.8,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.25,0.75,0,318,445.4,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.25,0.75,0,323,321.1,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.25,0.75,0,328,237.8,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.25,0.75,0,333,180.7,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.25,0.75,0,338,140.2,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.25,0.75,0,343,109.9,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.25,0.75,0,348,88.26,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.25,0.75,0,353,72.11,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.25,0.75,0,358,59.72,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.2,0.8,0,293,1824,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.2,0.8,0,298,1094,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.2,0.8,0,303,698.3,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.2,0.8,0,308,467.1,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.2,0.8,0,313,325.1,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.2,0.8,0,318,233.9,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.2,0.8,0,323,174.6,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.2,0.8,0,328,132.7,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.2,0.8,0,333,102.8,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.2,0.8,0,338,81.27,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.2,0.8,0,343,65.53,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.2,0.8,0,348,53.55,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.2,0.8,0,353,44.5,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Lithium bis(trifluoromethylsulfonyl)imide,Urea,,0.2,0.8,0,358,37.66,Physicochemical Properties and Empirical Polarity Parameters of Lithium Salt-Based Deep Eutectic Solvents,52
+Menthol,Hexanoic Acid,,0.5,0.5,0,298.15,10.09,Extraction of weak hydrophobic sulforaphane from broccoli by salting-out assisted hydrophobic deep eutectic solvent extraction,65
+Menthol,Octanoic Acid,,0.5,0.5,0,298.15,11.87,Extraction of weak hydrophobic sulforaphane from broccoli by salting-out assisted hydrophobic deep eutectic solvent extraction,65
+Decanoic Acid,Thymol,,0.5,0.5,0,298.15,12.22,Extraction of weak hydrophobic sulforaphane from broccoli by salting-out assisted hydrophobic deep eutectic solvent extraction,65
+Decanoic Acid,Octanol,,0.333333333,0.666666667,0,298.15,6.428,Extraction of weak hydrophobic sulforaphane from broccoli by salting-out assisted hydrophobic deep eutectic solvent extraction,65
+Methyltrioctylammonium Chloride,Octanoic Acid,,0.333333333,0.666666667,0,298.15,408.91,Extraction of weak hydrophobic sulforaphane from broccoli by salting-out assisted hydrophobic deep eutectic solvent extraction,65
+Methyltrioctylammonium Chloride,Glycerol,,0.333333333,0.666666667,0,298.15,350.21,Extraction of weak hydrophobic sulforaphane from broccoli by salting-out assisted hydrophobic deep eutectic solvent extraction,65
+Methyltrioctylammonium Chloride,"1,4-Butanediol",,0.333333333,0.666666667,0,298.15,244.82,Extraction of weak hydrophobic sulforaphane from broccoli by salting-out assisted hydrophobic deep eutectic solvent extraction,65
+Methyltrioctylammonium Chloride,Ethylene Glycol,,0.333333333,0.666666667,0,298.15,124.82,Extraction of weak hydrophobic sulforaphane from broccoli by salting-out assisted hydrophobic deep eutectic solvent extraction,65
+Itaconic acid,Choline chloride,,0.5,0.5,0,298.15,17000,Polymerization of renewable itaconic acid in deep eutectic monomers: Effect of the quaternary ammonium cation structure,68
+Itaconic acid,Bis(2-hydroxyethyl)dimethylammonium chloride,,0.5,0.5,0,298.15,10000,Polymerization of renewable itaconic acid in deep eutectic monomers: Effect of the quaternary ammonium cation structure,68
+Itaconic acid,(3-hydroxybutyl)trimethylammonium chloride,,0.5,0.5,0,298.15,50000,Polymerization of renewable itaconic acid in deep eutectic monomers: Effect of the quaternary ammonium cation structure,68
+Itaconic acid,Acetylcholine chloride,,0.5,0.5,0,298.15,150000,Polymerization of renewable itaconic acid in deep eutectic monomers: Effect of the quaternary ammonium cation structure,68
+Itaconic acid,Tetramethylammonium chloride,,0.5,0.5,0,298.15,100000,Polymerization of renewable itaconic acid in deep eutectic monomers: Effect of the quaternary ammonium cation structure,68
+Itaconic acid,Tetraethylammonium chloride,,0.5,0.5,0,298.15,70000,Polymerization of renewable itaconic acid in deep eutectic monomers: Effect of the quaternary ammonium cation structure,68
+Itaconic acid,Tetrabutylammonium chloride,,0.5,0.5,0,298.15,50000,Polymerization of renewable itaconic acid in deep eutectic monomers: Effect of the quaternary ammonium cation structure,68
+Choline chloride,Gallic acid,,0.75,0.25,0,323.15,2600,The Use of Deep Eutectic Solvents for the Synthesis of Iron Oxides Nanoparticles: A Driving Force for Materials Properties,69
+Choline chloride,Triethylene glycol,,0.25,0.75,0,323.15,44,The Use of Deep Eutectic Solvents for the Synthesis of Iron Oxides Nanoparticles: A Driving Force for Materials Properties,69
+Choline chloride,Urea,,0.333333333,0.666666667,0,323.15,150,The Use of Deep Eutectic Solvents for the Synthesis of Iron Oxides Nanoparticles: A Driving Force for Materials Properties,69
+Guanidine chloride,Triethylene glycol,,0.333333333,0.666666667,0,323.15,63,The Use of Deep Eutectic Solvents for the Synthesis of Iron Oxides Nanoparticles: A Driving Force for Materials Properties,69
+Guanidine chloride,Urea,,0.333333333,0.666666667,0,323.15,15,The Use of Deep Eutectic Solvents for the Synthesis of Iron Oxides Nanoparticles: A Driving Force for Materials Properties,69
+L-alanine,Formic acid,,0.25,0.75,0,333.15,20,Mechanistic insights into the lignin dissolution behavior in amino acid based deep eutectic solvents,70
+L-alanine,Formic acid,,0.25,0.75,0,348.15,20,Mechanistic insights into the lignin dissolution behavior in amino acid based deep eutectic solvents,70
+L-arginine,Formic acid,,0.25,0.75,0,333.15,530,Mechanistic insights into the lignin dissolution behavior in amino acid based deep eutectic solvents,70
+L-arginine,Formic acid,,0.25,0.75,0,348.15,50,Mechanistic insights into the lignin dissolution behavior in amino acid based deep eutectic solvents,70
+L-proline,Formic acid,,0.333333333,0.666666667,0,333.15,25,Mechanistic insights into the lignin dissolution behavior in amino acid based deep eutectic solvents,70
+L-proline,Formic acid,,0.333333333,0.666666667,0,348.15,25,Mechanistic insights into the lignin dissolution behavior in amino acid based deep eutectic solvents,70
+L-proline,Formic acid,,0.25,0.75,0,333.15,30,Mechanistic insights into the lignin dissolution behavior in amino acid based deep eutectic solvents,70
+L-proline,Formic acid,,0.25,0.75,0,348.15,20,Mechanistic insights into the lignin dissolution behavior in amino acid based deep eutectic solvents,70
+L-proline,Acetic acid,,0.333333333,0.666666667,0,333.15,80,Mechanistic insights into the lignin dissolution behavior in amino acid based deep eutectic solvents,70
+L-proline,Acetic acid,,0.333333333,0.666666667,0,348.15,30,Mechanistic insights into the lignin dissolution behavior in amino acid based deep eutectic solvents,70
+L-proline,Acetic acid,,0.25,0.75,0,333.15,40,Mechanistic insights into the lignin dissolution behavior in amino acid based deep eutectic solvents,70
+L-proline,Acetic acid,,0.25,0.75,0,348.15,25,Mechanistic insights into the lignin dissolution behavior in amino acid based deep eutectic solvents,70
+L-proline,Lactic acid,,0.333333333,0.666666667,0,333.15,120,Mechanistic insights into the lignin dissolution behavior in amino acid based deep eutectic solvents,70
+L-proline,Lactic acid,,0.333333333,0.666666667,0,348.15,30,Mechanistic insights into the lignin dissolution behavior in amino acid based deep eutectic solvents,70
+L-proline,Lactic acid,,0.25,0.75,0,333.15,110,Mechanistic insights into the lignin dissolution behavior in amino acid based deep eutectic solvents,70
+L-proline,Lactic acid,,0.25,0.75,0,348.15,30,Mechanistic insights into the lignin dissolution behavior in amino acid based deep eutectic solvents,70
+L-proline,Levulinic acid,,0.333333333,0.666666667,0,333.15,180,Mechanistic insights into the lignin dissolution behavior in amino acid based deep eutectic solvents,70
+L-proline,Levulinic acid,,0.333333333,0.666666667,0,348.15,40,Mechanistic insights into the lignin dissolution behavior in amino acid based deep eutectic solvents,70
+L-proline,Levulinic acid,,0.25,0.75,0,333.15,80,Mechanistic insights into the lignin dissolution behavior in amino acid based deep eutectic solvents,70
+L-proline,Levulinic acid,,0.25,0.75,0,348.15,25,Mechanistic insights into the lignin dissolution behavior in amino acid based deep eutectic solvents,70
+Choline chloride,Oxalic acid dihydrate,,0.5,0.5,0,353.15,62,Production of Nanocellulose Using Hydrated Deep Eutectic Solvent Combined with Ultrasonic Treatment,71
+Choline chloride,Oxalic acid dihydrate,,0.5,0.5,0,353.15,4.2,Production of Nanocellulose Using Hydrated Deep Eutectic Solvent Combined with Ultrasonic Treatment,71
+Choline chloride,Oxalic acid dihydrate,,0.5,0.5,0,353.15,1.8,Production of Nanocellulose Using Hydrated Deep Eutectic Solvent Combined with Ultrasonic Treatment,71
+Choline chloride,Oxalic acid dihydrate,,0.5,0.5,0,353.15,0.8,Production of Nanocellulose Using Hydrated Deep Eutectic Solvent Combined with Ultrasonic Treatment,71
+Lactic acid,Arginine,,0.833333333,0.166666667,0,353.15,1018.2,Natural arginine-based deep eutectic solvents for rapid microwave-assisted pretreatment on crystalline bamboo cellulose with boosting enzymatic conversion performance,76
+Lactic acid,Arginine,,0.833333333,0.166666667,0,373.15,360.8,Natural arginine-based deep eutectic solvents for rapid microwave-assisted pretreatment on crystalline bamboo cellulose with boosting enzymatic conversion performance,76
+Lactic acid,Arginine,,0.833333333,0.166666667,0,393.15,129.4,Natural arginine-based deep eutectic solvents for rapid microwave-assisted pretreatment on crystalline bamboo cellulose with boosting enzymatic conversion performance,76
+Lactic acid,Arginine,,0.857142857,0.142857143,0,353.15,713.8,Natural arginine-based deep eutectic solvents for rapid microwave-assisted pretreatment on crystalline bamboo cellulose with boosting enzymatic conversion performance,76
+Lactic acid,Arginine,,0.857142857,0.142857143,0,373.15,147.4,Natural arginine-based deep eutectic solvents for rapid microwave-assisted pretreatment on crystalline bamboo cellulose with boosting enzymatic conversion performance,76
+Lactic acid,Arginine,,0.857142857,0.142857143,0,393.15,70.6,Natural arginine-based deep eutectic solvents for rapid microwave-assisted pretreatment on crystalline bamboo cellulose with boosting enzymatic conversion performance,76
+Lactic acid,Arginine,,0.875,0.125,0,353.15,626.7,Natural arginine-based deep eutectic solvents for rapid microwave-assisted pretreatment on crystalline bamboo cellulose with boosting enzymatic conversion performance,76
+Lactic acid,Arginine,,0.875,0.125,0,373.15,223.5,Natural arginine-based deep eutectic solvents for rapid microwave-assisted pretreatment on crystalline bamboo cellulose with boosting enzymatic conversion performance,76
+Lactic acid,Arginine,,0.875,0.125,0,393.15,112,Natural arginine-based deep eutectic solvents for rapid microwave-assisted pretreatment on crystalline bamboo cellulose with boosting enzymatic conversion performance,76
+Choline chloride,p-toluene sulfonic acid,Ethylene glycol,0.333333333,0.333333333,0.333333333,298.15,349.63,"Fabrication of ternary deep eutectic solvent choline chloride:_p_-toluene sulfonic acid:Glycerol for pretreating wheat straw to augment cellulose accessibility, xylan removal, and lignin removal",77
+Choline chloride,p-toluene sulfonic acid,Glycerol,0.4,0.4,0.2,298.15,349.24,"Fabrication of ternary deep eutectic solvent choline chloride:_p_-toluene sulfonic acid:Glycerol for pretreating wheat straw to augment cellulose accessibility, xylan removal, and lignin removal",77
+Choline chloride,p-toluene sulfonic acid,Glycerol,0.333333333,0.333333333,0.333333333,298.15,345.52,"Fabrication of ternary deep eutectic solvent choline chloride:_p_-toluene sulfonic acid:Glycerol for pretreating wheat straw to augment cellulose accessibility, xylan removal, and lignin removal",77
+Choline chloride,p-toluene sulfonic acid,Glycerol,0.25,0.25,0.5,298.15,526.7,"Fabrication of ternary deep eutectic solvent choline chloride:_p_-toluene sulfonic acid:Glycerol for pretreating wheat straw to augment cellulose accessibility, xylan removal, and lignin removal",77
+Choline chloride,p-toluene sulfonic acid,Glycerol,0.2,0.2,0.6,298.15,550.8,"Fabrication of ternary deep eutectic solvent choline chloride:_p_-toluene sulfonic acid:Glycerol for pretreating wheat straw to augment cellulose accessibility, xylan removal, and lignin removal",77
+Benzyl triethyl ammonium chloride,Resorcinol,,0.333333333,0.666666667,0,293.15,1315.4244,Preparation and characterization of novel polyols-based DESs and their use in efficient sequestration of radioactive iodine,79
+Benzyl triethyl ammonium chloride,Resorcinol,,0.333333333,0.666666667,0,298.15,801.6224,Preparation and characterization of novel polyols-based DESs and their use in efficient sequestration of radioactive iodine,79
+Benzyl triethyl ammonium chloride,Resorcinol,,0.333333333,0.666666667,0,303.15,494.6886,Preparation and characterization of novel polyols-based DESs and their use in efficient sequestration of radioactive iodine,79
+Benzyl triethyl ammonium chloride,Resorcinol,,0.333333333,0.666666667,0,308.15,340.4223,Preparation and characterization of novel polyols-based DESs and their use in efficient sequestration of radioactive iodine,79
+Benzyl triethyl ammonium chloride,Resorcinol,,0.333333333,0.666666667,0,313.15,228.2341,Preparation and characterization of novel polyols-based DESs and their use in efficient sequestration of radioactive iodine,79
+Benzyl triethyl ammonium chloride,Catechol,,0.333333333,0.666666667,0,293.15,1730.726,Preparation and characterization of novel polyols-based DESs and their use in efficient sequestration of radioactive iodine,79
+Benzyl triethyl ammonium chloride,Catechol,,0.333333333,0.666666667,0,298.15,1127.29,Preparation and characterization of novel polyols-based DESs and their use in efficient sequestration of radioactive iodine,79
+Benzyl triethyl ammonium chloride,Catechol,,0.333333333,0.666666667,0,303.15,672.427,Preparation and characterization of novel polyols-based DESs and their use in efficient sequestration of radioactive iodine,79
+Benzyl triethyl ammonium chloride,Catechol,,0.333333333,0.666666667,0,308.15,416.8017,Preparation and characterization of novel polyols-based DESs and their use in efficient sequestration of radioactive iodine,79
+Benzyl triethyl ammonium chloride,Catechol,,0.333333333,0.666666667,0,313.15,290.3175,Preparation and characterization of novel polyols-based DESs and their use in efficient sequestration of radioactive iodine,79
+Benzyl triethyl ammonium chloride,Phenol,,0.333333333,0.666666667,0,293.15,35.4565,Preparation and characterization of novel polyols-based DESs and their use in efficient sequestration of radioactive iodine,79
+Benzyl triethyl ammonium chloride,Phenol,,0.333333333,0.666666667,0,298.15,27.943,Preparation and characterization of novel polyols-based DESs and their use in efficient sequestration of radioactive iodine,79
+Benzyl triethyl ammonium chloride,Phenol,,0.333333333,0.666666667,0,303.15,22.211,Preparation and characterization of novel polyols-based DESs and their use in efficient sequestration of radioactive iodine,79
+Benzyl triethyl ammonium chloride,Phenol,,0.333333333,0.666666667,0,308.15,18.0667,Preparation and characterization of novel polyols-based DESs and their use in efficient sequestration of radioactive iodine,79
+Benzyl triethyl ammonium chloride,Phenol,,0.333333333,0.666666667,0,313.15,14.8205,Preparation and characterization of novel polyols-based DESs and their use in efficient sequestration of radioactive iodine,79
+Benzyl triethyl ammonium chloride,Pyrogallol,,0.333333333,0.666666667,0,293.15,3246.2471,Preparation and characterization of novel polyols-based DESs and their use in efficient sequestration of radioactive iodine,79
+Benzyl triethyl ammonium chloride,Pyrogallol,,0.333333333,0.666666667,0,298.15,1635.2779,Preparation and characterization of novel polyols-based DESs and their use in efficient sequestration of radioactive iodine,79
+Benzyl triethyl ammonium chloride,Pyrogallol,,0.333333333,0.666666667,0,303.15,949.199,Preparation and characterization of novel polyols-based DESs and their use in efficient sequestration of radioactive iodine,79
+Benzyl triethyl ammonium chloride,Pyrogallol,,0.333333333,0.666666667,0,308.15,618.9559,Preparation and characterization of novel polyols-based DESs and their use in efficient sequestration of radioactive iodine,79
+Lactic acid,Choline chloride,,0.909090909,0.090909091,0,333.15,41.2,Upgrading lignin macromolecular by green and recyclable ternary deep eutectic solvents,83
+Formic acid,Lactic acid,Choline chloride,0.333333333,0.333333333,0.333333333,333.15,36.8,Upgrading lignin macromolecular by green and recyclable ternary deep eutectic solvents,83
+Formic acid,Lactic acid,Choline chloride,0.222222222,0.555555556,0.222222222,333.15,38.1,Upgrading lignin macromolecular by green and recyclable ternary deep eutectic solvents,83
+Formic acid,Lactic acid,Choline chloride,0.142857143,0.714285714,0.142857143,333.15,39.5,Upgrading lignin macromolecular by green and recyclable ternary deep eutectic solvents,83
+Formic acid,Choline chloride,,0.666666667,0.333333333,0,333.15,34.7,Upgrading lignin macromolecular by green and recyclable ternary deep eutectic solvents,83
+L(-)-menthol,Thymol,,0.5,0.5,0,298.15,38.08,Greener Terpene–Terpene Eutectic Mixtures as Hydrophobic Solvents,89
+L(-)-menthol,(1R)-(+)-camphor,,0.5,0.5,0,298.15,16,Greener Terpene–Terpene Eutectic Mixtures as Hydrophobic Solvents,89
+L(-)-menthol,(-)-borneol,,0.7,0.3,0,298.15,110,Greener Terpene–Terpene Eutectic Mixtures as Hydrophobic Solvents,89
+Choline chloride,Urea,,0.333333333,0.666666667,0,298.15,750,"Deep Eutectic Solvents for Pretreatment, Extraction, and Catalysis of Biomass and Food Waste",92
+Choline chloride,Ethylene glycol,,0.333333333,0.666666667,0,298.15,37,"Deep Eutectic Solvents for Pretreatment, Extraction, and Catalysis of Biomass and Food Waste",92
+Choline chloride,Glycerol,,0.333333333,0.666666667,0,298.15,259,"Deep Eutectic Solvents for Pretreatment, Extraction, and Catalysis of Biomass and Food Waste",92
+Choline chloride,Malonic acid,,0.333333333,0.666666667,0,298.15,1124,"Deep Eutectic Solvents for Pretreatment, Extraction, and Catalysis of Biomass and Food Waste",92
+Choline chloride,Glucose,,0.5,0.5,0,323.15,34400,"Deep Eutectic Solvents for Pretreatment, Extraction, and Catalysis of Biomass and Food Waste",92
+L-arginine,Choline hydroxide,,0.5,0.5,0,298.15,1026.3,Microwave assisted alkaline deep eutectic solvents treatment inducing deconstruction of recalcitrant moso bamboo cell walls for highly efficient dual-enzymatic saccharification,93
+L-arginine,Choline hydroxide,,0.333333333,0.666666667,0,298.15,983.6,Microwave assisted alkaline deep eutectic solvents treatment inducing deconstruction of recalcitrant moso bamboo cell walls for highly efficient dual-enzymatic saccharification,93
+n-decanoic acid,eugenol,,0.5,0.5,0,298.15,8.2,Decanoic Acid Based Deep Eutectic Solvents: Constituent-Controlled Physicochemical Properties and Solvatochromic Probe Behavior,98
+n-decanoic acid,thymol,,0.5,0.5,0,298.15,11.83,Decanoic Acid Based Deep Eutectic Solvents: Constituent-Controlled Physicochemical Properties and Solvatochromic Probe Behavior,98
+n-decanoic acid,geraniol,,0.5,0.5,0,298.15,8.62,Decanoic Acid Based Deep Eutectic Solvents: Constituent-Controlled Physicochemical Properties and Solvatochromic Probe Behavior,98
+n-decanoic acid,linalool,,0.5,0.5,0,298.15,7.84,Decanoic Acid Based Deep Eutectic Solvents: Constituent-Controlled Physicochemical Properties and Solvatochromic Probe Behavior,98
+n-decanoic acid,β-citronellol,,0.5,0.5,0,298.15,9.75,Decanoic Acid Based Deep Eutectic Solvents: Constituent-Controlled Physicochemical Properties and Solvatochromic Probe Behavior,98
+Choline chloride,Lactic acid,,0.5,0.5,0,298.15,1000,"Efficient whole-cell biosynthesis of (S)-2-chloro-1-(3,4-difluorophenyl)-ethanol from 2-chloro-1-(3,4-difluoro- phenyl) ethanone in a sustainable reaction system",99
+Choline chloride,Malic acid,,0.5,0.5,0,298.15,10000,"Efficient whole-cell biosynthesis of (S)-2-chloro-1-(3,4-difluorophenyl)-ethanol from 2-chloro-1-(3,4-difluoro- phenyl) ethanone in a sustainable reaction system",99
+Choline chloride,Citric acid,,0.5,0.5,0,298.15,31000,"Efficient whole-cell biosynthesis of (S)-2-chloro-1-(3,4-difluorophenyl)-ethanol from 2-chloro-1-(3,4-difluoro- phenyl) ethanone in a sustainable reaction system",99
+Choline chloride,Tartaric acid,,0.5,0.5,0,298.15,25000,"Efficient whole-cell biosynthesis of (S)-2-chloro-1-(3,4-difluorophenyl)-ethanol from 2-chloro-1-(3,4-difluoro- phenyl) ethanone in a sustainable reaction system",99
+Choline chloride,Malonic acid,,0.5,0.5,0,298.15,5000,"Efficient whole-cell biosynthesis of (S)-2-chloro-1-(3,4-difluorophenyl)-ethanol from 2-chloro-1-(3,4-difluoro- phenyl) ethanone in a sustainable reaction system",99

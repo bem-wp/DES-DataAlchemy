@@ -1,0 +1,698 @@
+{
+  "extraction": {
+    "article_title": "Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",
+    "des_entries": [
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Glycerol"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "298.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1.02",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Triethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Triethylene glycol"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "298.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1.41",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Phenol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Phenol"
+        ],
+        "molar_ratio": "1:3",
+        "temperature": [
+          "298.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "3.14",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Xylitol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Xylitol"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "1.15",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Malonic acid"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Malonic acid"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.91",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Levulinic acid"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Levulinic acid"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "298.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.81",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Zinc nitrate hexahydrate"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Zn(NO3)2 +6H2O"
+        ],
+        "molar_ratio": "1:1",
+        "temperature": [
+          "298.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "9.28",
+          "mS/cm"
+        ]
+      },
+      {
+        "compounds_names": [
+          "Acetylcholine chloride",
+          "Levulinic acid"
+        ],
+        "compounds_acronyms": [
+          "Acetylcholine Cl",
+          "Levulinic acid"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [
+          "298.15",
+          "Kelvin"
+        ],
+        "conductivity": [
+          "0.67",
+          "mS/cm"
+        ]
+      }
+    ]
+  },
+  "extraction_metadata": {
+    "article_title": {
+      "value": "Insights into the relationships between physicochemical properties, solvent performance, and applications of deep eutectic solvents",
+      "references": [
+        "72d3c9a6-ab98-45aa-b9a0-b7f5808c3835"
+      ]
+    },
+    "des_entries": [
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "b94c60d1-117a-47d1-8cc0-c6c1f6c51cce",
+              "10-8"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "10-9"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "10-8"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "10-9"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "10-a"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298.15",
+            "references": [
+              "10-1"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "10-1"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1.02",
+            "references": [
+              "10-b"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "10-5"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "b94c60d1-117a-47d1-8cc0-c6c1f6c51cce",
+              "10-8"
+            ]
+          },
+          {
+            "value": "Triethylene glycol",
+            "references": [
+              "10-f"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "10-8"
+            ]
+          },
+          {
+            "value": "Triethylene glycol",
+            "references": [
+              "10-f"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "10-g"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298.15",
+            "references": [
+              "10-1"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "10-1"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1.41",
+            "references": [
+              "10-h"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "10-5"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "b94c60d1-117a-47d1-8cc0-c6c1f6c51cce",
+              "10-8"
+            ]
+          },
+          {
+            "value": "Phenol",
+            "references": [
+              "10-l"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "10-8"
+            ]
+          },
+          {
+            "value": "Phenol",
+            "references": [
+              "10-l"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:3",
+          "references": [
+            "10-m"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298.15",
+            "references": [
+              "10-1"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "10-1"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "3.14",
+            "references": [
+              "10-n"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "10-5"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "b94c60d1-117a-47d1-8cc0-c6c1f6c51cce",
+              "10-8"
+            ]
+          },
+          {
+            "value": "Xylitol",
+            "references": [
+              "10-w"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "10-8"
+            ]
+          },
+          {
+            "value": "Xylitol",
+            "references": [
+              "10-w"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "10-s"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298.15",
+            "references": [
+              "10-1"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "10-1"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "1.15",
+            "references": [
+              "10-t"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "10-5"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "b94c60d1-117a-47d1-8cc0-c6c1f6c51cce",
+              "10-8"
+            ]
+          },
+          {
+            "value": "Malonic acid",
+            "references": [
+              "10-D"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "10-8"
+            ]
+          },
+          {
+            "value": "Malonic acid",
+            "references": [
+              "10-D"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "10-y"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298.15",
+            "references": [
+              "10-1"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "10-1"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.91",
+            "references": [
+              "10-z"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "10-5"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "b94c60d1-117a-47d1-8cc0-c6c1f6c51cce",
+              "10-8"
+            ]
+          },
+          {
+            "value": "Levulinic acid",
+            "references": [
+              "10-E"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "10-8"
+            ]
+          },
+          {
+            "value": "Levulinic acid",
+            "references": [
+              "10-E"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "10-F"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298.15",
+            "references": [
+              "10-1"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "10-1"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.81",
+            "references": [
+              "10-F"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "10-5"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "b94c60d1-117a-47d1-8cc0-c6c1f6c51cce",
+              "10-8"
+            ]
+          },
+          {
+            "value": "Zinc nitrate hexahydrate",
+            "references": [
+              "10-J"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "10-8"
+            ]
+          },
+          {
+            "value": "Zn(NO3)2 +6H2O",
+            "references": [
+              "10-J"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:1",
+          "references": [
+            "10-K"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298.15",
+            "references": [
+              "10-1"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "10-1"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "9.28",
+            "references": [
+              "10-L"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "10-5"
+            ]
+          }
+        ]
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Acetylcholine chloride",
+            "references": [
+              "10-O"
+            ]
+          },
+          {
+            "value": "Levulinic acid",
+            "references": [
+              "10-P"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Acetylcholine Cl",
+            "references": [
+              "10-O"
+            ]
+          },
+          {
+            "value": "Levulinic acid",
+            "references": [
+              "10-P"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "10-Q"
+          ]
+        },
+        "temperature": [
+          {
+            "value": "298.15",
+            "references": [
+              "10-1"
+            ]
+          },
+          {
+            "value": "Kelvin",
+            "references": [
+              "10-1"
+            ]
+          }
+        ],
+        "conductivity": [
+          {
+            "value": "0.67",
+            "references": [
+              "10-R"
+            ]
+          },
+          {
+            "value": "mS/cm",
+            "references": [
+              "10-5"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "credit_usage": 39.617,
+    "duration_ms": 31600,
+    "filename": "upload.md",
+    "job_id": "d6101fef6f664bfca9bed74afb2c5a18",
+    "org_id": null,
+    "version": "extract-20251024",
+    "fallback_model_version": null,
+    "schema_violation_error": "Extracted data does not completely conform to the requested schema. See below error for details.\nNone is not of type 'string'\n\nFailed validating 'type' in schema['properties']['des_entries']['items']['properties']['conductivity']['items']:\n    {'type': 'string'}\n\nOn instance['des_entries'][8]['conductivity'][0]:\n    None\nPlease read our documentation for more information: https://docs.landing.ai/ade/ade-extract-troubleshoot"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "extraction": {
+    "article_title": "Multivariate analysis of the process of deep eutectic solvent pretreatment of lignocellulosic biomass",
+    "des_entries": []
+  },
+  "extraction_metadata": {
+    "article_title": {
+      "value": "Multivariate analysis of the process of deep eutectic solvent pretreatment of lignocellulosic biomass",
+      "references": [
+        "f592b32e-23c9-4f45-960c-79abf3cc492d"
+      ]
+    },
+    "des_entries": []
+  },
+  "metadata": {
+    "credit_usage": 14.4726,
+    "duration_ms": 16786,
+    "filename": "upload.md",
+    "job_id": "a320955c901c40ccba3088f506cbd42e",
+    "org_id": null,
+    "version": "extract-20251024",
+    "fallback_model_version": null,
+    "schema_violation_error": null
+  }
+}

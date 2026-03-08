@@ -1,0 +1,630 @@
+{
+  "extraction": {
+    "article_title": "Untapped Potential of Deep Eutectic Solvents for the Synthesis of Bioinspired Inorganic–Organic Materials",
+    "des_entries": [
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Urea"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "U"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Thiourea"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Thiourea"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "1,3-dimethyl urea"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "1,3-dimethyl urea"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Ethylene glycol"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Glycerol"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline fluoride",
+          "Urea"
+        ],
+        "compounds_acronyms": [
+          "Choline fluoride",
+          "U"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Zinc chloride",
+          "Ethylene glycol"
+        ],
+        "compounds_acronyms": [
+          "ZnCl2",
+          "Ethylene glycol"
+        ],
+        "molar_ratio": "1:4",
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Water",
+          "Dimethyl sulfoxide"
+        ],
+        "compounds_acronyms": [
+          "H2O",
+          "DMSO"
+        ],
+        "molar_ratio": "1:4",
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Glycine"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Glycine"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline chloride",
+          "Malonic acid"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Malonic acid"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline Chloride",
+          "Glycerol"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "Gly"
+        ],
+        "molar_ratio": null,
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          "Choline Chloride",
+          "Urea"
+        ],
+        "compounds_acronyms": [
+          "ChCl",
+          "U"
+        ],
+        "molar_ratio": "1:2",
+        "temperature": [],
+        "conductivity": []
+      }
+    ]
+  },
+  "extraction_metadata": {
+    "article_title": {
+      "value": "Untapped Potential of Deep Eutectic Solvents for the Synthesis of Bioinspired Inorganic–Organic Materials",
+      "references": [
+        "24cc7644-855c-4c2a-bf5c-497dbb869eab"
+      ]
+    },
+    "des_entries": [
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "41456134-e700-4fad-8c65-318caa10fe1f",
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "41456134-e700-4fad-8c65-318caa10fe1f",
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "41456134-e700-4fad-8c65-318caa10fe1f",
+              "7a6b0210-79a7-4819-b798-bde7f2378c3d"
+            ]
+          },
+          {
+            "value": "U",
+            "references": [
+              "41456134-e700-4fad-8c65-318caa10fe1f",
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "41456134-e700-4fad-8c65-318caa10fe1f",
+            "415306ef-c146-42f6-9c99-d3f34c04fd21"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          },
+          {
+            "value": "Thiourea",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          },
+          {
+            "value": "Thiourea",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "415306ef-c146-42f6-9c99-d3f34c04fd21"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          },
+          {
+            "value": "1,3-dimethyl urea",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          },
+          {
+            "value": "1,3-dimethyl urea",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "415306ef-c146-42f6-9c99-d3f34c04fd21"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "415306ef-c146-42f6-9c99-d3f34c04fd21"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "415306ef-c146-42f6-9c99-d3f34c04fd21"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline fluoride",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "Choline fluoride",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          },
+          {
+            "value": "U",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "415306ef-c146-42f6-9c99-d3f34c04fd21"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Zinc chloride",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ZnCl2",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          },
+          {
+            "value": "Ethylene glycol",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:4",
+          "references": [
+            "415306ef-c146-42f6-9c99-d3f34c04fd21"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Water",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          },
+          {
+            "value": "Dimethyl sulfoxide",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "H2O",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          },
+          {
+            "value": "DMSO",
+            "references": [
+              "415306ef-c146-42f6-9c99-d3f34c04fd21"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:4",
+          "references": [
+            "415306ef-c146-42f6-9c99-d3f34c04fd21"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "7a6b0210-79a7-4819-b798-bde7f2378c3d"
+            ]
+          },
+          {
+            "value": "Glycine",
+            "references": [
+              "7a6b0210-79a7-4819-b798-bde7f2378c3d"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "7a6b0210-79a7-4819-b798-bde7f2378c3d"
+            ]
+          },
+          {
+            "value": "Glycine",
+            "references": [
+              "7a6b0210-79a7-4819-b798-bde7f2378c3d"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline chloride",
+            "references": [
+              "7a6b0210-79a7-4819-b798-bde7f2378c3d"
+            ]
+          },
+          {
+            "value": "Malonic acid",
+            "references": [
+              "7a6b0210-79a7-4819-b798-bde7f2378c3d"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": [
+              "7a6b0210-79a7-4819-b798-bde7f2378c3d"
+            ]
+          },
+          {
+            "value": "Malonic acid",
+            "references": [
+              "7a6b0210-79a7-4819-b798-bde7f2378c3d"
+            ]
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline Chloride",
+            "references": [
+              "bf89969a-07e8-438e-bfe0-6e375e9bf4aa"
+            ]
+          },
+          {
+            "value": "Glycerol",
+            "references": [
+              "bf89969a-07e8-438e-bfe0-6e375e9bf4aa"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": []
+          },
+          {
+            "value": "Gly",
+            "references": []
+          }
+        ],
+        "molar_ratio": {
+          "value": null,
+          "references": []
+        },
+        "temperature": [],
+        "conductivity": []
+      },
+      {
+        "compounds_names": [
+          {
+            "value": "Choline Chloride",
+            "references": [
+              "53f0eadd-8eae-432e-a99e-6cd636a55f21"
+            ]
+          },
+          {
+            "value": "Urea",
+            "references": [
+              "53f0eadd-8eae-432e-a99e-6cd636a55f21"
+            ]
+          }
+        ],
+        "compounds_acronyms": [
+          {
+            "value": "ChCl",
+            "references": []
+          },
+          {
+            "value": "U",
+            "references": []
+          }
+        ],
+        "molar_ratio": {
+          "value": "1:2",
+          "references": [
+            "53f0eadd-8eae-432e-a99e-6cd636a55f21"
+          ]
+        },
+        "temperature": [],
+        "conductivity": []
+      }
+    ]
+  },
+  "metadata": {
+    "credit_usage": 41.992,
+    "duration_ms": 26150,
+    "filename": "upload.md",
+    "job_id": "d8e15f5c1fbc4dc39efb124a1d6ebb67",
+    "org_id": null,
+    "version": "extract-20251024",
+    "fallback_model_version": null,
+    "schema_violation_error": null
+  }
+}

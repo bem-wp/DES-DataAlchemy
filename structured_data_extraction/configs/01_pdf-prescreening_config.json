@@ -1,0 +1,4 @@
+{
+  "target_key": "has_conductivity_data",
+  "output_csv": "pdf_has_conductivity_data.csv"
+}

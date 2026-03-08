@@ -1,0 +1,8 @@
+{
+  "property_json_field": "conductivity",
+  "property_type": "single_with_unit",
+  "property_cols": ["cond", "cond_unit"], 
+  "use_condition": true,
+  "condition_cols": ["t"],
+  "clean_strategy": "any"
+}
