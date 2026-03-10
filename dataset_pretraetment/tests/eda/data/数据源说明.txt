@@ -1,0 +1,5 @@
+DESignSolvents an open platform for the search and prediction of the physicochemical properties of deep eutectic solvents → 0
+Modeling the viscosity of binary eutectic systems at different compositions and temperatures → 1
+Multiscale exploration of informative latent features for accurate deep eutectic solvents viscosity prediction → 2
+Viscosity of deep eutectic solvents Predictive modeling with experimental validation → 3
+merged_raw-dataset：上述4个数据集的合并结果（手动）

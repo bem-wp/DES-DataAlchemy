@@ -75,7 +75,7 @@ class GoogleScholarScraper:
         """执行单次搜索查询 - 增强版，支持年份/年份范围限制"""
         papers = []
         start_index = 0
-        max_pages = min(70, (num_results // 10) + 2)
+        max_pages = min(100, (num_results // 10) + 2)
 
         page_count = 0
 
