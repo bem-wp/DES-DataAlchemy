@@ -2,31 +2,32 @@ import os
 import sys
 import time
 import re
-import io
-import socket
 import logging
-from collections import Counter
+import json
+import urllib.request
+from urllib.error import HTTPError, URLError
+import socket
 from functools import lru_cache
-
-# 数据处理与科学计算
-import numpy as np
+from datetime import datetime
 import pandas as pd
 
-# 化学信息学专业库
 import pubchempy as pcp
 
-# 设置全局超时（utils内部生效）
+# 设置全局超时（防止网络死锁）
 socket.setdefaulttimeout(15)
 
+# 日志配置
+logging.basicConfig(
+    level=logging.INFO, 
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[logging.StreamHandler(sys.stdout)]
+)
 
-# --- 2. 重试装饰器 ---
+# ==========================================
+# 1. 基础工具与防封禁重试机制
+# ==========================================
 def retry_on_failure(max_retries=3, delay=2, backoff=2):
-    """
-    重试装饰器
-    max_retries: 最大重试次数
-    delay: 初始延迟时间(秒)
-    backoff: 延迟倍增系数
-    """
+    """重试装饰器，附带防崩溃护甲"""
     def decorator(func):
         def wrapper(*args, **kwargs):
             current_delay = delay
@@ -35,133 +36,132 @@ def retry_on_failure(max_retries=3, delay=2, backoff=2):
                     return func(*args, **kwargs)
                 except Exception as e:
                     if attempt < max_retries - 1:
-                        print(f" [重试 {attempt + 1}/{max_retries - 1}，等待 {current_delay}s]", end="", flush=True)
+                        print(f" [遇到异常: {type(e).__name__}，重试 {attempt + 1}/{max_retries - 1}，等待 {current_delay}s] ", end="", flush=True)
                         time.sleep(current_delay)
                         current_delay *= backoff
                     else:
-                        # 最后一次重试也失败了
-                        raise e
+                        logging.debug(f"最终失败: {e}")
+                        return None
             return None
         return wrapper
     return decorator
 
-
-# --- 3. 分离的 PubChem 请求函数（带重试） ---
-@retry_on_failure(max_retries=3, delay=1, backoff=2)
-def get_smiles_with_retry(name):
-    """获取 SMILES，带重试"""
-    result = pcp.get_properties('IsomericSMILES', name, 'name')
-    if result and len(result) > 0 and 'SMILES' in result[0]:
-        return result[0]['SMILES']
+def validate_cas(cas_str):
+    if not cas_str: return None
+    cas_str = str(cas_str).strip()
+    if re.match(r'^\d{2,7}-\d{2}-\d$', cas_str):
+        return cas_str
     return None
 
-
-@retry_on_failure(max_retries=3, delay=1, backoff=2)
-def get_synonyms_with_retry(name):
-    """获取同义词，带重试"""
-    return pcp.get_synonyms(name, 'name')
-
-
-@retry_on_failure(max_retries=3, delay=1, backoff=2)
-def get_compounds_with_retry(name):
-    """获取化合物信息，带重试"""
-    return pcp.get_compounds(name, 'name')
-
-
-# --- 4. CAS 号提取函数（双重策略） ---
 def extract_cas_from_synonyms(synonyms_list):
-    """
-    从同义词列表中提取 CAS 号
-    synonyms_list: 同义词列表
-    返回: CAS 号字符串或 None
-    """
-    if not synonyms_list:
-        return None
-    
+    if not synonyms_list: return None
     for synonym in synonyms_list:
-        parts = synonym.split('-')
-        if len(parts) == 3 and all(part.isdigit() for part in parts):
-            return synonym
+        valid_cas = validate_cas(synonym)
+        if valid_cas:
+            return valid_cas
     return None
 
+# ==========================================
+# 2. PubChem 专属检索引擎
+# ==========================================
+@retry_on_failure(max_retries=3, delay=2, backoff=2)
+def get_cas_directly_from_pubchem(cid):
+    """直接从 PubChem PUG View API 获取专属 CAS 节点，显式异常抛出"""
+    url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/{cid}/JSON"
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+    
+    try:
+        with urllib.request.urlopen(req, timeout=10) as response:
+            data = json.loads(response.read().decode('utf-8'))
+    except socket.timeout:
+        raise Exception("PubChem API 网络连接超时")
+    except HTTPError as e:
+        raise Exception(f"PubChem 拒绝访问或限流, 状态码: {e.code}")
+    except URLError as e:
+        raise Exception(f"PubChem URL 路由错误: {e.reason}")
+    except json.JSONDecodeError:
+        raise Exception("PubChem 返回了无效的 JSON 数据")
+    
+    for section in data.get('Record', {}).get('Section', []):
+        if section.get('TOCHeading') == 'Names and Identifiers':
+            for sub_sec in section.get('Section', []):
+                if sub_sec.get('TOCHeading') == 'Other Identifiers':
+                    for sub_sub_sec in sub_sec.get('Section', []):
+                        if sub_sub_sec.get('TOCHeading') == 'CAS':
+                            try:
+                                return sub_sub_sec['Information'][0]['Value']['StringWithMarkup'][0]['String']
+                            except (KeyError, IndexError, TypeError):
+                                logging.debug(f"CID {cid} CAS节点残缺，跳过。")
+                                continue
+    return None
 
-# --- 5. 核心处理函数（整合版本 + 双重 CAS 获取策略） ---
+def fetch_pubchem(name, target_fields):
+    """采用 get_compounds 全量获取"""
+    data = {'smiles': None, 'uname': None, 'cas': None}
+    cid = None
+    synonyms_list = []
+    
+    # 1. 基础查询 (全量下载)
+    try:
+        compounds = pcp.get_compounds(name, 'name')
+        if compounds:
+            cid = compounds[0].cid
+            synonyms_list = compounds[0].synonyms
+            
+            if 'smiles' in target_fields:
+                data['smiles'] = compounds[0].smiles
+    except Exception as e: 
+        logging.debug(f"PubChem Compounds API Error: {e}")
+
+    # 2. 搜专属 CAS (PUG View)
+    if 'cas' in target_fields and cid:
+        time.sleep(0.5) 
+        raw_cas = get_cas_directly_from_pubchem(cid)
+        validated_cas = validate_cas(raw_cas)
+        if validated_cas:
+            data['cas'] = validated_cas
+            
+    # 3. 搜 CAS (同义词兜底)
+    if 'cas' in target_fields and not data['cas'] and synonyms_list:
+        data['cas'] = extract_cas_from_synonyms(synonyms_list)
+
+    # 4. 搜 通用名 (uname)
+    if 'uname' in target_fields and synonyms_list:
+        new_name = synonyms_list[0]
+        if re.search(r'\d{2,}', new_name) and len(synonyms_list) > 1:
+            data['uname'] = synonyms_list[1]
+        else:
+            data['uname'] = new_name
+
+    return data
+
+# ==========================================
+# 3. 核心调度器
+# ==========================================
 @lru_cache(maxsize=None)
 def f_fetch_compound_info(name):
-    """
-    整合版本：第一段搜索逻辑 + 第二段封装 + 重试机制 + 双重 CAS 策略
-    """
-    # 基础校验
     if not isinstance(name, str) or not name.strip():
-        logging.warning(f"Invalid input: {name}")
         return None, None, None
 
-    # 防止请求过快
     time.sleep(0.5)
     
-    # 请求提示
-    print(f"--> 正在请求: [{name}] ...", end="", flush=True)
-
-    smiles = None
-    univers_name = None
-    cas_number = None
-
-    # --- Part 1: 获取 SMILES ---
+    info = {'smiles': None, 'uname': None, 'cas': None}
+    target_fields = ['smiles', 'uname', 'cas'] 
+    
     try:
-        smiles = get_smiles_with_retry(name)
-        if not smiles:
-            logging.warning(f"No 'SMILES' found for {name}")
+        new_data = fetch_pubchem(name, target_fields)
+        
+        for field in target_fields:
+            if new_data and new_data.get(field):
+                info[field] = new_data[field]
+                logging.info(f"   └─ 成功获取 [{field}]: {new_data[field]}")
+                
     except Exception as e:
-        logging.error(f"Error getting SMILES for '{name}' after retries: {e}")
+        logging.error(f" PubChem Engine crashed on {name}: {e}")
 
-    # --- Part 2: 获取通用名 + CAS (策略1: 从 synonyms) ---
-    try:
-        synonyms = get_synonyms_with_retry(name)
-        if synonyms:
-            synonym_list = synonyms[0]['Synonym']
-            
-            # 2A. 获取通用名
-            new_name = synonym_list[0]
-            if re.search(r'\d{2,}', new_name) is not None:
-                if len(synonym_list) > 1:
-                    univers_name = synonym_list[1]
-                else:
-                    logging.warning(f"No second synonym available for compound: {name}")
-            else:
-                univers_name = new_name
-            
-            # 2B. 尝试从 synonyms 中提取 CAS (优先策略)
-            cas_number = extract_cas_from_synonyms(synonym_list)
-            if cas_number:
-                logging.info(f"Found CAS {cas_number} from synonyms for {name}")
-        else:
-            logging.warning(f"No synonyms found for compound: {name}")
-    except Exception as e:
-        logging.error(f"Error retrieving synonyms for '{name}' after retries: {e}")
+    logging.info(f"Result '{name}': SMILES={info['smiles']}, Name={info['uname']}, CAS={info['cas']}")
+    return info['smiles'], info['uname'], info['cas']
 
-    # --- Part 3: 获取 CAS (策略2: 从 compounds，仅在策略1失败时使用) ---
-    if not cas_number:  # 只有在 synonyms 中没找到 CAS 时才执行
-        try:
-            compounds = get_compounds_with_retry(name)
-            if compounds:
-                first_compound = compounds[0]
-                if hasattr(first_compound, 'synonyms') and first_compound.synonyms:
-                    cas_number = extract_cas_from_synonyms(first_compound.synonyms)
-                    if cas_number:
-                        logging.info(f"Found CAS {cas_number} from compounds for {name}")
-                    else:
-                        logging.info(f"No CAS-like synonym found in compounds for: {name}")
-                else:
-                    logging.warning(f"No synonyms available in compound object for: {name}")
-            else:
-                logging.warning(f"No compound found in PubChem for: {name}")
-        except Exception as e:
-            logging.error(f"Error retrieving CAS from compounds for '{name}' after retries: {e}")
-
-    # 打印完成状态
-    print(f" [完成]")
-    logging.info(f"Result '{name}': SMILES={smiles}, Name={univers_name}, CAS={cas_number}")
-    return smiles, univers_name, cas_number
 
 def data_quality_summary(df: pd.DataFrame, output_path: str):
     """

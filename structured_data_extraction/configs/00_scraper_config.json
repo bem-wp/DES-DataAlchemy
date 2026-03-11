@@ -4,14 +4,14 @@
     "https": "http://127.0.0.1:7897"
   },
   "search_settings": {
-    "keywords": ["deep eutectic solvent", "kamlet−taft parameters"],
-    "num_results": 15,
+    "keywords": ["deep eutectic solvent", "deep eutectic solvents"],
+    "num_results": 1000,
     "lang": "en",
-    "search_mode": "AND",
-    "year": [2016, 2026]
+    "search_mode": "OR",
+    "year": [2013, 2016]
   },
   "output_settings": {
-    "json_basename": "papers_info",
-    "excel_filename": "k-t_extracted_titles.xlsx"
+    "json_basename": "papers_info_2013_2016",
+    "excel_filename": "des_2013_2016.xlsx"
   }
 }
