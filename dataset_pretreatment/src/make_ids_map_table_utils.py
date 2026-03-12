@@ -82,7 +82,13 @@ def get_cas_directly_from_pubchem(cid):
     except json.JSONDecodeError:
         raise Exception("PubChem 返回了无效的 JSON 数据")
     
-    for section in data.get('Record', {}).get('Section', []):
+    # 针对 Comment 1: 判断 None，并显式抛出异常，主动触发装饰器的重试
+    if data is None:
+
+        raise Exception("PubChem API 返回了空数据 (None)")
+    
+    # 针对 Comment 2: 使用 (data or {}) 增加一层防御性保护
+    for section in (data or {}).get('Record', {}).get('Section', []):
         if section.get('TOCHeading') == 'Names and Identifiers':
             for sub_sec in section.get('Section', []):
                 if sub_sec.get('TOCHeading') == 'Other Identifiers':
@@ -161,7 +167,6 @@ def f_fetch_compound_info(name):
 
     logging.info(f"Result '{name}': SMILES={info['smiles']}, Name={info['uname']}, CAS={info['cas']}")
     return info['smiles'], info['uname'], info['cas']
-
 
 def data_quality_summary(df: pd.DataFrame, output_path: str):
     """
