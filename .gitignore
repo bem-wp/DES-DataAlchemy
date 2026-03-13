@@ -1,2 +1,4 @@
 dataset_pretreatment/tests
 structured_data_extraction/tests
+dataset_pretreatment/data
+structured_data_extraction/data
