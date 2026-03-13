@@ -1,0 +1,3 @@
+总行数: 770
+列清单: ['x1', 'x2', 'x3', 't', 'vis', 'ref', 'num', 'c1_ismiles', 'c1_uname', 'c1_cas', 'c2_ismiles', 'c2_uname', 'c2_cas', 'c3_ismiles', 'c3_uname', 'c3_cas']
+缺失值统计: {'x1': 0, 'x2': 0, 'x3': 0, 't': 0, 'vis': 0, 'ref': 0, 'num': 0, 'c1_ismiles': 0, 'c1_uname': 0, 'c1_cas': 0, 'c2_ismiles': 0, 'c2_uname': 0, 'c2_cas': 0, 'c3_ismiles': 640, 'c3_uname': 640, 'c3_cas': 640}

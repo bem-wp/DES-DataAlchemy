@@ -1,0 +1,13 @@
+{
+  
+  "RAW_DATASET_NAME" : "vis_incoming_ds.csv",
+
+  "PROPERTY" : "vis",
+
+  "STATE_VAR" : "t",
+
+  "REFERENCE" : "num",
+
+  "PROXY_URL" : "http://127.0.0.1:7897"
+
+}
