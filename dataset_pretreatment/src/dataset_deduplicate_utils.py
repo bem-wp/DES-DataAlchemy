@@ -20,7 +20,7 @@ def data_quality_summary(df, output_path):
             f.write(f"{k}: {v}\n")
     print(f"质量报告已生成: {output_path.replace('.xlsx', '.txt')}")
 
-def process_dataset_deduplication(original_df, essential_cols, str_cols, num_cols, property_col, drop_columns, output_dir, ref_col='ref', temp_col=None):
+def process_dataset_deduplication(original_df, essential_cols, str_cols, num_cols, property_col, drop_columns, output_dir, ref_col='ref', state_var_col=None):
     """
     执行具备“置换不变性”的混合物数据集去重 (即 A+B == B+A)。
     
@@ -55,9 +55,9 @@ def process_dataset_deduplication(original_df, essential_cols, str_cols, num_col
     # =========================================================================
     # 2. 生成规范化去重键
     # =========================================================================
-    if temp_col:
-        print(f"\n=== [Utils] 2. 生成规范化 Key (解决 A+B vs B+A 问题，包含温度: {temp_col}) ===")
-        cols_to_numeric = num_cols + [temp_col]
+    if state_var_col:
+        print(f"\n=== [Utils] 2. 生成规范化 Key (解决 A+B vs B+A 问题，包含温度: {state_var_col}) ===")
+        cols_to_numeric = num_cols + [state_var_col]
     else:
         print("\n=== [Utils] 2. 生成规范化 Key (解决 A+B vs B+A 问题，不包含温度) ===")
         cols_to_numeric = num_cols
@@ -81,8 +81,8 @@ def process_dataset_deduplication(original_df, essential_cols, str_cols, num_col
         pairs.sort(key=lambda x: (x[0], x[1]))
         comp_key = "~~".join([f"{p[0]}::{p[1]}" for p in pairs])
         
-        if temp_col:
-            t_val = temp_nums.at[row.name, temp_col]
+        if state_var_col:
+            t_val = temp_nums.at[row.name, state_var_col]
             t_key = "T::{:.2f}".format(t_val)
             return f"{comp_key}~~{t_key}" if comp_key else f"~~{t_key}"
         else:
@@ -92,7 +92,7 @@ def process_dataset_deduplication(original_df, essential_cols, str_cols, num_col
     data_df['_dedup_key'] = data_df.apply(generate_key, axis=1)
     
     # 剔除无效 Key
-    if temp_col:
+    if state_var_col:
         empty_key_mask = (data_df['_dedup_key'] == "") | (data_df['_dedup_key'].str.startswith("~~T::"))
     else:
         empty_key_mask = (data_df['_dedup_key'] == "")
