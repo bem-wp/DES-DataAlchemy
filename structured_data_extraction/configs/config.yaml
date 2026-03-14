@@ -1,0 +1,13 @@
+paths:
+  input_folder: data/input
+  output_folder: data/output
+  output_csv: data/output/prescreening_results.csv
+prompt:
+  template: LLMprompt/prompt_conductivity.md
+model:
+  base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+  name: qwen-long
+  timeout: 300          # 单次请求超时(秒)，Qwen Long 处理 PDF 较慢，建议 ≥ 300
+
+  
+  
