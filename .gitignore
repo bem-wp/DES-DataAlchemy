@@ -4,3 +4,7 @@ dataset_pretreatment/data
 structured_data_extraction/data
 dataset_pretreatment/temp_data
 structured_data_extraction/temp_data
+
+__pycache__/
+*.py[cod]
+*$py.class
