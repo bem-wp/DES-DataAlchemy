@@ -49,180 +49,328 @@ def data_quality_summary(df: pd.DataFrame, output_path: str):
         row_summary.to_excel(writer, sheet_name='Row_Missing_Summary', index=False)
 
 
-def process_dataset_deduplication(original_df, essential_cols, str_cols, num_cols, property_col, drop_columns, output_dir, ref_col='ref', state_var_col=None):
-    """
-    执行具备“置换不变性”的混合物数据集去重 (即 A+B == B+A)。
-    
-    【核心业务假设与物理约束说明】:
-    1. 组分缺失等同于含量为0：物理化学中，未报告的组分即代表体系中不存在该物质。
-    2. 摩尔分数求和约束 (Σx_i = 1)：锁定组分比例约束，不对 x 取均值。
-    3. 数值截断去噪：消除实验精度噪音。
-    """
-    # 严格的参数校验
-    assert len(str_cols) == len(num_cols), "错误：组分名称列(str_cols)和数值列(num_cols)的长度必须一致！"
-    
-    if output_dir: 
-        os.makedirs(output_dir, exist_ok=True)
-
-    data_df = original_df.copy()
-    
-    # 记录原始索引，方便溯源
-    data_df['original_excel_index'] = data_df.index + 2
-    
-    print("=== [Utils] 1. 缺失值处理 ===")
-    missing_cols = [c for c in essential_cols if c not in data_df.columns]
+def _clean_missing_data(df, essential_cols):
+    """关键字段缺失检查与清理"""
+    print("\n=== step 1: 关键字段缺失处理 ===")
+    missing_cols = [c for c in essential_cols if c not in df.columns]
     if missing_cols:
-        print(f"错误: 输入数据缺少关键列: {missing_cols}")
+        print(f"错误: 数据集缺少关键列: {missing_cols}")
         return None
 
-    null_mask = data_df[essential_cols].isnull().any(axis=1)
+    null_mask = df[essential_cols].isnull().any(axis=1)
     if null_mask.any():
-        print(f"检测到 {null_mask.sum()} 行包含缺失值，正在删除。")
-        data_df = data_df.dropna(subset=essential_cols)
+        print(f"检测到 {null_mask.sum()} 行包含关键缺失值，正在删除。")
+        df = df.dropna(subset=essential_cols)
     else:
         print("未检测到关键列的缺失值。")
-    print(f"剩余行数: {len(data_df)}")
+    print(f"剩余行数: {len(df)}")
+    return df
 
-    # =========================================================================
-    # 2. 生成规范化去重键
-    # =========================================================================
-    if state_var_col:
-        print(f"\n=== [Utils] 2. 生成规范化 Key (解决 A+B vs B+A 问题，包含温度: {state_var_col}) ===")
-        cols_to_numeric = num_cols + [state_var_col]
+def _filter_and_log_invalid_numerics(df, num_cols, state_var_cols, output_dir):
+
+    print("\n=== step 2: 异常数值审查与拦截 ===")
+
+    if state_var_cols is None:
+        state_vars = []
+    elif isinstance(state_var_cols, str):
+        state_vars = [state_var_cols]
     else:
-        print("\n=== [Utils] 2. 生成规范化 Key (解决 A+B vs B+A 问题，不包含温度) ===")
+        state_vars = list(state_var_cols)
+        
+    cols_to_check = num_cols + state_vars
+    
+    invalid_mask = pd.Series(False, index=df.index)
+    for col in cols_to_check:
+        if col not in df.columns: continue
+        
+        # 原本非空，但强转数字后变成 NaN 的，就是非法字符
+        is_not_empty = df[col].notna() & (df[col].astype(str).str.strip() != "") # pandas Series,判断df的某一列中，哪些单元格是真正“非空”的
+        is_invalid_num = pd.to_numeric(df[col], errors='coerce').isna() # 确认是不是个数字
+        invalid_mask |= (is_not_empty & is_invalid_num) # 只有当单元格里既写了东西又不是个数据才判定为脏数据
+        
+    invalid_df = df[invalid_mask].copy()
+    
+    if not invalid_df.empty:
+        print(f"⚠️拦截到 {len(invalid_df)} 行包含非法数值的数据！")
+        log_path = os.path.join(output_dir, 'raw-ds_invalid_numerics_log.xlsx')
+        invalid_df.to_excel(log_path, index=False)
+        print(f" ├─ 异常数据已记录并单独保存至: {log_path}")
+        
+        df = df[~invalid_mask].copy()
+        print(f" └─ 剔除后剩余有效行数: {len(df)}")
+    else:
+        print(" └─ 未发现非法数值")
+        
+    return df
+
+def _generate_invariant_keys(df, str_cols, num_cols, state_var_cols=None):
+    
+    if state_var_cols is None:
+        state_vars = []
+    elif isinstance(state_var_cols, str):
+        state_vars = [state_var_cols]
+    else:
+        state_vars = list(state_var_cols)
+
+    if state_vars:
+        print(f"\n=== step3: 构建数值去重键 (含状态变量: {state_vars}) ===")
+        cols_to_numeric = num_cols + state_vars
+    else:
+        print("\n=== step3: 构建数值去重键 (仅摩尔分数) ===")
         cols_to_numeric = num_cols
 
-    temp_nums = data_df[cols_to_numeric].apply(pd.to_numeric, errors='coerce').fillna(0)
+    temp_nums = df[cols_to_numeric].apply(pd.to_numeric, errors='coerce').fillna(0)
     
-    def generate_key(row):
+    str_matrix = df[str_cols].fillna("").astype(str).values
+    num_matrix = temp_nums[num_cols].values
+    state_matrix = temp_nums[state_vars].values if state_vars else None
+    
+    keys = []
+    
+    for i in range(len(df)):
+        s_row, n_row = str_matrix[i], num_matrix[i] 
         pairs = []
-        for c_col, x_col in zip(str_cols, num_cols):
-            c_val = row[c_col]
-            x_val = temp_nums.at[row.name, x_col]
-            
-            if pd.isna(c_val) or str(c_val).strip() == "":
-                continue
-            
-            c_clean = str(c_val).strip().lower()
-            x_clean = "{:.4f}".format(x_val)
-            pairs.append((c_clean, x_clean))
         
-        # 稳定的双重排序 (Tie-breaking)
+        for c_val, x_val in zip(s_row, n_row):
+            c_str = c_val.strip()
+            if not c_str or c_str.lower() == 'nan': 
+                continue
+            pairs.append((c_str.lower(), f"{x_val:.4f}"))
+        
         pairs.sort(key=lambda x: (x[0], x[1]))
         comp_key = "~~".join([f"{p[0]}::{p[1]}" for p in pairs])
         
-        if state_var_col:
-            t_val = temp_nums.at[row.name, state_var_col]
-            t_key = "T::{:.2f}".format(t_val)
-            return f"{comp_key}~~{t_key}" if comp_key else f"~~{t_key}"
+        if state_matrix is not None: # 动态挂载状态变量
+            s_vals = state_matrix[i]
+            state_strs = [f"{col}::{val:.2f}" for col, val in zip(state_vars, s_vals)]
+            state_suffix = "~~".join(state_strs)
+            final_key = f"{comp_key}~~{state_suffix}" if comp_key else f"~~{state_suffix}"
+            keys.append(final_key)
         else:
-            return comp_key
+            keys.append(comp_key)
 
-    print("正在生成唯一标识键...")
-    data_df['_dedup_key'] = data_df.apply(generate_key, axis=1)
+    return pd.Series(keys, index=df.index)
+
+def _export_duplicate_details(duplicates_df, output_dir, ref_col):
+    """生成Excel 留痕报表，并增加重复组容量统计"""
+    if duplicates_df.empty:
+        print("未发现重复数据，跳过报表生成。")
+        return
+
+    # 1. 添加分组编号 和 组内记录数统计 (_group_size)
+    duplicates_df['_dedup_number'] = duplicates_df.groupby('_dedup_key').ngroup() + 1
+    duplicates_df['_group_size'] = duplicates_df.groupby('_dedup_key')['_dedup_key'].transform('size')
     
-    # 剔除无效 Key
-    if state_var_col:
-        empty_key_mask = (data_df['_dedup_key'] == "") | (data_df['_dedup_key'].str.startswith("~~T::"))
-    else:
-        empty_key_mask = (data_df['_dedup_key'] == "")
-
-    if empty_key_mask.any():
-        print(f"警告: {empty_key_mask.sum()} 行生成了无效 Key，将被剔除。")
-        data_df = data_df[~empty_key_mask]
-
-    # =========================================================================
-    # 3. 识别重复值并保存详情
-    # =========================================================================
-    print("\n=== [Utils] 3. 识别重复数据 ===")
-    data_df['is_duplicate'] = data_df.duplicated(subset=['_dedup_key'], keep=False)
-    total_duplicates = data_df['is_duplicate'].sum()
-    print(f"涉及重复的总行数: {total_duplicates}")
+    # 2. 排序
+    sorted_dups = duplicates_df.sort_values(by=['_dedup_number', ref_col])
     
+    # 3. 调整列顺序
+    cols = ['_dedup_number', '_group_size', '_dedup_key', 'original_excel_index'] + \
+           [c for c in sorted_dups.columns if c not in ['_dedup_number', '_group_size', '_dedup_key', 'original_excel_index']]
+    sorted_dups = sorted_dups[cols]
+    
+    detail_path = os.path.join(output_dir, 'raw-ds_dd_details.xlsx')
+    sorted_dups.to_excel(detail_path, index=False) # 先落袋为安再打开优化
+    
+    # 4. Openpyxl 优化格式 这段都是AI写的
+    try:
+        wb = load_workbook(detail_path)
+        ws = wb.active
+        
+        start_row, max_row = 2, ws.max_row
+        prev_val = ws.cell(row=2, column=1).value # 依靠第1列(_dedup_number)来判断边界
+        
+        for row in range(3, max_row + 2):
+            curr_val = ws.cell(row=row, column=1).value if row <= max_row else None
+            if curr_val != prev_val:
+                if row - 1 > start_row:
+                    # 合并第1列 (_dedup_number)
+                    ws.merge_cells(start_row=start_row, start_column=1, end_row=row-1, end_column=1)
+                    ws.cell(row=start_row, column=1).alignment = Alignment(horizontal='center', vertical='center')
+                    
+                    # 合并第2列 (_group_size)
+                    ws.merge_cells(start_row=start_row, start_column=2, end_row=row-1, end_column=2)
+                    ws.cell(row=start_row, column=2).alignment = Alignment(horizontal='center', vertical='center')
+                    
+                start_row, prev_val = row, curr_val
+                
+        wb.save(detail_path)
+        print(f"重复数据详情已保存至: {detail_path}")
+    except Exception as e:
+        print(f"警告: 合并单元格操作失败，但数据已保存。错误: {e}")
+
+
+def _fuse_duplicate_groups(duplicates_df, property_col, ref_col, agg_method='mean'):
+    """
+    子功能 4：执行物理化学约束下的数据融合
+    支持的聚合策略 (agg_method): 'mean' (均值), 'median' (中位数), 'mode' (众数)
+    """
+    print(f"\n=== [Utils 4] 合并重复数据 (当前聚合策略: {agg_method}) ===")
+    if duplicates_df.empty:
+        return pd.DataFrame()
+
+    # 防呆设计：如果传入了不支持的策略，强制切回均值
+    valid_methods = ['mean', 'median', 'mode']
+    if agg_method not in valid_methods:
+        print(f"⚠️ 警告: 不支持的聚合方法 '{agg_method}'，已自动回退到 'mean'")
+        agg_method = 'mean'
+
+    processed_rows = []
+    for key, group in duplicates_df.groupby('_dedup_key'):
+        # 1. 处理参考文献合并 (去重并用分号拼接)
+        refs = group[ref_col].dropna().astype(str).tolist()
+        all_refs = []
+        for r in refs:
+            r_str = re.sub(r'\.0$', '', r.strip())
+            all_refs.extend([x.strip() for x in r_str.split(';')])
+        combined_ref = "; ".join(sorted(list(set(all_refs))))
+        
+        # 2. 清洗并提取当前组的所有有效属性值
+        prop_values = pd.to_numeric(group[property_col], errors='coerce').dropna()
+        
+        # 3. 根据策略执行聚合计算
+        if prop_values.empty:
+            agg_val = np.nan
+        elif agg_method == 'mean':
+            agg_val = prop_values.mean()
+        elif agg_method == 'median':
+            agg_val = prop_values.median()
+        elif agg_method == 'mode':
+            modes = prop_values.mode()
+            # 众数的边缘情况处理：如果有众数则取第一个；如果所有值都只出现一次(无绝对众数)，为了避免报错，回退到中位数
+            agg_val = modes.iloc[0] if not modes.empty else prop_values.median()
+        
+        # 4. 锁定配比模板 (保留第一行的所有其他元数据)
+        new_row = group.iloc[0].copy()
+        new_row[property_col] = agg_val
+        new_row[ref_col] = combined_ref
+        processed_rows.append(new_row)
+        
+    fused_df = pd.DataFrame(processed_rows)
+    print(f"已将 {len(duplicates_df)} 行重复数据压缩为 {len(fused_df)} 条唯一记录。")
+    return fused_df
+
+def fuse_and_assemble_dataset(data_df, property_col, drop_columns, ref_col='ref'):
+    """
+    第二阶段：基于第一阶段的标记，执行物理化学约束下的数据融合，并输出最终干净的数据集。
+    """
+    if data_df is None or data_df.empty:
+        print("错误：传入的数据集为空，无法执行融合。")
+        return None
+
     duplicates_df = data_df[data_df['is_duplicate']].copy()
     non_duplicates_df = data_df[~data_df['is_duplicate']].copy()
 
-    if not duplicates_df.empty:
-        duplicates_df['_dedup_number'] = duplicates_df.groupby('_dedup_key').ngroup() + 1
-        sorted_dups = duplicates_df.sort_values(by=['_dedup_number', ref_col])
-        
-        # 把 original_excel_index 放在最前面（紧跟编号和 Key），让追溯极其方便
-        cols = ['_dedup_number', '_dedup_key', 'original_excel_index'] + \
-               [c for c in sorted_dups.columns if c not in ['_dedup_number', '_dedup_key', 'original_excel_index']]
-        sorted_dups = sorted_dups[cols]
-        
-        detail_path = os.path.join(output_dir, 'raw-ds_dd_details.xlsx')
-        sorted_dups.to_excel(detail_path, index=False)
-        
-        # 尝试合并单元格优化可读性，允许降级
-        try:
-            print(f"正在优化 Excel 格式 (合并重复组编号)...")
-            wb = load_workbook(detail_path)
-            ws = wb.active
-            col_idx, start_row, max_row = 1, 2, ws.max_row
-            prev_val = ws.cell(row=2, column=col_idx).value
-            
-            for row in range(3, max_row + 2):
-                curr_val = ws.cell(row=row, column=col_idx).value
-                if curr_val != prev_val:
-                    if row - 1 > start_row:
-                        ws.merge_cells(start_row=start_row, start_column=col_idx, end_row=row-1, end_column=col_idx)
-                        ws.cell(row=start_row, column=col_idx).alignment = Alignment(horizontal='center', vertical='center')
-                    start_row, prev_val = row, curr_val
-            wb.save(detail_path)
-            print(f"重复数据详情已保存至: {detail_path} (已合并单元格)")
-        except Exception as e:
-            print(f"合并单元格时出错: {e}")
-            print(f"重复数据详情已保存至: {detail_path} (未合并单元格)")
-    else:
-        print("未发现重复数据。")
+    # 4. 执行数据融合
+    processed_duplicates_df = _fuse_duplicate_groups(duplicates_df, property_col, ref_col)
 
-    # =========================================================================
-    # 4. 合并重复数据
-    # =========================================================================
-    print("\n=== [Utils] 4. 合并重复数据 ===")
-    processed_rows = []
-    if not duplicates_df.empty:
-        grouped = duplicates_df.groupby('_dedup_key')
-        
-        for key, group in grouped:
-            # 合并 Ref (精准去除结尾的 .0)
-            refs = group[ref_col].dropna().astype(str).tolist()
-            all_refs = []
-            for r in refs:
-                r_str = re.sub(r'\.0$', '', r.strip())
-                all_refs.extend([x.strip() for x in r_str.split(';')])
-            combined_ref = "; ".join(sorted(list(set(all_refs))))
-            
-            # 强制转化 property_col 为数值型，过滤异常字符串
-            prop_values = pd.to_numeric(group[property_col], errors='coerce')
-            mean_val = prop_values.mean()
-            
-            # 取第一行作为模板以锁定组分比例约束
-            new_row = group.iloc[0].copy()
-            new_row[property_col] = mean_val
-            new_row[ref_col] = combined_ref
-            
-            processed_rows.append(new_row)
-            
-        processed_duplicates_df = pd.DataFrame(processed_rows)
-        print(f"已将 {len(duplicates_df)} 行重复数据压缩为 {len(processed_duplicates_df)} 条唯一记录。")
-    else:
-        processed_duplicates_df = pd.DataFrame()
-
-    # =========================================================================
-    # 5. 生成最终数据集
-    # =========================================================================
-    print("\n=== [Utils] 5. 生成最终数据集 ===")
+    # 5. 组装最终结果
+    print("\n=== 生成最终数据集 ===")
     final_df = pd.concat([non_duplicates_df, processed_duplicates_df], ignore_index=True)
-    
-    # 清理掉辅助列
-    cols_to_remove = ['is_duplicate', '_dedup_key', '_dedup_number', 'original_excel_index'] + \
-                     [c for c in drop_columns if c in final_df.columns]
-    
-    final_df.drop(columns=cols_to_remove, inplace=True, errors='ignore')
+
+    cols_to_remove = ['is_duplicate', '_dedup_key', '_dedup_number', '_group_size', 'original_excel_index'] + drop_columns
+    final_df.drop(columns=[c for c in cols_to_remove if c in final_df.columns], inplace=True, errors='ignore')
     final_df.reset_index(drop=True, inplace=True)
     
     print(f"最终数据集构建完成。总行数: {len(final_df)}")
     return final_df
+
+
+# =========================================================================
+# 阶段一调度器：识别并导出重复详情 (Phase 1)
+# =========================================================================
+def identify_and_export_duplicates(original_df, essential_cols, str_cols, num_cols, output_dir, ref_col='ref', state_var_cols=None):
+    """
+    第一阶段：清洗数据、拦截非法值、生成置换不变性去重键，并导出重复详情供审查。
+    返回带有 '_dedup_key' 和 'is_duplicate' 标识的中间态 DataFrame。
+    """
+    assert len(str_cols) == len(num_cols), "错误：组分名称列和数值列的长度必须一致！"
+    if output_dir: os.makedirs(output_dir, exist_ok=True)
+
+    data_df = original_df.copy()
+    data_df['original_excel_index'] = data_df.index + 2
+
+    # 1. 清理关键缺失数据
+    data_df = _clean_missing_data(data_df, essential_cols)
+    if data_df is None: return None
+
+    # 1.5. 拦截并记录含有非法数值 (如 Trace) 的脏数据
+    data_df = _filter_and_log_invalid_numerics(data_df, num_cols, state_var_cols, output_dir)
+    if data_df.empty: return None
+
+    # 2. 生成 Key 
+    data_df['_dedup_key'] = _generate_invariant_keys(data_df, str_cols, num_cols, state_var_cols)
+    
+    # 过滤毫无意义的无效 Key (只有 ~~ 前缀或全空的)
+    empty_mask = data_df['_dedup_key'].str.startswith("~~") | (data_df['_dedup_key'] == "")
+    if empty_mask.any():
+        print(f"警告: 剔除 {empty_mask.sum()} 行毫无意义的无效去重键的数据。")
+        data_df = data_df[~empty_mask]
+
+    # 3. 识别并导出重复详情
+    print("\n=== [Utils 3] 识别重复数据 ===")
+    data_df['is_duplicate'] = data_df.duplicated(subset=['_dedup_key'], keep=False)
+    print(f"涉及重复的总行数: {data_df['is_duplicate'].sum()}")
+    
+    duplicates_df = data_df[data_df['is_duplicate']].copy()
+    _export_duplicate_details(duplicates_df, output_dir, ref_col)
+
+    return data_df
+
+
+
+
+
+
+
+
+
+
+# =========================================================================
+# 阶段二调度器：执行数据融合与组装 (Phase 2)
+# =========================================================================
+def fuse_and_assemble_dataset(data_df, property_col, drop_columns, ref_col='ref', agg_method='mean'):
+    """
+    第二阶段：基于第一阶段的标记，执行物理化学约束下的数据融合，并输出最终干净的数据集。
+    """
+    if data_df is None or data_df.empty:
+        print("错误：传入的数据集为空，无法执行融合。")
+        return None
+
+    duplicates_df = data_df[data_df['is_duplicate']].copy()
+    non_duplicates_df = data_df[~data_df['is_duplicate']].copy()
+
+    processed_duplicates_df = _fuse_duplicate_groups(duplicates_df, property_col, ref_col, agg_method=agg_method)
+
+    # 5. 组装最终结果
+    print("\n=== [Utils 5] 生成最终数据集 ===")
+    final_df = pd.concat([non_duplicates_df, processed_duplicates_df], ignore_index=True)
+    
+    cols_to_remove = ['is_duplicate', '_dedup_key', '_dedup_number', '_group_size', 'original_excel_index'] + drop_columns
+    final_df.drop(columns=[c for c in cols_to_remove if c in final_df.columns], inplace=True, errors='ignore')
+    final_df.reset_index(drop=True, inplace=True)
+    
+    print(f"最终数据集构建完成。总行数: {len(final_df)}")
+    return final_df
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
