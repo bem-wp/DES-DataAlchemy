@@ -7,6 +7,7 @@ import yaml
 @dataclass(frozen=True)
 class AppConfig:
 
+    
     api_key: str
     pdf_input_folder: str
     result_output_folder: str
@@ -14,7 +15,8 @@ class AppConfig:
     prompt_templates_path: str
     model_base_url: str
     model_name: str
-    timeout: int = 300          
+    timeout: int = 300
+    max_workers: int = 3        
 
 def load_config() -> AppConfig:
 
@@ -45,6 +47,7 @@ def load_config() -> AppConfig:
     paths_cfg = yaml_config.get("paths") or {}
     prompt_cfg = yaml_config.get("prompt") or {}
     model_cfg = yaml_config.get("model") or {}
+    setting_cfg = yaml_config.get("settings") or {}
 
     required_fields = {
         "paths.input_folder":  paths_cfg.get("input_folder"),
@@ -53,6 +56,7 @@ def load_config() -> AppConfig:
         "prompt.template":     prompt_cfg.get("template"),
         "model.base_url":     model_cfg.get("base_url"),
         "model.name":         model_cfg.get("name"),
+        "settings.max_workers": setting_cfg.get("max_workers"),
 
     }
     missing = [key for key, val in required_fields.items() if not val]
@@ -81,4 +85,5 @@ def load_config() -> AppConfig:
         model_base_url=model_cfg["base_url"],
         model_name=model_cfg["name"],
         timeout=int(model_cfg.get("timeout", 300)),
+        max_workers=int(setting_cfg.get("max_workers", 3)),
     )
