@@ -4,13 +4,11 @@ import numpy as np
 import pandas as pd
 
 def data_quality_summary(df: pd.DataFrame, output_path: str):
-    """
-    生成列缺失和行缺失的汇总报告，输出到同一个Excel文件的两个sheet
-    
-    Parameters:
-    df: DataFrame - 输入数据框
-    output_path: str - 输出Excel文件路径
-    """
+
+    output_dir = os.path.dirname(output_path)
+    if output_dir: 
+        os.makedirs(output_dir, exist_ok=True)
+
     with pd.ExcelWriter(output_path, engine='openpyxl') as writer:
         # 列缺失汇总
         total_rows = len(df)

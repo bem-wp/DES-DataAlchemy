@@ -1,17 +1,20 @@
+import json
+import logging
 import os
+import re
+import socket
 import sys
 import time
-import re
-import logging
-import json
 import urllib.request
-from urllib.error import HTTPError, URLError
-import socket
-from functools import lru_cache
 from datetime import datetime
-import pandas as pd
+from functools import lru_cache
+from pathlib import Path
+from urllib.error import HTTPError, URLError
 
+import pandas as pd
 import pubchempy as pcp
+from openpyxl import load_workbook
+from openpyxl.styles import Alignment
 
 # 设置全局超时（防止网络死锁）
 socket.setdefaulttimeout(15)
@@ -176,6 +179,10 @@ def data_quality_summary(df: pd.DataFrame, output_path: str):
     df: DataFrame - 输入数据框
     output_path: str - 输出Excel文件路径
     """
+    output_dir = os.path.dirname(output_path)
+    if output_dir:  # 确保路径不为空
+        os.makedirs(output_dir, exist_ok=True)
+
     with pd.ExcelWriter(output_path, engine='openpyxl') as writer:
         # 列缺失汇总
         total_rows = len(df)
@@ -209,7 +216,7 @@ def data_quality_summary(df: pd.DataFrame, output_path: str):
 
 def deduplicate_byproduct_table(df, group_cols, output_dir):
     """
-    对副产物表格进行去重操作并生成相关分析报告
+    对副产物表格进行去重操作，并将所有重复明细整合到单个具有良好可读性的审查报表中。
     
     Parameters:
     df: DataFrame - 输入数据框
@@ -217,59 +224,76 @@ def deduplicate_byproduct_table(df, group_cols, output_dir):
     output_dir: str or Path - 输出目录路径
     
     Returns:
-    tuple: (去重后的数据框, 重复数据统计DataFrame)
+    DataFrame: 去重后的数据框
     """
-    from pathlib import Path
-    
-    # 处理输出目录
+    # 1. 处理输出目录与基础清理
     output_path = Path(output_dir)
     output_path.mkdir(parents=True, exist_ok=True)
     
-    # 移除compound列
-    byproduct_table = df.drop(columns=['compound'])
+    # 增加鲁棒性：判断是否存在 compound 列后再移除
+    if 'compound' in df.columns:
+        byproduct_table = df.drop(columns=['compound'])
+    else:
+        byproduct_table = df.copy()
+        
+    # 添加 Excel 物理行号用于溯源 (Pandas index 从0开始，Excel有表头且从1开始，因此 +2)
+    byproduct_table['original_excel_index'] = byproduct_table.index + 2
     
-    # 统计重复情况
+    # 2. 统计并提取重复情况
     is_duplicate = byproduct_table.duplicated(subset=group_cols, keep=False)
     total_duplicates = is_duplicate.sum()
-    print(f"总重复行数: {total_duplicates}")
+    print(f"涉及重复的总行数: {total_duplicates}")
     
-    # 保留每组第一行，直接去重
+    # 3. 处理重复明细并输出合并报表 (一表搞定留痕)
+    duplicates_df = byproduct_table[is_duplicate].copy()
+    
+    if not duplicates_df.empty:
+        # 添加分组编号
+        duplicates_df['_duplicate_group'] = duplicates_df.groupby(group_cols, dropna=False).ngroup() + 1
+        
+        # 排序：按分组编号 -> Excel行号 排序
+        sorted_dups = duplicates_df.sort_values(by=['_duplicate_group', 'original_excel_index'])
+        
+        # 调整列顺序，把核心溯源字段放在最前面
+        cols = ['_duplicate_group', 'original_excel_index'] + \
+               [c for c in sorted_dups.columns if c not in ['_duplicate_group', 'original_excel_index']]
+        sorted_dups = sorted_dups[cols]
+        
+        detail_path = output_path / 'byproduct_duplicated_details.xlsx'
+        sorted_dups.to_excel(detail_path, index=False)
+        
+        # 使用 openpyxl 合并重复组单元格以提升可读性
+        try:
+            wb = load_workbook(detail_path)
+            ws = wb.active
+            col_idx, start_row, max_row = 1, 2, ws.max_row
+            prev_val = ws.cell(row=2, column=col_idx).value
+            
+            # 遍历到 max_row + 1 以确保最后一组也能被合并
+            for row in range(3, max_row + 2):
+                curr_val = ws.cell(row=row, column=col_idx).value if row <= max_row else None
+                if curr_val != prev_val:
+                    if row - 1 > start_row:
+                        ws.merge_cells(start_row=start_row, start_column=col_idx, end_row=row-1, end_column=col_idx)
+                        ws.cell(row=start_row, column=col_idx).alignment = Alignment(horizontal='center', vertical='center')
+                    start_row, prev_val = row, curr_val
+            wb.save(detail_path)
+            print(f"重复明细已整合并保存至: {detail_path} (单元格已合并)")
+        except Exception as e:
+            print(f"警告: 单元格合并优化失败，但数据已保存。错误信息: {e}")
+    else:
+        print("未发现重复数据，跳过生成重复明细表。")
+
+    # 4. 执行直接留一去重
     original_rows = len(byproduct_table)
     byproduct_table_deduplicated = byproduct_table.drop_duplicates(subset=group_cols, keep='first')
-    cleaned_rows = len(byproduct_table_deduplicated)
     
+    # 返回前清理掉溯源辅助列
+    final_result = byproduct_table_deduplicated.drop(columns=['original_excel_index'])
+    cleaned_rows = len(final_result)
+    
+    print("开始去重，规则：直接留一")
     print(f"原始行数: {original_rows}")
     print(f"去重后行数: {cleaned_rows}")
-    print(f"移除重复行数: {original_rows - cleaned_rows}")
     
-    # 分析重复数据 - 获取所有重复的行（包括每组的第一行）
-    duplicate_records = byproduct_table[byproduct_table.duplicated(subset=group_cols, keep=False)]
-    print(f"所有重复记录行数: {len(duplicate_records)}")
-    
-    # 添加重复标识列
-    byproduct_table_with_flag = byproduct_table.copy()
-    byproduct_table_with_flag['is_duplicate'] = is_duplicate
-    duplicates_df = byproduct_table_with_flag[byproduct_table_with_flag['is_duplicate']].copy()
-    sorted_duplicates = duplicates_df.sort_values(by=group_cols)
-    
-    # 统计每组重复行数
-    group_sizes = duplicates_df.groupby(group_cols, dropna=False).size()
-    group_sizes_df = group_sizes.to_frame(name='count')
-    
-    # 如果需要分析被移除的重复行
-    removed_duplicates = byproduct_table[byproduct_table.duplicated(subset=group_cols, keep='first')]
-    print(f"被移除的重复行数: {len(removed_duplicates)}")
-    
-    # 保存文件
-    removed_duplicates.to_excel(output_path / 'byproduct_removed_table.xlsx', index=False)
-    byproduct_table_deduplicated.to_excel(output_path / 'byproduct_table.xlsx', index=False)
-    duplicate_records.to_excel(output_path / 'byproduct_duplicate_analysis.xlsx', index=False)
-    sorted_duplicates.to_excel(output_path / 'byproduct_sorted_duplicates.xlsx', index=False)
-    
-    # 添加空值检查
-    if not group_sizes_df.empty:
-        group_sizes_df.to_excel(output_path / 'byproduct_duplicate_group_counts.xlsx', index=True)
-    else:
-        print("警告: 没有找到重复组，跳过保存分组计数文件")
-    
-    return byproduct_table_deduplicated
+    return final_result

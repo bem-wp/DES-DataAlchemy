@@ -5,20 +5,49 @@ import re
 from openpyxl import load_workbook
 from openpyxl.styles import Alignment
 
-def data_quality_summary(df, output_path):
+def data_quality_summary(df: pd.DataFrame, output_path: str):
     """
-    生成简单的数据质量报告
-    """
-    summary = {
-        '总行数': len(df),
-        '列清单': str(df.columns.tolist()),
-        '缺失值统计': df.isnull().sum().to_dict()
-    }
+    生成列缺失和行缺失的汇总报告，输出到同一个Excel文件的两个sheet
     
-    with open(output_path.replace('.xlsx', '.txt'), 'w', encoding='utf-8') as f:
-        for k, v in summary.items():
-            f.write(f"{k}: {v}\n")
-    print(f"质量报告已生成: {output_path.replace('.xlsx', '.txt')}")
+    Parameters:
+    df: DataFrame - 输入数据框
+    output_path: str - 输出Excel文件路径
+    """
+    output_dir = os.path.dirname(output_path)
+    if output_dir: 
+        os.makedirs(output_dir, exist_ok=True)
+
+    with pd.ExcelWriter(output_path, engine='openpyxl') as writer:
+        # 列缺失汇总
+        total_rows = len(df)
+        miss_count = df.isnull().sum()
+        miss_pct = miss_count / total_rows if total_rows else 0
+        dtype = df.dtypes
+        col_summary = pd.DataFrame({
+            "column": df.columns,
+            "dtype": dtype.values,
+            "missing_count": miss_count.values,
+            "missing_pct": miss_pct.values,
+            "total_rows": total_rows
+        })
+        col_summary = col_summary.sort_values("missing_pct", ascending=False).reset_index(drop=True)
+        
+        # 行缺失汇总
+        total_cols = df.shape[1]
+        r_miss = df.isnull().sum(axis=1)
+        r_pct = r_miss / total_cols if total_cols else 0
+        row_summary = pd.DataFrame({
+            "index": df.index,
+            "missing_count": r_miss,
+            "missing_pct": r_pct,
+            "total_cols": total_cols
+        })
+        row_summary = row_summary.sort_values(["missing_count", "missing_pct"], ascending=False).reset_index(drop=True)
+        
+        # 写入Excel的不同sheet
+        col_summary.to_excel(writer, sheet_name='Column_Missing_Summary', index=False)
+        row_summary.to_excel(writer, sheet_name='Row_Missing_Summary', index=False)
+
 
 def process_dataset_deduplication(original_df, essential_cols, str_cols, num_cols, property_col, drop_columns, output_dir, ref_col='ref', state_var_col=None):
     """
@@ -32,11 +61,13 @@ def process_dataset_deduplication(original_df, essential_cols, str_cols, num_col
     # 严格的参数校验
     assert len(str_cols) == len(num_cols), "错误：组分名称列(str_cols)和数值列(num_cols)的长度必须一致！"
     
-    os.makedirs(output_dir, exist_ok=True)
+    if output_dir: 
+        os.makedirs(output_dir, exist_ok=True)
+
     data_df = original_df.copy()
     
     # 记录原始索引，方便溯源
-    data_df['original_index'] = data_df.index
+    data_df['original_excel_index'] = data_df.index + 2
     
     print("=== [Utils] 1. 缺失值处理 ===")
     missing_cols = [c for c in essential_cols if c not in data_df.columns]
@@ -116,12 +147,12 @@ def process_dataset_deduplication(original_df, essential_cols, str_cols, num_col
         duplicates_df['_dedup_number'] = duplicates_df.groupby('_dedup_key').ngroup() + 1
         sorted_dups = duplicates_df.sort_values(by=['_dedup_number', ref_col])
         
-        # 把 original_index 放在最前面（紧跟编号和 Key），让追溯极其方便
-        cols = ['_dedup_number', '_dedup_key', 'original_index'] + \
-               [c for c in sorted_dups.columns if c not in ['_dedup_number', '_dedup_key', 'original_index']]
+        # 把 original_excel_index 放在最前面（紧跟编号和 Key），让追溯极其方便
+        cols = ['_dedup_number', '_dedup_key', 'original_excel_index'] + \
+               [c for c in sorted_dups.columns if c not in ['_dedup_number', '_dedup_key', 'original_excel_index']]
         sorted_dups = sorted_dups[cols]
         
-        detail_path = os.path.join(output_dir, '00_duplicated_data_details.xlsx')
+        detail_path = os.path.join(output_dir, 'raw-ds_dd_details.xlsx')
         sorted_dups.to_excel(detail_path, index=False)
         
         # 尝试合并单元格优化可读性，允许降级
@@ -187,7 +218,7 @@ def process_dataset_deduplication(original_df, essential_cols, str_cols, num_col
     final_df = pd.concat([non_duplicates_df, processed_duplicates_df], ignore_index=True)
     
     # 清理掉辅助列
-    cols_to_remove = ['is_duplicate', '_dedup_key', '_dedup_number', 'original_index'] + \
+    cols_to_remove = ['is_duplicate', '_dedup_key', '_dedup_number', 'original_excel_index'] + \
                      [c for c in drop_columns if c in final_df.columns]
     
     final_df.drop(columns=cols_to_remove, inplace=True, errors='ignore')
