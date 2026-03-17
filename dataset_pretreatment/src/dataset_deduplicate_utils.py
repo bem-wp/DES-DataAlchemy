@@ -240,9 +240,11 @@ def _fuse_duplicate_groups(duplicates_df, property_col, ref_col, agg_method='mea
             agg_val = prop_values.median()
         elif agg_method == 'mode':
             modes = prop_values.mode()
-            # 众数的边缘情况处理：如果有众数则取第一个；如果所有值都只出现一次(无绝对众数)，为了避免报错，回退到中位数
-            agg_val = modes.iloc[0] if not modes.empty else prop_values.median()
-        
+        if len(modes) == len(prop_values) or len(modes) > 1:    
+            agg_val = prop_values.median()
+        else:
+            agg_val = modes.iloc[0]
+            
         # 4. 锁定配比模板 (保留第一行的所有其他元数据)
         new_row = group.iloc[0].copy()
         new_row[property_col] = agg_val
