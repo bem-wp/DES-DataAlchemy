@@ -57,16 +57,16 @@ def _clean_missing_data(df, essential_cols):
     logger.info("\n=== step 1: 关键字段缺失处理 ===")
     missing_cols = [c for c in essential_cols if c not in df.columns]
     if missing_cols:
-        logger.error(f"错误: 数据集缺少关键列: {missing_cols}")
+        logger.error(f"错误: 数据集缺少关键列，无法构成DES体系: {missing_cols}")
         return None
 
-    null_mask = df[essential_cols].isnull().any(axis=1)
+    null_mask = df[essential_cols].isnull().any(axis=1) 
     if null_mask.any():
-        logger.warning(f"检测到 {null_mask.sum()} 行包含关键缺失值，正在删除。")
+        logger.warning(f"检测到 {null_mask.sum()} 个包含关键缺失值的记录，正在删除这些记录。")
         df = df.dropna(subset=essential_cols)
     else:
-        logger.info("未检测到关键列的缺失值。")
-    logger.info(f"剩余行数: {len(df)}")
+        logger.info("未检测到在关键字段有缺失的记录。")
+    logger.info(f"剩余记录数: {len(df)}")
     return df
 
 def _filter_and_log_invalid_numerics(df, num_cols, state_var_cols, output_dir):
@@ -87,9 +87,9 @@ def _filter_and_log_invalid_numerics(df, num_cols, state_var_cols, output_dir):
         if col not in df.columns: continue
         
         # 原本非空，但强转数字后变成 NaN 的，就是非法字符
-        is_not_empty = df[col].notna() & (df[col].astype(str).str.strip() != "") # pandas Series,判断df的某一列中，哪些单元格是真正“非空”的
-        is_invalid_num = pd.to_numeric(df[col], errors='coerce').isna() # 确认是不是个数字
-        invalid_mask |= (is_not_empty & is_invalid_num) # 只有当单元格里既写了东西又不是个数据才判定为脏数据
+        is_not_empty = df[col].notna() & (df[col].astype(str).str.strip() != "") # 找出真正写了东西的单元格
+        is_invalid_num = pd.to_numeric(df[col], errors='coerce').isna() # 找出转不成数字的单元格
+        invalid_mask |= (is_not_empty & is_invalid_num) # 把当前列的脏数据标记累积到总掩码中
         
     invalid_df = df[invalid_mask].copy()
     
@@ -124,35 +124,44 @@ def _generate_invariant_keys(df, str_cols, num_cols, state_var_cols=None):
 
     temp_nums = df[cols_to_numeric].apply(pd.to_numeric, errors='coerce').fillna(0)
     
-    str_matrix = df[str_cols].fillna("").astype(str).values
-    num_matrix = temp_nums[num_cols].values
-    state_matrix = temp_nums[state_vars].values if state_vars else None
+    # 1. 向量化拼接 ci 和 xi列
+    pair_df = pd.DataFrame(index=df.index, dtype=object)
+    for s_col, n_col in zip(str_cols, num_cols):
+        s_series = df[s_col].fillna("").astype(str).str.strip().str.lower()
+        mask = (s_series != "") & (s_series != "nan")
+        n_series = temp_nums[n_col].map('{:.4f}'.format)
+        pair_df[s_col] = np.where(mask, s_series + "::" + n_series, None)
     
-    keys = []
-    
-    for i in range(len(df)):
-        s_row, n_row = str_matrix[i], num_matrix[i] 
-        pairs = []
+    # 2. 逐行按字符串排序并连接
+    pair_matrix = pair_df.values
+    comp_keys = []
+    for row in pair_matrix:
+        valid_pairs = [x for x in row if pd.notna(x)]
+        valid_pairs.sort() 
+        comp_keys.append("~~".join(valid_pairs))
         
-        for c_val, x_val in zip(s_row, n_row):
-            c_str = c_val.strip()
-            if not c_str or c_str.lower() == 'nan': 
-                continue
-            pairs.append((c_str.lower(), f"{x_val:.4f}"))
-        
-        pairs.sort(key=lambda x: (x[0], x[1]))
-        comp_key = "~~".join([f"{p[0]}::{p[1]}" for p in pairs])
-        
-        if state_matrix is not None: # 动态挂载状态变量
-            s_vals = state_matrix[i]
-            state_strs = [f"{col}::{val:.2f}" for col, val in zip(state_vars, s_vals)]
-            state_suffix = "~~".join(state_strs)
-            final_key = f"{comp_key}~~{state_suffix}" if comp_key else f"~~{state_suffix}"
-            keys.append(final_key)
-        else:
-            keys.append(comp_key)
+    comp_keys_series = pd.Series(comp_keys, index=df.index)
 
-    return pd.Series(keys, index=df.index)
+    # 3. 动态挂载状态变量
+    if state_vars:
+        state_series_list = []
+        for col in state_vars:
+            formatted_state = col + "::" + temp_nums[col].map('{:.2f}'.format)
+            state_series_list.append(formatted_state)
+        
+        state_suffix_series = state_series_list[0]
+        for s in state_series_list[1:]:
+            state_suffix_series = state_suffix_series + "~~" + s
+            
+        final_keys = np.where(
+            comp_keys_series != "", 
+            comp_keys_series + "~~" + state_suffix_series, 
+            "~~" + state_suffix_series
+        )
+        return pd.Series(final_keys, index=df.index)
+    else:
+        return comp_keys_series
+   
 
 def _export_duplicate_details(duplicates_df, output_dir, ref_col):
     """生成Excel 留痕报表，并增加重复组容量统计"""
@@ -274,20 +283,19 @@ def identify_and_export_duplicates(original_df, essential_cols, str_cols, num_co
     data_df = _clean_missing_data(data_df, essential_cols)
     if data_df is None: return None
 
-    # 1.5. 拦截并记录含有非法数值 (如 Trace) 的脏数据
+    # 2 拦截并记录含有非法数值的脏数据
     data_df = _filter_and_log_invalid_numerics(data_df, num_cols, state_var_cols, output_dir)
     if data_df.empty: return None
 
-    # 2. 生成 Key 
+    # 2. 生成entry指纹（去重键）
     data_df['_dedup_key'] = _generate_invariant_keys(data_df, str_cols, num_cols, state_var_cols)
     
-    # 过滤毫无意义的无效 Key (只有 ~~ 前缀或全空的)
+    #3. 过滤毫无意义的无效指纹
     empty_mask = data_df['_dedup_key'].str.startswith("~~") | (data_df['_dedup_key'] == "")
     if empty_mask.any():
         logger.warning(f"警告: 剔除 {empty_mask.sum()} 行毫无意义的无效去重键的数据。")
         data_df = data_df[~empty_mask]
 
-    # 3. 识别并导出重复详情
     logger.info("\n=== 识别重复数据 ===")
     data_df['is_duplicate'] = data_df.duplicated(subset=['_dedup_key'], keep=False)
     logger.info(f"涉及重复的总行数: {data_df['is_duplicate'].sum()}")
