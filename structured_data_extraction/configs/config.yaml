@@ -11,5 +11,11 @@ model:
 settings:
   max_workers: 3    
 
-  
+pdf_renamer:
+  pdf_dir: data/input              # PDF 文件存放目录
+  rate_limit_sleep: 0.34            # API 请求间隔（秒）
+  api_timeout: 10                   # 请求超时（秒）
+  user_agent: "PDFRenamerBot/1.0 (mailto:bemlabapi@163.com)"  # API User-Agent
+  log_level: INFO
+  retry_times: 2
   
