@@ -9,7 +9,7 @@ import logging
 import requests
 import fitz  # PyMuPDF
 
-from rename_pdf_configs import AppConfig
+from app_configs import AppConfig
 
 def extract_doi_from_pdf(pdf_path):
     """从 PDF 前两页提取 DOI（清理换行符，支持跨行）"""
@@ -127,28 +127,32 @@ def build_new_filename(metadata):
 def process_pdf_rename(config: AppConfig):
     """
     执行 PDF 重命名主流程
-    :param pdf_dir: PDF 文件所在目录
-    :param rate_limit_sleep: API 请求间隔（秒）
-    :param api_timeout: API 请求超时（秒）
-    :param user_agent: API 请求的 User-Agent
     """
     # 检查目录是否存在
     if not os.path.exists(config.pdf_dir):
         logging.error(f"找不到文件夹: {config.pdf_dir}")
         return
 
-    logging.info(f"开始处理 '{config.pdf_dir}' 中的 PDF 文件...\n")
+    # 1. 获取所有 PDF 文件列表并统计总数
+    pdf_files = [f for f in os.listdir(config.pdf_dir) if f.lower().endswith('.pdf')]
+    total_pdfs = len(pdf_files)
+
+    # 2. 如果文件夹里没有 PDF，直接拦截退出
+    if total_pdfs == 0:
+        logging.info(f"在目录 '{config.pdf_dir}' 中未找到任何 PDF 文件，跳过处理。")
+        return
+
+    logging.info(f"开始处理 '{config.pdf_dir}' 中的 {total_pdfs} 个 PDF 文件...\n")
 
     failed_files = []
+    success_count = 0
 
-    for filename in os.listdir(config.pdf_dir):
-        if not filename.lower().endswith('.pdf'):
-            continue
-
+    # 3. 开始遍历处理
+    for filename in pdf_files:
         old_path = os.path.join(config.pdf_dir, filename)
+        logging.info(f"正在处理: {filename}")
 
         # 提取 DOI
-        logging.warning(f"尝试提取: {filename}的doi")
         doi = extract_doi_from_pdf(old_path)
         if not doi:
             logging.warning(f"未能在前两页找到 DOI，跳过重命名: {filename}")
@@ -173,32 +177,45 @@ def process_pdf_rename(config: AppConfig):
 
         new_path = os.path.join(config.pdf_dir, new_filename)
 
-        # 防止文件名冲突
-        if os.path.exists(new_path) and old_path != new_path:
+        # 4. 完美解决多重冲突的命名递增逻辑
+        if old_path != new_path:
             name_body, ext = os.path.splitext(new_filename)
-            new_filename = f"{name_body}_1{ext}"
-            new_path = os.path.join(config.pdf_dir, new_filename)
-
-        # 遵守 API 速率限制
-        time.sleep(config.rate_limit_sleep)
+            counter = 1
+            # 持续检查占用情况，直到找到没有被占用的后缀
+            while os.path.exists(new_path) and old_path != new_path:
+                new_filename = f"{name_body}_{counter}{ext}"
+                new_path = os.path.join(config.pdf_dir, new_filename)
+                counter += 1
 
         # 执行重命名
         if old_path != new_path:
             try:
                 os.rename(old_path, new_path)
                 logging.info(f"  成功重命名为: {new_filename}")
+                success_count += 1
             except Exception as e:
                 logging.error(f"  重命名失败: {e}")
+                failed_files.append(filename)
         else:
-            logging.info("文件名已经是标准格式，无需修改。")
+            logging.info("  文件名已经是标准格式，无需修改。")
+            success_count += 1
+
         logging.info("-" * 40)
 
-        # 记录未找到 DOI 的文件
-        if failed_files:
-            no_doi_log = os.path.join(config.pdf_dir, "no_doi.txt")
-            with open(no_doi_log, "w", encoding="utf-8") as f:
-                for fn in failed_files:
-                    f.write(fn + "\n")
-            logging.info(f"已将 {len(failed_files)} 个未找到 DOI 的文件名写入 {no_doi_log}")
-        else:
-            logging.info("所有 PDF 均成功找到 DOI。")
+        # 遵守 API 速率限制
+        time.sleep(config.rate_limit_sleep)
+
+    # 5. 最终统计和输出
+    logging.info("=" * 40)
+    if success_count == total_pdfs:
+        logging.info(f"处理完成：共 {total_pdfs} 个 PDF，全部处理成功！")
+    else:
+        logging.info(f"处理完成：共 {total_pdfs} 个 PDF，成功 {success_count} 个，失败/跳过 {len(failed_files)} 个。")
+
+    # 记录失败详情
+    if failed_files:
+        fail_log_path = os.path.join(config.pdf_dir, "failed_pdfs.txt")
+        with open(fail_log_path, "w", encoding="utf-8") as f:
+            for fn in failed_files:
+                f.write(fn + "\n")
+        logging.warning(f"已将 {len(failed_files)} 个未重命名的文件名写入 {fail_log_path}")
