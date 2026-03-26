@@ -14,11 +14,10 @@ from app_configs import AppConfig
 def extract_doi_from_pdf(pdf_path):
     """从 PDF 前两页提取 DOI（清理换行符，支持跨行）"""
     try:
-        doc = fitz.open(pdf_path)
-        text = ""
-        for page_num in range(min(2, doc.page_count)):
-            text += doc[page_num].get_text()
-        doc.close()
+        with fitz.open(pdf_path) as doc:
+            text = ""
+            for page_num in range(min(2, doc.page_count)):
+                text += doc[page_num].get_text()
 
         # 清理换行符，防止跨行中断
         text = text.replace('\n', ' ').replace('\r', ' ')
@@ -53,68 +52,75 @@ def clean_filename(filename):
     return cleaned.strip()
 
 
-def build_new_filename(metadata):
-    """根据元数据构建新文件名：年份 - 作者 - 期刊 - 标题前5个单词.pdf"""
-    # 1. 获取年份（按优先级）
-    year = ""
-    pub_print = metadata.get('published-print')
-    if pub_print:
-        date_parts = pub_print.get('date-parts')
-        if date_parts and len(date_parts) > 0 and len(date_parts[0]) > 0:
-            year = str(date_parts[0][0])
-    if not year:
-        pub_online = metadata.get('published-online')
-        if pub_online:
-            date_parts = pub_online.get('date-parts')
+def _get_year(metadata: dict) -> str:
+    """提取年份，优先级：published-print > published-online > created"""
+    for key in ('published-print', 'published-online', 'created'):
+        date_info = metadata.get(key)
+        if date_info:
+            date_parts = date_info.get('date-parts')
             if date_parts and len(date_parts) > 0 and len(date_parts[0]) > 0:
-                year = str(date_parts[0][0])
-    if not year:
-        created = metadata.get('created')
-        if created:
-            date_parts = created.get('date-parts')
-            if date_parts and len(date_parts) > 0 and len(date_parts[0]) > 0:
-                year = str(date_parts[0][0])
+                return str(date_parts[0][0])
+    return ""
 
-    # 2. 获取第一作者姓氏
-    author_last_name = ""
+
+def _get_first_author_last_name(metadata: dict) -> str:
+    """提取第一作者姓氏"""
     authors = metadata.get('author')
     if authors and isinstance(authors, list) and len(authors) > 0:
-        author_last_name = authors[0].get('family', '')
+        return authors[0].get('family', '')
+    return ""
 
-    # 3. 获取期刊名称（优先用简称）
-    journal = ""
+
+def _get_journal_name(metadata: dict) -> str:
+    """提取期刊名称，优先使用简称"""
     short_titles = metadata.get('short-container-title')
     if short_titles and isinstance(short_titles, list) and len(short_titles) > 0:
-        journal = short_titles[0]
-    if not journal:
-        container_titles = metadata.get('container-title')
-        if container_titles and isinstance(container_titles, list) and len(container_titles) > 0:
-            journal = container_titles[0]
+        return short_titles[0]
+    container_titles = metadata.get('container-title')
+    if container_titles and isinstance(container_titles, list) and len(container_titles) > 0:
+        return container_titles[0]
+    return ""
 
-    # 4. 获取标题前5个单词
-    title_snippet = ""
+
+def _get_title_snippet(metadata: dict, max_words: int = 5) -> str:
+    """提取标题前 N 个单词"""
     titles = metadata.get('title')
     if titles and isinstance(titles, list) and len(titles) > 0:
-        full_title = titles[0]
-        words = full_title.split()[:5]
-        title_snippet = " ".join(words)
+        words = titles[0].split()[:max_words]
+        return " ".join(words)
+    return ""
 
-    # 组装文件名
-    parts = []
-    if year:
-        parts.append(year)
-    if author_last_name:
-        parts.append(author_last_name)
-    if journal:
-        parts.append(journal)
+def extract_filename_fields(metadata: dict) -> dict:
+    """
+    从 Crossref metadata 中提取构建文件名所需的结构化字段。
+    """
+    return {
+        "year":          _get_year(metadata),
+        "author":        _get_first_author_last_name(metadata),
+        "journal":       _get_journal_name(metadata),
+        "title_snippet": _get_title_snippet(metadata, max_words=5),
+    }
 
+
+def build_new_filename(metadata: dict) -> str | None:
+    """
+    根据元数据构建新文件名：年份 - 作者 - 期刊 - 标题前5个单词.pdf
+    内部调用 extract_filename_fields 完成字段提取，自身只负责格式拼装。
+    """
+    fields = extract_filename_fields(metadata)
+
+    year          = fields["year"]
+    author        = fields["author"]
+    journal       = fields["journal"]
+    title_snippet = fields["title_snippet"]
+
+    # 组装 "年份 - 作者 - 期刊" 前缀
+    parts = [p for p in (year, author, journal) if p]
     base_name = " - ".join(parts)
 
+    # 拼接标题片段
     if title_snippet:
-        if base_name:
-            final_name = f"{base_name}-{title_snippet}"
-        else:
-            final_name = title_snippet
+        final_name = f"{base_name}-{title_snippet}" if base_name else title_snippet
     else:
         final_name = base_name
 
@@ -123,21 +129,15 @@ def build_new_filename(metadata):
 
     return clean_filename(final_name) + ".pdf"
 
-
 def process_pdf_rename(config: AppConfig):
-    """
-    执行 PDF 重命名主流程
-    """
-    # 检查目录是否存在
+    """执行 PDF 重命名主流程"""
     if not os.path.exists(config.pdf_dir):
         logging.error(f"找不到文件夹: {config.pdf_dir}")
         return
 
-    # 1. 获取所有 PDF 文件列表并统计总数
     pdf_files = [f for f in os.listdir(config.pdf_dir) if f.lower().endswith('.pdf')]
     total_pdfs = len(pdf_files)
 
-    # 2. 如果文件夹里没有 PDF，直接拦截退出
     if total_pdfs == 0:
         logging.info(f"在目录 '{config.pdf_dir}' 中未找到任何 PDF 文件，跳过处理。")
         return
@@ -147,12 +147,10 @@ def process_pdf_rename(config: AppConfig):
     failed_files = []
     success_count = 0
 
-    # 3. 开始遍历处理
     for filename in pdf_files:
         old_path = os.path.join(config.pdf_dir, filename)
         logging.info(f"正在处理: {filename}")
 
-        # 提取 DOI
         doi = extract_doi_from_pdf(old_path)
         if not doi:
             logging.warning(f"未能在前两页找到 DOI，跳过重命名: {filename}")
@@ -161,14 +159,14 @@ def process_pdf_rename(config: AppConfig):
 
         logging.info(f"找到 DOI: {doi}")
 
-        # 获取元数据
+        time.sleep(config.rate_limit_sleep) 
+        
         metadata = fetch_metadata_crossref(doi, config.user_agent, config.api_timeout)
         if not metadata:
             logging.warning(f"未能从 Crossref 获取到元数据，跳过重命名: {filename}")
             failed_files.append(filename)
             continue
 
-        # 构建新文件名
         new_filename = build_new_filename(metadata)
         if not new_filename:
             logging.warning(f"元数据字段均为空，无法构建新文件名: {filename}")
@@ -177,17 +175,15 @@ def process_pdf_rename(config: AppConfig):
 
         new_path = os.path.join(config.pdf_dir, new_filename)
 
-        # 4. 完美解决多重冲突的命名递增逻辑
+        # 处理文件名冲突：递增后缀，直接生成可用的名称
         if old_path != new_path:
             name_body, ext = os.path.splitext(new_filename)
             counter = 1
-            # 持续检查占用情况，直到找到没有被占用的后缀
             while os.path.exists(new_path) and old_path != new_path:
                 new_filename = f"{name_body}_{counter}{ext}"
                 new_path = os.path.join(config.pdf_dir, new_filename)
                 counter += 1
 
-        # 执行重命名
         if old_path != new_path:
             try:
                 os.rename(old_path, new_path)
@@ -201,18 +197,17 @@ def process_pdf_rename(config: AppConfig):
             success_count += 1
 
         logging.info("-" * 40)
+        # time.sleep(config.rate_limit_sleep)
 
-        # 遵守 API 速率限制
-        time.sleep(config.rate_limit_sleep)
-
-    # 5. 最终统计和输出
     logging.info("=" * 40)
     if success_count == total_pdfs:
         logging.info(f"处理完成：共 {total_pdfs} 个 PDF，全部处理成功！")
     else:
-        logging.info(f"处理完成：共 {total_pdfs} 个 PDF，成功 {success_count} 个，失败/跳过 {len(failed_files)} 个。")
+        logging.info(
+            f"处理完成：共 {total_pdfs} 个 PDF，"
+            f"成功 {success_count} 个，失败/跳过 {len(failed_files)} 个。"
+        )
 
-    # 记录失败详情
     if failed_files:
         fail_log_path = os.path.join(config.pdf_dir, "failed_pdfs.txt")
         with open(fail_log_path, "w", encoding="utf-8") as f:
