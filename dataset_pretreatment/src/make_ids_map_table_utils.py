@@ -16,21 +16,23 @@ import pubchempy as pcp
 from openpyxl import load_workbook
 from openpyxl.styles import Alignment
 
-# 设置全局超时（防止网络死锁）
 socket.setdefaulttimeout(15)
 
-# 日志配置
+# ==========================================
+# 1. Logging
+# ==========================================
 logging.basicConfig(
-    level=logging.INFO, 
+    level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[logging.StreamHandler(sys.stdout)]
 )
 
+
 # ==========================================
-# 1. 基础工具与防封禁重试机制
+# 2. 基础工具
 # ==========================================
 def retry_on_failure(max_retries=3, delay=2, backoff=2):
-    """重试装饰器，附带防崩溃护甲"""
+    """指数退避重试装饰器"""
     def decorator(func):
         def wrapper(*args, **kwargs):
             current_delay = delay
@@ -39,25 +41,33 @@ def retry_on_failure(max_retries=3, delay=2, backoff=2):
                     return func(*args, **kwargs)
                 except Exception as e:
                     if attempt < max_retries - 1:
-                        print(f" [遇到异常: {type(e).__name__}，重试 {attempt + 1}/{max_retries - 1}，等待 {current_delay}s] ", end="", flush=True)
+                        print(
+                            f" [重试 {attempt + 1}/{max_retries - 1}，等待 {current_delay}s]",
+                            end="", flush=True
+                        )
                         time.sleep(current_delay)
                         current_delay *= backoff
                     else:
-                        logging.debug(f"最终失败: {e}")
-                        return None
+                        raise e
             return None
         return wrapper
     return decorator
 
+
 def validate_cas(cas_str):
-    if not cas_str: return None
+    """校验并返回合法的 CAS 号，否则返回 None"""
+    if not cas_str:
+        return None
     cas_str = str(cas_str).strip()
-    if re.match(r'^\d{2,7}-\d{2}-\d$', cas_str):
+    if re.match(r'^\d{2,7}-\d{2}-\d$', cas_str): # CAS 号：2~7-2-1 
         return cas_str
     return None
 
+
 def extract_cas_from_synonyms(synonyms_list):
-    if not synonyms_list: return None
+    """从同义词列表中提取第一个合法 CAS 号"""
+    if not synonyms_list:
+        return None
     for synonym in synonyms_list:
         valid_cas = validate_cas(synonym)
         if valid_cas:
@@ -65,111 +75,86 @@ def extract_cas_from_synonyms(synonyms_list):
     return None
 
 # ==========================================
-# 2. PubChem 专属检索引擎
+# 3. PubChem 检索引擎
 # ==========================================
-@retry_on_failure(max_retries=3, delay=2, backoff=2)
-def get_cas_directly_from_pubchem(cid):
-    """直接从 PubChem PUG View API 获取专属 CAS 节点，显式异常抛出"""
-    url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/{cid}/JSON"
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-    
-    try:
-        with urllib.request.urlopen(req, timeout=10) as response:
-            data = json.loads(response.read().decode('utf-8'))
-    except socket.timeout:
-        raise Exception("PubChem API 网络连接超时")
-    except HTTPError as e:
-        raise Exception(f"PubChem 拒绝访问或限流, 状态码: {e.code}")
-    except URLError as e:
-        raise Exception(f"PubChem URL 路由错误: {e.reason}")
-    except json.JSONDecodeError:
-        raise Exception("PubChem 返回了无效的 JSON 数据")
-    
-    # 针对 Comment 1: 判断 None，并显式抛出异常，主动触发装饰器的重试
-    if data is None:
-
-        raise Exception("PubChem API 返回了空数据 (None)")
-    
-    # 针对 Comment 2: 使用 (data or {}) 增加一层防御性保护
-    for section in (data or {}).get('Record', {}).get('Section', []):
-        if section.get('TOCHeading') == 'Names and Identifiers':
-            for sub_sec in section.get('Section', []):
-                if sub_sec.get('TOCHeading') == 'Other Identifiers':
-                    for sub_sub_sec in sub_sec.get('Section', []):
-                        if sub_sub_sec.get('TOCHeading') == 'CAS':
-                            try:
-                                return sub_sub_sec['Information'][0]['Value']['StringWithMarkup'][0]['String']
-                            except (KeyError, IndexError, TypeError):
-                                logging.debug(f"CID {cid} CAS节点残缺，跳过。")
-                                continue
-    return None
-
+@retry_on_failure(max_retries=3, delay=1, backoff=2)
 def fetch_pubchem(name, target_fields):
-    """采用 get_compounds 全量获取"""
-    data = {'smiles': None, 'uname': None, 'cas': None}
-    cid = None
+    """
+    PubChem 检索引擎。
+    uname 字段使用 compound.iupac_name（IUPAC 系统名），字段名保持 'uname'。
+    fallback：若带括号的名称搜不到，自动去掉括号后空格重试。
+    """
+    data = {'ismile': None, 'uname': None, 'cas': None}
     synonyms_list = []
-    
-    # 1. 基础查询 (全量下载)
-    try:
-        compounds = pcp.get_compounds(name, 'name')
-        if compounds:
-            cid = compounds[0].cid
-            synonyms_list = compounds[0].synonyms
-            
-            if 'smiles' in target_fields:
-                data['smiles'] = compounds[0].smiles
-    except Exception as e: 
-        logging.debug(f"PubChem Compounds API Error: {e}")
-
-    # 2. 搜专属 CAS (PUG View)
-    if 'cas' in target_fields and cid:
-        time.sleep(0.5) 
-        raw_cas = get_cas_directly_from_pubchem(cid)
-        validated_cas = validate_cas(raw_cas)
-        if validated_cas:
-            data['cas'] = validated_cas
-            
-    # 3. 搜 CAS (同义词兜底)
-    if 'cas' in target_fields and not data['cas'] and synonyms_list:
+    compound = None
+ 
+    def _query(query_name):
+        try:
+            results = pcp.get_compounds(query_name, 'name')
+            return results[0] if results else None
+        except Exception as e:
+            logging.debug(f"PubChem Compounds API Error: {e}")
+            return None
+ 
+    # 主查询
+    compound = _query(name)
+ 
+    # fallback：括号后有空格时，去掉空格重试
+    if compound is None and re.search(r'\)\s', name):
+        normalized = re.sub(r'\)\s+', ')', name)
+        logging.debug(f"PubChem fallback: '{name}' → '{normalized}'")
+        compound = _query(normalized)
+ 
+    if compound:
+        synonyms_list = compound.synonyms
+ 
+    if 'ismile' in target_fields and compound:
+        data['ismile'] = compound.isomeric_smiles
+ 
+    if 'cas' in target_fields and synonyms_list:
         data['cas'] = extract_cas_from_synonyms(synonyms_list)
-
-    # 4. 搜 通用名 (uname)
-    if 'uname' in target_fields and synonyms_list:
-        new_name = synonyms_list[0]
-        if re.search(r'\d{2,}', new_name) and len(synonyms_list) > 1:
-            data['uname'] = synonyms_list[1]
-        else:
-            data['uname'] = new_name
-
+ 
+    if 'uname' in target_fields and compound:
+        data['uname'] = compound.iupac_name
+ 
     return data
 
+
 # ==========================================
-# 3. 核心调度器
+# 4. 检索调度器
 # ==========================================
 @lru_cache(maxsize=None)
 def f_fetch_compound_info(name):
+    """
+    PubChem 单引擎检索。
+
+    Returns
+    -------
+    tuple : (ismile, uname, cas)
+    """
     if not isinstance(name, str) or not name.strip():
         return None, None, None
 
     time.sleep(0.5)
-    
-    info = {'smiles': None, 'uname': None, 'cas': None}
-    target_fields = ['smiles', 'uname', 'cas'] 
-    
+    print(f"\n--> 正在请求: [{name}] ...", flush=True)
+
+    info = {'ismile': None, 'uname': None, 'cas': None}
+
     try:
-        new_data = fetch_pubchem(name, target_fields)
-        
-        for field in target_fields:
+        new_data = fetch_pubchem(name, list(info.keys()))
+        for field in info:
             if new_data and new_data.get(field):
                 info[field] = new_data[field]
-                logging.info(f"   └─ 成功获取 [{field}]: {new_data[field]}")
-                
+                logging.info(f"     └─ 成功获取 [{field}]: {new_data[field]}")
     except Exception as e:
-        logging.error(f" PubChem Engine crashed on {name}: {e}")
+        logging.error(f"  PubChem 在 [{name}] 上崩溃: {e}")
 
-    logging.info(f"Result '{name}': SMILES={info['smiles']}, Name={info['uname']}, CAS={info['cas']}")
-    return info['smiles'], info['uname'], info['cas']
+    logging.info(
+        f"Result '{name}': ismile={info['ismile']}, "
+        f"uname={info['uname']}, CAS={info['cas']}"
+    )
+
+    return info['ismile'], info['uname'], info['cas']
 
 def data_quality_summary(df: pd.DataFrame, output_path: str):
     """
