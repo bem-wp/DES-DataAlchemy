@@ -15,6 +15,7 @@ import pandas as pd
 import pubchempy as pcp
 from openpyxl import load_workbook
 from openpyxl.styles import Alignment
+from tenacity import retry, stop_after_attempt, wait_exponential
 
 socket.setdefaulttimeout(15)
 
@@ -31,35 +32,12 @@ logging.basicConfig(
 # ==========================================
 # 2. 基础工具
 # ==========================================
-def retry_on_failure(max_retries=3, delay=2, backoff=2):
-    """指数退避重试装饰器"""
-    def decorator(func):
-        def wrapper(*args, **kwargs):
-            current_delay = delay
-            for attempt in range(max_retries):
-                try:
-                    return func(*args, **kwargs)
-                except Exception as e:
-                    if attempt < max_retries - 1:
-                        print(
-                            f" [重试 {attempt + 1}/{max_retries - 1}，等待 {current_delay}s]",
-                            end="", flush=True
-                        )
-                        time.sleep(current_delay)
-                        current_delay *= backoff
-                    else:
-                        raise e
-            return None
-        return wrapper
-    return decorator
-
-
 def validate_cas(cas_str):
     """校验并返回合法的 CAS 号，否则返回 None"""
     if not cas_str:
         return None
     cas_str = str(cas_str).strip()
-    if re.match(r'^\d{2,7}-\d{2}-\d$', cas_str): # CAS 号：2~7-2-1 
+    if re.match(r'^\d{2,7}-\d{2}-\d$', cas_str):  # CAS 号：2~7-2-1 
         return cas_str
     return None
 
@@ -74,49 +52,60 @@ def extract_cas_from_synonyms(synonyms_list):
             return valid_cas
     return None
 
+
 # ==========================================
 # 3. PubChem 检索引擎
 # ==========================================
-@retry_on_failure(max_retries=3, delay=1, backoff=2)
+def _log_after_attempt(retry_state):
+    """每次尝试后，若失败则记录异常信息"""
+    if retry_state.outcome.failed:
+        exc = retry_state.outcome.exception()
+        logging.warning(
+            f"调用 {retry_state.fn.__name__} 失败 "
+            f"(第{retry_state.attempt_number}次): {type(exc).__name__}: {exc}"
+        )
+
+
+def _log_before_sleep(retry_state):
+    """重试前的休眠提示"""
+    max_attempts = retry_state.retry_object.stop.max_attempt_number
+    sleep_time = retry_state.next_action.sleep
+    logging.info(
+        f"重试 {retry_state.attempt_number}/{max_attempts - 1}，"
+        f"等待 {sleep_time:.0f}s..."
+    )
+
+
+@retry(
+    stop=stop_after_attempt(3),
+    wait=wait_exponential(multiplier=1, min=1, max=4),
+    after=_log_after_attempt,
+    before_sleep=_log_before_sleep,
+)
 def fetch_pubchem(name, target_fields):
     """
     PubChem 检索引擎。
     uname 字段使用 compound.iupac_name（IUPAC 系统名），字段名保持 'uname'。
-    fallback：若带括号的名称搜不到，自动去掉括号后空格重试。
     """
     data = {'ismile': None, 'uname': None, 'cas': None}
-    synonyms_list = []
-    compound = None
- 
-    def _query(query_name):
-        try:
-            results = pcp.get_compounds(query_name, 'name')
-            return results[0] if results else None
-        except Exception as e:
-            logging.debug(f"PubChem Compounds API Error: {e}")
-            return None
- 
-    # 主查询
-    compound = _query(name)
- 
-    # fallback：括号后有空格时，去掉空格重试
-    if compound is None and re.search(r'\)\s', name):
-        normalized = re.sub(r'\)\s+', ')', name)
-        logging.debug(f"PubChem fallback: '{name}' → '{normalized}'")
-        compound = _query(normalized)
- 
-    if compound:
-        synonyms_list = compound.synonyms
- 
-    if 'ismile' in target_fields and compound:
+    
+    # 移除多余的 try-except，让 tenacity 全权接管异常
+    results = pcp.get_compounds(name, 'name')
+    compound = results[0] if results else None
+    
+    # 提前阻断：如果没搜到，直接返回全 None 字典，避免后续无意义的判断
+    if not compound:
+        return data
+
+    if 'ismile' in target_fields:
         data['ismile'] = compound.isomeric_smiles
- 
-    if 'cas' in target_fields and synonyms_list:
-        data['cas'] = extract_cas_from_synonyms(synonyms_list)
- 
-    if 'uname' in target_fields and compound:
+        
+    if 'cas' in target_fields and getattr(compound, 'synonyms', None):
+        data['cas'] = extract_cas_from_synonyms(compound.synonyms)
+        
+    if 'uname' in target_fields:
         data['uname'] = compound.iupac_name
- 
+        
     return data
 
 
@@ -136,7 +125,8 @@ def f_fetch_compound_info(name):
         return None, None, None
 
     time.sleep(0.5)
-    print(f"\n--> 正在请求: [{name}] ...", flush=True)
+
+    logging.info(f"--> 正在请求: [{name}] ...")
 
     info = {'ismile': None, 'uname': None, 'cas': None}
 
@@ -145,9 +135,10 @@ def f_fetch_compound_info(name):
         for field in info:
             if new_data and new_data.get(field):
                 info[field] = new_data[field]
-                logging.info(f"     └─ 成功获取 [{field}]: {new_data[field]}")
+                logging.info(f"    └─ 成功获取 [{field}]: {new_data[field]}")
     except Exception as e:
-        logging.error(f"  PubChem 在 [{name}] 上崩溃: {e}")
+        # 当 tenacity 所有重试均失败后，异常会抛到这里，记录最终失败状态
+        logging.error(f"  PubChem 在 [{name}] 上彻底失败: {type(e).__name__}: {e}")
 
     logging.info(
         f"Result '{name}': ismile={info['ismile']}, "
