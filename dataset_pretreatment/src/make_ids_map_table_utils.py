@@ -2,7 +2,7 @@ import json
 import logging
 import os
 import re
-import socket
+# import socket
 import sys
 import time
 import urllib.request
@@ -17,7 +17,7 @@ from openpyxl import load_workbook
 from openpyxl.styles import Alignment
 from tenacity import retry, stop_after_attempt, wait_exponential
 
-socket.setdefaulttimeout(15)
+# socket.setdefaulttimeout(15)
 
 # ==========================================
 # 1. Logging
@@ -90,7 +90,7 @@ def fetch_pubchem(name, target_fields):
     data = {'ismile': None, 'uname': None, 'cas': None}
     
     # 移除多余的 try-except，让 tenacity 全权接管异常
-    results = pcp.get_compounds(name, 'name')
+    results = pcp.get_compounds(name, 'name', timeout = 15)
     compound = results[0] if results else None
     
     # 提前阻断：如果没搜到，直接返回全 None 字典，避免后续无意义的判断
