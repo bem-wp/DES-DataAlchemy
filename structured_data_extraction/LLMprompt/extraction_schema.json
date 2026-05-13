@@ -1,6 +1,6 @@
 {
   "title": "Deep Eutectic Solvent Data Extraction",
-  "description": "Schema for extracting the paper's title and detailed information about Deep Eutectic Solvents (DESs), specifically focusing on their composition and conductivity.",
+  "description": "Schema for extracting the paper's title and detailed information about Deep Eutectic Solvents (DESs), specifically focusing on their composition and pH.",
   "type": "object",
   "properties": {
     "article_title": {
@@ -42,12 +42,10 @@
               "type": "string"
             }
           },
-          "conductivity": {
-            "type": "array",
-            "description": "Extract the electrical conductivity measurement corresponding to the extracted temperature. Format must be a list of exactly two strings: [Numerical Value, Unit]. Example: ['5.2', 'mS/cm'] or ['0.015', 'S/m'].",
-            "items": {
-              "type": "string"
-            }
+          "ph": {
+            "type": "string",
+            "nullable": true,
+            "description": "Extract the pH value as it appears in the text (e.g., '7.4', 'pH 7.0'). If the pH is not explicitly mentioned, infer it from the experimental conditions."
           }
         },
         "required": [
@@ -55,7 +53,7 @@
           "compounds_acronyms",
           "molar_ratio",
           "temperature",
-          "conductivity"
+          "ph"
         ]
       }
     }
