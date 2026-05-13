@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 def get_files_with_data(excel_path):
     # 读取Excel文件
-    screening_results = pd.read_excel(excel_path)
+    screening_results = pd.read_csv(excel_path)
     # 筛选出“数据状态”列为“有”的行
     yes_files = screening_results[screening_results['数据状态'] == '有']
     # 将筛选结果中的“文件名”列转换成列表并返回

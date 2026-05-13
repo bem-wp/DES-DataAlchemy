@@ -13,7 +13,7 @@ llms:
       input_folder: data/input # PDF 文件存放目录（重命名后）
       in-out_folder: data/in-out
       output_folder: data/output
-      output_xlsx: data/output/prescreening_results.xlsx
+      output_csv: data/output/prescreening_results.csv
     prompt:
       template: LLMprompt/prompt.md
     model:
@@ -38,7 +38,7 @@ llms:
 
 pdf_selector:
   pdf_input_dir: data/input
-  screening_result: data/output/prescreening_results.xlsx
+  screening_result: data/output/prescreening_results.csv
   pdf_output_dir: data/in-out/has_data_pdfs
 
 json_filter:
