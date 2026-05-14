@@ -8,7 +8,7 @@ pdf_renamer:
 
 llms:
   pdf_screening: # 预筛选LLM
-    targe_property: pH # 目标物性 
+    targe_property: viscosity # 目标物性 
     paths:
       input_folder: data/input # PDF 文件存放目录（重命名后）
       in-out_folder: data/in-out
@@ -43,7 +43,7 @@ pdf_selector:
 
 json_filter:
   json_input_dir : data/in-out/_01_extracted
-  targe_property : ph
+  targe_property : viscosity
   condition_vars : ['temperature']
   json_output_dir : data/in-out/_02_filtered
 
