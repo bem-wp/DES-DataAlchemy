@@ -6,7 +6,7 @@ import os
 import copy
 import re
 
-# 从工具库中仅导入纯数据处理和绘图的函数，不再导入任何路径和文件读取相关的函数
+# 从工具库中仅导入纯数据处理和绘图的函数
 from gradio_utils import (
     parse_extraction_metadata,
     get_pdf_page_count,
@@ -17,39 +17,30 @@ from gradio_utils import (
     group_data_by_system
 )
 
-# ================== 1. 动态路径配置 ==================
+# 导入统一配置加载器
+from app_configs import load_visualizer_config
+
 # ================== 1. 动态路径配置 ==================
 current_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.dirname(current_dir)
 
-# 0. 读取配置文件获取动态物性名称
-CONFIG_PATH = os.path.join(project_root, "configs", "03_json_filter_config.json")
-prop_name = "unknown" # 默认 fallback 名称
+# 1. 获取物性名称（用于过滤数据、解析数据文件夹）
 try:
-    if os.path.exists(CONFIG_PATH):
-        with open(CONFIG_PATH, 'r', encoding='utf-8') as f:
-            config_data = json.load(f)
-            # 获取 property_json_field 的值，例如 "conductivity"
-            prop_name = config_data.get('property_json_field', 'unknown')
-    else:
-        print(f"⚠️ 警告: 找不到配置文件 {CONFIG_PATH}")
+    visualizer_cfg = load_visualizer_config()
 except Exception as e:
-    print(f"⚠️ 警告: 读取配置文件出错: {e}")
+    print(f"⚠️ 加载配置失败")
 
-# 1. 原始PDF存放目录
-PDF_FOLDER = Path(os.path.normpath(os.path.join(
-    project_root, "data", "in_out", f"pdfs_has_{prop_name}"
-)))
+# 2. 获取 PDF 存放目录（来自 pdf_selector 配置）
+try:
+    PDF_FOLDER = Path(visualizer_cfg.pdf_folder)
+except Exception as e:
+    print(f"⚠️ 加载 PDF 选择器配置失败")
 
-# 2. 最终过滤后的数据提取结果
-EXTRACTED_FOLDER = Path(os.path.normpath(os.path.join(
-    project_root, "data", "in_out", f"{prop_name}_02_filtered"
-)))
+# 3. 过滤后的数据提取结果
+EXTRACTED_FOLDER = Path(visualizer_cfg.filtered_json_folder)
 
-# 3. LandingAI 解析生成的 chunks 
-PARSED_FOLDER = Path(os.path.normpath(os.path.join(
-    project_root, "data", "in_out", f"{prop_name}_00_parsed"
-)))
+# 4. LandingAI 解析生成的 chunks 
+PARSED_FOLDER = Path(visualizer_cfg.parsed_json_folder)
 
 
 # ================== 2. 文件读取与 I/O 逻辑 ==================
@@ -332,29 +323,9 @@ def create_interface():
     if available_pdfs:
         app_state.load_pdf(available_pdfs[0])
     
-    with gr.Blocks(title="PDF Data Extraction & Verification Tool", css="""
-        #field_radio_scrollable {
-            max-height: 500px;
-            overflow-y: auto;
-            padding-right: 10px;
-        }
-        #field_radio_scrollable label {
-            margin-bottom: 4px;
-            padding: 8px;
-            border: 1px solid #eee;
-            border-radius: 4px;
-            font-size: 13px;
-        }
-        #field_radio_scrollable label:hover {
-            background-color: #f5f5f5;
-        }
-        #field_radio_scrollable input:checked + span {
-            font-weight: bold;
-            color: #1976d2;
-        }
-        .success-msg { color: green; font-weight: bold; }
-        .error-msg { color: red; font-weight: bold; }
-    """) as app:
+    with gr.Blocks(title="PDF Data Extraction & Verification Tool") as app:
+        # Note: CSS moved to launch() in Gradio 6.0+, but we keep it here for compatibility
+        # Actual CSS will be passed to .launch() below if needed.
         
         pdf_dropdown = gr.Dropdown(
             choices=available_pdfs if available_pdfs else [],
@@ -529,4 +500,28 @@ def create_interface():
 
 if __name__ == "__main__":
     app = create_interface()
-    app.launch(server_name="127.0.0.1", server_port=7880, inbrowser=True)
+    # Pass CSS here for Gradio 6.0 compatibility
+    custom_css = """
+        #field_radio_scrollable {
+            max-height: 500px;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+        #field_radio_scrollable label {
+            margin-bottom: 4px;
+            padding: 8px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+        #field_radio_scrollable label:hover {
+            background-color: #f5f5f5;
+        }
+        #field_radio_scrollable input:checked + span {
+            font-weight: bold;
+            color: #1976d2;
+        }
+        .success-msg { color: green; font-weight: bold; }
+        .error-msg { color: red; font-weight: bold; }
+    """
+    app.launch(server_name="127.0.0.1", server_port=7880, inbrowser=True, css=custom_css)

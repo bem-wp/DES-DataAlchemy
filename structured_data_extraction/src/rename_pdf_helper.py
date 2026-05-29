@@ -9,24 +9,54 @@ import logging
 import requests
 import fitz  # PyMuPDF
 
-from app_configs import AppConfig
+from app_configs import PdfRenamerConfig
 
 def extract_doi_from_pdf(pdf_path):
-    """从 PDF 前两页提取 DOI（清理换行符，支持跨行）"""
+    """
+    从 PDF 中提取 DOI，优先从前两页提取；
+    若前两页未找到，则尝试从最后两页提取。
+    包含黑名单机制，过滤掉常见的非期刊 DOI（如数据集、补充材料等）。
+    """
     try:
         with fitz.open(pdf_path) as doc:
-            text = ""
+            # 定义黑名单关键字：排除常见的数据集、代码库和补充材料的 DOI
+            exclude_keywords = ['zenodo', 'figshare', 'dryad', 'osf.io', 'supp', 'video']
+
+            def find_valid_doi(text):
+                # 清理换行符，防止跨行中断
+                text = text.replace('\n', ' ').replace('\r', ' ')
+                # 使用 findall 获取所有可能的 DOI
+                matches = re.findall(r'(10\.\d{4,9}/[-._;()/:A-Za-z0-9]+)', text)
+                for match in matches:
+                    # 去除末尾可能多抓取的标点符号和右括号
+                    doi = match.rstrip('.:;,)') 
+                    
+                    # 检查 DOI 中是否包含黑名单中的关键字
+                    is_excluded = any(keyword in doi.lower() for keyword in exclude_keywords)
+                    if not is_excluded:
+                        return doi
+                return None
+
+            # 1. 先查前两页
+            text_front = ""
             for page_num in range(min(2, doc.page_count)):
-                text += doc[page_num].get_text()
+                text_front += doc[page_num].get_text()
+                
+            doi = find_valid_doi(text_front)
+            if doi:
+                return doi
 
-        # 清理换行符，防止跨行中断
-        text = text.replace('\n', ' ').replace('\r', ' ')
+            # 2. 如果前两页没找到（或全被黑名单过滤了），尝试最后两页
+            if doc.page_count > 2:
+                text_back = ""
+                start_page = max(0, doc.page_count - 2)
+                for page_num in range(start_page, doc.page_count):
+                    text_back += doc[page_num].get_text()
+                    
+                doi = find_valid_doi(text_back)
+                if doi:
+                    return doi
 
-        # 直接匹配纯 DOI
-        doi_match = re.search(r'(10\.\d{4,9}/[-._;()/:A-Za-z0-9]+)', text)
-        if doi_match:
-            doi = doi_match.group(1).rstrip('.:;,')
-            return doi
     except Exception as e:
         logging.error(f"读取 PDF 出错: {e}")
     return None
@@ -104,7 +134,7 @@ def extract_filename_fields(metadata: dict) -> dict:
 
 def build_new_filename(metadata: dict) -> str | None:
     """
-    根据元数据构建新文件名：年份 - 作者 - 期刊 - 标题前5个单词.pdf
+    根据元数据构建新文件名：年份-作者-期刊-标题前5个单词.pdf
     内部调用 extract_filename_fields 完成字段提取，自身只负责格式拼装。
     """
     fields = extract_filename_fields(metadata)
@@ -114,9 +144,9 @@ def build_new_filename(metadata: dict) -> str | None:
     journal       = fields["journal"]
     title_snippet = fields["title_snippet"]
 
-    # 组装 "年份 - 作者 - 期刊" 前缀
+    # 组装 "年份-作者-期刊" 前缀 (去掉了连字符周围的空格)
     parts = [p for p in (year, author, journal) if p]
-    base_name = " - ".join(parts)
+    base_name = "-".join(parts)
 
     # 拼接标题片段
     if title_snippet:
@@ -129,7 +159,7 @@ def build_new_filename(metadata: dict) -> str | None:
 
     return clean_filename(final_name) + ".pdf"
 
-def process_pdf_rename(config: AppConfig):
+def process_pdf_rename(config: PdfRenamerConfig):
     """执行 PDF 重命名主流程"""
     if not os.path.exists(config.pdf_dir):
         logging.error(f"找不到文件夹: {config.pdf_dir}")
@@ -153,7 +183,7 @@ def process_pdf_rename(config: AppConfig):
 
         doi = extract_doi_from_pdf(old_path)
         if not doi:
-            logging.warning(f"未能在前两页找到 DOI，跳过重命名: {filename}")
+            logging.warning(f"未能找到有效 DOI，跳过重命名: {filename}")
             failed_files.append(filename)
             continue
 

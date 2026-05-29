@@ -1,14 +1,22 @@
 import os
 import yaml
 from dataclasses import dataclass
-from typing import Optional
 from dotenv import load_dotenv
 
-
-# ==================== Dataclasses ====================
+# ==================== 1. 数据结构定义 (Dataclasses) ====================
+@dataclass(frozen=True)
+class PdfRenamerConfig:
+    """PDF 重命名工具配置"""
+    pdf_dir: str
+    rate_limit_sleep: float
+    api_timeout: int
+    user_agent: str
+    log_level: str
+    retry_times: int
 
 @dataclass(frozen=True)
-class LLMConfig:
+class ScreeningConfig:
+    """预筛选任务专用配置"""
     api_key: str
     pdf_input_folder: str
     result_output_folder: str
@@ -19,125 +27,190 @@ class LLMConfig:
     timeout: int
     max_workers: int
 
+@dataclass(frozen=True)
+class PdfSelectorConfig:
+    pdf_input_folder: str
+    screening_result: str
+    pdf_output_folder: str
 
 @dataclass(frozen=True)
-class PdfRenamerConfig:
-    pdf_dir: str
-    rate_limit_sleep: float
-    api_timeout: int
-    user_agent: str
-    log_level: str
-    retry_times: int
+class ExtractionConfig:
+    """数据抽取任务专用配置"""
+    api_key: str
+    pdf_input_folder: str
+    schema_template_path: str
+    result_output_folder: str
+    parse_model_name: str
+    extract_model_name : str
+
+@dataclass(frozen=True)
+class JsonFilterConfig:
+    json_input_folder: str
+    target_property : str
+    condition_vars : list
+    json_output_folder: str
 
 
 @dataclass(frozen=True)
-class AppConfig:
-    # 改为 Optional，允许按需加载时为空
-    llm: Optional[LLMConfig] = None
-    pdf_renamer: Optional[PdfRenamerConfig] = None
+class VisualizerConfig:
+    pdf_folder: str
+    parsed_json_folder : str
+    filtered_json_folder : str
+    revised_json_folder : str
 
 
-# ==================== 各配置节解析函数 ====================
+# ==================== 2. 基础环境初始化 ====================
 
-def _load_llm_config(yaml_config: dict, project_root: str, api_key: str) -> LLMConfig:
-    paths_cfg   = yaml_config.get("paths")    or {}
-    prompt_cfg  = yaml_config.get("prompt")   or {}
-    model_cfg   = yaml_config.get("model")    or {}
-    setting_cfg = yaml_config.get("settings") or {}
+def _init_env_and_read_yaml():
+    """内部通用函数：定位目录、加载 .env、读取 config.yaml"""
+    current_file_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(current_file_dir)
 
-    required_pipeline = {
-        "paths.input_folder":   paths_cfg.get("input_folder"),
-        "paths.output_folder":  paths_cfg.get("output_folder"),
-        "paths.output_csv":     paths_cfg.get("output_csv"),
-        "prompt.template":      prompt_cfg.get("template"),
-        "model.base_url":       model_cfg.get("base_url"),
-        "model.name":           model_cfg.get("name"),
-        "settings.max_workers": setting_cfg.get("max_workers"),
+    # 只要调用任何配置，都默认加载一次环境变量
+    load_dotenv(dotenv_path=os.path.join(project_root, ".env"))
+
+    yaml_path = os.path.join(project_root, "configs", "config.yaml")
+    if not os.path.exists(yaml_path):
+        raise FileNotFoundError(f"配置文件未找到: {yaml_path}")
+    
+    with open(yaml_path, "r", encoding="utf-8") as f:
+        yaml_data = yaml.safe_load(f) or {}
+
+    return project_root, yaml_data
+
+
+# ==================== 3. 为每个 Pipeline 节点暴露专属加载器 ====================
+def load_pdf_renamer_config() -> PdfRenamerConfig:
+    """Pipeline 节点 1：专属加载重命名工具配置"""
+    project_root, yaml_data = _init_env_and_read_yaml()
+    
+    cfg = yaml_data.get("pdf_renamer")
+    if not cfg:
+        raise RuntimeError("config.yaml 中缺少 'pdf_renamer' 配置节")
+
+    pdf_dir_raw = cfg.get("pdf_dir")
+    if not pdf_dir_raw:
+        raise RuntimeError("pdf_renamer 配置中缺少 pdf_dir")
+
+    full_pdf_dir = os.path.join(project_root, pdf_dir_raw)
+    os.makedirs(full_pdf_dir, exist_ok=True)
+
+    return PdfRenamerConfig(
+        pdf_dir=full_pdf_dir,
+        rate_limit_sleep=float(cfg.get("rate_limit_sleep", 0.5)),
+        api_timeout=int(cfg.get("api_timeout", 20)),
+        user_agent=str(cfg.get("user_agent", "PDFBot/1.0")),
+        log_level=str(cfg.get("log_level", "INFO")),
+        retry_times=int(cfg.get("retry_times", 3))
+    )
+
+def load_screening_config() -> ScreeningConfig:
+    """Pipeline 节点 2：专属加载预筛选配置"""
+    project_root, yaml_data = _init_env_and_read_yaml()
+    
+    task_cfg = yaml_data.get("llms", {}).get("pdf_screening", {})
+    if not task_cfg:
+        raise RuntimeError("config.yaml 中缺失 llms.pdf_screening 节点")
+
+    paths_cfg   = task_cfg.get("paths")    or {}
+    prompt_cfg  = task_cfg.get("prompt")   or {}
+    model_cfg   = task_cfg.get("model")    or {}
+    setting_cfg = task_cfg.get("settings") or {}
+
+    env_name = model_cfg.get("api_key_env")
+    api_key = os.getenv(env_name)
+    if not api_key:
+        raise RuntimeError(f"未找到环境变量 {env_name}，请检查 .env 文件")
+
+    # 必填项预检
+    required = {
+        "paths.input_folder": paths_cfg.get("input_folder"),
+        "paths.output_csv":    paths_cfg.get("output_csv"),
+        "prompt.template":     prompt_cfg.get("template"),
+        "model.name":          model_cfg.get("name"),
     }
-    missing = [k for k, v in required_pipeline.items() if not v]
+    missing = [k for k, v in required.items() if not v]
     if missing:
-        raise RuntimeError(f"config.yaml 中以下必填配置项缺失或为空: {', '.join(missing)}")
+        raise RuntimeError(f"pdf_screening 配置缺失必填项: {', '.join(missing)}")
 
-    pdf_input_folder      = os.path.join(project_root, paths_cfg["input_folder"])
-    result_output_folder  = os.path.join(project_root, paths_cfg["output_folder"])
-    output_csv            = os.path.join(project_root, paths_cfg["output_csv"])
-    prompt_templates_path = os.path.join(project_root, prompt_cfg["template"])
-
-    if not os.path.exists(pdf_input_folder):
-        raise RuntimeError(f"输入文件夹不存在: {pdf_input_folder}")
-    if not os.path.exists(prompt_templates_path):
-        raise RuntimeError(f"提示模板文件不存在: {prompt_templates_path}")
-
-    return LLMConfig(
+    return ScreeningConfig(
         api_key=api_key,
-        pdf_input_folder=pdf_input_folder,
-        result_output_folder=result_output_folder,
-        output_csv=output_csv,
-        prompt_templates_path=prompt_templates_path,
-        model_base_url=model_cfg["base_url"],
+        pdf_input_folder=os.path.join(project_root, paths_cfg["input_folder"]),
+        result_output_folder=os.path.join(project_root, paths_cfg.get("output_folder", "data/output")),
+        output_csv=os.path.join(project_root, paths_cfg["output_csv"]),
+        prompt_templates_path=os.path.join(project_root, prompt_cfg["template"]),
+        model_base_url=model_cfg.get("base_url", ""),
         model_name=model_cfg["name"],
         timeout=int(model_cfg.get("timeout", 300)),
         max_workers=int(setting_cfg.get("max_workers", 3)),
     )
 
+def load_pdf_selector_config() -> PdfSelectorConfig:
 
-def _load_pdf_renamer_config(yaml_config: dict, project_root: str) -> PdfRenamerConfig:
-    pdf_renamer_cfg = yaml_config.get("pdf_renamer")
-    if not pdf_renamer_cfg:
-        raise RuntimeError("config.yaml 中缺少 'pdf_renamer' 配置节")
+    project_root, yaml_data = _init_env_and_read_yaml()
 
-    if not pdf_renamer_cfg.get("pdf_dir"):
-        raise RuntimeError("pdf_renamer 配置节中缺少必填字段: pdf_dir")
-    try:
-        pdf_dir = str(pdf_renamer_cfg["pdf_dir"])
-    except (ValueError, TypeError) as e:
-        raise RuntimeError(f"pdf_dir 字段类型错误: {e}") from e
+    pdf_selector_cfg = yaml_data.get("pdf_selector", {})
 
-    full_pdf_dir = os.path.join(project_root, pdf_dir)
-    if not os.path.exists(full_pdf_dir):
-        raise RuntimeError(f"PDF 文件夹不存在: {full_pdf_dir}")
 
-    return PdfRenamerConfig(
-        pdf_dir=full_pdf_dir,
-        rate_limit_sleep=float(pdf_renamer_cfg.get("rate_limit_sleep", 1.0)),
-        api_timeout=int(pdf_renamer_cfg.get("api_timeout", 30)),
-        user_agent=str(pdf_renamer_cfg.get("user_agent", "")),
-        log_level=str(pdf_renamer_cfg.get("log_level", "INFO")),
-        retry_times=int(pdf_renamer_cfg.get("retry_times", 3)),
+    return PdfSelectorConfig(
+
+        pdf_input_folder = os.path.join(project_root, pdf_selector_cfg["pdf_input_dir"]),
+        screening_result = os.path.join(project_root, pdf_selector_cfg["screening_result"]),
+        pdf_output_folder = os.path.join(project_root, pdf_selector_cfg["pdf_output_dir"])
+        
     )
 
+def load_extraction_config() -> ExtractionConfig:
+    """Pipeline 节点 N：专属加载数据抽取配置"""
+    project_root, yaml_data = _init_env_and_read_yaml()
+    
+    extract_cfg = yaml_data.get("llms", {}).get("data_extraction", {})
+    if not extract_cfg:
+        raise RuntimeError("config.yaml 中缺失 llms.data_extraction 节点")
 
-# ==================== 入口 ====================
+    paths_cfg   = extract_cfg.get("paths")    or {}
+    schema_cfg  = extract_cfg.get("schema")   or {}
+    model_cfg   = extract_cfg.get("model")    or {}
 
-def load_config(require_llm: bool = True, require_pdf_renamer: bool = True) -> AppConfig:
-    # 定位项目根目录
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.dirname(current_dir)
+    env_name = model_cfg.get("api_key_env")
+    api_key = os.getenv(env_name)
+    if not api_key:
+        raise RuntimeError(f"未找到环境变量 {env_name}，请检查 .env 文件")
 
-    # 加载 config.yaml
-    yaml_path = os.path.join(project_root, "configs", "config.yaml")
-    if not os.path.exists(yaml_path):
-        raise RuntimeError(f"配置文件 config.yaml 未找到: {yaml_path}")
-    try:
-        with open(yaml_path, "r", encoding="utf-8") as f:
-            yaml_config = yaml.safe_load(f)
-    except Exception as e:
-        raise RuntimeError(f"加载配置文件时发生错误: {e}") from e
+    return ExtractionConfig(
+        
+        api_key=api_key,
+        pdf_input_folder=os.path.join(project_root, paths_cfg.get("input_folder", "")),
+        schema_template_path=os.path.join(project_root, schema_cfg.get("template", "")),
+        result_output_folder=os.path.join(project_root, paths_cfg.get("output_folder", "")),
+        parse_model_name = model_cfg.get("parse_model_name", ""),
+        extract_model_name = model_cfg.get("extract_model_name", "")
 
-    llm_config = None
-    if require_llm:
-        # 只有在需要 LLM 的时候，才加载 .env 并校验 API Key
-        load_dotenv(dotenv_path=os.path.join(project_root, ".env"))
-        api_key = os.getenv("LLM_API_KEY")
-        if not api_key:
-            raise RuntimeError("LLM_API_KEY 未找到，请确保已在 .env 文件中设置")
-        llm_config = _load_llm_config(yaml_config, project_root, api_key)
+    )
 
-    pdf_renamer_config = None
-    if require_pdf_renamer:
-        pdf_renamer_config = _load_pdf_renamer_config(yaml_config, project_root)
+def load_json_filter_config() -> JsonFilterConfig:
+    project_root, yaml_data = _init_env_and_read_yaml()
 
-    return AppConfig(
-        llm=llm_config,
-        pdf_renamer=pdf_renamer_config,
+    json_filter_cfg = yaml_data.get('json_filter', {})
+
+    return JsonFilterConfig(
+        json_input_folder = os.path.join(project_root, json_filter_cfg["json_input_dir"]),
+        # 直接取值，注意 YAML 键名是 targe_property（拼写保持原样）
+        target_property = json_filter_cfg.get("targe_property", ""),
+        condition_vars = json_filter_cfg.get("condition_vars", []),
+        json_output_folder = os.path.join(project_root, json_filter_cfg["json_output_dir"])
+    )
+
+def load_visualizer_config() -> VisualizerConfig:
+    project_root, yaml_data = _init_env_and_read_yaml()
+
+    visualizer_cfg = yaml_data.get('visualizer', {})
+
+    return VisualizerConfig(
+
+         pdf_folder = os.path.join(project_root, visualizer_cfg["pdf_files_dir"]),
+         parsed_json_folder  = os.path.join(project_root, visualizer_cfg["parsed_json_dir"]),
+         filtered_json_folder = os.path.join(project_root, visualizer_cfg["filtered_json_dir"]),
+         revised_json_folder = os.path.join(project_root, visualizer_cfg["revised_json_dir"])
+         
     )
