@@ -8,3 +8,5 @@ structured_data_extraction/tmp_data
 __pycache__/
 *.py[cod]
 *$py.class
+
+.env
