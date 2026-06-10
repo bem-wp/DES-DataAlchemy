@@ -58,6 +58,11 @@ class VisualizerConfig:
     filtered_json_folder : str
     revised_json_folder : str
 
+@dataclass(frozen=True)
+class JsontotableConfig:
+    property_name : str
+    json_folder : str
+    table_folder : str
 
 # ==================== 2. 基础环境初始化 ====================
 
@@ -213,4 +218,21 @@ def load_visualizer_config() -> VisualizerConfig:
          filtered_json_folder = os.path.join(project_root, visualizer_cfg["filtered_json_dir"]),
          revised_json_folder = os.path.join(project_root, visualizer_cfg["revised_json_dir"])
          
+    )
+
+
+def load_json_to_table_config() -> JsontotableConfig:
+
+    project_root, yaml_data = _init_env_and_read_yaml()
+
+    json_to_table_cfg = yaml_data.get('json_to_table', {})
+
+    return JsontotableConfig(
+
+        property_name = json_to_table_cfg['targe_property'],
+
+        json_folder = os.path.join(project_root, json_to_table_cfg['json_files_dir']),
+
+        table_folder = os.path.join(project_root, json_to_table_cfg['table_dir'])
+
     )

@@ -53,3 +53,7 @@ visualizer:
   filtered_json_dir : data/in-out/_02_filtered
   revised_json_dir  : data/in-out/_03_revised
 
+json_to_table:
+  targe_property : viscosity
+  json_files_dir : data/in-out/_02_filtered
+  table_dir : data/output
