@@ -7,6 +7,24 @@ pdf_renamer:
   retry_times: 2
 
 llms:
+
+  deepseek_pdf_screening:  # 预筛选LLM
+    paths:
+      input_folder: data/input # PDF 文件存放目录（重命名后）
+      in-out_folder: data/in-out/pdf_text
+      output_folder: data/output
+      output_csv: data/output/prescreening_results_deepseek.csv
+    prompt:
+      template: LLMprompt/as_prescreening_prompt.md
+    model:
+      base_url: https://api.deepseek.com
+      name: deepseek-v4-pro
+      api_key_env: DEEPSEEK_API_KEY
+      timeout: 300
+    settings:
+      max_workers: 3
+
+
   pdf_screening: # 预筛选LLM
     targe_property: viscosity # 目标物性 
     paths:
