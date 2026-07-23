@@ -15,12 +15,11 @@ class PdfRenamerConfig:
     retry_times: int
 
 @dataclass(frozen=True)
-class DeepSeekScreeningConfig:
-    """预筛选任务专用配置"""
+class AsExtractionConfig:
+    """应用场景提取专用配置"""
     api_key: str
     pdf_input_folder: str
     pdf_to_txt_log : str
-    result_output_folder: str
     output_csv: str
     prompt_templates_path: str
     model_base_url: str
@@ -29,11 +28,10 @@ class DeepSeekScreeningConfig:
     max_workers: int
 
 @dataclass(frozen=True)
-class ScreeningConfig:
+class MainScreeningConfig:
     """预筛选任务专用配置"""
     api_key: str
     pdf_input_folder: str
-    result_output_folder: str
     output_csv: str
     prompt_templates_path: str
     model_base_url: str
@@ -42,9 +40,26 @@ class ScreeningConfig:
     max_workers: int
 
 @dataclass(frozen=True)
-class PdfSelectorConfig:
+class MainSelectorConfig:
     pdf_input_folder: str
-    screening_result: str
+    main_screening_result: str
+    pdf_output_folder: str
+
+@dataclass(frozen=True)
+class SiScreeningConfig:
+    api_key: str
+    pdf_input_folder: str
+    output_csv: str
+    prompt_templates_path: str
+    model_base_url: str
+    model_name: str
+    timeout: int
+    max_workers: int
+
+@dataclass(frozen=True)
+class SiSelectorConfig:
+    pdf_input_folder: str
+    si_screening_result: str
     pdf_output_folder: str
 
 @dataclass(frozen=True)
@@ -123,13 +138,13 @@ def load_pdf_renamer_config() -> PdfRenamerConfig:
         retry_times=int(cfg.get("retry_times", 3))
     )
 
-def load_deepseek_screening_config() -> DeepSeekScreeningConfig:
-    """Pipeline 节点 2：专属加载预筛选配置"""
+def load_as_extraction_config() -> AsExtractionConfig:
+
     project_root, yaml_data = _init_env_and_read_yaml()
 
-    task_cfg = yaml_data.get("llms", {}).get("deepseek_pdf_screening", {})
+    task_cfg = yaml_data.get("llms", {}).get("as_extraction", {})
     if not task_cfg:
-        raise RuntimeError("config.yaml 中缺失 llms.deepseek_pdf_screening 节点")
+        raise RuntimeError("config.yaml 中缺失 llms.as_extraction 节点")
 
     paths_cfg   = task_cfg.get("paths")    or {}
     prompt_cfg  = task_cfg.get("prompt")   or {}
@@ -151,13 +166,12 @@ def load_deepseek_screening_config() -> DeepSeekScreeningConfig:
     }
     missing = [k for k, v in required.items() if not v]
     if missing:
-        raise RuntimeError(f"pdf_screening 配置缺失必填项: {', '.join(missing)}")
+        raise RuntimeError(f"as_extraction 配置缺失必填项: {', '.join(missing)}")
 
-    return DeepSeekScreeningConfig(
+    return AsExtractionConfig(
         api_key=api_key,
         pdf_input_folder=os.path.join(project_root, paths_cfg["input_folder"]),
         pdf_to_txt_log= os.path.join(project_root, paths_cfg["in-out_folder"]),
-        result_output_folder=os.path.join(project_root, paths_cfg.get("output_folder", "data/output")),
         output_csv=os.path.join(project_root, paths_cfg["output_csv"]),
         prompt_templates_path=os.path.join(project_root, prompt_cfg["template"]),
         model_base_url=model_cfg.get("base_url", ""),
@@ -166,13 +180,13 @@ def load_deepseek_screening_config() -> DeepSeekScreeningConfig:
         max_workers=int(setting_cfg.get("max_workers", 3)),
     )
 
-def load_screening_config() -> ScreeningConfig:
+def load_main_screening_config() -> MainScreeningConfig:
     """Pipeline 节点 2：专属加载预筛选配置"""
     project_root, yaml_data = _init_env_and_read_yaml()
     
-    task_cfg = yaml_data.get("llms", {}).get("pdf_screening", {})
+    task_cfg = yaml_data.get("llms", {}).get("main_screening", {})
     if not task_cfg:
-        raise RuntimeError("config.yaml 中缺失 llms.pdf_screening 节点")
+        raise RuntimeError("config.yaml 中缺失 llms.main_screening 节点")
 
     paths_cfg   = task_cfg.get("paths")    or {}
     prompt_cfg  = task_cfg.get("prompt")   or {}
@@ -195,10 +209,9 @@ def load_screening_config() -> ScreeningConfig:
     if missing:
         raise RuntimeError(f"pdf_screening 配置缺失必填项: {', '.join(missing)}")
 
-    return ScreeningConfig(
+    return MainScreeningConfig(
         api_key=api_key,
         pdf_input_folder=os.path.join(project_root, paths_cfg["input_folder"]),
-        result_output_folder=os.path.join(project_root, paths_cfg.get("output_folder", "data/output")),
         output_csv=os.path.join(project_root, paths_cfg["output_csv"]),
         prompt_templates_path=os.path.join(project_root, prompt_cfg["template"]),
         model_base_url=model_cfg.get("base_url", ""),
@@ -207,17 +220,72 @@ def load_screening_config() -> ScreeningConfig:
         max_workers=int(setting_cfg.get("max_workers", 3)),
     )
 
-def load_pdf_selector_config() -> PdfSelectorConfig:
+def load_main_selector_config() -> MainSelectorConfig:
 
     project_root, yaml_data = _init_env_and_read_yaml()
 
-    pdf_selector_cfg = yaml_data.get("pdf_selector", {})
+    pdf_selector_cfg = yaml_data.get("main_selector", {})
 
 
-    return PdfSelectorConfig(
+    return MainSelectorConfig(
 
         pdf_input_folder = os.path.join(project_root, pdf_selector_cfg["pdf_input_dir"]),
-        screening_result = os.path.join(project_root, pdf_selector_cfg["screening_result"]),
+        main_screening_result = os.path.join(project_root, pdf_selector_cfg["main_screening_result"]),
+        pdf_output_folder = os.path.join(project_root, pdf_selector_cfg["pdf_output_dir"])
+        
+    )
+
+def load_si_screening_config() -> SiScreeningConfig:
+    """Pipeline 节点 2：专属加载预筛选配置"""
+    project_root, yaml_data = _init_env_and_read_yaml()
+    
+    task_cfg = yaml_data.get("llms", {}).get("si_screening", {})
+    if not task_cfg:
+        raise RuntimeError("config.yaml 中缺失 llms.si_screening 节点")
+
+    paths_cfg   = task_cfg.get("paths")    or {}
+    prompt_cfg  = task_cfg.get("prompt")   or {}
+    model_cfg   = task_cfg.get("model")    or {}
+    setting_cfg = task_cfg.get("settings") or {}
+
+    env_name = model_cfg.get("api_key_env")
+    api_key = os.getenv(env_name)
+    if not api_key:
+        raise RuntimeError(f"未找到环境变量 {env_name}，请检查 .env 文件")
+
+    # 必填项预检
+    required = {
+        "paths.input_folder": paths_cfg.get("input_folder"),
+        "paths.output_csv":    paths_cfg.get("output_csv"),
+        "prompt.template":     prompt_cfg.get("template"),
+        "model.name":          model_cfg.get("name"),
+    }
+    missing = [k for k, v in required.items() if not v]
+    if missing:
+        raise RuntimeError(f"si_screening 配置缺失必填项: {', '.join(missing)}")
+
+    return SiScreeningConfig(
+        api_key=api_key,
+        pdf_input_folder=os.path.join(project_root, paths_cfg["input_folder"]),
+        output_csv=os.path.join(project_root, paths_cfg["output_csv"]),
+        prompt_templates_path=os.path.join(project_root, prompt_cfg["template"]),
+        model_base_url=model_cfg.get("base_url", ""),
+        model_name=model_cfg["name"],
+        timeout=int(model_cfg.get("timeout", 300)),
+        max_workers=int(setting_cfg.get("max_workers", 3)),
+    )
+
+def load_si_selector_config() -> SiSelectorConfig:
+
+    project_root, yaml_data = _init_env_and_read_yaml()
+
+    pdf_selector_cfg = yaml_data.get("si_selector", {})
+
+
+    return SiSelectorConfig(
+
+        pdf_input_folder = os.path.join(project_root, pdf_selector_cfg["pdf_input_dir"]),
+        si_screening_result = os.path.join(project_root, pdf_selector_cfg["si_screening_result"]),
         pdf_output_folder = os.path.join(project_root, pdf_selector_cfg["pdf_output_dir"])
         
     )

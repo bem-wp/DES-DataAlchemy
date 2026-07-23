@@ -1,4 +1,4 @@
-pdf_renamer:
+pdf_renamer: # 按规则，重命名PDF
   pdf_dir: data/input              # PDF 文件存放目录
   rate_limit_sleep: 0.34            # API 请求间隔（秒）
   api_timeout: 10                   # 请求超时（秒）
@@ -7,33 +7,29 @@ pdf_renamer:
   retry_times: 2
 
 llms:
-
-  deepseek_pdf_screening:  # 预筛选LLM
-    paths:
-      input_folder: data/input # PDF 文件存放目录（重命名后）
-      in-out_folder: data/in-out/pdf_text
-      output_folder: data/output
-      output_csv: data/output/prescreening_results_deepseek.csv
-    prompt:
-      template: LLMprompt/as_prescreening_prompt.md
-    model:
+  as_extraction:  # 提取DES的应用场景（application scenario）
+    paths: # 掌管输入、输出以及中间文件的路径
+      input_folder: data/input # PDF 文件存放目录
+      in-out_folder: data/in-out/pdf_text # ds大模型不支持PDF直接上传，因此要先提取为text格式
+      output_csv: data/output/as_extraction_results.csv
+    prompt: # 掌管大模型提示词路径
+      template: LLMprompt/as_extraction_prompt.md
+    model: # 掌管api参数
       base_url: https://api.deepseek.com
       name: deepseek-v4-pro
       api_key_env: DEEPSEEK_API_KEY
       timeout: 300
-    settings:
+    settings: # 掌管并发参数
       max_workers: 3
 
-
-  pdf_screening: # 预筛选LLM
-    targe_property: viscosity # 目标物性 
+  main_screening: # 正文是否有数据？
+    targe_property: viscosity # 目标物性，给人看的
     paths:
-      input_folder: data/input # PDF 文件存放目录（重命名后）
+      input_folder: data/input
       in-out_folder: data/in-out
-      output_folder: data/output
-      output_csv: data/output/prescreening_results.csv
+      output_csv: data/output/main_screening_results.csv
     prompt:
-      template: LLMprompt/prompt.md
+      template: LLMprompt/main_screening_prompt.md
     model:
       base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
       name: qwen-long
@@ -41,10 +37,26 @@ llms:
       timeout: 300
     settings:
       max_workers: 3
-  
+
+  si_screening: 
+    targe_property: viscosity 
+    paths:
+      input_folder: data/input 
+      in-out_folder: data/in-out
+      output_csv: data/output/si_screening_results.csv
+    prompt:
+      template: LLMprompt/si_screening_prompt.md
+    model:
+      base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+      name: qwen-long
+      api_key_env: QWEN_API_KEY
+      timeout: 300
+    settings:
+      max_workers: 3
+
   data_extraction:
     paths:
-      input_folder: data/in-out/has_data_pdfs
+      input_folder: data/in-out/pdfs_for_extraction
       output_folder: data/in-out
     schema:
       template: LLMprompt/extraction_schema.json
@@ -54,10 +66,15 @@ llms:
       extract_model_name : extract-latest
       api_key_env: VISION_AGENT_API_KEY
 
-pdf_selector:
+main_selector:
   pdf_input_dir: data/input
-  screening_result: data/output/prescreening_results.csv
-  pdf_output_dir: data/in-out/has_data_pdfs
+  main_screening_result: data/output/main_screening_results.csv
+  pdf_output_dir: data/in-out/pdfs_for_extraction
+
+si_selector:
+  pdf_input_dir: data/input
+  si_screening_result: data/output/si_screening_results.csv
+  pdf_output_dir: data/in-out/si_has_data
 
 json_filter:
   json_input_dir : data/in-out/_01_extracted
@@ -66,7 +83,7 @@ json_filter:
   json_output_dir : data/in-out/_02_filtered
 
 visualizer:
-  pdf_files_dir : data/in-out/has_data_pdfs
+  pdf_files_dir : data/in-out/pdfs_for_extraction
   parsed_json_dir : data/in-out/_00_parsed
   filtered_json_dir : data/in-out/_02_filtered
   revised_json_dir  : data/in-out/_03_revised

@@ -1,7 +1,6 @@
 import logging
-# 明确指出只导入 process_pdf_folder
-from as_prescreening_helper import process_pdf_folder
-from app_configs import load_deepseek_screening_config
+from as_extraction_helper import process_pdf_folder
+from app_configs import load_as_extraction_config
 
 logging.basicConfig(
     level=logging.INFO,
@@ -12,7 +11,7 @@ logger = logging.getLogger(__name__)
 
 if __name__ == "__main__":
 
-    config = load_deepseek_screening_config()
+    config = load_as_extraction_config()
     
     logger.info(f"使用模型: {config.model_name}")
     logger.info("=" * 60)

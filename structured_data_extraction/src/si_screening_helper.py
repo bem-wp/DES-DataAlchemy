@@ -20,7 +20,7 @@ from tenacity import (
     before_sleep_log,
 )
 
-from app_configs import ScreeningConfig
+from app_configs import SiScreeningConfig
 
 logger = logging.getLogger(__name__)
 
@@ -117,7 +117,7 @@ class ThreadSafeCounters:
 # 线程独立client
 # ==========================================
 
-def make_client(config: ScreeningConfig) -> OpenAI:
+def make_client(config: SiScreeningConfig) -> OpenAI:
 
     http_client = httpx.Client(
         proxy=None,
@@ -185,7 +185,7 @@ def clean_response_text(text):
 
 
 @retry(**_RETRY_POLICY)
-def run_workflow(client: OpenAI, file_id: str, prompt: str, config: ScreeningConfig) -> str | None:
+def run_workflow(client: OpenAI, file_id: str, prompt: str, config: SiScreeningConfig) -> str | None:
     """调用 Qwen Long 对已上传的文件执行提取任务"""
     logger.info(f"  调用模型中 (file_id={file_id[:16]}..., timeout={config.timeout}s)")
     completion = client.chat.completions.create(
@@ -249,7 +249,7 @@ def _process_single_task(
     pdf_file: Path,
     index: int,
     total: int,
-    config: ScreeningConfig,
+    config: SiScreeningConfig,
     prompt: str,
     csv_manager: ThreadSafeCSVManager,
     counters: ThreadSafeCounters,
@@ -314,7 +314,7 @@ def _process_single_task(
 # 主处理流程
 # ==========================================
 
-def process_pdf_folder(config: ScreeningConfig, skip_existing: bool = True) -> None:
+def process_pdf_folder(config: SiScreeningConfig, skip_existing: bool = True) -> None:
     """
     遍历 PDF 文件夹，使用线程池并发上传并调用 Qwen Long 进行预筛选，
     skip_existing: 是否跳过 CSV 中已有记录的文件，适合断点续跑。
@@ -381,7 +381,7 @@ def process_pdf_folder(config: ScreeningConfig, skip_existing: bool = True) -> N
     logger.info(f"CSV 路径: {csv_path}")
 
 
-def process_pdf_single_file(config: ScreeningConfig, pdf_path: str):
+def process_pdf_single_file(config: SiScreeningConfig, pdf_path: str):
 
     if not os.path.exists(pdf_path):
         logger.error(f"文件不存在: {pdf_path}")
