@@ -1,4 +1,5 @@
 pdf_renamer: # 按规则，重命名PDF
+  pdf_pool_dir: data/pdf-pool   
   pdf_dir: data/input              # PDF 文件存放目录
   rate_limit_sleep: 0.34            # API 请求间隔（秒）
   api_timeout: 10                   # 请求超时（秒）
@@ -10,7 +11,7 @@ llms:
   as_extraction:  # 提取DES的应用场景（application scenario）
     paths: # 掌管输入、输出以及中间文件的路径
       input_folder: data/input # PDF 文件存放目录
-      in-out_folder: data/in-out/pdf_text # ds大模型不支持PDF直接上传，因此要先提取为text格式
+      in-out_folder: data/in-out/as_extraction_pdf_text # ds大模型不支持PDF直接上传，因此要先提取为text格式
       output_csv: data/output/as_extraction_results.csv
     prompt: # 掌管大模型提示词路径
       template: LLMprompt/as_extraction_prompt.md
@@ -20,22 +21,6 @@ llms:
       api_key_env: DEEPSEEK_API_KEY
       timeout: 300
     settings: # 掌管并发参数
-      max_workers: 3
-
-  main_screening: # 正文是否有数据？
-    targe_property: viscosity # 目标物性，给人看的
-    paths:
-      input_folder: data/input
-      in-out_folder: data/in-out
-      output_csv: data/output/main_screening_results.csv
-    prompt:
-      template: LLMprompt/main_screening_prompt.md
-    model:
-      base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
-      name: qwen-long
-      api_key_env: QWEN_API_KEY
-      timeout: 300
-    settings:
       max_workers: 3
 
   si_screening: 
@@ -50,6 +35,22 @@ llms:
       base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
       name: qwen-long
       api_key_env: QWEN_API_KEY
+      timeout: 300
+    settings:
+      max_workers: 3
+
+  main_screening: # 正文是否有数据？
+    targe_property: viscosity # 目标物性，给人看的
+    paths:
+      input_folder: data/input
+      in-out_folder: data/in-out/main_screening_pdf_text
+      output_csv: data/output/main_screening_results.csv
+    prompt:
+      template: LLMprompt/main_screening_prompt.md
+    model:
+      base_url: https://api.deepseek.com
+      name: deepseek-v4-flash
+      api_key_env: DEEPSEEK_API_KEY
       timeout: 300
     settings:
       max_workers: 3
@@ -92,3 +93,9 @@ json_to_table:
   targe_property : viscosity
   json_files_dir : data/in-out/_02_filtered
   table_dir : data/output
+
+table_clean:
+  targe_property: viscosity
+  input_dir: data/output
+  output_dir: data/output
+  unit_mappings_file: configs/unit_mappings.yaml

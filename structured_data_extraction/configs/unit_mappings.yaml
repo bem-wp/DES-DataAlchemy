@@ -1,0 +1,30 @@
+# 单位映射：规范化键 → 目标单位/换算系数
+#
+# 规范化键规则（table_clean_helper._canon_unit）：
+#   小写、·→.、去首尾空格、去内部空格、Unicode 上标（⁻¹→-1、²→2）
+#
+# 条目字段：
+#   unit   : 目标单位标签
+#   factor : 数值换算系数（新值 = 原值 × factor）
+#   kind   : convert(默认) | assumed(疑似 OCR/笔误，告警) | kinematic(运动粘度，仅归一标签+告警)
+#   warn_on_raw : 可选正则，对 strip 后的原始单位做大小写敏感的 re.match，命中才额外告警
+#                 （用于规范化后同键、但需区分原文大小写的情形，如 MPa s vs mPa s）
+#
+# 增补新单位：先按规则推导规范化键，确认不与其他键冲突后追加一行即可。
+# 未收录的规范化键会被视为"未识别单位"：数值与单位原样保留并告警。
+
+viscosity:
+  cp:          { unit: mPa·s, factor: 1 }                                # cP（原有覆盖）
+  cps:         { unit: mPa·s, factor: 1 }                                # cPs = cP
+  mpa.s:       { unit: mPa·s, factor: 1 }                                # mPa·s / mPa.s
+  mpa:         { unit: mPa·s, factor: 1 }                                # 残缺写法 mPa
+  mpa/s:       { unit: mPa·s, factor: 1 }                                # mPa/s
+  m.pa.s:      { unit: mPa·s, factor: 1 }                                # "m Pa·s"（m 与 Pa 间空格）
+  mpas:        { unit: mPa·s, factor: 1, warn_on_raw: '^MPa s$' }        # MPa s 疑为 mPa s 的 OCR 错误
+  mpas-1:      { unit: mPa·s, factor: 1, kind: assumed }                 # mPa s⁻¹ / mPa s-1 疑为 mPa·s 笔误
+  pa.s:        { unit: mPa·s, factor: 1000 }                             # Pa·s / Pa.s（×1000）
+  pas:         { unit: mPa·s, factor: 1000 }                             # Pa s（×1000）
+  kgm-1s-1:    { unit: mPa·s, factor: 1000 }                             # kg m⁻¹ s⁻¹ = Pa·s（×1000）
+  kg.m-1.s-1:  { unit: mPa·s, factor: 1000 }                             # kg·m⁻¹·s⁻¹ 点乘写法 = Pa·s（×1000）
+  mm2/s:       { unit: mm²/s, factor: 1, kind: kinematic }               # mm²/s 运动粘度
+  cst:         { unit: mm²/s, factor: 1, kind: kinematic }               # cSt = mm²/s 运动粘度
