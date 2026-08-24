@@ -1,10 +1,10 @@
 {
   
-  "RAW_DATASET_NAME" : "demo.csv",
+  "RAW_DATASET_NAME" : "visco_dataset_26-08-22.xlsx",
 
-  "PROPERTY" : "vis",
+  "PROPERTY" : "viscosity",
 
-  "STATE_VAR" : "t",
+  "STATE_VAR" : "T",
 
   "REFERENCE" : "ref",
 
