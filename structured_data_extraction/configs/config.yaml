@@ -1,3 +1,4 @@
+# viscosity
 pdf_renamer: # 按规则，重命名PDF
   pdf_pool_dir: data/pdf-pool   
   pdf_dir: data/input              # PDF 文件存放目录
@@ -43,14 +44,14 @@ llms:
     targe_property: viscosity # 目标物性，给人看的
     paths:
       input_folder: data/input
-      in-out_folder: data/in-out/main_screening_pdf_text
+      in-out_folder: data/in-out
       output_csv: data/output/main_screening_results.csv
     prompt:
       template: LLMprompt/main_screening_prompt.md
     model:
-      base_url: https://api.deepseek.com
-      name: deepseek-v4-flash
-      api_key_env: DEEPSEEK_API_KEY
+      base_url: https://llm-3cjll6d4apbjl1sp.cn-beijing.maas.aliyuncs.com/compatible-mode/v1
+      name: qwen3.7-max-preview
+      api_key_env: QWEN_API_KEY
       timeout: 300
     settings:
       max_workers: 3
@@ -58,7 +59,7 @@ llms:
   data_extraction:
     paths:
       input_folder: data/in-out/pdfs_for_extraction
-      output_folder: data/in-out
+      output_folder: data/in-out/lading-ai_extraction
     schema:
       template: LLMprompt/extraction_schema.json
     model:
@@ -78,20 +79,20 @@ si_selector:
   pdf_output_dir: data/in-out/si_has_data
 
 json_filter:
-  json_input_dir : data/in-out/_01_extracted
+  json_input_dir : data/in-out/lading-ai_extraction/_01_extracted
   targe_property : viscosity
   condition_vars : ['temperature']
-  json_output_dir : data/in-out/_02_filtered
+  json_output_dir : data/in-out/lading-ai_extraction/_02_filtered
 
 visualizer:
   pdf_files_dir : data/in-out/pdfs_for_extraction
-  parsed_json_dir : data/in-out/_00_parsed
-  filtered_json_dir : data/in-out/_02_filtered
-  revised_json_dir  : data/in-out/_03_revised
+  parsed_json_dir : data/in-out/lading-ai_extraction/_00_parsed
+  filtered_json_dir : data/in-out/lading-ai_extraction/_02_filtered
+  revised_json_dir  : data/in-out/lading-ai_extraction/_03_revised
 
 json_to_table:
   targe_property : viscosity
-  json_files_dir : data/in-out/_02_filtered
+  json_files_dir : data/in-out/lading-ai_extraction/_02_filtered
   table_dir : data/output
 
 table_clean:

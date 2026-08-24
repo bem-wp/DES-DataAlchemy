@@ -51,7 +51,6 @@ class MainScreeningConfig:
     """预筛选任务专用配置"""
     api_key: str
     pdf_input_folder: str
-    pdf_to_txt_log : str
     output_csv: str
     prompt_templates_path: str
     model_base_url: str
@@ -102,6 +101,7 @@ class TableCleanConfig:
     input_folder : str
     output_folder : str
     unit_mappings : dict
+    condition_specs : dict
 
 # ==================== 2. 基础环境初始化 ====================
 
@@ -277,7 +277,6 @@ def load_main_screening_config() -> MainScreeningConfig:
     # 必填项预检
     required = {
         "paths.input_folder": paths_cfg.get("input_folder"),
-        "paths.in-out_folder" : paths_cfg.get("in-out_folder"),
         "paths.output_csv":    paths_cfg.get("output_csv"),
         "prompt.template":     prompt_cfg.get("template"),
         "model.name":          model_cfg.get("name"),
@@ -289,7 +288,6 @@ def load_main_screening_config() -> MainScreeningConfig:
     return MainScreeningConfig(
         api_key=api_key,
         pdf_input_folder=os.path.join(project_root, paths_cfg["input_folder"]),
-        pdf_to_txt_log= os.path.join(project_root, paths_cfg["in-out_folder"]),
         output_csv=os.path.join(project_root, paths_cfg["output_csv"]),
         prompt_templates_path=os.path.join(project_root, prompt_cfg["template"]),
         model_base_url=model_cfg.get("base_url", ""),
@@ -385,6 +383,14 @@ def load_json_to_table_config() -> JsontotableConfig:
 
     )
 
+def _require(cfg: dict, key: str, section: str):
+    """从配置段中取键，缺失时给出可读报错而非裸 KeyError。"""
+    value = cfg.get(key)
+    if value is None:
+        raise ValueError(f"config.yaml 的 '{section}:' 段缺少键 '{key}'")
+    return value
+
+
 def _load_unit_mappings(project_root: str, rel_path: str, property_name: str) -> dict:
     """加载并校验单位映射文件（如 configs/unit_mappings.yaml）。
 
@@ -401,7 +407,7 @@ def _load_unit_mappings(project_root: str, rel_path: str, property_name: str) ->
     if not isinstance(section, dict):
         raise ValueError(f"单位映射文件 '{path}' 缺少 '{property_name}:' 段")
 
-    valid_kinds = ('convert', 'assumed', 'kinematic')
+    valid_kinds = ('convert', 'assumed', 'kinematic', 'relative')
     mappings = {}
     for canon, entry in section.items():
         if not isinstance(entry, dict) or 'unit' not in entry or 'factor' not in entry:
@@ -425,29 +431,83 @@ def _load_unit_mappings(project_root: str, rel_path: str, property_name: str) ->
 
     return mappings
 
+
+def _load_condition_mappings(project_root: str, rel_path: str) -> dict:
+    """加载并校验环境条件映射文件（如 configs/condition_mappings.yaml）。
+
+    返回 {条件名(数值列名): {target_unit, round_digits, units: {规范化键: 条目}}}，
+    条目换算方式三选一：offset（加法）/ factor（乘法）/ keep（原样保留）。
+    """
+    path = os.path.join(project_root, rel_path)
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"条件映射文件未找到: {path}")
+
+    with open(path, "r", encoding="utf-8") as f:
+        data = yaml.safe_load(f) or {}
+
+    specs = {}
+    for cond_name, section in data.items():
+        if not isinstance(section, dict):
+            raise ValueError(f"条件映射文件 '{path}' 的 '{cond_name}:' 段必须为映射")
+        target_unit = section.get('target_unit')
+        if not isinstance(target_unit, str):
+            raise ValueError(f"条件映射文件 '{path}' 的 '{cond_name}:' 段需要字符串 target_unit")
+        round_digits = section.get('round_digits', 2)
+        if isinstance(round_digits, bool) or not isinstance(round_digits, int) or round_digits < 0:
+            raise ValueError(f"条件映射文件 '{path}' 的 '{cond_name}:' 段 round_digits 非法: {round_digits!r}")
+        units = section.get('units')
+        if not isinstance(units, dict) or not units:
+            raise ValueError(f"条件映射文件 '{path}' 的 '{cond_name}:' 段需要非空 units")
+        entries = {}
+        for canon, entry in units.items():
+            if not isinstance(entry, dict):
+                raise ValueError(f"条件映射文件 '{path}' 的 '{cond_name}.{canon}' 条目必须为映射: {entry!r}")
+            ways = [k for k in ('offset', 'factor', 'keep') if k in entry]
+            if len(ways) != 1:
+                raise ValueError(f"条件映射文件 '{path}' 的 '{cond_name}.{canon}' 条目必须且只能含 offset/factor/keep 之一: {entry!r}")
+            way = ways[0]
+            if way == 'keep':
+                if entry['keep'] is not True:
+                    raise ValueError(f"条件映射文件 '{path}' 的 '{cond_name}.{canon}' keep 必须为 true: {entry!r}")
+                entries[canon] = {'keep': True}
+            else:
+                num = entry[way]
+                if isinstance(num, bool) or not isinstance(num, (int, float)):
+                    raise ValueError(f"条件映射文件 '{path}' 的 '{cond_name}.{canon}' {way} 必须为数值: {entry!r}")
+                entries[canon] = {way: num}
+        specs[cond_name] = {'target_unit': target_unit, 'round_digits': round_digits, 'units': entries}
+
+    if not specs:
+        raise ValueError(f"条件映射文件 '{path}' 为空")
+    return specs
+
+
 def load_table_clean_config() -> TableCleanConfig:
+    """10 号管线配置：读取 config.yaml 的 table_clean: 段。"""
 
     project_root, yaml_data = _init_env_and_read_yaml()
 
     table_clean_cfg = yaml_data.get('table_clean', {})
-
     if not table_clean_cfg:
         raise ValueError("config.yaml 中缺少 'table_clean:' 段")
 
+    input_folder = os.path.join(project_root, _require(table_clean_cfg, 'input_dir', 'table_clean'))
+    output_folder = os.path.join(project_root, _require(table_clean_cfg, 'output_dir', 'table_clean'))
+    property_name = _require(table_clean_cfg, 'targe_property', 'table_clean')
 
-    property_name =  table_clean_cfg['targe_property']
+    if not os.path.isdir(input_folder):
+        raise FileNotFoundError(f"数据输入目录不存在: {input_folder}")
+
     unit_mappings_rel = table_clean_cfg.get('unit_mappings_file', 'configs/unit_mappings.yaml')
     unit_mappings = _load_unit_mappings(project_root, unit_mappings_rel, property_name)
 
+    condition_mappings_rel = table_clean_cfg.get('condition_mappings_file', 'configs/condition_mappings.yaml')
+    condition_specs = _load_condition_mappings(project_root, condition_mappings_rel)
 
     return TableCleanConfig(
-
-        property_name = property_name,
-
-        input_folder =  os.path.join(project_root, table_clean_cfg['input_dir']),
-
-        output_folder =  os.path.join(project_root, table_clean_cfg['output_dir']),
-
-        unit_mappings =  unit_mappings
-
+        property_name=property_name,
+        input_folder=input_folder,
+        output_folder=output_folder,
+        unit_mappings=unit_mappings,
+        condition_specs=condition_specs
     )

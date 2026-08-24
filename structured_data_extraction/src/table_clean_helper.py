@@ -21,7 +21,7 @@ def _round_half_up(value, ndigits: int = 2) -> float:
     return float(Decimal(str(value)).quantize(quant, rounding=ROUND_HALF_UP))
 
 
-_SUPERSCRIPT_MAP = {'⁻': '-', '¹': '1', '²': '2'}
+_SUPERSCRIPT_MAP = {'⁻': '-', '¹': '1', '²': '2', '³': '3', '⁴': '4'}
 
 
 def _canon_unit(unit: str) -> str:
@@ -35,32 +35,41 @@ def _canon_unit(unit: str) -> str:
     return key.replace(' ', '')
 
 
-def normalize_temp(value, unit) -> tuple:
+def normalize_condition(value, unit, cond_name: str, spec: dict) -> tuple:
     """
-    归一化单个温度 (value, unit)。
-    °C / Celsius（忽略大小写）→ 数值 +273.15（round 2 位），标签置 K；
-    Kelvin（本身就是开尔文）→ 数值与标签均原样保留；
-    未知单位 → warning + 原样保留。
+    归一化单个环境条件（temp / pressure / ...）的 (value, unit)。
+
+    规则来源为 table_clean.condition_mappings_file 指向的映射文件
+    （如 configs/condition_mappings.yaml，配置层加载后经 spec 传入）：
+    规范化键命中 offset/factor 条目 → 换算后按 round_digits 舍入，标签置 target_unit；
+    keep 条目（已是目标单位）→ 数值与原单位标签均原样保留；
+    未命中 → warning + 原样保留。
     """
     if not isinstance(unit, str):
         return value, unit
-    key = unit.strip().lower()
-    if key in ('°c', 'celsius'):
-        return _round_half_up(value + 273.15, 2), 'K'
-    if key in ('kelvin', 'k'):
+    entry = spec['units'].get(_canon_unit(unit.strip()))
+    if entry is None:
+        logger.warning(f"未识别的{cond_name}单位: {unit!r}，原样保留")
         return value, unit
-    logger.warning(f"未识别的温度单位: {unit!r}，原样保留")
-    return value, unit
+    if entry.get('keep'):
+        return value, unit
+    if 'offset' in entry:
+        new_value = value + entry['offset']
+    else:
+        new_value = value * entry['factor']
+    return _round_half_up(new_value, spec['round_digits']), spec['target_unit']
 
 
-def normalize_viscosity_unit(value, unit, mappings: dict) -> tuple:
+def normalize_property_unit(value, unit, property_name: str, mappings: dict) -> tuple:
     """
-    归一化单个粘度 (value, unit)。
+    归一化单个属性（如 viscosity / density）的 (value, unit)。
 
-    规则来源为 configs/unit_mappings.yaml（配置层加载后经 mappings 传入）：
+    规则来源为 table_clean.unit_mappings_file 指向的映射文件
+    （如 configs/unit_mappings.yaml，按属性名取段，
+    配置层加载后经 mappings 传入）：
     规范化键命中 → 数值 ×factor，标签置目标单位；
-    kind=kinematic（运动粘度）→ 数值不变，仅归一标签 + 告警；
-    kind=assumed 或 warn_on_raw 命中（疑似 OCR/笔误）→ 数值不变，归一标签 + 告警；
+    kind=kinematic / relative（近亲量，缺换算条件）→ 数值不变，仅归一标签 + 告警；
+    kind=assumed（疑似 OCR/笔误）或 warn_on_raw 命中 → 换算 + 告警；
     未命中 → warning + 原样保留。
     """
     if not isinstance(unit, str):
@@ -68,30 +77,38 @@ def normalize_viscosity_unit(value, unit, mappings: dict) -> tuple:
     raw = unit.strip()
     entry = mappings.get(_canon_unit(raw))
     if entry is None:
-        logger.warning(f"未识别的粘度单位: {unit!r}，原样保留")
+        logger.warning(f"未识别的{property_name}单位: {unit!r}，原样保留")
         return value, unit
     target = entry['unit']
-    if entry.get('kind') == 'kinematic':
-        logger.warning(f"运动粘度单位 {unit!r} 缺少密度无法换算为 mPa·s，仅归一标签为 {target!r}")
-    elif entry.get('kind') == 'assumed':
-        logger.warning(f"粘度单位 {unit!r} 疑似 OCR/笔误，按 {target!r} 处理")
+    kind = entry.get('kind')
+    if kind == 'kinematic':
+        logger.warning(f"{property_name}单位 {unit!r} 为运动粘度，缺少密度无法换算，仅归一标签为 {target!r}")
+    elif kind == 'relative':
+        logger.warning(f"{property_name}单位 {unit!r} 为相对密度/比重类量，无法按系数换算，仅归一标签为 {target!r}")
+    elif kind == 'assumed':
+        logger.warning(f"{property_name}单位 {unit!r} 疑似 OCR/笔误或制式不明，按 {target!r} 换算")
     warn_on_raw = entry.get('warn_on_raw')
     if warn_on_raw is not None and warn_on_raw.match(raw):
-        logger.warning(f"粘度单位 {unit!r} 疑似 OCR 错误（应为 mPa s），按 {target!r} 处理")
+        logger.warning(f"{property_name}单位 {unit!r} 疑似 OCR 错误，按 {target!r} 处理")
     return value * entry['factor'], target
 
 
-def clean_table(df: pd.DataFrame, property_name: str, mappings: dict) -> pd.DataFrame:
-    """对整表执行单位归一化，返回新 DataFrame（不修改入参）。"""
+def clean_table(df: pd.DataFrame, property_name: str, mappings: dict, condition_specs: dict) -> pd.DataFrame:
+    """对整表执行单位归一化，返回新 DataFrame（不修改入参）。
+
+    condition_specs 中每个条件段作用于 <条件名>/<条件名>_unit 列对（列存在才生效）。
+    """
     out = df.copy()
-    if {'temp', 'temp_unit'}.issubset(out.columns):
-        out[['temp', 'temp_unit']] = out.apply(
-            lambda r: normalize_temp(r['temp'], r['temp_unit']),
-            axis=1, result_type='expand')
+    for cond_name, spec in condition_specs.items():
+        unit_col = f'{cond_name}_unit'
+        if {cond_name, unit_col}.issubset(out.columns):
+            out[[cond_name, unit_col]] = out.apply(
+                lambda r: normalize_condition(r[cond_name], r[unit_col], cond_name, spec),
+                axis=1, result_type='expand')
     unit_col = f'{property_name}_unit'
     if unit_col in out.columns:
         out[[property_name, unit_col]] = out.apply(
-            lambda r: normalize_viscosity_unit(r[property_name], r[unit_col], mappings),
+            lambda r: normalize_property_unit(r[property_name], r[unit_col], property_name, mappings),
             axis=1, result_type='expand')
     return out
 
@@ -112,6 +129,7 @@ class TableCleaner:
         self.input_folder = config.input_folder
         self.output_folder = config.output_folder
         self.unit_mappings = config.unit_mappings
+        self.condition_specs = config.condition_specs
         self._input_names = (f"{config.property_name}_data.xlsx",
                              f"{config.property_name}_over3components.xlsx")
 
@@ -151,7 +169,7 @@ class TableCleaner:
             if df is None:
                 logger.warning(f"输入表不存在，跳过: {os.path.join(self.input_folder, src_name)}")
                 continue
-            df_clean = clean_table(df, self.property_name, self.unit_mappings)
+            df_clean = clean_table(df, self.property_name, self.unit_mappings, self.condition_specs)
             dst_name = src_name.replace('.xlsx', f'{self.CLEANED_SUFFIX}.xlsx')
             dst_path = os.path.join(self.output_folder, dst_name)
             suffix = self.save_dataframe(df_clean, dst_path)

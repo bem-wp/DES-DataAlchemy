@@ -1,0 +1,27 @@
+# 环境条件归一化映射：温度 / 压力 / 其他环境因素
+#
+# 结构：每个条件一个段，段名 = 数值列名，单位列名约定为 <段名>_unit。
+#   例如 temp 段作用于 temp / temp_unit 列对；
+#   将来需要归一化压力时，新增 pressure 段即自动作用于 pressure / pressure_unit 列对，
+#   表中存在该列对才生效，无需改代码。
+#
+# 段字段：
+#   target_unit : 归一后的目标单位标签
+#   round_digits: 换算后保留位数（ROUND_HALF_UP，缺省 2）
+#   units       : 规范化键 → 换算条目
+#     规范化键规则与 unit_mappings 相同（table_clean_helper._canon_unit）：
+#     小写、·→.、去首尾空格、去内部空格、Unicode 上标替换
+#     条目换算方式（三选一）：
+#       offset: 新值 = 原值 + offset   （加法换算，温度类）
+#       factor: 新值 = 原值 × factor   （乘法换算）
+#       keep: true                     （已是目标单位，数值与原单位标签均原样保留）
+#     未收录的键视为"未识别单位"：数值与单位原样保留并告警。
+
+temp:
+  target_unit: K
+  round_digits: 2
+  units:
+    °c:      { offset: 273.15 }   # °C → K
+    celsius: { offset: 273.15 }   # Celsius → K
+    kelvin:  { keep: true }       # 已是开尔文，原样保留
+    k:       { keep: true }

@@ -1,14 +1,20 @@
 # 单位映射：规范化键 → 目标单位/换算系数
 #
+# 每个属性一个段，段名 = config.yaml 的 table_clean.targe_property；
+# 新增属性在本文件追加一个段即可，无需新增配置文件。
+#
 # 规范化键规则（table_clean_helper._canon_unit）：
-#   小写、·→.、去首尾空格、去内部空格、Unicode 上标（⁻¹→-1、²→2）
+#   小写、·→.、去首尾空格、去内部空格、Unicode 上标（⁻¹→-1、²→2、³→3、⁻³→-3）
 #
 # 条目字段：
 #   unit   : 目标单位标签
 #   factor : 数值换算系数（新值 = 原值 × factor）
-#   kind   : convert(默认) | assumed(疑似 OCR/笔误，告警) | kinematic(运动粘度，仅归一标签+告警)
+#   kind   : convert(默认)
+#          | assumed(疑似 OCR/笔误/制式不明，换算但告警)
+#          | kinematic(运动粘度，仅归一标签+告警，不换算数值)
+#          | relative(相对密度/比重/°API，仅归一标签+告警，不换算数值)
 #   warn_on_raw : 可选正则，对 strip 后的原始单位做大小写敏感的 re.match，命中才额外告警
-#                 （用于规范化后同键、但需区分原文大小写的情形，如 MPa s vs mPa s）
+#                 （用于规范化后同键、但需区分原文大小写的情形，如 MPa s vs mPa s、Mg/m³ vs mg/m³）
 #
 # 增补新单位：先按规则推导规范化键，确认不与其他键冲突后追加一行即可。
 # 未收录的规范化键会被视为"未识别单位"：数值与单位原样保留并告警。
@@ -20,11 +26,83 @@ viscosity:
   mpa:         { unit: mPa·s, factor: 1 }                                # 残缺写法 mPa
   mpa/s:       { unit: mPa·s, factor: 1 }                                # mPa/s
   m.pa.s:      { unit: mPa·s, factor: 1 }                                # "m Pa·s"（m 与 Pa 间空格）
-  mpas:        { unit: mPa·s, factor: 1, warn_on_raw: '^MPa s$' }        # MPa s 疑为 mPa s 的 OCR 错误
-  mpas-1:      { unit: mPa·s, factor: 1, kind: assumed }                 # mPa s⁻¹ / mPa s-1 疑为 mPa·s 笔误
+  mpas:        { unit: mPa·s, factor: 1 }                                # 覆盖 mPa s / MPa s；MPa s 按 OCR 错误直接换算，不再告警
+  mpas-1:      { unit: mPa·s, factor: 1 }                                # 覆盖 mPa s⁻¹ / mPa s-1；视为 mPa·s 笔误直接换算，不再告警
   pa.s:        { unit: mPa·s, factor: 1000 }                             # Pa·s / Pa.s（×1000）
   pas:         { unit: mPa·s, factor: 1000 }                             # Pa s（×1000）
   kgm-1s-1:    { unit: mPa·s, factor: 1000 }                             # kg m⁻¹ s⁻¹ = Pa·s（×1000）
   kg.m-1.s-1:  { unit: mPa·s, factor: 1000 }                             # kg·m⁻¹·s⁻¹ 点乘写法 = Pa·s（×1000）
-  mm2/s:       { unit: mm²/s, factor: 1, kind: kinematic }               # mm²/s 运动粘度
+  mm2/s:       { unit: mm²/s, factor: 1, kind: kinematic }               # 覆盖 mm²/s / mm2/s；运动粘度仅归一标签，保留告警
   cst:         { unit: mm²/s, factor: 1, kind: kinematic }               # cSt = mm²/s 运动粘度
+
+density:
+
+  # ---------- SI 主单位：kg/m³ ----------
+  kg/m3:       { unit: kg/m³, factor: 1 }                                # kg/m³、kg/m3、Kg/M³ 等写法变体
+  kg/m^3:      { unit: kg/m³, factor: 1 }                                # 纯文本写法 kg/m^3（^ 不参与规范化，单独成键）
+  kg.m-3:      { unit: kg/m³, factor: 1 }                                # kg·m⁻³ / kg·m-3 点乘写法
+  kgm-3:       { unit: kg/m³, factor: 1 }                                # kg m⁻³ / kgm⁻³ 无分隔写法
+  kgm3:        { unit: kg/m³, factor: 1, kind: assumed }                 # kg m³ / kgm³ 疑为 kg/m³ 丢斜杠或 kg m⁻³ 丢负号
+  kg.m3:       { unit: kg/m³, factor: 1, kind: assumed }                 # kg·m³ 疑为 kg·m⁻³ 丢负号 / kg/m³ 斜杠误作点
+  kg/m:        { unit: kg/m³, factor: 1, kind: assumed }                 # 残缺写法（丢失 ³）；kg/m 本为线密度单位，出现即复核
+
+  # ---------- g/cm³ 族（×1000） ----------
+  g/cm3:       { unit: kg/m³, factor: 1000 }                             # g/cm³ / g/cm3
+  g/cm^3:      { unit: kg/m³, factor: 1000 }                             # 纯文本写法 g/cm^3
+  g.cm-3:      { unit: kg/m³, factor: 1000 }                             # g·cm⁻³
+  gcm-3:       { unit: kg/m³, factor: 1000 }                             # g cm⁻³
+  gcm3:        { unit: kg/m³, factor: 1000, kind: assumed }              # g cm³ / gcm³ 疑为 g/cm³ 丢斜杠或 g cm⁻³ 丢负号
+  g.cm3:       { unit: kg/m³, factor: 1000, kind: assumed }              # g·cm³ 疑为 g·cm⁻³ 丢负号 / g/cm³ 斜杠误作点
+  g/cm:        { unit: kg/m³, factor: 1000, kind: assumed }              # 残缺写法（丢失 ³）
+  g/cc:        { unit: kg/m³, factor: 1000 }                             # g/cc（石油行业惯用，= g/cm³）
+  gcc:         { unit: kg/m³, factor: 1000 }                             # "g cc" 去空格后同 g/cc
+  g/cm-3:      { unit: kg/m³, factor: 1000 }
+  # ---------- g/mL 族（×1000，1 mL = 1 cm³） ----------
+  g/ml:        { unit: kg/m³, factor: 1000 }                             # g/mL / g/ml
+  g.ml-1:      { unit: kg/m³, factor: 1000 }                             # g·mL⁻¹
+  gml-1:       { unit: kg/m³, factor: 1000 }                             # g mL⁻¹
+
+  # ---------- g/L 族（×1） ----------
+  g/l:         { unit: kg/m³, factor: 1 }                                # g/L = 1 kg/m³
+  g.l-1:       { unit: kg/m³, factor: 1 }                                # g·L⁻¹
+  gl-1:        { unit: kg/m³, factor: 1 }                                # g L⁻¹
+
+  # ---------- kg/L、kg/dm³ 族（×1000） ----------
+  kg/l:        { unit: kg/m³, factor: 1000 }                             # kg/L
+  kg.l-1:      { unit: kg/m³, factor: 1000 }                             # kg·L⁻¹
+  kgl-1:       { unit: kg/m³, factor: 1000 }                             # kg L⁻¹
+  kg/dm3:      { unit: kg/m³, factor: 1000 }                             # kg/dm³（dm³ = L）
+
+  # ---------- 吨（×1000） ----------
+  t/m3:        { unit: kg/m³, factor: 1000 }                             # t/m³
+  ton/m3:      { unit: kg/m³, factor: 1000, kind: assumed }              # 默认公吨；美制短吨应为 907.18474，需人工确认
+
+  # ---------- 小密度单位 ----------
+  g/m3:        { unit: kg/m³, factor: 0.001, kind: assumed }             # g/m³ 少见：多为 g/cm³ 丢字符（相差 1e6 倍），复核
+  mg/m3:       { unit: kg/m³, factor: 1.0e-06, warn_on_raw: '^Mg/' }     # mg/m³；Mg/m³（megagram=吨）同键差 1e9 倍，原文大写 M 开头即告警
+  μg/m3:       { unit: kg/m³, factor: 1.0e-09, warn_on_raw: '^Μg/' }     # μg/m³（U+03BC）；希腊大写 Μg（U+039C，形同 M）疑为 Mg/m³
+  µg/m3:       { unit: kg/m³, factor: 1.0e-09 }                          # µg/m³（微符号 U+00B5；与 μ 字形相同、码位不同）
+  ug/m3:       { unit: kg/m³, factor: 1.0e-09 }                          # ug/m³（ASCII 写法）
+
+  # ---------- 英制 ----------
+  lb/ft3:      { unit: kg/m³, factor: 16.01846337 }                      # lb/ft³
+  pcf:         { unit: kg/m³, factor: 16.01846337 }                      # pcf = lb/ft³
+  slug/ft3:    { unit: kg/m³, factor: 515.3788184 }                      # slug/ft³（英制一贯制密度单位）
+  lb/in3:      { unit: kg/m³, factor: 27679.90471 }                      # lb/in³
+  lb/gal:      { unit: kg/m³, factor: 119.8264273, kind: assumed }       # 默认美制加仑；英制应为 99.77637266，制式需人工确认
+  lb/gal(us):  { unit: kg/m³, factor: 119.8264273 }                      # lb/gal (US) 美制加仑（去空格成键）
+  lb/gal(uk):  { unit: kg/m³, factor: 99.77637266 }                      # lb/gal (UK) 英制加仑（去空格成键）
+
+  # ---------- CJK 方块字符写法（中文/日文文档常见） ----------
+  kg/㎥:       { unit: kg/m³, factor: 1 }                                # kg/㎥（㎥=U+33A5，m³ 的方块字符）
+  ㎏/㎥:       { unit: kg/m³, factor: 1 }                                # ㎏/㎥（㎏=U+338F，kg 的方块字符）
+  g/㎤:        { unit: kg/m³, factor: 1000 }                             # g/㎤（㎤=U+33A4，cm³ 的方块字符）
+  g/㏄:        { unit: kg/m³, factor: 1000 }                             # g/㏄（㏄=U+33C4，cc 的方块字符）
+
+  # ---------- 相对密度 / 比重 / °API（近亲量：仅归一标签+告警，不换算数值） ----------
+  sg:          { unit: SG, factor: 1, kind: relative }                   # SG 无量纲，数值≈g/cm³，不自动 ×1000
+  s.g.:        { unit: SG, factor: 1, kind: relative }                   # S.G. 缩写
+  比重:        { unit: SG, factor: 1, kind: relative }                   # 中文"比重"
+  api:         { unit: °API, factor: 1, kind: relative }                 # API 度（非线性：ρ = 141.5×1000/(API+131.5)，无法乘系数换算）
+  °api:        { unit: °API, factor: 1, kind: relative }                 # °API 带度符写法
+   
