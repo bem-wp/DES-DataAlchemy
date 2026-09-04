@@ -1,10 +1,10 @@
 {
   
-  "RAW_DATASET_NAME" : "visco_dataset_26-08-22.xlsx", 
+  "RAW_DATASET_NAME" : "density_data_26-09-01.xlsx", 
 
-  "PROPERTY" : "viscosity",
+  "PROPERTY" : "density",
 
-  "STATE_VAR" : "T",
+  "STATE_VAR" :   "T"   ,
 
   "REFERENCE" : "ref",
 

@@ -41,7 +41,7 @@ llms:
       max_workers: 3
 
   main_screening: # 正文是否有数据？
-    targe_property: viscosity # 目标物性，给人看的
+    targe_property: 
     paths:
       input_folder: data/input
       in-out_folder: data/in-out
@@ -49,8 +49,8 @@ llms:
     prompt:
       template: LLMprompt/main_screening_prompt.md
     model:
-      base_url: https://llm-3cjll6d4apbjl1sp.cn-beijing.maas.aliyuncs.com/compatible-mode/v1
-      name: qwen3.7-max-preview
+      base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+      name: qwen-doc-turbo
       api_key_env: QWEN_API_KEY
       timeout: 300
     settings:

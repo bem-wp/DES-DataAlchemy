@@ -161,7 +161,7 @@ _RETRY_POLICY = dict(
 
 @retry(**_RETRY_POLICY)
 def upload_file(client: OpenAI, file_path: str):
-    """上传 PDF 文件到 Qwen Long，返回 file_id"""
+    """上传 PDF 文件到百炼，返回 file_id（purpose=file-extract，解析免费）"""
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"文件不存在: {file_path}")
 
@@ -186,7 +186,7 @@ def clean_response_text(text):
 
 @retry(**_RETRY_POLICY)
 def run_workflow(client: OpenAI, file_id: str, prompt: str, config: MainScreeningConfig) -> str | None:
-    """调用 Qwen Long 对已上传的文件执行提取任务"""
+    """通过 fileid:// 引用已上传文件，调用模型执行筛查任务"""
     logger.info(f"  调用模型中 (file_id={file_id[:16]}..., timeout={config.timeout}s)")
     completion = client.chat.completions.create(
         model=config.model_name,
@@ -202,6 +202,35 @@ def run_workflow(client: OpenAI, file_id: str, prompt: str, config: MainScreenin
         return None
 
     return completion.choices[0].message.content
+
+
+def delete_file(client: OpenAI, file_id: str) -> None:
+    """删除已上传的文件，释放服务端文件配额"""
+    try:
+        client.files.delete(file_id)
+        logger.debug(f"  已删除文件 file_id={file_id[:16]}...")
+    except Exception as e:
+        logger.warning(f"  删除文件失败 file_id={file_id[:16]}...: {e}")
+
+
+def cleanup_uploaded_files(client: OpenAI) -> int:
+    """清理服务端残留的已上传文件，返回删除数量"""
+    deleted = 0
+    try:
+        files = client.files.list()
+        file_list = getattr(files, "data", None) or []
+        for f in file_list:
+            fid = getattr(f, "id", None)
+            if not fid:
+                continue
+            try:
+                client.files.delete(fid)
+                deleted += 1
+            except Exception as e:
+                logger.warning(f"  清理文件失败 {fid}: {e}")
+    except Exception as e:
+        logger.warning(f"  获取服务端文件列表失败: {e}")
+    return deleted
 
 
 # ==========================================
@@ -273,6 +302,7 @@ def _process_single_task(
     has_data = "处理失败"
     note = "未知错误"
     raw_response = ""
+    file_id = None
 
     try:
         file_id = upload_file(client, str(pdf_file))
@@ -299,6 +329,9 @@ def _process_single_task(
         logger.error(f"  处理异常: {e}", exc_info=True)
         has_data, note = "处理失败", f"错误: {e}"
         counters.increment("failed")
+    finally:
+        if file_id:
+            delete_file(client, file_id)
 
     row = [
         filename,
@@ -342,6 +375,12 @@ def process_pdf_folder(config: MainScreeningConfig, skip_existing: bool = True) 
 
     if csv_manager.handled_set:
         logger.info(f"已有 {len(csv_manager.handled_set)} 条历史记录")
+
+    logger.info("清理服务端残留文件...")
+    cleanup_client = make_client(config)
+    removed = cleanup_uploaded_files(cleanup_client)
+    if removed:
+        logger.info(f"已清理 {removed} 个残留文件")
 
     max_workers = getattr(config, "max_workers", 4)
     logger.info(f"启动线程池，max_workers={max_workers}")
@@ -393,6 +432,7 @@ def process_pdf_single_file(config: MainScreeningConfig, pdf_path: str):
         logger.error("prompt 模板为空，终止处理")
         return "处理失败", "prompt 模板为空"
 
+    file_id = None
     try:
         file_id = upload_file(client, pdf_path)
         result = run_workflow(client, file_id, prompt, config)
@@ -407,3 +447,6 @@ def process_pdf_single_file(config: MainScreeningConfig, pdf_path: str):
     except Exception as e:
         logger.error(f"处理异常: {e}", exc_info=True)
         return "处理失败", f"错误: {e}"
+    finally:
+        if file_id:
+            delete_file(client, file_id)
