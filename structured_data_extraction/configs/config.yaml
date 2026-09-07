@@ -50,7 +50,7 @@ llms:
       template: LLMprompt/main_screening_prompt.md
     model:
       base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
-      name: qwen-doc-turbo
+      name: qwen-long
       api_key_env: QWEN_API_KEY
       timeout: 300
     settings:
@@ -80,8 +80,8 @@ si_selector:
 
 json_filter:
   json_input_dir : data/in-out/lading-ai_extraction/_01_extracted
-  targe_property : viscosity
-  condition_vars : ['temperature']
+  targe_property : alpha            # 新结构物性为纯数值，须与 des_entries 内键名一致（可选 alpha / beta / pi_star）
+  condition_vars : []               # 新结构无温度等环境条件字段，置空（如有则填列名）
   json_output_dir : data/in-out/lading-ai_extraction/_02_filtered
 
 visualizer:
@@ -91,12 +91,13 @@ visualizer:
   revised_json_dir  : data/in-out/lading-ai_extraction/_03_revised
 
 json_to_table:
-  targe_property : viscosity
+  targe_property : alpha            # 须与 json_filter.targe_property 一致
+  condition_vars : []               # 须与 json_filter.condition_vars 一致；标量只出值列，[值,单位]/{value,unit} 额外出 <字段>_unit 列
   json_files_dir : data/in-out/lading-ai_extraction/_02_filtered
   table_dir : data/output
 
 table_clean:
-  targe_property: viscosity
+  targe_property: alpha            # 须与 json_to_table.targe_property 一致；无单位物性的归一化会自动跳过
   input_dir: data/output
   output_dir: data/output
   unit_mappings_file: configs/unit_mappings.yaml

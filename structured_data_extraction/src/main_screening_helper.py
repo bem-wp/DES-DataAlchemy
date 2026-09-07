@@ -3,6 +3,7 @@ import json
 import logging
 import os
 import re
+import time
 from collections import OrderedDict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
@@ -176,6 +177,27 @@ def upload_file(client: OpenAI, file_path: str):
     return file_object.id
 
 
+def wait_file_processed(client: OpenAI, file_id: str, timeout: float = 120.0) -> None:
+    """轮询文件解析状态，直到 processed；超时或解析失败则抛异常"""
+    deadline = time.time() + timeout
+    while time.time() < deadline:
+        try:
+            file_obj = client.files.retrieve(file_id)
+        except Exception:
+            file_obj = None
+
+        status = getattr(file_obj, "status", None)
+        if status == "processed":
+            logger.debug(f"  文件解析完成: {file_id[:16]}...")
+            return
+        if status == "error":
+            raise RuntimeError(f"文件解析失败: {file_id[:16]}...")
+
+        time.sleep(2)
+
+    raise TimeoutError(f"文件解析超时 ({timeout}s): {file_id[:16]}...")
+
+
 def clean_response_text(text):
     """清理 LLM 返回文本中的 <think> 标签和 Markdown 代码块标记"""
     text = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL)
@@ -306,6 +328,7 @@ def _process_single_task(
 
     try:
         file_id = upload_file(client, str(pdf_file))
+        wait_file_processed(client, file_id)
         result = run_workflow(client, file_id, prompt, config)
 
         if not result:
@@ -435,6 +458,7 @@ def process_pdf_single_file(config: MainScreeningConfig, pdf_path: str):
     file_id = None
     try:
         file_id = upload_file(client, pdf_path)
+        wait_file_processed(client, file_id)
         result = run_workflow(client, file_id, prompt, config)
         if not result:
             return "处理失败", "工作流执行失败"

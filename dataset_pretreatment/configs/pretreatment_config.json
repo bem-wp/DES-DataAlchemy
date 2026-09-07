@@ -1,10 +1,10 @@
 {
   
-  "RAW_DATASET_NAME" : "density_data_26-09-01.xlsx", 
+  "RAW_DATASET_NAME" : "mp_dataset.xlsx", 
 
-  "PROPERTY" : "density",
+  "PROPERTY" : "mp",
 
-  "STATE_VAR" :   "T"   ,
+  "STATE_VAR" :   null  ,
 
   "REFERENCE" : "ref",
 

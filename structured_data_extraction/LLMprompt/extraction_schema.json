@@ -1,94 +1,74 @@
 {
-  "description": "Root object",
+  "title": "Deep Eutectic Solvent Kamlet-Taft Parameters Extraction",
+  "description": "Schema for extracting DES composition and Kamlet-Taft parameters (α, β, π*). Always expand chemical abbreviations into full names.",
   "type": "object",
   "properties": {
-    "des_formulations": {
-      "description": "An array of deep eutectic solvent (DES) formulations, each with its associated properties and Kamlet-Taft parameters.",
+    "article_title": {
+      "type": "string",
+      "nullable": true,
+      "description": "The full title of the scientific research paper."
+    },
+    "des_entries": {
+      "description": "An array of DES entries focused on composition and Kamlet-Taft parameters.",
       "x-alternativeNames": [
-        "Deep Eutectic Solvent Formulations",
-        "DES Compositions",
-        "Solvent Mixtures"
+        "Deep Eutectic Solvent Entries",
+        "DES Systems",
+        "Kamlet-Taft Data"
       ],
       "type": "array",
       "items": {
-        "description": "Item in des_formulations",
+        "description": "A single DES entry with composition and Kamlet-Taft parameters.",
         "type": "object",
         "properties": {
           "components": {
-            "description": "An ordered list of the full chemical names of all components in the DES formulation.",
-            "x-alternativeNames": [
-              "Chemical Components",
-              "Constituents",
-              "Ingredients"
-            ],
+            "description": "Ordered list of chemical components. Always expand abbreviations into full chemical names.",
+            "x-alternativeNames": ["Chemical Components", "Constituents", "Ingredients"],
             "type": "array",
             "items": {
-              "description": "Item in components",
               "type": "object",
               "properties": {
-                "component": {
-                  "description": "The name of a single chemical component in the DES formulation.",
-                  "x-alternativeNames": [
-                    "Chemical Name",
-                    "Ingredient",
-                    "Constituent Name"
-                  ],
+                "name": {
+                  "description": "FULL chemical name of the component. MUST expand any abbreviation (e.g. convert 'ChCl' to 'Choline chloride', 'U' to 'Urea', 'EG' to 'Ethylene glycol', 'Gly' to 'Glycerol', 'LA' to 'Lactic acid'). Never output abbreviations in this field.",
+                  "x-alternativeNames": ["Full Chemical Name", "Chemical Name", "Full Name"],
                   "type": "string"
                 },
+                "acronym": {
+                  "description": "Abbreviation or acronym exactly as written in the paper (e.g. 'ChCl', 'U', 'EG'). If no abbreviation appears, set to null.",
+                  "x-alternativeNames": ["Abbreviation", "Short Name", "Acronym"],
+                  "type": "string",
+                  "nullable": true
+                },
                 "composition": {
-                  "description": "The compositional value (e.g., molar ratio, weight percentage) of the specific component.",
-                  "x-alternativeNames": [
-                    "Component Composition",
-                    "Amount",
-                    "Ratio"
-                  ],
+                  "description": "Compositional value (usually the molar ratio coefficient, e.g. 1 or 2 in a 1:2 mixture).",
+                  "x-alternativeNames": ["Component Composition", "Amount", "Ratio"],
                   "type": "number"
                 }
               },
-              "required": [
-                "component",
-                "composition"
-              ]
+              "required": ["name", "composition"]
             }
           },
           "alpha": {
-            "description": "The Kamlet-Taft hydrogen-bond acidity parameter (α) of the DES formulation.",
-            "x-alternativeNames": [
-              "Kamlet-Taft Alpha",
-              "Hydrogen-Bond Acidity",
-              "Alpha Parameter"
-            ],
-            "type": "number"
+            "description": "Kamlet-Taft hydrogen-bond acidity parameter (α).",
+            "x-alternativeNames": ["Kamlet-Taft Alpha", "Hydrogen-Bond Acidity", "Alpha Parameter"],
+            "type": "number",
+            "nullable": true
           },
           "beta": {
-            "description": "The Kamlet-Taft hydrogen-bond acceptor basicity parameter (β), indicating the ability of the DES to accept hydrogen bonds.",
-            "x-alternativeNames": [
-              "Kamlet-Taft beta",
-              "Hydrogen-bond basicity",
-              "Beta parameter"
-            ],
-            "type": "number"
+            "description": "Kamlet-Taft hydrogen-bond acceptor basicity parameter (β).",
+            "x-alternativeNames": ["Kamlet-Taft Beta", "Hydrogen-Bond Basicity", "Beta Parameter"],
+            "type": "number",
+            "nullable": true
           },
           "pi_star": {
-            "description": "The Kamlet-Taft dipolarity/polarizability parameter (π*), representing the ability of the DES to stabilize a charge or a dipole by non-specific solute-solvent interactions.",
-            "x-alternativeNames": [
-              "Kamlet-Taft pi-star",
-              "Dipolarity/polarizability",
-              "Pi-star parameter"
-            ],
-            "type": "number"
+            "description": "Kamlet-Taft dipolarity/polarizability parameter (π*).",
+            "x-alternativeNames": ["Kamlet-Taft Pi-Star", "Dipolarity/Polarizability", "Pi-Star Parameter"],
+            "type": "number",
+            "nullable": true
           }
         },
-        "required": [
-          "components",
-          "alpha",
-          "beta",
-          "pi_star"
-        ]
+        "required": ["components"]
       }
     }
   },
-  "required": [
-    "des_formulations"
-  ]
+  "required": ["des_entries"]
 }

@@ -19,9 +19,9 @@ def is_valid_value(value):
 def filter_des_entries(data, target_property, condition_vars=None):
     """
     通用过滤函数。
-    - 必检字段: molar_ratio (定义 DES 组成的基础字段，通常必留)
+    - 必检字段: components (定义 DES 组成的基础字段，须为非空列表才保留)
     - 条件字段: condition_vars (若列表非空，则检查其中的每一个变量)
-    - 目标物性: target_property (例如 'viscosity', 'density', 'conductivity')
+    - 目标物性: target_property (新结构为纯数值，例如 'alpha', 'beta', 'pi_star')
     """
     if condition_vars is None:
         condition_vars = []
@@ -53,11 +53,9 @@ def filter_des_entries(data, target_property, condition_vars=None):
     for i, entry in enumerate(raw_data_entries):
         should_keep = True
         
-        # --- 规则 1: 检查 molar_ratio (基础组分定义必检) ---
-        molar_ratio = entry.get('molar_ratio')
-        if molar_ratio is None or molar_ratio == "":
-            should_keep = False
-        elif isinstance(molar_ratio, dict) and not molar_ratio.get('value'):
+        # --- 规则 1: 检查 components (基础组分定义必检，须为非空列表) ---
+        components = entry.get('components')
+        if not isinstance(components, list) or not components:
             should_keep = False
 
         # --- 规则 2: 检查条件变量 (若 condition_vars 非空，则逐一校验) ---

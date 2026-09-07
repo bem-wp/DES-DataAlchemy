@@ -3,6 +3,9 @@ import yaml
 from dataclasses import dataclass
 from dotenv import load_dotenv
 import re
+import logging
+
+logger = logging.getLogger(__name__)
 
 # ==================== 1. 数据结构定义 (Dataclasses) ====================
 @dataclass(frozen=True)
@@ -94,6 +97,7 @@ class JsontotableConfig:
     property_name : str
     json_folder : str
     table_folder : str
+    condition_vars : list
 
 @dataclass(frozen=True)
 class TableCleanConfig:
@@ -379,7 +383,9 @@ def load_json_to_table_config() -> JsontotableConfig:
 
         json_folder = os.path.join(project_root, json_to_table_cfg['json_files_dir']),
 
-        table_folder = os.path.join(project_root, json_to_table_cfg['table_dir'])
+        table_folder = os.path.join(project_root, json_to_table_cfg['table_dir']),
+
+        condition_vars = json_to_table_cfg.get('condition_vars', []) or []
 
     )
 
@@ -404,8 +410,14 @@ def _load_unit_mappings(project_root: str, rel_path: str, property_name: str) ->
         data = yaml.safe_load(f) or {}
 
     section = data.get(property_name)
+    if section is None:
+        # 新结构物性为纯数值、无单位：允许缺少对应段，返回空映射；
+        # 表清洗层在无 <property>_unit 列时会自动跳过单位归一化（no-op）。
+        logger.warning(
+            f"单位映射文件 '{path}' 无 '{property_name}:' 段，按无单位物性处理（跳过单位归一化）")
+        return {}
     if not isinstance(section, dict):
-        raise ValueError(f"单位映射文件 '{path}' 缺少 '{property_name}:' 段")
+        raise ValueError(f"单位映射文件 '{path}' 的 '{property_name}:' 段必须为映射")
 
     valid_kinds = ('convert', 'assumed', 'kinematic', 'relative')
     mappings = {}

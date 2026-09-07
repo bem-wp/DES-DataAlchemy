@@ -1,7 +1,7 @@
 # 环境条件归一化映射：温度 / 压力 / 其他环境因素
 #
-# 结构：每个条件一个段，段名 = 数值列名，单位列名约定为 <段名>_unit。
-#   例如 temp 段作用于 temp / temp_unit 列对；
+# 结构：每个条件一个段，段名 = condition_vars 中的字段名 = 表中数值列名，单位列名约定为 <段名>_unit。
+#   例如 condition_vars=['temperature'] 时，temperature 段作用于 temperature / temperature_unit 列对；
 #   将来需要归一化压力时，新增 pressure 段即自动作用于 pressure / pressure_unit 列对，
 #   表中存在该列对才生效，无需改代码。
 #
@@ -17,7 +17,7 @@
 #       keep: true                     （已是目标单位，数值与原单位标签均原样保留）
 #     未收录的键视为"未识别单位"：数值与单位原样保留并告警。
 
-temp:
+temperature:
   target_unit: K
   round_digits: 2
   units:
