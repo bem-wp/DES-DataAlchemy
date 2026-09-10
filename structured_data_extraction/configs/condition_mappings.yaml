@@ -23,5 +23,6 @@ temperature:
   units:
     °c:      { offset: 273.15 }   # °C → K
     celsius: { offset: 273.15 }   # Celsius → K
+    degreescelsius: { offset: 273.15 } 
     kelvin:  { keep: true }       # 已是开尔文，原样保留
     k:       { keep: true }

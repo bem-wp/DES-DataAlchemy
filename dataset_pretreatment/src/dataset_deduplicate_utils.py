@@ -63,7 +63,7 @@ def _clean_missing_data(df, essential_cols):
     null_mask = df[essential_cols].isnull().any(axis=1) 
     if null_mask.any():
         logger.warning(f"检测到 {null_mask.sum()} 个包含关键缺失值的记录，正在删除这些记录。")
-        df = df.dropna(subset=essential_cols)
+        df = df.dropna(subset=essential_cols) # 检测 关键列中 是否存在空值，若有则直接删除 对应行，并记录删除数量。
     else:
         logger.info("未检测到在关键字段有缺失的记录。")
     logger.info(f"剩余记录数: {len(df)}")

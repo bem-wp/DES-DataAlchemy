@@ -1,6 +1,7 @@
 # 单位归一化清洗管线：读取 09 输出的 xlsx，清洗单位后另存 *_cleaned.xlsx
 import os
 import math
+import re
 import logging
 from decimal import Decimal, ROUND_HALF_UP
 
@@ -93,6 +94,23 @@ def normalize_property_unit(value, unit, property_name: str, mappings: dict) -> 
     return value * entry['factor'], target
 
 
+def normalize_composition(df: pd.DataFrame) -> pd.DataFrame:
+    """将每条记录的组分摩尔比列（x1..xN）归一化为摩尔分数，使每条记录求和为 1。
+
+    空值/缺失视为 0（覆盖主表中 2 组分条目的 x3 恒空情形）；
+    全部为 0 的行（无有效组分）保持原样（全 0），避免除零。
+    """
+    cols = [c for c in df.columns if re.fullmatch(r'x\d+', c)]
+    if not cols:
+        return df
+    out = df.copy()
+    sub = out[cols].apply(pd.to_numeric, errors='coerce').fillna(0.0)
+    sums = sub.sum(axis=1)
+    mask = sums > 0
+    out[cols] = sub.div(sums.where(mask, 1.0), axis=0).where(mask, 0.0)
+    return out
+
+
 def clean_table(df: pd.DataFrame, property_name: str, mappings: dict, condition_specs: dict) -> pd.DataFrame:
     """对整表执行单位归一化，返回新 DataFrame（不修改入参）。
 
@@ -110,6 +128,7 @@ def clean_table(df: pd.DataFrame, property_name: str, mappings: dict, condition_
         out[[property_name, unit_col]] = out.apply(
             lambda r: normalize_property_unit(r[property_name], r[unit_col], property_name, mappings),
             axis=1, result_type='expand')
+    out = normalize_composition(out)
     return out
 
 
@@ -131,6 +150,7 @@ class TableCleaner:
         self.unit_mappings = config.unit_mappings
         self.condition_specs = config.condition_specs
         self._input_names = (f"{config.property_name}_data.xlsx",
+                             f"{config.property_name}_pure_compound.xlsx",
                              f"{config.property_name}_over3components.xlsx")
 
     # ---- IO ----

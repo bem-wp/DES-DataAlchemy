@@ -33,7 +33,10 @@ viscosity:
   kgm-1s-1:    { unit: mPa·s, factor: 1000 }                             # kg m⁻¹ s⁻¹ = Pa·s（×1000）
   kg.m-1.s-1:  { unit: mPa·s, factor: 1000 }                             # kg·m⁻¹·s⁻¹ 点乘写法 = Pa·s（×1000）
   mm2/s:       { unit: mm²/s, factor: 1, kind: kinematic }               # 覆盖 mm²/s / mm2/s；运动粘度仅归一标签，保留告警
-  cst:         { unit: mm²/s, factor: 1, kind: kinematic }               # cSt = mm²/s 运动粘度
+  cst:         { unit: mm²/s, factor: 1, kind: kinematic }
+  millipascalsecond: { unit: mPa·s, factor: 1 }   # millipascal second = mPa·s  
+  mpa-s: { unit: mPa·s, factor: 1 } 
+  mpa7s: { unit: mPa·s, factor: 1, kind: assumed }            # cSt = mm²/s 运动粘度
 
 density:
 

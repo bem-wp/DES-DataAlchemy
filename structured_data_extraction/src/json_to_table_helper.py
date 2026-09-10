@@ -163,7 +163,8 @@ def build_row(entry, article_title, property_name, origin, condition_vars=None):
     单条 des_entry → 行数据，返回 (row, status)。
     condition_vars: 环境条件字段名列表（如 ['temperature']）；每个条件按方案C自动判别——
                     标量只出值列，[值,单位]/{value,unit} 则额外出 <字段>_unit 列。
-    status: 'kept' 有效 / 'over3' >3组分（分流，不丢数据）
+    status: 'kept' 有效(2~3组分，进主表) / 'pure' 单组分(纯化合物，分流到 <物性>_pure_compound 表)
+            'over3' >3组分（分流，不丢数据）
             'ratio_mismatch' 组分名数量与有效摩尔比数量不匹配 / 'incomplete' 目标物性或条件变量缺失
     """
     condition_vars = condition_vars or []
@@ -180,10 +181,13 @@ def build_row(entry, article_title, property_name, origin, condition_vars=None):
     prop_value = _merge_row_fields(row, entry, property_name, condition_vars)
     row['origin'] = origin
 
-    # 数据清洗：组分名非空数量与有效摩尔比(composition)数量必须匹配
+    # 数据清洗：组分名(c1~c3)非空数量必须与有效摩尔比(x1~x3)数量一致，否则告警并丢弃此行
     count_c = sum(1 for i in range(3) if row[f'c{i + 1}'] and str(row[f'c{i + 1}']).strip())
     count_x = sum(1 for i in range(3) if row[f'x{i + 1}'] is not None)
     if count_c != count_x:
+        logger.warning(
+            f"组分名(c1~c3)非空数 {count_c} 与摩尔比(x1~x3)有效数 {count_x} 不一致，"
+            f"丢弃此行 (文件:{origin}, article_title:{article_title})")
         return row, 'ratio_mismatch'
 
     # 目标物性不能缺失；若配置了条件变量，其数值同样不能缺失（保留旧版“条件必检”清洗逻辑）
@@ -193,7 +197,8 @@ def build_row(entry, article_title, property_name, origin, condition_vars=None):
         if row.get(cond) is None:
             return row, 'incomplete'
 
-    return row, 'kept'
+    # 通过全部清洗校验：单组分条目归为“纯化合物”分流(pure)，2~3 组分进主表(kept)
+    return row, ('pure' if len(components) == 1 else 'kept')
 
 
 def build_over3_dataframe(over3_rows, property_name, condition_vars=None) -> pd.DataFrame:
@@ -224,6 +229,34 @@ def build_over3_dataframe(over3_rows, property_name, condition_vars=None) -> pd.
         row['origin'] = r['origin']
         expanded.append(row)
     return sanitize_dataframe(pd.DataFrame(expanded))
+
+
+def build_pure_dataframe(pure_rows, property_name, condition_vars=None) -> pd.DataFrame:
+    """将单组分（纯化合物）条目构建为精简表。
+
+    单组分只有一个组分，故仅保留 c1/a1/x1，去掉主表中恒空的 c2/c3、a2/a3、x2/x3 列。
+    列结构：article_title, c1, a1, x1, [<条件>, <条件>_unit…], <物性>, [<物性>_unit], origin。
+    """
+    condition_vars = condition_vars or []
+    records = []
+    for r in pure_rows:
+        row = {
+            'article_title': r.get('article_title'),
+            'c1': r.get('c1'),
+            'a1': r.get('a1'),
+            'x1': r.get('x1'),
+        }
+        # 条件变量列：值必带；单位列按原始行是否解析出单位透传
+        for cond in condition_vars:
+            row[cond] = r.get(cond)
+            if f'{cond}_unit' in r:
+                row[f'{cond}_unit'] = r[f'{cond}_unit']
+        row[property_name] = r.get(property_name)
+        if f'{property_name}_unit' in r:
+            row[f'{property_name}_unit'] = r[f'{property_name}_unit']
+        row['origin'] = r.get('origin')
+        records.append(row)
+    return sanitize_dataframe(pd.DataFrame(records))
 
 
 # ==================== 管线第 4 步：写盘（引擎兜底） ====================
@@ -269,6 +302,7 @@ def extract_json_to_excel(cfg: JsontotableConfig) -> pd.DataFrame:
 
     all_data = []
     over3_data = []
+    pure_data = []
     files_processed = 0
     total_entries = 0
     skipped_ratio_mismatch = 0
@@ -280,6 +314,7 @@ def extract_json_to_excel(cfg: JsontotableConfig) -> pd.DataFrame:
         files_processed += 1
         file_entries = 0
         file_kept = 0
+        file_pure = 0
         try:
             article_title, des_entries = parse_entries(data)
             for entry in des_entries:
@@ -288,6 +323,9 @@ def extract_json_to_excel(cfg: JsontotableConfig) -> pd.DataFrame:
                 if status == 'kept':
                     file_kept += 1
                     all_data.append(row)
+                elif status == 'pure':
+                    file_pure += 1
+                    pure_data.append(row)
                 elif status == 'over3':
                     skipped_too_many_components += 1
                     logger.warning(
@@ -295,14 +333,13 @@ def extract_json_to_excel(cfg: JsontotableConfig) -> pd.DataFrame:
                     )
                     over3_data.append(row)
                 elif status == 'ratio_mismatch':
-                    skipped_ratio_mismatch += 1
-                    logger.debug(f"数据清洗：跳过不匹配数据 (文件:{filename})")
+                    skipped_ratio_mismatch += 1  # 详细 warning 已在 build_row 内按行输出
                 else:
                     skipped_incomplete += 1
                     logger.debug(f"数据清洗：跳过{property_name}或条件变量缺失数据 (文件:{filename})")
 
             total_entries += file_entries
-            logger.info(f"[{filename}] 条目 {file_entries} → 有效 {file_kept}")
+            logger.info(f"[{filename}] 条目 {file_entries} → 主表 {file_kept} / 纯化合物 {file_pure}")
         except Exception:
             file_errors += 1
             logger.exception(f"处理文件 {filename} 时出错")
@@ -315,14 +352,17 @@ def extract_json_to_excel(cfg: JsontotableConfig) -> pd.DataFrame:
         df = sanitize_dataframe(df)
         save_dataframe(df, output_file)
         logger.info(f"数据已保存至 {output_file}，共 {len(df)} 条记录")
-    else:
+    elif not pure_data and not over3_data:
         logger.warning(
             f"未提取到任何有效数据：文件错误 {file_errors}，"
-            f"跳过 不匹配 {skipped_ratio_mismatch} / 物性缺失 {skipped_incomplete} / 组分>3单独保存 {skipped_too_many_components}。"
+            f"跳过 不匹配 {skipped_ratio_mismatch} / 物性缺失 {skipped_incomplete}。"
             f"若条目大量存在但全被跳过，请检查 config.yaml 的 targe_property 是否与 JSON 中 des_entries 的物性键一致"
         )
+    else:
+        logger.info(
+            f"主表无 2~3 组分条目；已分流：纯化合物 {len(pure_data)} 条 / >3组分 {skipped_too_many_components} 条")
 
-    total_skipped = skipped_ratio_mismatch + skipped_incomplete + skipped_too_many_components
+    total_skipped = skipped_ratio_mismatch + skipped_incomplete
 
     # 将超过 3 组分的条目按组分最大数展开为 c1..cN / a1..aN / x1..xN 列，另存一个 xlsx
     if over3_data:
@@ -331,9 +371,16 @@ def extract_json_to_excel(cfg: JsontotableConfig) -> pd.DataFrame:
         save_dataframe(df_over3, over3_file)
         logger.info(f">3组分数据已单独保存至 {over3_file}，共 {len(df_over3)} 条记录")
 
+    # 单组分（纯化合物）条目另存一个 xlsx（列精简为 c1/a1/x1）
+    if pure_data:
+        df_pure = build_pure_dataframe(pure_data, property_name, condition_vars)
+        pure_file = os.path.join(output_dir, f"{property_name}_pure_compound.xlsx")
+        save_dataframe(df_pure, pure_file)
+        logger.info(f"单组分(纯化合物)数据已单独保存至 {pure_file}，共 {len(df_pure)} 条记录")
+
     logger.info(
-        f"汇总: 文件 {files_processed} | 总条目 {total_entries} → 有效 {len(df)}，"
-        f"跳过 {total_skipped}（不匹配 {skipped_ratio_mismatch} / 缺失 {skipped_incomplete} / >3组分单独保存 {skipped_too_many_components}），"
+        f"汇总: 文件 {files_processed} | 总条目 {total_entries} → 主表 {len(df)} / 纯化合物 {len(pure_data)} / >3组分 {skipped_too_many_components}，"
+        f"跳过 {total_skipped}（不匹配 {skipped_ratio_mismatch} / 缺失 {skipped_incomplete}），"
         f"文件错误 {file_errors}"
     )
 

@@ -1,6 +1,6 @@
 {
-  "title": "Deep Eutectic Solvent Kamlet-Taft Parameters Extraction",
-  "description": "Schema for extracting DES composition and Kamlet-Taft parameters (α, β, π*). Always expand chemical abbreviations into full names.",
+  "title": "Deep Eutectic Solvent Viscosity Extraction",
+  "description": "Schema for extracting DES composition, temperature, and viscosity data. Always expand chemical abbreviations into full names.",
   "type": "object",
   "properties": {
     "article_title": {
@@ -9,15 +9,15 @@
       "description": "The full title of the scientific research paper."
     },
     "des_entries": {
-      "description": "An array of DES entries focused on composition and Kamlet-Taft parameters.",
+      "description": "An array of DES entries focused on composition, temperature, and viscosity.",
       "x-alternativeNames": [
         "Deep Eutectic Solvent Entries",
         "DES Systems",
-        "Kamlet-Taft Data"
+        "Viscosity Data"
       ],
       "type": "array",
       "items": {
-        "description": "A single DES entry with composition and Kamlet-Taft parameters.",
+        "description": "A single DES entry with composition, temperature, and viscosity.",
         "type": "object",
         "properties": {
           "components": {
@@ -47,23 +47,39 @@
               "required": ["name", "composition"]
             }
           },
-          "alpha": {
-            "description": "Kamlet-Taft hydrogen-bond acidity parameter (α).",
-            "x-alternativeNames": ["Kamlet-Taft Alpha", "Hydrogen-Bond Acidity", "Alpha Parameter"],
-            "type": "number",
-            "nullable": true
+          "temperature": {
+            "description": "Experimental temperature at which the viscosity was measured.",
+            "x-alternativeNames": ["Measurement Temperature", "Experimental Temperature"],
+            "type": "object",
+            "nullable": true,
+            "properties": {
+              "value": {
+                "description": "Numerical value of the temperature.",
+                "type": "number"
+              },
+              "unit": {
+                "description": "Unit of the temperature (e.g. 'K', '°C', 'Celsius', 'Kelvin').",
+                "type": "string"
+              }
+            },
+            "required": ["value", "unit"]
           },
-          "beta": {
-            "description": "Kamlet-Taft hydrogen-bond acceptor basicity parameter (β).",
-            "x-alternativeNames": ["Kamlet-Taft Beta", "Hydrogen-Bond Basicity", "Beta Parameter"],
-            "type": "number",
-            "nullable": true
-          },
-          "pi_star": {
-            "description": "Kamlet-Taft dipolarity/polarizability parameter (π*).",
-            "x-alternativeNames": ["Kamlet-Taft Pi-Star", "Dipolarity/Polarizability", "Pi-Star Parameter"],
-            "type": "number",
-            "nullable": true
+          "viscosity": {
+            "description": "Measured viscosity of the DES at the corresponding temperature.",
+            "x-alternativeNames": ["Dynamic Viscosity", "Viscosity Value"],
+            "type": "object",
+            "nullable": true,
+            "properties": {
+              "value": {
+                "description": "Numerical value of the viscosity.",
+                "type": "number"
+              },
+              "unit": {
+                "description": "Unit of the viscosity (e.g. 'mPa·s', 'cP', 'Pa·s').",
+                "type": "string"
+              }
+            },
+            "required": ["value", "unit"]
           }
         },
         "required": ["components"]
