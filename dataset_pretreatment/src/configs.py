@@ -5,7 +5,6 @@ import logging
 from datetime import datetime
 from pathlib import Path
 
-# --- 日志配置 ---
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -13,6 +12,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# 固定位置
 BASE_DIR = Path(__file__).resolve().parent.parent # 定位根目录
 
 CONFIG_FILE = BASE_DIR / 'configs' / 'pretreatment_config.json'
@@ -50,7 +50,7 @@ class MakeIdsMapTableConfig:
     # ---------- 目录 ----------
     IN_DIR      = str(BASE_DIR / 'data' / 'input')
     IN_OUT_DIR  = str(BASE_DIR / 'data' / 'in_out')
-    OUT_DIR     = str(BASE_DIR / 'data' / 'output')
+    # OUT_DIR     = str(BASE_DIR / 'data' / 'output')
     TEMP_DIR    = str(BASE_DIR / 'tmp_data')
 
     # ---------- 配置文件 ----------
@@ -60,10 +60,7 @@ class MakeIdsMapTableConfig:
     _raw_config = _load_raw_config(CONFIG_FILE)
 
     # 默认值，防止文件读取失败时报错
-    _raw_dataset_name = _raw_config.get("RAW_DATASET_NAME", "default_dataset.csv")
-
-    # 代理设置
-    _setup_proxy(_raw_config.get("PROXY_URL", ""))
+    _raw_dataset_name = _raw_config.get("RAW_DATASET_NAME")
 
     # ---------- 输入文件路径 ----------
     RAW_DATASET = os.path.join(IN_DIR, _raw_dataset_name)
@@ -76,8 +73,68 @@ class MakeIdsMapTableConfig:
     DEDUPLICATE_DIR      = os.path.join(TEMP_DIR, _base_name, 'deduplicate')
 
     # ---------- 输出文件路径 ----------
-    IDS_MAP_TABLE      = os.path.join(IN_OUT_DIR, f'{_base_name}_{TIMESTAMP}_raw-ds_fetch-ids_add-ids.xlsx')
+    IDS_MAP_TABLE      = os.path.join(IN_OUT_DIR, f'{_base_name}_{TIMESTAMP}_ids-map-table.xlsx')
     # IDS_MAP_TABLE_OUT  = os.path.join(OUT_DIR,    f'{_base_name}_{TIMESTAMP}_out_ids-map-tb.xlsx')
 
-    BYPRODUCT_TABLE    = os.path.join(IN_OUT_DIR, f'{_base_name}_{TIMESTAMP}_ids-map-tb_dd_fg.xlsx')
+    BYPRODUCT_TABLE    = os.path.join(IN_OUT_DIR, f'{_base_name}_{TIMESTAMP}_by-product-table.xlsx')
     # BYPRODUCT_TABLE_OUT= os.path.join(OUT_DIR,    f'{_base_name}_{TIMESTAMP}_out_byproduct-tb.xlsx')
+
+    @classmethod
+    def setup_proxy(cls):
+        _setup_proxy(cls._raw_config.get("PROXY_URL", ""))
+
+
+class AddIdsToDatasetConfig:
+
+    TIMESTAMP = datetime.now().strftime('%y%m%d')
+
+    IN_DIR      = str(BASE_DIR / 'data' / 'input')
+    IN_OUT_DIR  = str(BASE_DIR / 'data' / 'in_out')
+    TEMP_DIR    = str(BASE_DIR / 'tmp_data')
+
+    config_path = str(CONFIG_FILE)
+
+    _raw_config = _load_raw_config(CONFIG_FILE)
+
+    _raw_dataset_name = _raw_config.get("RAW_DATASET_NAME")
+    _base_name = os.path.splitext(_raw_dataset_name)[0]
+
+    # ---------- 输入文件路径 ----------
+    RAW_DATASET = os.path.join(IN_DIR, _raw_dataset_name)
+    IDS_MAP_TABLE      = os.path.join(IN_OUT_DIR, f'{_base_name}_{TIMESTAMP}_ids-map-table.xlsx')
+
+    # 缺失值管理文件路径
+    MISSING_DATA_MAG_DIR = os.path.join(TEMP_DIR, _base_name, 'mis_data_mag')
+
+    # 输出文件路径
+    DATASET_WITH_IDS = os.path.join(IN_OUT_DIR, f'{_base_name}_{TIMESTAMP}_with-ids.xlsx')
+
+
+class DatasetDeduplicateConfig:
+
+    TIMESTAMP = datetime.now().strftime('%y%m%d')
+
+    IN_OUT_DIR  = str(BASE_DIR / 'data' / 'in_out')
+    TEMP_DIR    = str(BASE_DIR / 'tmp_data')
+    OUT_DIR     = str(BASE_DIR / 'data' / 'output')
+
+    config_path = str(CONFIG_FILE)
+
+    _raw_config = _load_raw_config(CONFIG_FILE)
+            
+    _raw_dataset_name = _raw_config.get("RAW_DATASET_NAME")
+    _base_name = os.path.splitext(_raw_dataset_name)[0]
+    _property = _raw_config.get("PROPERTY")
+    _state_var = _raw_config.get("STATE_VAR", "")
+    _reference = _raw_config.get("REFERENCE")
+
+    # ---------- 输入文件路径 ----------
+    DATASET_WITH_IDS = os.path.join(IN_OUT_DIR, f'{_base_name}_{TIMESTAMP}_with-ids.xlsx')
+
+    DEDUPLICATE_DIR      = os.path.join(TEMP_DIR, _base_name, 'deduplicate')
+
+    # 缺失值管理文件路径
+    MISSING_DATA_MAG_DIR = os.path.join(TEMP_DIR, _base_name, 'mis_data_mag')
+
+    # 输出文件路径
+    DATASET_DEDUPLICATED = os.path.join(OUT_DIR, f'{_base_name}_{TIMESTAMP}_deduplicated.xlsx')

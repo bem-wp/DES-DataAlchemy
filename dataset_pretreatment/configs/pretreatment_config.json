@@ -1,10 +1,10 @@
 {
   
-  "RAW_DATASET_NAME" : "viscosity_dataset_26-09-10.xlsx", 
+  "RAW_DATASET_NAME" : "viscosity_dataset_26-09-11.xlsx", 
 
   "PROPERTY" : "viscosity",
 
-  "STATE_VAR" : "temperature",
+  "STATE_VAR" : "T",
 
   "REFERENCE" : "ref",
 
