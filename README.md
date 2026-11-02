@@ -110,7 +110,3 @@ We welcome contributions to DES-DataAlchemy! If you have suggestions, bug report
 ## License
 
 This project is licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
-
-## About BEM Lab, Westlake University
-
-BEM Lab at Westlake University bridges artificial intelligence with chemistry and materials science, developing data-driven methods and open tools for molecular and materials discovery. Learn more at [bem.lab.westlake.edu.cn](https://bem.lab.westlake.edu.cn/).
