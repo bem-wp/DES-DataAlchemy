@@ -1,0 +1,31 @@
+# DES-DataAlchemy runtime dependencies
+# Install: pip install -r requirements.txt
+
+# Data handling
+pandas
+numpy
+openpyxl
+
+# Config & environment
+pyyaml
+python-dotenv
+
+# HTTP & retry
+requests
+httpx
+tenacity
+
+# LLM & extraction clients
+openai            # DeepSeek / Qwen via OpenAI-compatible API
+landingai-ade     # LandingAI ADE (imports as landingai_ade)
+
+# PDF parsing & imaging
+pymupdf           # imports as fitz
+pillow            # imports as PIL
+
+# Review web app
+gradio
+
+# Stage 2 cheminformatics
+pubchempy
+rdkit
