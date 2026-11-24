@@ -1,12 +1,12 @@
 {
   
-  "RAW_DATASET_NAME" : "alpha_dataset_26-09-11.xlsx", 
+  "RAW_DATASET_NAME" : "viscosity_dataset_261123.csv",
 
-  "PROPERTY" : "alpha",
+  "PROPERTY" : "viscosity",
 
-  "STATE_VAR" : null,
+  "STATE_VAR" : "T",
 
-  "REFERENCE" : "origin",
+  "REFERENCE" : "ref",
 
   "PROXY_URL" : "http://127.0.0.1:7897"
 
